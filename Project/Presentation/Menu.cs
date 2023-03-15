@@ -6,9 +6,10 @@ static class Menu
     //You could edit this to show different menus depending on the user's role
     static public void Start()
     {
+        Console.WriteLine("Welkom bij BIO. Wij zijn een bioscoop gelegen in het hartje van Rotterdam-Zuid aan de Zuiderparkweg! \n" +
+            "Onze bioscoop bestaat uit 12 zalen waar jij volop kunt genieten van de allerbeste films van dit moment! ");
         Console.WriteLine("Enter 1 to login");
         Console.WriteLine("Enter 2 to do something else in the future");
-
         string input = Console.ReadLine();
         if (input == "1")
         {
