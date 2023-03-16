@@ -19,20 +19,10 @@ class SnacksLogic
         return _snacks;
     }
 
-    public bool Add_To_List(SnackModel snack)
+    public void Add_To_List(SnackModel snack)
     {
-        bool duplicated_snack = Check_For_Duplicates(snack.Name);
-        if(!duplicated_snack)
-        {
-            _snacks.Add(snack);
-            SnacksAccess.WriteAll(_snacks);
-            return true;
-
-        }
-        else
-        {
-            return false;
-        }
+        _snacks.Add(snack);
+        SnacksAccess.WriteAll(_snacks);
     }
 
 
@@ -41,24 +31,14 @@ class SnacksLogic
         // Loops through the snack list and finds the SnackModel based on method's argument
         foreach (SnackModel snack in _snacks)
         {
-            if (snack.Name == name)
+            if (snack.Name == name )
             {
                 return snack;
             }
         }
         return null;
     }
-    public bool Check_For_Duplicates(string name)
-    {
-        foreach(SnackModel snack in _snacks)
-        {
-            if(snack.Name == name)
-            {
-                return true;
-            }
-        }
-        return false;
-    }
+
 
     public void Delete_From_List(SnackModel snack)
     {
@@ -66,9 +46,33 @@ class SnacksLogic
         SnacksAccess.WriteAll(_snacks);
     }
 
-    public void Change_String_Snack(SnackModel snack, string snack_value, string value_to_be_canged)
+    public void Change_Name_Snack(string value, SnackModel snack)
     {
-        snack_value = value_to_be_canged;
+        snack.Name = value;
+        _snacks.Remove(snack);
+        _snacks.Add(snack);
+        SnacksAccess.WriteAll(_snacks);
+
+    }
+    public void Change_Price_Snack(double value, SnackModel snack)
+    {
+        snack.Price = value;
+        _snacks.Remove(snack);
+        _snacks.Add(snack);
+        SnacksAccess.WriteAll(_snacks);
+
+    }
+    public void Change_Type_Snack(string value, SnackModel snack)
+    {
+        snack.Type_Of_Food = value;
+        _snacks.Remove(snack);
+        _snacks.Add(snack);
+        SnacksAccess.WriteAll(_snacks);
+
+    }
+    public void Change_Allergy_Snack(string value, SnackModel snack)
+    {
+        snack.Allergies = value;
         _snacks.Remove(snack);
         _snacks.Add(snack);
         SnacksAccess.WriteAll(_snacks);
