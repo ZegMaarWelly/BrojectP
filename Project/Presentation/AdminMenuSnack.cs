@@ -34,6 +34,14 @@
         }
     }
 
+    static public void Get_Snack_List()
+    {
+        List<SnackModel> snack_list = snacksLogic.Return_Snack_List();
+        foreach(SnackModel snack in snack_list)
+        {
+            Console.WriteLine(snack);
+        }
+    }
     static public string Get_Snack_Name()
     {
         Console.WriteLine("Your Snack name: ");
@@ -95,6 +103,11 @@
     }
     static public void Add_Snack()
     {
+        //Prints the current snack list
+        Console.WriteLine("Current List: ");
+        Get_Snack_List();
+        Console.WriteLine();
+
         //Asks the user for their snack.
         string snack_name = Get_Snack_Name();
 
@@ -121,6 +134,10 @@
                 if(snacksLogic.Add_To_List(snack))
                 {
                     Console.WriteLine($"{snack.Name} successfully added to the snack list!");
+                    //Prints the new snack list and returns the user back to the menu
+                    Console.WriteLine("New List: ");
+                    Get_Snack_List();
+                    Console.WriteLine();
                     Start();
                 }
                 else
@@ -144,6 +161,11 @@
 
     static public void Remove_Snack()
     {
+        //Prints the current snack list
+        Console.WriteLine("Current List: ");
+        Get_Snack_List();
+        Console.WriteLine();
+
         //Asks the user want snack they want to remove
         Console.WriteLine("What Snack do you want to remove?");
         string snack_name = Console.ReadLine()!;
@@ -164,6 +186,11 @@
             {
                 snacksLogic.Delete_From_List(your_snack);
                 Console.WriteLine($"{your_snack.Name} has succesfully been deleted from the snack list");
+                //Prints the new snack list
+                Console.WriteLine("New List: ");
+                Get_Snack_List();
+                Console.WriteLine();
+
                 Start();
             }
             else if (snack_confirmation == "N")

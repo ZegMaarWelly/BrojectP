@@ -13,7 +13,11 @@ class SnacksLogic
     {
         _snacks = SnacksAccess.LoadAll();
     }
-  
+
+    public List<SnackModel> Return_Snack_List()
+    {
+        return _snacks;
+    }
 
     public bool Add_To_List(SnackModel snack)
     {

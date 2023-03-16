@@ -23,7 +23,7 @@ class SnackModel
 
     public override string ToString()
     {
-        return $"Name: {Name} Price: {Price} Type of Food: {Type_Of_Food} Allergies: {Allergies}";
+        return $"Name: {Name}, Price: {Price}, Type of Food: {Type_Of_Food}, Allergies: {Allergies}";
     }
 }
 
