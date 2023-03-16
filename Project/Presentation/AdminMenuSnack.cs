@@ -8,7 +8,8 @@
         Console.WriteLine("Enter 1 to add a snack to the snack list");
         Console.WriteLine("Enter 2 to remove a snack from the snack list");
         Console.WriteLine("Enter 3 to change a value of snacks from the snack list");
-        Console.WriteLine("Enter 4 to go back to");
+        Console.WriteLine("Enter 4 see current snack list");
+        Console.WriteLine("Enter 5 to go back to");
 
         string input = Console.ReadLine()!;
         if (input == "1")
@@ -24,6 +25,10 @@
             Change_Snack();
         }
         else if (input == "4")
+        {
+            Get_Snack_List();
+        }
+        else if (input == "5")
         {
             AdminMenu.Start();
         }
