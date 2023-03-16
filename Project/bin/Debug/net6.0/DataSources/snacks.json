@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Water",
+    "price": 2,
+    "type_of_food": "Drink",
+    "allergies": "none"
+  },
+  {
+    "name": "Balls",
+    "price": 5,
+    "type_of_food": "Snack",
+    "allergies": "PP"
+  },
+  {
+    "name": "Popcorn",
+    "price": 6.5,
+    "type_of_food": "Snack",
+    "allergies": "none"
+  }
+]
