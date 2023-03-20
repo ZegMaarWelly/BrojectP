@@ -25,8 +25,14 @@
   },
   {
     "name": "Edible Water",
-    "price": 1000,
+    "price": 3,
     "type_of_food": "Drink",
+    "allergies": "none"
+  },
+  {
+    "name": "yo",
+    "price": 53.345,
+    "type_of_food": "Snack",
     "allergies": "none"
   }
 ]

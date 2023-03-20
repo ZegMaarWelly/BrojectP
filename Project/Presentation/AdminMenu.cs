@@ -8,6 +8,7 @@
     {
         Console.WriteLine("What do you want to do?");
         Console.WriteLine("Enter 1 to add/remove/change snacks");
+        Console.WriteLine("Enter 2 to add items to shopping cart test");
 
         string input = Console.ReadLine()!;
         if (input == "1")
@@ -16,7 +17,7 @@
         }
         else if (input == "2")
         {
-            Console.WriteLine("This feature is not yet implemented");
+            MenuSnack.Start();
         }
         else
         {

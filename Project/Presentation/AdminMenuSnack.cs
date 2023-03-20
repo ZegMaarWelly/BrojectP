@@ -27,6 +27,7 @@
         else if (input == "4")
         {
             Get_Snack_List();
+            Start();
         }
         else if (input == "5")
         {
