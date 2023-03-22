@@ -1,11 +1,5 @@
 [
   {
-    "name": "Water",
-    "price": 2,
-    "type_of_food": "Drink",
-    "allergies": "none"
-  },
-  {
     "name": "Balls",
     "price": 5,
     "type_of_food": "Snack",
@@ -18,14 +12,26 @@
     "allergies": "none"
   },
   {
-    "name": "Penis",
-    "price": 69,
-    "type_of_food": "Snack",
-    "allergies": "Human"
-  },
-  {
     "name": "Poep",
     "price": 6.29,
+    "type_of_food": "Snack",
+    "allergies": "none"
+  },
+  {
+    "name": "Water",
+    "price": 6,
+    "type_of_food": "Drink",
+    "allergies": "none"
+  },
+  {
+    "name": "Edible Water",
+    "price": 3,
+    "type_of_food": "Drink",
+    "allergies": "none"
+  },
+  {
+    "name": "yo",
+    "price": 53.345,
     "type_of_food": "Snack",
     "allergies": "none"
   }
