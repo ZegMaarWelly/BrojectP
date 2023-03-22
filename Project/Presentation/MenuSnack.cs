@@ -16,6 +16,7 @@
             Food_Menu();
             Console.WriteLine();
             Console.WriteLine("What Snack are you going to choose \n Type the name: ");
+            
             string snack_choice = Console.ReadLine()!;
             SnackModel your_snack = snacksLogic.Find_Snack(snack_choice);
             if (your_snack == null || your_snack.Type_Of_Food == "Drink")

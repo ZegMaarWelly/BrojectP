@@ -85,7 +85,6 @@
         _snacks.Remove(snack);
         _snacks.Add(snack);
         SnacksAccess.WriteAll(_snacks);
-
     }
 }
 
