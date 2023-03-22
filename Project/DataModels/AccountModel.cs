@@ -26,6 +26,10 @@ public class AccountModel
         FullName = fullName;
         Vip = vip;
     }
+    public override string ToString()
+    {
+        return $"ID: {Id}, email: {EmailAddress}, password: {Password}, Fullname: {FullName}, V.I.P: {Vip}";
+    }
 
 }
 

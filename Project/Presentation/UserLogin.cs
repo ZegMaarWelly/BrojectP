@@ -7,6 +7,8 @@ static class UserLogin
 
     public static void Start()
     {
+        while (true) 
+        {
         Console.Clear();
         int loginAttempts = 0;
         while (loginAttempts < 3)
@@ -32,6 +34,8 @@ static class UserLogin
                 Console.Clear();
             }
         }
-        Console.WriteLine("You have reached the maximum number of login attempts. Please contact customer support of our Cinema.");
+        Console.WriteLine("You have reached the maximum number of login attempts. You are locked for 30 seconds.");
+        Thread.Sleep(30000);
+        }
     }
 }

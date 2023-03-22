@@ -13,7 +13,10 @@ class AccountsLogic
     {
         _accounts = AccountsAccess.LoadAll();
     }
-
+    public List<AccountModel> Return_Account_List()
+    {
+        return _accounts;
+    }
 
     public void UpdateList(AccountModel acc)
     {
@@ -49,7 +52,15 @@ class AccountsLogic
         return CurrentAccount;
     }
 
-    
+    public AccountModel AccountList()
+    {
+        foreach (AccountModel account in _accounts)
+        {
+            return account;
+        }
+        return null;
+    }
+
 }
 
 
