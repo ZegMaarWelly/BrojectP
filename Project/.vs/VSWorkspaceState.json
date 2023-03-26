@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\DataAccess",
+    "\\DataModels",
+    "\\Logic",
+    "\\Presentation"
   ],
-  "SelectedNode": "\\Program.cs",
+  "SelectedNode": "\\Presentation\\AdminMovieList.cs",
   "PreviewInSolutionExplorer": false
 }

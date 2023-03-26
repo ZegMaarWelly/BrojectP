@@ -27,7 +27,7 @@ class MovieListLogic
 
 	public MovieListModel Find_Movie(string name)
 	{
-		foreach (MovieListLogic movie in _movies)
+		foreach (MovieListModel movie in _movies)
 		{
 			if (movie.Name == name)
 			{
@@ -36,3 +36,4 @@ class MovieListLogic
 		}
 		return null;
 	}
+}

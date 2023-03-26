@@ -3,26 +3,27 @@ static class AdminMovieList
     static private MovieListLogic movieLogic = new MovieListLogic();
     static public void Start()
     {
-        Console.WriteLine("What would you like to do?\n1) Add a movie to the list of movies\n2) Remove a movie from the list\n3) See the current list of movies\n4) Return to the main menu")
+        Console.WriteLine("What would you like to do?\n1) Add a movie to the list of movies\n2) Remove a movie from the list\n3) See the current list of movies\n4) Return to the main menu");
         string input = Console.ReadLine()!;
-        switch (input)
+        if (input == "1")
         {
-            case "1":
-                Add_Movie();
-                break;
-            case "2":
-                Remove_Movie();
-                break;
-            case "3":
-                View_List();
-                break;
-            case "4":
-                AdminMenu.Start();
-                break;
-            default:
-                Console.WriteLine("Invalid input");
-                Start();
+            Add_movie();
         }
+        else if (input == "2") 
+        {
+            Console.WriteLine("Not yet implemented");
+            Start();
+        }
+        else if (input == "3")
+        {
+            Get_Movie_list();
+        }
+        else
+        {
+            Console.WriteLine("Invalid input\n\n");
+        }
+        
+       
     }
 
     static public void Get_Movie_list()
@@ -34,59 +35,63 @@ static class AdminMovieList
         }
     }
 
-    static public void New_Movie_Name()
+    static public string New_Movie_Name()
     {
-        Console.WriteLine("Enter the name of the movie: ")
+        Console.WriteLine("Enter the name of the movie: ");
         string movie_name = Console.ReadLine()!;
         return movie_name;
     }
 
-    static public void New_Movie_Genre()
+    static public string New_Movie_Genre()
     {
-        Console.WriteLine("Enter the genre(s) of the movie: ")
+        Console.WriteLine("Enter the genre(s) of the movie: ");
         string movie_genre = Console.ReadLine()!;
         return movie_genre;
     }
 
-    static public void New_Movie_Length()
+    static public int New_Movie_Length()
     {
+        int movie_length = -1;
         bool correct_price = false;
         while (!correct_price)
         {
-            Console.WriteLine("Enter the length of the movie in minutes in numbers: ")
+            Console.WriteLine("Enter the length of the movie in minutes in numbers: ");
             try
             {
-                movie_length = Convert.ToInt32(Console.ReadLine());
+                string movie_length_string = Console.ReadLine();
+                int movie_length = Convert.ToInt32(movie_length_string);
                 correct_price = true;
             }
             catch
             {
-                Console.WriteLine("Please enter only numbers")
+                Console.WriteLine("Please enter only numbers");
             }
         }
         return movie_length;
     }
 
-    static public void New_Movie_Age()
+    static public int New_Movie_Age()
     {
+        int movie_age = -1;
         bool correct_age = false;
         while (!correct_age)
         {
-            Console.WriteLine("Enter the minumum age of the movie goer for this movie: ")
+            Console.WriteLine("Enter the minumum age of the movie goer for this movie: ");
             try
             {
-                movie_age = Convert.ToInt32(Console.ReadLine());
+                string movie_age_string = Console.ReadLine();
+                int movie_age = Convert.ToInt32(movie_age_string);
                 correct_age = true;
             }
             catch
             {
-                Console.WriteLine("Please enter only numbers")
+                Console.WriteLine("Please enter only numbers");
             }
         }
         return movie_age;
     }
 
-    static public void New_Movie_Labels()
+    static public string New_Movie_Labels()
     {
         Console.WriteLine("Please enter the labels you would like to attach to this movie: ");
         string movie_labels = Console.ReadLine()!;
@@ -99,14 +104,14 @@ static class AdminMovieList
 
     static public void Add_movie()
     {
-        Console.WriteLine("Current list of movies: ")
+        Console.WriteLine("Current list of movies: ");
         Get_Movie_list();
         Console.WriteLine();
 
         string movie_name = New_Movie_Name();
         string movie_genre = New_Movie_Genre();
-        string movie_length = New_Movie_Length();
-        string movie_age = New_Movie_Age();
+        int movie_length = New_Movie_Length();
+        int movie_age = New_Movie_Age();
         string movie_labels = New_Movie_Labels();
 
         MovieListModel movie = new(movie_name, movie_genre, movie_length, movie_age, movie_labels);
@@ -116,7 +121,7 @@ static class AdminMovieList
             Console.WriteLine(movie);
             if (new_movie != null)
             {
-                Console.WriteLine("This movie is already in the list of movies. Returning to main menu... \n")
+                Console.WriteLine("This movie is already in the list of movies. Returning to main menu... \n");
                 Start();
             }
             else

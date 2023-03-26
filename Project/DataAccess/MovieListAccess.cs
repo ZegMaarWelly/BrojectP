@@ -8,7 +8,7 @@ static class MovieListAccess
     public static List<MovieListModel> LoadAll()
     {
         string json = File.ReadAllText(path);
-        return JsonSerializer.Deserialize<List<SnackModel>>(json);
+        return JsonSerializer.Deserialize<List<MovieListModel>>(json);
     }
 
 
@@ -18,7 +18,4 @@ static class MovieListAccess
         string json = JsonSerializer.Serialize(movies, options);
         File.WriteAllText(path, json);
     }
-
-
-
 }

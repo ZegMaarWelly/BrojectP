@@ -6,13 +6,13 @@ class MovieListModel
         public string Name { get; set; }
 
         [JsonPropertyName("genre")]
-        public double Genre { get; set; }
+        public string Genre { get; set; }
 
         [JsonPropertyName("length")]
-        public string Length { get; set; }
+        public int Length { get; set; }
 
         [JsonPropertyName("age")]
-        public string Age { get; set; }
+        public int Age { get; set; }
 
         [JsonPropertyName("labels")]
         public string Labels { get; set; }
@@ -22,11 +22,12 @@ class MovieListModel
             Name = name;
             Genre = genre;
             Length = length;
+            Age = age;
             Labels = labels;
         }
 
         public override string ToString()
         {
-            return $"Name: {Name}, Genre: {Genre}, Length: {Length}, Labels: {Labels}";
+            return $"Name: {Name}, Genre: {Genre}, Length: {Length}, Age: {Age}, Labels: {Labels}";
         }
     }
