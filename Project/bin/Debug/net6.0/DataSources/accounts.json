@@ -1,5 +1,12 @@
 ﻿[
 	{
+		"id": 0,
+		"emailAddress": "Admin",
+		"password": "Admin",
+		"fullName": "Admin",
+		"V.I.P.": true
+	},
+	{
 		"id": 1,
 		"emailAddress": "n@b.c",
 		"password": "xyz",
