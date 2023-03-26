@@ -12,12 +12,6 @@
     "allergies": "none"
   },
   {
-    "name": "Poep",
-    "price": 6.29,
-    "type_of_food": "Snack",
-    "allergies": "none"
-  },
-  {
     "name": "Water",
     "price": 6,
     "type_of_food": "Drink",
@@ -30,8 +24,14 @@
     "allergies": "none"
   },
   {
-    "name": "yo",
-    "price": 53.345,
+    "name": "Koekje",
+    "price": 6.29,
+    "type_of_food": "Snack",
+    "allergies": "none"
+  },
+  {
+    "name": "Oreo",
+    "price": 3.5,
     "type_of_food": "Snack",
     "allergies": "none"
   }

@@ -13,6 +13,7 @@ class ShoppingCartLogic
         _shoppingcart = new();
     }
 
+  
 
     public List<CountedSnackModel> Return_Counted_Snack_List()
     {
@@ -44,6 +45,17 @@ class ShoppingCartLogic
             CountedSnackModel counted_snack_to_be_added = new(your_snack, 1);
             _shoppingcart.Add(counted_snack_to_be_added);
         }
+    }
+
+    public double Get_Total_Price()
+    {
+        double total_price = 0;
+        foreach(CountedSnackModel CountedSnack in _shoppingcart)
+        {
+            double snack_price = CountedSnack.Snack.Price * CountedSnack.Quantity ;
+            total_price += snack_price;
+        }
+        return total_price;
     }
 
 

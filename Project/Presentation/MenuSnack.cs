@@ -1,7 +1,7 @@
 ﻿static class MenuSnack
 {
     static private SnacksLogic snacksLogic = new SnacksLogic();
-    static public ShoppingCartLogic shoppingcartLogic = new ShoppingCartLogic();
+    static public  ShoppingCartLogic shoppingcartLogic = new ShoppingCartLogic();
     static public void Start()
     {
         Console.WriteLine("What do you want to order?");
