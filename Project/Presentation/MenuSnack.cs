@@ -8,7 +8,6 @@
         Console.WriteLine("Enter 1 to order food");
         Console.WriteLine("Enter 2 to order drinks");
         Console.WriteLine("Enter 3 to see your shopping cart");
-        Console.WriteLine("Enter 4 to quit");
 
         string input = Console.ReadLine()!;
         if (input == "1")
@@ -51,11 +50,7 @@
         }
         else if(input == "3")
         {
-            ShoppingCart.Show_Shopping_Cart();
-        }
-        else if (input == "4")
-        {
-            Console.WriteLine("you have quit");
+            ShoppingCart.Start();
         }
         else
         {

@@ -142,6 +142,7 @@
             {
                 Console.WriteLine("Proceed to add the snack to the snack list? (Y/N) ");
                 string snack_confirmation = Console.ReadLine()!.ToUpper();
+                //If the answer is Yes, it will delete it from the list (and also the json file)
                 if (snack_confirmation == "Y")
                 {
                     snacksLogic.Add_To_List(snack);
@@ -164,7 +165,7 @@
                 }
             }
             
-                //If the answer is Yes, it will delete it from the list (and also the json file)
+                
                
         }
 
