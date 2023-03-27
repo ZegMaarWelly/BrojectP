@@ -11,6 +11,7 @@
         Console.WriteLine("Enter 2 to add items to shopping cart test.");
         Console.WriteLine("Enter 3 to see a list of all registered users.");
         Console.WriteLine("Enter 4 to go the the beginning of the program.");
+        Console.WriteLine("Enter 5 to Quit the Program.");
 
         string input = Console.ReadLine()!;
         if (input == "1")
@@ -38,6 +39,10 @@
         {
             Console.Clear() ;
             Menu.Start();
+        }
+        else if (input == "5")
+        {
+            Environment.Exit(0);
         }
         else
         {

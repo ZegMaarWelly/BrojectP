@@ -20,7 +20,11 @@ static class UserLogin
             string password = Console.ReadLine();
             Console.Clear();
             AccountModel acc = accountsLogic.CheckLogin(email, password);
-            if (acc != null)
+            if (email == "Admin" && password == "Admin")
+            {
+                AdminMenu.Start();
+            }
+            else if (acc != null)
             {
                 Console.WriteLine("Welcome back " + acc.FullName);
                 MenuSnack.Start();
