@@ -52,6 +52,7 @@ C:\Users\Welly\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.csproj
 C:\Users\Welly\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.dll
 C:\Users\Welly\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\refint\Project.dll
 C:\Users\Welly\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.pdb
+<<<<<<< Updated upstream
 C:\Users\Welly\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.exe
 C:\Users\Welly\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.deps.json
 C:\Users\Welly\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.runtimeconfig.json
@@ -59,3 +60,5 @@ C:\Users\Welly\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.dll
 C:\Users\Welly\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.pdb
 C:\Users\Welly\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.genruntimeconfig.cache
 C:\Users\Welly\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\ref\Project.dll
+=======
+>>>>>>> Stashed changes

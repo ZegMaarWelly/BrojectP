@@ -3,7 +3,7 @@ static class AdminMovieList
     static private MovieListLogic movieLogic = new MovieListLogic();
     static public void Start()
     {
-        Console.WriteLine("What would you like to do?\n1) Add a movie to the list of movies\n2) Remove a movie from the list\n3) See the current list of movies\n4) Return to the main menu");
+        Console.WriteLine("What would you like to do?\n1) Add a movie to the list of movies\n2) Remove a movie from the list\n3) See the current list of movies\n);
         string input = Console.ReadLine()!;
         if (input == "1")
         {
@@ -33,6 +33,7 @@ static class AdminMovieList
         {
             Console.WriteLine(movie);
         }
+        Start();
     }
 
     static public string New_Movie_Name()
@@ -126,6 +127,7 @@ static class AdminMovieList
             }
             else
             {
+                movieLogic.Add_To_List(movie);
                 Console.WriteLine($"Movie {movie.Name} has succesfully been added to the list of movies");
                 Console.WriteLine("Current list of movies:\n");
                 Get_Movie_list();

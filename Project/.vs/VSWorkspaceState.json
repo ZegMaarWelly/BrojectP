@@ -1,8 +1,15 @@
 {
   "ExpandedNodes": [
     "",
+    "\\bin",
+    "\\bin\\Debug",
+    "\\bin\\Debug\\net6.0",
+    "\\bin\\Debug\\net6.0\\DataSources",
+    "\\DataAccess",
+    "\\DataModels",
+    "\\Logic",
     "\\Presentation"
   ],
-  "SelectedNode": "\\Program.cs",
+  "SelectedNode": "\\DataAccess\\MovieListAccess.cs",
   "PreviewInSolutionExplorer": false
 }
