@@ -56,7 +56,7 @@
         }
         else if (input == "4")
         {
-            Console.WriteLine("you have quit");
+            Environment.Exit(0);
         }
         else
         {
