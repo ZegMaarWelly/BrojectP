@@ -28,6 +28,6 @@ class MovieListModel
 
         public override string ToString()
         {
-            return $"Name: {Name}, Genre: {Genre}, Length: {Length}, Age: {Age}, Labels: {Labels}";
+            return $"Name: {Name}, Genre: {Genre}, Length: {Length} minutes, Age: {Age} and above, Parental labels: {Labels}";
         }
     }

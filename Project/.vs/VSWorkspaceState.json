@@ -10,6 +10,6 @@
     "\\Logic",
     "\\Presentation"
   ],
-  "SelectedNode": "\\DataAccess\\MovieListAccess.cs",
+  "SelectedNode": "\\bin\\Debug\\net6.0\\DataSources\\movielist.json",
   "PreviewInSolutionExplorer": false
 }

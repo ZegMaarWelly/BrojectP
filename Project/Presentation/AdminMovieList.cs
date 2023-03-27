@@ -3,11 +3,11 @@ static class AdminMovieList
     static private MovieListLogic movieLogic = new MovieListLogic();
     static public void Start()
     {
-        Console.WriteLine("What would you like to do?\n1) Add a movie to the list of movies\n2) Remove a movie from the list\n3) See the current list of movies\n);
+        Console.WriteLine("What would you like to do?\n1) Add a movie to the list of movies\n2) Remove a movie from the list\n3) See the current list of movies\n");
         string input = Console.ReadLine()!;
         if (input == "1")
         {
-            Add_movie();
+            Add_Movie();
         }
         else if (input == "2") 
         {
@@ -17,6 +17,7 @@ static class AdminMovieList
         else if (input == "3")
         {
             Get_Movie_list();
+            Start();
         }
         else
         {
@@ -33,7 +34,6 @@ static class AdminMovieList
         {
             Console.WriteLine(movie);
         }
-        Start();
     }
 
     static public string New_Movie_Name()
@@ -94,7 +94,7 @@ static class AdminMovieList
 
     static public string New_Movie_Labels()
     {
-        Console.WriteLine("Please enter the labels you would like to attach to this movie: ");
+        Console.WriteLine("Please enter the parental labels you would like to attach to this movie: ");
         string movie_labels = Console.ReadLine()!;
         if (movie_labels == "")
         {
@@ -103,12 +103,11 @@ static class AdminMovieList
         return movie_labels;
     }
 
-    static public void Add_movie()
+    static public void Add_Movie()
     {
         Console.WriteLine("Current list of movies: ");
         Get_Movie_list();
         Console.WriteLine();
-
         string movie_name = New_Movie_Name();
         string movie_genre = New_Movie_Genre();
         int movie_length = New_Movie_Length();
