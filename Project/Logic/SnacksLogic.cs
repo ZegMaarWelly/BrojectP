@@ -59,9 +59,10 @@
     //Changes the value of the Name based on an argument.
     public void Change_Name_Snack(string value, SnackModel snack)
     {
+      
         snack.Name = value;
-        _snacks.Remove(snack);
-        _snacks.Add(snack);
+        int snackindex = _snacks.IndexOf(snack);
+        _snacks[snackindex] = snack;
         SnacksAccess.WriteAll(_snacks);
 
     }
@@ -69,8 +70,8 @@
     public void Change_Price_Snack(double value, SnackModel snack)
     {
         snack.Price = value;
-        _snacks.Remove(snack);
-        _snacks.Add(snack);
+        int snackindex = _snacks.IndexOf(snack);
+        _snacks[snackindex] = snack;
         SnacksAccess.WriteAll(_snacks);
 
     }
@@ -78,8 +79,8 @@
     public void Change_Type_Snack(string value, SnackModel snack)
     {
         snack.Type_Of_Food = value;
-        _snacks.Remove(snack);
-        _snacks.Add(snack);
+        int snackindex = _snacks.IndexOf(snack);
+        _snacks[snackindex] = snack;
         SnacksAccess.WriteAll(_snacks);
 
     }
@@ -87,8 +88,8 @@
     public void Change_Allergy_Snack(string value, SnackModel snack)
     {
         snack.Allergies = value;
-        _snacks.Remove(snack);
-        _snacks.Add(snack);
+        int snackindex = _snacks.IndexOf(snack);
+        _snacks[snackindex] = snack;
         SnacksAccess.WriteAll(_snacks);
 
     }
