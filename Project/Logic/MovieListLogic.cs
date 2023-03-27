@@ -8,7 +8,7 @@ class MovieListLogic
 		_movies = MovieListAccess.LoadAll();
 	}
 
-	public List<MovieListModel> Return_Movie_list()
+	public List<MovieListModel> Return_Movie_List()
 	{
 		return _movies;
 	}

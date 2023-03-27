@@ -51,7 +51,6 @@ static class AdminMovieList
 
     static public int New_Movie_Length()
     {
-        int movie_length = -1;
         bool correct_price = false;
         while (!correct_price)
         {
@@ -60,6 +59,7 @@ static class AdminMovieList
             {
                 string movie_length_string = Console.ReadLine();
                 int movie_length = Convert.ToInt32(movie_length_string);
+                return movie_length;
                 correct_price = true;
             }
             catch
@@ -67,12 +67,11 @@ static class AdminMovieList
                 Console.WriteLine("Please enter only numbers");
             }
         }
-        return movie_length;
+        return 0;
     }
 
     static public int New_Movie_Age()
     {
-        int movie_age = -1;
         bool correct_age = false;
         while (!correct_age)
         {
@@ -81,6 +80,7 @@ static class AdminMovieList
             {
                 string movie_age_string = Console.ReadLine();
                 int movie_age = Convert.ToInt32(movie_age_string);
+                return movie_age;
                 correct_age = true;
             }
             catch
@@ -88,7 +88,7 @@ static class AdminMovieList
                 Console.WriteLine("Please enter only numbers");
             }
         }
-        return movie_age;
+        return 0;
     }
 
     static public string New_Movie_Labels()
