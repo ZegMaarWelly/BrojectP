@@ -26,8 +26,9 @@ class MovieListModel
             Labels = labels;
         }
 
+        // This is how the string for the movie will be displayed E.G. Name: (name of movie), Genre etc...
         public override string ToString()
         {
-            return $"Name: {Name}, Genre: {Genre}, Length: {Length} minutes, Age: {Age} and above, Parental labels: {Labels}";
+            return $"Name: {Name}, Genre(s): {Genre}, Length: {Length} minutes, Age: {Age} and above, Parental labels: {Labels}";
         }
     }

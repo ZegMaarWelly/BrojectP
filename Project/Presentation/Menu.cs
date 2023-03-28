@@ -21,6 +21,7 @@ static class Menu
         }
         else if (input == "3")
         {
+            Console.Clear();
             AdminMovieList.Start();
         }
         else

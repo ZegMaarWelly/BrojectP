@@ -62,3 +62,10 @@ C:\Users\Welly\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.genrun
 C:\Users\Welly\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\ref\Project.dll
 =======
 >>>>>>> Stashed changes
+D:\BrojectP\Project\bin\Debug\net6.0\Project.exe
+D:\BrojectP\Project\bin\Debug\net6.0\Project.deps.json
+D:\BrojectP\Project\bin\Debug\net6.0\Project.runtimeconfig.json
+D:\BrojectP\Project\bin\Debug\net6.0\Project.dll
+D:\BrojectP\Project\bin\Debug\net6.0\Project.pdb
+D:\BrojectP\Project\obj\Debug\net6.0\Project.genruntimeconfig.cache
+D:\BrojectP\Project\obj\Debug\net6.0\ref\Project.dll

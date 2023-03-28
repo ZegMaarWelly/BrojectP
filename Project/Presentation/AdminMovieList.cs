@@ -3,7 +3,7 @@ static class AdminMovieList
     static private MovieListLogic movieLogic = new MovieListLogic();
     static public void Start()
     {
-        Console.WriteLine("What would you like to do?\n1) Add a movie to the list of movies\n2) Remove a movie from the list\n3) See the current list of movies\n");
+        Console.WriteLine("What would you like to do?\n1) Add a movie to the list of movies\n2) Remove a movie from the list\n3) See the current list of movies\n4) Return to the main menu\n");
         string input = Console.ReadLine()!;
         if (input == "1")
         {
@@ -16,12 +16,24 @@ static class AdminMovieList
         }
         else if (input == "3")
         {
+            Console.Clear();
+            Console.WriteLine("The current list of movies consists off:\n");
             Get_Movie_list();
+            Console.WriteLine("\nPress any button to return to the main menu");
+            Console.ReadLine();
+            Console.Clear();
             Start();
+        }
+        else if (input == "4")
+        {
+            Console.Clear();
+            Menu.Start();
         }
         else
         {
-            Console.WriteLine("Invalid input\n\n");
+            Console.WriteLine("Invalid input");
+            Console.WriteLine();
+            Start();
         }
         
        
@@ -33,25 +45,27 @@ static class AdminMovieList
         foreach(MovieListModel movie in movie_list)
         {
             Console.WriteLine(movie);
+            Console.WriteLine();
         }
     }
 
     static public string New_Movie_Name()
     {
-        Console.WriteLine("Enter the name of the movie: ");
+        Console.WriteLine("Enter the name of the new movie you would like to add: ");
         string movie_name = Console.ReadLine()!;
         return movie_name;
     }
 
     static public string New_Movie_Genre()
     {
-        Console.WriteLine("Enter the genre(s) of the movie: ");
+        Console.WriteLine("Enter the genre(s) of this movie: ");
         string movie_genre = Console.ReadLine()!;
         return movie_genre;
     }
-
+    
+    // Length has to be expressed in numbers and will not accept anything but numbers
     static public int New_Movie_Length()
-    {
+    {   
         bool correct_price = false;
         while (!correct_price)
         {
@@ -71,6 +85,7 @@ static class AdminMovieList
         return 0;
     }
 
+    // Age has to be expressed in numbers and will not accept anything but numbers
     static public int New_Movie_Age()
     {
         bool correct_age = false;
@@ -105,6 +120,7 @@ static class AdminMovieList
 
     static public void Add_Movie()
     {
+        Console.Clear();
         Console.WriteLine("Current list of movies: ");
         Get_Movie_list();
         Console.WriteLine();
@@ -113,6 +129,7 @@ static class AdminMovieList
         int movie_length = New_Movie_Length();
         int movie_age = New_Movie_Age();
         string movie_labels = New_Movie_Labels();
+        Console.Clear();
 
         MovieListModel movie = new(movie_name, movie_genre, movie_length, movie_age, movie_labels);
         while (true)
@@ -121,16 +138,21 @@ static class AdminMovieList
             Console.WriteLine(movie);
             if (new_movie != null)
             {
-                Console.WriteLine("This movie is already in the list of movies. Returning to main menu... \n");
+                Console.WriteLine("This movie is already in the list of movies. \nPress any button to return to the main menu...");
+                Console.ReadLine();
+                Console.Clear();
                 Start();
             }
             else
             {
                 movieLogic.Add_To_List(movie);
-                Console.WriteLine($"Movie {movie.Name} has succesfully been added to the list of movies");
-                Console.WriteLine("Current list of movies:\n");
+                Console.WriteLine($"The movie, '{movie.Name}' has succesfully been added to the list of movies");
+                Thread.Sleep(10000);
+                Console.WriteLine("\nCurrent list of movies:\n");
                 Get_Movie_list();
-                Console.WriteLine();
+                Console.WriteLine("Press any button to return to the movie list menu");
+                Console.ReadLine();
+                Console.Clear();
                 Start();
             }
         }
