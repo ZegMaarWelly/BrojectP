@@ -225,3 +225,6 @@ Project/obj/Debug/net6.0/Project.dll
 *.dll
 *.dll
 *.pdb
+Project/bin/Debug/net6.0/Project.deps.json
+Project/bin/Debug/net6.0/Project.exe
+Project/bin/Debug/net6.0/Project.runtimeconfig.json
