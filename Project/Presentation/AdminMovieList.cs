@@ -5,38 +5,34 @@ static class AdminMovieList
     {
         Console.WriteLine("What would you like to do?\n1) Add a movie to the list of movies\n2) Remove a movie from the list\n3) See the current list of movies\n4) Return to the main menu\n");
         string input = Console.ReadLine()!;
-        if (input == "1")
+        int int_input = Convert.ToInt32(input);
+        switch (int_input)
         {
-            Add_Movie();
+            case 1:
+                Add_Movie();
+                break;
+            case 2:
+                Console.WriteLine("Not yet implented, we're working on it");
+                Start();
+                break;
+            case 3:
+                Console.Clear();
+                Console.WriteLine("The current list of movies consists of:\n");
+                Get_Movie_list();
+                Console.WriteLine("\nPress any button to return to the main menu");
+                Console.ReadKey();
+                Console.Clear();
+                Start();
+                break;
+            case 4:
+                Console.Clear();
+                Menu.Start();
+                break;
+            default:
+                Console.WriteLine("Invalid input\n");
+                Start();
+                break;
         }
-        else if (input == "2") 
-        {
-            Console.WriteLine("Not yet implemented");
-            Start();
-        }
-        else if (input == "3")
-        {
-            Console.Clear();
-            Console.WriteLine("The current list of movies consists off:\n");
-            Get_Movie_list();
-            Console.WriteLine("\nPress any button to return to the main menu");
-            Console.ReadLine();
-            Console.Clear();
-            Start();
-        }
-        else if (input == "4")
-        {
-            Console.Clear();
-            Menu.Start();
-        }
-        else
-        {
-            Console.WriteLine("Invalid input");
-            Console.WriteLine();
-            Start();
-        }
-        
-       
     }
 
     static public void Get_Movie_list()
@@ -44,8 +40,7 @@ static class AdminMovieList
         List<MovieListModel> movie_list = movieLogic.Return_Movie_List();
         foreach(MovieListModel movie in movie_list)
         {
-            Console.WriteLine(movie);
-            Console.WriteLine();
+            Console.WriteLine($"{movie}\n");
         }
     }
 
@@ -139,7 +134,7 @@ static class AdminMovieList
             if (new_movie != null)
             {
                 Console.WriteLine("This movie is already in the list of movies. \nPress any button to return to the main menu...");
-                Console.ReadLine();
+                Console.ReadKey();
                 Console.Clear();
                 Start();
             }
@@ -148,10 +143,11 @@ static class AdminMovieList
                 movieLogic.Add_To_List(movie);
                 Console.WriteLine($"The movie, '{movie.Name}' has succesfully been added to the list of movies");
                 Thread.Sleep(10000);
-                Console.WriteLine("\nCurrent list of movies:\n");
+                Console.Clear();
+                Console.WriteLine("Current list of movies:\n");
                 Get_Movie_list();
                 Console.WriteLine("Press any button to return to the movie list menu");
-                Console.ReadLine();
+                Console.ReadKey();
                 Console.Clear();
                 Start();
             }
