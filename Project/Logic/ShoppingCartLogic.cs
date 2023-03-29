@@ -19,7 +19,7 @@ class ShoppingCartLogic
     }
     
     
-    //Finds the Counted Snack based on the SnackModel argument
+    //Finds the Counted Snack based on the SnackModel argument..
     public CountedSnackModel Find_Counted_Snack(SnackModel your_snack)
     {
         // Loops through the snack list and finds the SnackModel based on method's argument

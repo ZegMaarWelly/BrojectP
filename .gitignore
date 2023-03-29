@@ -224,3 +224,10 @@ AppPackages/
 #####
 # End of core ignore list, below put you custom 'per project' settings (patterns or path)
 #####
+Project/obj/Debug/net6.0/Project.pdb
+Project/bin/Debug/net6.0/Project.dll
+Project/bin/Debug/net6.0/Project.pdb
+Project/obj/Debug/net6.0/Project.dll
+*.dll
+*.dll
+*.pdb
