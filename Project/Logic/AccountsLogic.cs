@@ -4,7 +4,7 @@ class AccountsLogic
 {
     private List<AccountModel> _accounts;
 
-    //Static properties are shared across all inshtances of the class
+    //Static properties are shared across all inshfbvtances of the class
     //This can be used to get the current logged in account from anywhere in the program
     //private set, so this can only be set by the class itself
     static public AccountModel? CurrentAccount { get; private set; }

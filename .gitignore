@@ -227,3 +227,5 @@ AppPackages/
 #####
 *.vsidx
 Project/.vs/Project/v17/.suo
+*.1
+*.v2

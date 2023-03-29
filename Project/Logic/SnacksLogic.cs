@@ -13,7 +13,7 @@
         return _snacks;
     }
     
-    //returns a list of snacks based on argument
+    //returns a list of snacks based on argumnent
     public List<SnackModel> Return_Snack_List_Based_On_Type(string type)
     {
         List<SnackModel> snack_list = new();
