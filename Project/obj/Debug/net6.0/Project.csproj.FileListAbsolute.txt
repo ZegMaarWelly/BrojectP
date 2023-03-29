@@ -28,22 +28,56 @@ C:\Users\KruKY\OneDrive - Hogeschool Rotterdam\ProjectB\Template version 2\Three
 C:\Users\KruKY\OneDrive - Hogeschool Rotterdam\ProjectB\Template version 2\ThreeLayerTemplate\Project\obj\Debug\net6.0\Project.pdb
 C:\Users\KruKY\OneDrive - Hogeschool Rotterdam\ProjectB\Template version 2\ThreeLayerTemplate\Project\obj\Debug\net6.0\Project.genruntimeconfig.cache
 C:\Users\KruKY\OneDrive - Hogeschool Rotterdam\ProjectB\Template version 2\ThreeLayerTemplate\Project\obj\Debug\net6.0\ref\Project.dll
-D:\schul\BrojectP\Project\obj\Debug\net6.0\Project.csproj.AssemblyReference.cache
-D:\schul\BrojectP\Project\obj\Debug\net6.0\Project.GeneratedMSBuildEditorConfig.editorconfig
-D:\schul\BrojectP\Project\obj\Debug\net6.0\Project.AssemblyInfoInputs.cache
-D:\schul\BrojectP\Project\obj\Debug\net6.0\Project.AssemblyInfo.cs
-D:\schul\BrojectP\Project\obj\Debug\net6.0\Project.csproj.CoreCompileInputs.cache
-D:\schul\BrojectP\Project\obj\Debug\net6.0\Project.dll
-D:\schul\BrojectP\Project\obj\Debug\net6.0\refint\Project.dll
-D:\schul\BrojectP\Project\obj\Debug\net6.0\Project.pdb
-D:\BrojectP\Project\obj\Debug\net6.0\Project.csproj.AssemblyReference.cache
-D:\BrojectP\Project\obj\Debug\net6.0\Project.GeneratedMSBuildEditorConfig.editorconfig
-D:\BrojectP\Project\obj\Debug\net6.0\Project.AssemblyInfoInputs.cache
-D:\BrojectP\Project\obj\Debug\net6.0\Project.AssemblyInfo.cs
-D:\BrojectP\Project\obj\Debug\net6.0\Project.csproj.CoreCompileInputs.cache
-D:\BrojectP\Project\obj\Debug\net6.0\Project.dll
-D:\BrojectP\Project\obj\Debug\net6.0\refint\Project.dll
-D:\BrojectP\Project\obj\Debug\net6.0\Project.pdb
+C:\Users\glgvo\OneDrive\BrojectP\Project\bin\Debug\net6.0\Project.exe
+C:\Users\glgvo\OneDrive\BrojectP\Project\bin\Debug\net6.0\Project.deps.json
+C:\Users\glgvo\OneDrive\BrojectP\Project\bin\Debug\net6.0\Project.runtimeconfig.json
+C:\Users\glgvo\OneDrive\BrojectP\Project\bin\Debug\net6.0\Project.dll
+C:\Users\glgvo\OneDrive\BrojectP\Project\bin\Debug\net6.0\Project.pdb
+C:\Users\glgvo\OneDrive\BrojectP\Project\obj\Debug\net6.0\Project.csproj.AssemblyReference.cache
+C:\Users\glgvo\OneDrive\BrojectP\Project\obj\Debug\net6.0\Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\glgvo\OneDrive\BrojectP\Project\obj\Debug\net6.0\Project.AssemblyInfoInputs.cache
+C:\Users\glgvo\OneDrive\BrojectP\Project\obj\Debug\net6.0\Project.AssemblyInfo.cs
+C:\Users\glgvo\OneDrive\BrojectP\Project\obj\Debug\net6.0\Project.csproj.CoreCompileInputs.cache
+C:\Users\glgvo\OneDrive\BrojectP\Project\obj\Debug\net6.0\Project.dll
+C:\Users\glgvo\OneDrive\BrojectP\Project\obj\Debug\net6.0\refint\Project.dll
+C:\Users\glgvo\OneDrive\BrojectP\Project\obj\Debug\net6.0\Project.pdb
+C:\Users\glgvo\OneDrive\BrojectP\Project\obj\Debug\net6.0\Project.genruntimeconfig.cache
+C:\Users\glgvo\OneDrive\BrojectP\Project\obj\Debug\net6.0\ref\Project.dll
+C:\Users\glgvo.LAPTOP-VVR8ENRB\OneDrive\BrojectP\Project\bin\Debug\net6.0\Project.exe
+C:\Users\glgvo.LAPTOP-VVR8ENRB\OneDrive\BrojectP\Project\bin\Debug\net6.0\Project.deps.json
+C:\Users\glgvo.LAPTOP-VVR8ENRB\OneDrive\BrojectP\Project\bin\Debug\net6.0\Project.runtimeconfig.json
+C:\Users\glgvo.LAPTOP-VVR8ENRB\OneDrive\BrojectP\Project\bin\Debug\net6.0\Project.dll
+C:\Users\glgvo.LAPTOP-VVR8ENRB\OneDrive\BrojectP\Project\bin\Debug\net6.0\Project.pdb
+C:\Users\glgvo.LAPTOP-VVR8ENRB\OneDrive\BrojectP\Project\obj\Debug\net6.0\Project.csproj.AssemblyReference.cache
+C:\Users\glgvo.LAPTOP-VVR8ENRB\OneDrive\BrojectP\Project\obj\Debug\net6.0\Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\glgvo.LAPTOP-VVR8ENRB\OneDrive\BrojectP\Project\obj\Debug\net6.0\Project.AssemblyInfoInputs.cache
+C:\Users\glgvo.LAPTOP-VVR8ENRB\OneDrive\BrojectP\Project\obj\Debug\net6.0\Project.AssemblyInfo.cs
+C:\Users\glgvo.LAPTOP-VVR8ENRB\OneDrive\BrojectP\Project\obj\Debug\net6.0\Project.csproj.CoreCompileInputs.cache
+C:\Users\glgvo.LAPTOP-VVR8ENRB\OneDrive\BrojectP\Project\obj\Debug\net6.0\Project.dll
+C:\Users\glgvo.LAPTOP-VVR8ENRB\OneDrive\BrojectP\Project\obj\Debug\net6.0\refint\Project.dll
+C:\Users\glgvo.LAPTOP-VVR8ENRB\OneDrive\BrojectP\Project\obj\Debug\net6.0\Project.pdb
+C:\Users\glgvo.LAPTOP-VVR8ENRB\OneDrive\BrojectP\Project\obj\Debug\net6.0\Project.genruntimeconfig.cache
+C:\Users\glgvo.LAPTOP-VVR8ENRB\OneDrive\BrojectP\Project\obj\Debug\net6.0\ref\Project.dll
+C:\Users\31640\OneDrive - Hogeschool Rotterdam\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.exe
+C:\Users\31640\OneDrive - Hogeschool Rotterdam\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.deps.json
+C:\Users\31640\OneDrive - Hogeschool Rotterdam\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.runtimeconfig.json
+C:\Users\31640\OneDrive - Hogeschool Rotterdam\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.dll
+C:\Users\31640\OneDrive - Hogeschool Rotterdam\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.pdb
+C:\Users\31640\OneDrive - Hogeschool Rotterdam\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.csproj.AssemblyReference.cache
+C:\Users\31640\OneDrive - Hogeschool Rotterdam\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\31640\OneDrive - Hogeschool Rotterdam\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.AssemblyInfoInputs.cache
+C:\Users\31640\OneDrive - Hogeschool Rotterdam\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.AssemblyInfo.cs
+C:\Users\31640\OneDrive - Hogeschool Rotterdam\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.csproj.CoreCompileInputs.cache
+C:\Users\31640\OneDrive - Hogeschool Rotterdam\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.dll
+C:\Users\31640\OneDrive - Hogeschool Rotterdam\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\refint\Project.dll
+C:\Users\31640\OneDrive - Hogeschool Rotterdam\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.pdb
+C:\Users\31640\OneDrive - Hogeschool Rotterdam\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.genruntimeconfig.cache
+C:\Users\31640\OneDrive - Hogeschool Rotterdam\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\ref\Project.dll
+C:\Users\Welly\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.exe
+C:\Users\Welly\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.deps.json
+C:\Users\Welly\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.runtimeconfig.json
+C:\Users\Welly\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.dll
+C:\Users\Welly\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.pdb
 C:\Users\Welly\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.csproj.AssemblyReference.cache
 C:\Users\Welly\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Welly\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.AssemblyInfoInputs.cache
@@ -52,20 +86,5 @@ C:\Users\Welly\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.csproj
 C:\Users\Welly\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.dll
 C:\Users\Welly\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\refint\Project.dll
 C:\Users\Welly\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.pdb
-<<<<<<< Updated upstream
-C:\Users\Welly\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.exe
-C:\Users\Welly\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.deps.json
-C:\Users\Welly\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.runtimeconfig.json
-C:\Users\Welly\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.dll
-C:\Users\Welly\Documents\GitHub\BrojectP\Project\bin\Debug\net6.0\Project.pdb
 C:\Users\Welly\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\Project.genruntimeconfig.cache
 C:\Users\Welly\Documents\GitHub\BrojectP\Project\obj\Debug\net6.0\ref\Project.dll
-=======
->>>>>>> Stashed changes
-D:\BrojectP\Project\bin\Debug\net6.0\Project.exe
-D:\BrojectP\Project\bin\Debug\net6.0\Project.deps.json
-D:\BrojectP\Project\bin\Debug\net6.0\Project.runtimeconfig.json
-D:\BrojectP\Project\bin\Debug\net6.0\Project.dll
-D:\BrojectP\Project\bin\Debug\net6.0\Project.pdb
-D:\BrojectP\Project\obj\Debug\net6.0\Project.genruntimeconfig.cache
-D:\BrojectP\Project\obj\Debug\net6.0\ref\Project.dll

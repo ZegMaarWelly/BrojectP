@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text.Json;
-
-
+﻿
 //This class is not static so later on we can use inheritance and interfaces
 class AccountsLogic
 {
@@ -18,7 +13,10 @@ class AccountsLogic
     {
         _accounts = AccountsAccess.LoadAll();
     }
-
+    public List<AccountModel> Return_Account_List()
+    {
+        return _accounts;
+    }
 
     public void UpdateList(AccountModel acc)
     {
@@ -53,6 +51,16 @@ class AccountsLogic
         CurrentAccount = _accounts.Find(i => i.EmailAddress == email && i.Password == password);
         return CurrentAccount;
     }
+
+    public AccountModel AccountList()
+    {
+        foreach (AccountModel account in _accounts)
+        {
+            return account;
+        }
+        return null;
+    }
+
 }
 
 
