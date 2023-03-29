@@ -11,6 +11,7 @@
         Console.WriteLine("Enter 2 to add items to shopping cart test.");
         Console.WriteLine("Enter 3 to see a list of all registered users.");
         Console.WriteLine("Enter 4 to go the the beginning of the program.");
+        Console.WriteLine("Enter 5 to add/remove movies.");
         Console.WriteLine("Enter 5 to Quit the Program.");
 
         string input = Console.ReadLine()!;
@@ -41,6 +42,11 @@
             Menu.Start();
         }
         else if (input == "5")
+        {
+            Console.Clear();
+            AdminMovieList.Start();
+        }
+        else if (input == "6")
         {
             Environment.Exit(0);
         }
