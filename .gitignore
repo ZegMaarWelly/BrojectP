@@ -13,7 +13,6 @@
 *.sln.docstates
 
 # Build results
-[Dd]ebug/
 [Rr]elease/
 x64/
 [Oo]bj/
@@ -175,7 +174,6 @@ ehthumbs.db
 Desktop.ini
 
 # Recycle Bin used on file shares
-$RECYCLE.BIN/
 
 # OS generated files #
 Icon?
