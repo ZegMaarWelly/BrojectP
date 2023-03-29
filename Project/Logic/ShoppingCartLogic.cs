@@ -12,7 +12,7 @@ class ShoppingCartLogic
 
   
 
-    //just returns the shopping cart list.
+    //just returns the shopping Cart list.
     public List<CountedSnackModel> Return_Counted_Snack_List()
     {
         return _shoppingcart;
