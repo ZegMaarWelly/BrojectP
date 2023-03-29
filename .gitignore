@@ -114,7 +114,6 @@ AppPackages/
 
 # Others
 *.Cache
-ClientBin/
 [Ss]tyle[Cc]op.*
 ~$*
 *~
@@ -122,8 +121,6 @@ ClientBin/
 *.[Pp]ublish.xml
 *.pfx
 *.publishsettings
-modulesbin/
-tempbin/
 
 # EPiServer Site file (VPP)
 AppData/
