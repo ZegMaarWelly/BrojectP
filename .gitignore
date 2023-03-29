@@ -15,7 +15,6 @@
 # Build results
 [Rr]elease/
 x64/
-[Oo]bj/
 # build folder is nowadays used for build scripts and should not be ignored
 #build/
 
@@ -228,3 +227,13 @@ Project/obj/Debug/net6.0/Project.dll
 Project/bin/Debug/net6.0/Project.deps.json
 Project/bin/Debug/net6.0/Project.exe
 Project/bin/Debug/net6.0/Project.runtimeconfig.json
+Project/obj/Debug/net6.0/.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+Project/obj/Debug/net6.0/apphost.exe
+Project/obj/Debug/net6.0/Project.AssemblyInfo.cs
+Project/obj/Debug/net6.0/Project.csproj.BuildWithSkipAnalyzers
+Project/obj/Debug/net6.0/Project.csproj.FileListAbsolute.txt
+Project/obj/Debug/net6.0/Project.GeneratedMSBuildEditorConfig.editorconfig
+Project/obj/Debug/net6.0/Project.GlobalUsings.g.cs
+Project/obj/Project.csproj.nuget.dgspec.json
+Project/obj/Project.csproj.nuget.g.props
+Project/obj/Project.csproj.nuget.g.targets
