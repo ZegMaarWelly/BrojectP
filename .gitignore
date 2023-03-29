@@ -229,3 +229,7 @@ AppPackages/
 Project/.vs/Project/v17/.suo
 *.1
 *.v2
+*.cache
+*.dll
+*.pdb
+*.dll
