@@ -1,14 +1,13 @@
 ﻿static class MenuSnack
 {
     static private SnacksLogic snacksLogic = new SnacksLogic();
-    static public ShoppingCartLogic shoppingcartLogic = new ShoppingCartLogic();
+    static public  ShoppingCartLogic shoppingcartLogic = new ShoppingCartLogic();
     static public void Start()
     {
         Console.WriteLine("What do you want to order?");
         Console.WriteLine("Enter 1 to order food");
         Console.WriteLine("Enter 2 to order drinks");
         Console.WriteLine("Enter 3 to see your shopping cart");
-        Console.WriteLine("Enter 4 to quit");
 
         string input = Console.ReadLine()!;
         if (input == "1")
@@ -16,7 +15,6 @@
             Food_Menu();
             Console.WriteLine();
             Console.WriteLine("What Snack are you going to choose \n Type the name: ");
-            
             string snack_choice = Console.ReadLine()!;
             SnackModel your_snack = snacksLogic.Find_Snack(snack_choice);
             if (your_snack == null || your_snack.Type_Of_Food == "Drink")
@@ -52,11 +50,7 @@
         }
         else if(input == "3")
         {
-            ShoppingCart.Show_Shopping_Cart();
-        }
-        else if (input == "4")
-        {
-            Environment.Exit(0);
+            ShoppingCart.Start();
         }
         else
         {
