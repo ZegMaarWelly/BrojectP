@@ -8,11 +8,12 @@
     {
         Console.WriteLine("What do you want to do?.");
         Console.WriteLine("Enter 1 to add/remove/change snacks.");
-        Console.WriteLine("Enter 2 to add items to shopping cart test.");
+        Console.WriteLine("Enter 2 to add items to shopping cart TEST.");
         Console.WriteLine("Enter 3 to see a list of all registered users.");
         Console.WriteLine("Enter 4 to go the the beginning of the program.");
         Console.WriteLine("Enter 5 to add/remove movies.");
-        Console.WriteLine("Enter 5 to Quit the Program.");
+        Console.WriteLine("Enter 6 to do the screening room TEST.");
+        Console.WriteLine("Enter 7 to Quit the Program.");
 
         string input = Console.ReadLine()!;
         if (input == "1")
@@ -47,6 +48,10 @@
             AdminMovieList.Start();
         }
         else if (input == "6")
+        {
+            ScreeningRoom.Start();
+        }
+        else if (input == "7")
         {
             Environment.Exit(0);
         }
