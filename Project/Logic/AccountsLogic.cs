@@ -65,7 +65,6 @@ class AccountsLogic
     {
         _accounts.Add(newAccount);
         AccountsAccess.WriteAll(_accounts);
-        
     }
 }
 
