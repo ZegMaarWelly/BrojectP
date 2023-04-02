@@ -2,7 +2,7 @@
 //This class is not static so later on we can use inheritance and interfaces
 class AccountsLogic
 {
-    private List<AccountModel> _accounts;
+    static private List<AccountModel> _accounts;
 
     //Static properties are shared across all instances of the class
     //This can be used to get the current logged in account from anywhere in the program
@@ -61,8 +61,11 @@ class AccountsLogic
         return null;
     }
 
+    static public void Add_To_List(AccountModel newAccount)
+    {
+        _accounts.Add(newAccount);
+        AccountsAccess.WriteAll(_accounts);
+        
+    }
 }
-
-
-
 

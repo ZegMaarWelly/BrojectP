@@ -7,14 +7,20 @@ static class Menu
     static public void Start()
     {
         Console.WriteLine("Enter 1 to login");
-        //Console.WriteLine("Enter 2 to get to admin thingies");
+        Console.WriteLine("Enter 2 to add a new account");
+        
+        //Console.WriteLine("Enter 3 to get to admin thingies");
 
         string input = Console.ReadLine();
         if (input == "1")
         {
             UserLogin.Start();
         }
-        //else if (input == "2")
+        else if (input == "2")
+        {
+            NewAccount.Start();
+        }
+        //else if (input == "3")
         //{
         //    AdminMenu.Start();
         //}
