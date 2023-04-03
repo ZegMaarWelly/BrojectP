@@ -237,3 +237,13 @@ Project/obj/Debug/net6.0/Project.GlobalUsings.g.cs
 Project/obj/Project.csproj.nuget.dgspec.json
 Project/obj/Project.csproj.nuget.g.props
 Project/obj/Project.csproj.nuget.g.targets
+Project/bin/Debug/net6.0/Project.dll
+Project/bin/Debug/net6.0/Project.pdb
+Project/obj/Debug/net6.0/Project.assets.cache
+Project/obj/Debug/net6.0/Project.csproj.FileListAbsolute.txt
+Project/obj/Debug/net6.0/Project.dll
+Project/obj/Debug/net6.0/Project.genruntimeconfig.cache
+Project/obj/Debug/net6.0/Project.pdb
+Project/obj/Release/net6.0/Project.GeneratedMSBuildEditorConfig.editorconfig
+Project/obj/Release/net6.0/Project.assets.cache
+Project/.vs/slnx.sqlite
