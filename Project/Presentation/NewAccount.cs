@@ -1,6 +1,7 @@
 
 static class NewAccount
-{ 
+{
+    static private AccountsLogic accountsLogic = new AccountsLogic();
     public static void Start()
     {
         int id = AccountModel.GetNextId();
@@ -28,9 +29,9 @@ static class NewAccount
                 }
                 while (lowerInput != "y" || lowerInput == "n")
                 {
-                   AccountsAccess.LoadAll();
+                   
                    AccountModel newAcc = new AccountModel(id, emailAddress, password, fullName, vip: false);
-                   AccountsLogic.Add_To_List(newAcc);
+                   accountsLogic.Add_To_List(newAcc);
                    Console.WriteLine("account has been added :)");
                    Menu.Start();
                 } 
