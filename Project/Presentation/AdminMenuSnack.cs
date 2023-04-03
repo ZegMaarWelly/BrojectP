@@ -33,6 +33,32 @@
         {
             AdminMenu.Start();
         }
+        else if (input == "6")
+        {
+            List<string> your_list = new List<string>
+                {"  O O O O O O O O  ", "O O O O O O O O O O", "O O O O O O O O O O"  };
+            while (true)
+            {
+                
+                foreach (var test in your_list)
+                {
+                    Console.WriteLine(test);
+                }
+                var question_row = Convert.ToInt32(Console.ReadLine());
+                var x_as = (question_row-1) ;
+                var question_column = (Convert.ToInt32(Console.ReadLine()) - 1 ) * 2;
+                var your_line = your_list[x_as];
+                if (your_line[question_column] == Convert.ToChar("O"))
+                {
+                    your_line = your_line.Remove(question_column, 1).Insert(question_column, "X");
+                    your_list[x_as] = your_line;
+                }
+                else 
+                { Console.WriteLine("Noob");
+                }
+ 
+            }
+        }
         else
         {
             Console.WriteLine("Invalid input");
@@ -142,6 +168,7 @@
             {
                 Console.WriteLine("Proceed to add the snack to the snack list? (Y/N) ");
                 string snack_confirmation = Console.ReadLine()!.ToUpper();
+                //If the answer is Yes, it will delete it from the list (and also the json file)
                 if (snack_confirmation == "Y")
                 {
                     snacksLogic.Add_To_List(snack);
@@ -164,7 +191,7 @@
                 }
             }
             
-                //If the answer is Yes, it will delete it from the list (and also the json file)
+                
                
         }
 
