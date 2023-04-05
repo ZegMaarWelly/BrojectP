@@ -10,6 +10,7 @@
         Console.WriteLine("Enter 3 to see your shopping cart");
 
         string input = Console.ReadLine()!;
+        Console.Clear();
         if (input == "1")
         {
             Food_Menu();
@@ -25,6 +26,8 @@
             {
                 Console.WriteLine($"{your_snack.Name} has been added to your shopping cart");
                 shoppingcartLogic.AddCountedSnack(your_snack);
+                Thread.Sleep(3000);
+                Console.Clear();
             }
             Start();
 
@@ -45,6 +48,8 @@
             {
                 Console.WriteLine($"{your_snack.Name} has been added to your shopping cart");
                 shoppingcartLogic.AddCountedSnack(your_snack);
+                Thread.Sleep(3000);
+                Console.Clear();
             }
             Start();
         }
