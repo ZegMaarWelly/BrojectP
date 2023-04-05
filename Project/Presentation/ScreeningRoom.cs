@@ -3,7 +3,7 @@ public class ScreeningRoom
 {
     public static void Start()
     {
-        screening_room_large();
+        screening_room_small();
     }
     public static void screening_room_small()
     {

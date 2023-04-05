@@ -13,7 +13,8 @@
         Console.WriteLine("Enter 4 to go the the beginning of the program.");
         Console.WriteLine("Enter 5 to add/remove movies.");
         Console.WriteLine("Enter 6 to do the screening room TEST.");
-        Console.WriteLine("Enter 7 to Quit the Program.");
+        Console.WriteLine("Admin Manage Movie.");
+        Console.WriteLine("Enter 8 to Quit the Program.");
 
         string input = Console.ReadLine()!;
         if (input == "1")
@@ -52,6 +53,10 @@
             ScreeningRoom.Start();
         }
         else if (input == "7")
+        {
+            AdminManageMovie.Start();
+        }
+        else if (input == "8")
         {
             Environment.Exit(0);
         }
