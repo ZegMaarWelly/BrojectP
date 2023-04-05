@@ -1,5 +1,4 @@
-﻿using System.Xml.Linq;
-
+﻿
 class ShoppingCartLogic
 {
     private List<CountedSnackModel> _shoppingcart;

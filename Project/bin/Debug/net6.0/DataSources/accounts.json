@@ -33,5 +33,12 @@
     "password": "awf",
     "fullName": "lol lol",
     "V.I.P.": false
+  },
+  {
+    "id": 5,
+    "emailAddress": "fhrt",
+    "password": "grtf",
+    "fullName": "ggrtgrtr e",
+    "V.I.P.": false
   }
 ]
