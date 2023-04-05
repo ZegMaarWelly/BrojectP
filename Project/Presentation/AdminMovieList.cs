@@ -36,6 +36,15 @@ static class AdminMovieList
         }
     }
 
+    static public void Get_Movie_List()
+    {
+        List<MovieListModel> movie_list = movieLogic.Return_Movie_List();
+        foreach (MovieListModel movie in movie_list)
+        {
+            Console.WriteLine($"{movie}\n");
+        }
+    }
+
     static public void Get_Movie_Names()
     {
         List<MovieListModel> movie_list = movieLogic.Return_Movie_List();
@@ -43,6 +52,11 @@ static class AdminMovieList
         {
             Console.WriteLine($"{movie.Name}\n");
         }
+    }
+
+    static public string New_Movie_id()
+    {
+
     }
 
     static public string New_Movie_Name()
@@ -120,6 +134,7 @@ static class AdminMovieList
         Console.WriteLine("Current list of movies: ");
         Get_Movie_Names();
         Console.WriteLine();
+        int movie_id = New_Movie_Id();
         string movie_name = New_Movie_Name();
         string movie_genre = New_Movie_Genre();
         int movie_length = New_Movie_Length();
@@ -127,7 +142,7 @@ static class AdminMovieList
         string movie_labels = New_Movie_Labels();
         Console.Clear();
 
-        MovieListModel movie = new(movie_name, movie_genre, movie_length, movie_age, movie_labels);
+        MovieListModel movie = new(movie_id, movie_name, movie_genre, movie_length, movie_age, movie_labels);
         while (true)
         {
             MovieListModel new_movie = movieLogic.Find_Movie(movie.Name);

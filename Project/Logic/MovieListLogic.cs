@@ -13,7 +13,6 @@ class MovieListLogic
 		return _movies;
 	}
 
-
 	public void Add_To_List(MovieListModel movie)
 	{
 		_movies.Add(movie);
