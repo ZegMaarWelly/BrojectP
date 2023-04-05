@@ -3,7 +3,7 @@ static class AdminMovieList
     static private MovieListLogic movieLogic = new MovieListLogic();
     static public void Start()
     {
-        Console.WriteLine("What would you like to do?\n1) Add a movie to the list of movies\n2) Remove a movie from the list\n3) See the current list of movies\n4) Return to the main menu\n");
+        Console.WriteLine("Admin movie list menu\n\nWhat would you like to do?\n1) Add a movie to the list of movies\n2) Remove a movie from the list\n3) See the current list of movies\n4) Return to the main menu\n");
         string input = Console.ReadLine()!;
         int int_input = Convert.ToInt32(input);
         switch (int_input)
@@ -18,7 +18,7 @@ static class AdminMovieList
             case 3:
                 Console.Clear();
                 Console.WriteLine("The current list of movies consists of:\n");
-                Get_Movie_list();
+                Get_Movie_Names();
                 Console.WriteLine("\nPress any button to return to the main menu");
                 Console.ReadKey();
                 Console.Clear();
@@ -29,18 +29,19 @@ static class AdminMovieList
                 Menu.Start();
                 break;
             default:
+                Console.Clear();
                 Console.WriteLine("Invalid input\n");
                 Start();
                 break;
         }
     }
 
-    static public void Get_Movie_list()
+    static public void Get_Movie_Names()
     {
         List<MovieListModel> movie_list = movieLogic.Return_Movie_List();
         foreach(MovieListModel movie in movie_list)
         {
-            Console.WriteLine($"{movie}\n");
+            Console.WriteLine($"{movie.Name}\n");
         }
     }
 
@@ -117,7 +118,7 @@ static class AdminMovieList
     {
         Console.Clear();
         Console.WriteLine("Current list of movies: ");
-        Get_Movie_list();
+        Get_Movie_Names();
         Console.WriteLine();
         string movie_name = New_Movie_Name();
         string movie_genre = New_Movie_Genre();
@@ -145,7 +146,7 @@ static class AdminMovieList
                 Thread.Sleep(10000);
                 Console.Clear();
                 Console.WriteLine("Current list of movies:\n");
-                Get_Movie_list();
+                Get_Movie_Names();
                 Console.WriteLine("Press any button to return to the movie list menu");
                 Console.ReadKey();
                 Console.Clear();
