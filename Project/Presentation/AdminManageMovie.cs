@@ -16,6 +16,10 @@ static class AdminManageMovie
         foreach (RoomModel room in room_list)
         {
             Console.WriteLine(room);
+            foreach (string line in room.Map)
+            {
+                Console.WriteLine(line);
+            }
         }
     }
 

@@ -23,8 +23,10 @@ class RoomModel
 
     public override string ToString()
     {
-        return $"ID: {ID}  MAP: {Map} Total Seats: {Total_Seats}  Available Seats: {Available_Seats}";
+        return $"ID: {ID} \n  MAP: {Map} \n Total Seats: {Total_Seats} \n Available Seats: {Available_Seats}";
     }
+
+    
 }
 
 
