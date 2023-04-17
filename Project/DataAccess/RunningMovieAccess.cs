@@ -8,7 +8,7 @@ static class RunningMovieAccess
 
     public static List<RunningMovieModel> LoadAll(string name)
     {
-        string path = System.IO.Path.GetFullPath(System.IO.Path.Combine(Environment.CurrentDirectory, $@"DataSources/{name}.json"));
+        string path = System.IO.Path.GetFullPath(System.IO.Path.Combine(Environment.CurrentDirectory, $@"DataSources/dates/{name}.json"));
 
         if (File.Exists(path))
         {
