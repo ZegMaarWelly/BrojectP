@@ -8,8 +8,10 @@
         Console.WriteLine("Enter 1 to order food");
         Console.WriteLine("Enter 2 to order drinks");
         Console.WriteLine("Enter 3 to see your shopping cart");
+        Console.WriteLine("Enter 4 screening room test small.");
 
         string input = Console.ReadLine()!;
+        Console.Clear();
         if (input == "1")
         {
             Food_Menu();
@@ -25,6 +27,8 @@
             {
                 Console.WriteLine($"{your_snack.Name} has been added to your shopping cart");
                 shoppingcartLogic.AddCountedSnack(your_snack);
+                Thread.Sleep(3000);
+                Console.Clear();
             }
             Start();
 
@@ -45,12 +49,18 @@
             {
                 Console.WriteLine($"{your_snack.Name} has been added to your shopping cart");
                 shoppingcartLogic.AddCountedSnack(your_snack);
+                Thread.Sleep(3000);
+                Console.Clear();
             }
             Start();
         }
         else if(input == "3")
         {
             ShoppingCart.Start();
+        }
+        else if(input == "4")
+        {
+            ScreeningRoom.Start();
         }
         else
         {
