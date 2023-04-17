@@ -192,7 +192,7 @@ static class AdminManageMovie
     static public DateTime Get_End_Time(DateTime date)
     {
         Console.WriteLine("You are now adding a end time \n\n");
-        Console.WriteLine("Your start time: [HH:MM]");
+        Console.WriteLine("Your end time: [HH:MM]");
         string startString = Console.ReadLine()!;
         DateTime start_date = DateTime.ParseExact(startString, "HH:mm", CultureInfo.InvariantCulture);
 

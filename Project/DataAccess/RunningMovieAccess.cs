@@ -27,7 +27,7 @@ static class RunningMovieAccess
 
     public static void WriteAll(List<RunningMovieModel> snacks, string name)
     {
-        string path = System.IO.Path.GetFullPath(System.IO.Path.Combine(Environment.CurrentDirectory, $@"DataSources/{name}.json"));
+        string path = System.IO.Path.GetFullPath(System.IO.Path.Combine(Environment.CurrentDirectory, $@"DataSources/dates/{name}.json"));
         var options = new JsonSerializerOptions { WriteIndented = true };
         string json = JsonSerializer.Serialize(snacks, options);
         File.WriteAllText(path, json);
