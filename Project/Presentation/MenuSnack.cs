@@ -8,6 +8,7 @@
         Console.WriteLine("Enter 1 to order food");
         Console.WriteLine("Enter 2 to order drinks");
         Console.WriteLine("Enter 3 to see your shopping cart");
+        Console.WriteLine("Enter 4 screening room test small.");
 
         string input = Console.ReadLine()!;
         Console.Clear();
@@ -56,6 +57,10 @@
         else if(input == "3")
         {
             ShoppingCart.Start();
+        }
+        else if(input == "4")
+        {
+            ScreeningRoom.Start();
         }
         else
         {
