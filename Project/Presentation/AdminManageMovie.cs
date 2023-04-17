@@ -19,7 +19,7 @@ static class AdminManageMovie
         Console.WriteLine("[4] to change the room n/a");
         Console.WriteLine("[5] to change the date n/a");
         Console.WriteLine("[6] to see all the movies on a date");
-        Console.WriteLine("[6] to go back \n");
+        Console.WriteLine("[7] to go back \n");
         Console.WriteLine("Your option: ");
         //DateTime date = new DateTime(2012, 5, 5);
         //Console.WriteLine(date.ToString("yyyy-MM-dd"));
@@ -46,8 +46,8 @@ static class AdminManageMovie
         }
         else
         {
-            Console.WriteLine("This feature does not exist (yet) ");
             Console.Clear();
+            Console.WriteLine("This feature does not exist (yet) ");
             Start();
         }
 
@@ -57,9 +57,10 @@ static class AdminManageMovie
     static public void Get_Room_List()
     {
         List<RoomModel> room_list = roomLogic.Return_Room_List();
+        Console.WriteLine("Room list: ");
         foreach (RoomModel room in room_list)
         {
-            Console.WriteLine(room);
+            Console.WriteLine($"Room: {room.ID}| Total Seats: {room.Total_Seats}");
             //foreach (string line in room.Map)
             //{
             //    Console.WriteLine(line);
@@ -74,19 +75,38 @@ static class AdminManageMovie
         Console.WriteLine("On which date do you want to see the movies?\n");
         Console.WriteLine("Date: ");
         string your_date = Console.ReadLine()!;
+        Console.Clear();
 
         RunningMovieLogic runningmovieLogic = new RunningMovieLogic(your_date);
 
         List<RunningMovieModel> runningmovie_list = runningmovieLogic.Return_RunningMovie_List();
 
-        // Prints the listToString("HH:mm")
-        Console.WriteLine($"Running Movies on {your_date}");
+        // Prints the list.
+        Console.WriteLine($"Running Movies on {your_date}: \n");
         foreach(RunningMovieModel runningmovie  in runningmovie_list)
         {
-            Console.WriteLine($"Movie: {runningmovie.Movie.Name}| Time: [{runningmovie.Begin_Time.ToString("HH:mm")}-{runningmovie.End_Time.ToString("HH:mm")}]| Room: {runningmovie.Room.ID}");
+            Console.WriteLine($"Movie: {runningmovie.Movie.Name}| Time: [{runningmovie.Begin_Time.ToString("HH:mm")}-{runningmovie.End_Time.ToString("HH:mm")}]| Room: {runningmovie.Room.ID}\n");
+        }
+        // If list is empty.
+        if(runningmovie_list.Count == 0)
+        {
+            Console.WriteLine($"There are no movies running on {your_date}\n");
         }
 
-        Start();
+        // A while loop asking the user to press ENTER. only leaves when enter is pressed.
+        while(true)
+        {
+            Console.WriteLine($"\nPress [Enter] to go back to the Admin Manage Movie Menu \n ");
+
+            var readkey = Console.ReadKey();
+            if (readkey.Key == ConsoleKey.Enter)
+            {
+                Console.Clear();
+                Start();
+
+            }
+
+        }
     }
     
     
@@ -227,7 +247,7 @@ static class AdminManageMovie
         Console.Clear();
 
         // Asks the user for the end time of the movie.
-        DateTime end_time = Get_Start_Time(date);
+        DateTime end_time = Get_End_Time(date);
         Console.Clear();
 
         RunningMovieModel running_movie = new(movie, room, begin_time, end_time, date);
