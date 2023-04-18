@@ -12,8 +12,7 @@ static class AdminMovieList
                 Add_Movie();
                 break;
             case 2:
-                Console.WriteLine("Not yet implented, we're working on it");
-                Start();
+                Remove_Movie();
                 break;
             case 3:
                 Console.Clear();
@@ -50,13 +49,14 @@ static class AdminMovieList
         List<MovieListModel> movie_list = movieLogic.Return_Movie_List();
         foreach(MovieListModel movie in movie_list)
         {
-            Console.WriteLine($"{movie.Name}\n");
+            Console.WriteLine($"ID {movie.Id} Name: {movie.Name}\n");
         }
     }
 
-    static public string New_Movie_id()
+    static public int New_Movie_id()
     {
-
+        int next_id = MovieListLogic.Find_Next_ID();
+        return next_id;
     }
 
     static public string New_Movie_Name()
@@ -134,7 +134,7 @@ static class AdminMovieList
         Console.WriteLine("Current list of movies: ");
         Get_Movie_Names();
         Console.WriteLine();
-        int movie_id = New_Movie_Id();
+        int movie_id = New_Movie_id();
         string movie_name = New_Movie_Name();
         string movie_genre = New_Movie_Genre();
         int movie_length = New_Movie_Length();
@@ -167,6 +167,68 @@ static class AdminMovieList
                 Console.Clear();
                 Start();
             }
+        }
+    }
+
+    static public void Remove_Movie()
+    {
+        Console.Clear();
+        Console.WriteLine("Current list of movies:\n");
+        Get_Movie_Names();
+        Console.WriteLine();
+        Console.WriteLine("Which movie would you like to remove? (please provide only the ID)");
+        bool correct_input = false;
+        while (!correct_input) 
+        {
+            try
+            {
+                string remove_id = Console.ReadLine();
+                int for_removal = Convert.ToInt32(remove_id);
+                MovieListModel selected_movie = movieLogic.Find_Movie_ID(for_removal);
+                if (selected_movie == null)
+                {
+                    Console.WriteLine("This ID does not belong to any movies\nPress any button to return to Admin Movie list menu");
+                    Console.ReadKey();
+                    Console.Clear();
+                    Start();
+                }
+                else
+                {
+                    Console.WriteLine($"Are you sure you wish to remove the movie {selected_movie.Name}? (Y/N)");
+                    string movie_confirmation = Console.ReadLine()!.ToUpper();
+                    switch (movie_confirmation)
+                    {
+                        case "Y":
+                            movieLogic.Delete_From_List(selected_movie);
+                            Console.Clear();
+                            Console.WriteLine($"{selected_movie.Name} has been succesfully removed from the movie list\nCurrent list of movies:\n");
+                            Get_Movie_Names();
+                            Console.WriteLine("Press any button to return to the movie list menu");
+                            Console.ReadKey();
+                            Console.Clear();
+                            Start();
+                            break;
+
+                        case "N":
+                            Console.WriteLine("\nPress any button to return to the movie list menu");
+                            Console.ReadKey();
+                            Console.Clear();
+                            Start();
+                            break;
+
+                        default:
+                            Console.WriteLine("Invalid input");
+                            break;
+                    }
+                }
+            }
+
+            catch
+            {
+                Console.WriteLine("Invalid input, only numbers are accepted");
+            }
+
+
         }
     }
 }
