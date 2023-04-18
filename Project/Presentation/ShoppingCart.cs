@@ -14,6 +14,7 @@
         Console.WriteLine("Press 2 to delete snacks");
         Console.WriteLine("Press 3 to confirm your order");
         var choice = Console.ReadLine()!;
+        Console.Clear();
         if(choice == "1")
         {
             MenuSnack.Start();
@@ -68,6 +69,8 @@
             {
                 shoppingcartLogic.Remove_Counted_Snack(your_counted_snack);
                 Console.WriteLine($"You have succesfully removed one {your_counted_snack.Snack.Name} of your list");
+                Thread.Sleep(4000);
+                Console.Clear();
                 Start();
             }
             else
@@ -80,12 +83,15 @@
                 {
                     Console.WriteLine($"Your snack has not been deleted from your inventory");
                     Console.WriteLine($"You tried removing {quantity_to_be_deleted}, but you only have {your_counted_snack.Quantity}");
+                    Thread.Sleep( 8000 );
                     Start();
+
                 }
                 else
                 {
                     shoppingcartLogic.Decrease_Quantity(your_counted_snack, quantity_to_be_deleted);
                     Console.WriteLine($"You have decreased your quantity of {your_counted_snack.Snack.Name}");
+                    Thread.Sleep( 8000 );
                     Start();
 
                 }

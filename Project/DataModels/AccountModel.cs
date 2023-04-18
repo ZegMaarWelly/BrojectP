@@ -31,6 +31,11 @@ public class AccountModel
         return $"ID: {Id}, email: {EmailAddress}, password: {Password}, Fullname: {FullName}, V.I.P: {Vip}";
     }
 
+    public static int GetNextId()
+    {
+        return AccountsAccess.LoadAll().Select(a => a.Id).Max() + 1;
+    }
+
 }
 
 

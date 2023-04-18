@@ -60,7 +60,11 @@ class AccountsLogic
         }
         return null;
     }
-
+    public void Add_To_List(AccountModel newAccount)
+    {
+        _accounts.Add(newAccount);
+        AccountsAccess.WriteAll(_accounts);
+    }
 }
 
 
