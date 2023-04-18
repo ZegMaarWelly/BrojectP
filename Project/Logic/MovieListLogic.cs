@@ -36,4 +36,21 @@ class MovieListLogic
 		}
 		return null;
 	}
+
+	public MovieListModel Find_Movie_ID(int id)
+	{
+		foreach (MovieListModel movie in _movies)
+		{
+			if (movie.Id == id)
+			{
+				return movie;
+			}
+		}
+		return null;
+	}
+
+	public static int Find_Next_ID()
+	{
+		return MovieListAccess.LoadAll().Select(a => a.Id).Max() + 1;
+	}
 }
