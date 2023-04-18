@@ -1,10 +1,10 @@
-using System.Runtime.CompilerServices;
 
 class ScreenRoomLogic
 {
 
     public static void screening_room_small()
     {
+        
         List<string> screening_room = new List<string>
             {"14|     O O O O O O O O    ",
              "13|   O O O O O O O O O O  ",
@@ -58,13 +58,30 @@ class ScreenRoomLogic
             var your_line = screening_room[row];
             if (your_line[input_column] == 'O')
             {
-
-                your_line = your_line.Remove(input_column, 1).Insert(input_column, "X");
-
-                screening_room[row] = your_line;
                 Console.Clear();
                 Console.WriteLine($"U heeft stoel {input_column / 2 - 1} op rij {input_row} geselecteerd, wilt u deze stoel reserveren?");
+                Console.WriteLine("Y/N");
                 Thread.Sleep(3000);
+                string conf = Console.ReadLine();
+                conf.ToUpper();
+                if (conf == "Y")
+                {
+                    your_line = your_line.Remove(input_column, 1).Insert(input_column, "X");
+
+                    screening_room[row] = your_line;
+                    Console.Clear();
+                    Console.WriteLine($"You have selected this chair {input_column / 2 - 1} on row {input_row}.");
+                    Thread.Sleep(5000);
+                    Console.Clear();
+                    //MenuSnack.Start();  Uncomment deze om de loop eruit te halen dit is voor het testen.
+                }
+                else if (conf == "N") 
+                {
+                    Console.Clear();
+                    Console.WriteLine($"You did not confirm chair {input_column / 2 - 1} on row {input_row}.");
+                    Thread.Sleep(5000);
+                    Console.Clear();
+                }
             }
             else
             {
@@ -80,7 +97,7 @@ class ScreenRoomLogic
 
     public static void screening_room_medium()
     {
-        bool cont = true;
+        
         List<string> screening_room = new List<string>
                 {"19|   O O O O O O O O O O O O O O O O   ",
                  "18|   O O O O O O O O O O O O O O O O   ",
@@ -105,7 +122,7 @@ class ScreenRoomLogic
                  "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 ",
                  "                      0 1 2 3 4 5 6 7 8 "};
 
-        while (cont == true)
+        while (true)
         {
             foreach (var chair_row in screening_room)
             {
@@ -144,7 +161,7 @@ class ScreenRoomLogic
                 Console.Clear();
                 Console.WriteLine($"U heeft stoel {input_column / 2 - 1} op rij {input_row} geselecteerd, wilt u deze stoel reserveren?");
                 Thread.Sleep(3000);
-                cont = false;
+                MenuSnack.Start();
             }
             else
             {
@@ -159,7 +176,6 @@ class ScreenRoomLogic
 
     public static void screening_room_large()
     {
-        bool cont = true;
         List<string> screening_room = new List<string>
                 {"20|         O O O O O O O O O O O O O O O O O O O O O O         ",
                  "19|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
@@ -185,7 +201,7 @@ class ScreenRoomLogic
                  "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
                  "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "};
 
-        while (cont == true)
+        while (true)
         {
             foreach (var chair_row in screening_room)
             {
@@ -224,7 +240,7 @@ class ScreenRoomLogic
                 Console.Clear();
                 Console.WriteLine($"U heeft stoel {input_column / 2 - 1} op rij {input_row} geselecteerd, wilt u deze stoel reserveren?");
                 Thread.Sleep(3000);
-                cont = false;
+                MenuSnack.Start();
             }
             else
             {
