@@ -169,7 +169,7 @@ static class AdminManageMovie
         List<MovieListModel> movie_list = movieLogic.Return_Movie_List();
         foreach (MovieListModel movie in movie_list)
         {
-            Console.WriteLine(movie.Name);
+            Console.WriteLine($"{movie.Id}| {movie.Name}");
         }
     }
 
