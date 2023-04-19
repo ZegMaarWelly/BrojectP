@@ -5,7 +5,7 @@ static class AdminManageMovie
 
     static private RoomLogic roomLogic = new RoomLogic();
     static private MovieListLogic movieLogic = new MovieListLogic();
-    //static private RunningMovieLogic runningmovieLogic = new RunningMovieLogic("2023-15-05");
+    static private RunningMovieLogic runningmovieLogic = new RunningMovieLogic("empty_file");
         
     static public void Start()
     {
@@ -84,7 +84,7 @@ static class AdminManageMovie
     {
         
 
-        RunningMovieLogic runningmovieLogic = new RunningMovieLogic(your_date);
+        runningmovieLogic = new RunningMovieLogic(your_date);
 
         List<RunningMovieModel> runningmovie_list = runningmovieLogic.Return_RunningMovie_List();
 
@@ -109,7 +109,7 @@ static class AdminManageMovie
     {
         
 
-        RunningMovieLogic runningmovieLogic = new RunningMovieLogic(your_date);
+        runningmovieLogic = new RunningMovieLogic(your_date);
 
         // Prints all the available movies on a date.
         Get_Running_Movie_List(your_date);
@@ -159,7 +159,6 @@ static class AdminManageMovie
         }
 
         RunningMovieModel your_running_movie = runningmovie_list[to_be_changed_id - 1];
-        Console.ReadLine();
         return your_running_movie;
     }
     
@@ -265,6 +264,7 @@ static class AdminManageMovie
         return correct_start_date;
     }
 
+    // Changes the start and the end time of a running movie.
     static public void Change_Start_And_End_Time()
     {
 
@@ -298,6 +298,8 @@ static class AdminManageMovie
         {
             Console.WriteLine("\n\n Do you want to confirm the changes? [Y/N]]\n\n");
             var confirmation_input = Console.ReadLine()!;
+
+            // If choice is no, then go back to menu without any changes.
             if (confirmation_input == "N")
             {
                 Console.Clear();
@@ -305,11 +307,12 @@ static class AdminManageMovie
                 Console.WriteLine("now returning to the menu....\n\n");
                 Start();
             }
+            // If choice is yes, it will change the begin and end time to the json file.
             else if (confirmation_input == "Y")
             {
-                RunningMovieLogic runningmovieLogic = new RunningMovieLogic(your_date);
                 runningmovieLogic.Change_Begin_Time(begin_time,running_movie);
-                runningmovieLogic.Change_End_Time(begin_time, running_movie);
+                runningmovieLogic.Change_End_Time(end_time, running_movie);
+                Console.Clear();
                 Console.WriteLine("Your changes have been made!");
                 Console.WriteLine("now returning to the menu....\n\n");
                 Start();
@@ -326,6 +329,8 @@ static class AdminManageMovie
 
 
     }
+    
+    // See all the running movies running on a certain date.
     static public void See_All_Movies_On_A_Date()
     {
         string date = Get_String_Date();
@@ -351,6 +356,8 @@ static class AdminManageMovie
 
         }
     }
+    
+    // Adds a running movie to the running movie list (and also the json file).
     static public void Add_RunningMovie()
     {
 
@@ -407,6 +414,11 @@ static class AdminManageMovie
 
         RunningMovieModel running_movie = new(movie, room, begin_time, end_time, date);
         runningmovieLogic.Add_To_List(running_movie);
+
+
+        Console.WriteLine("You have succesfully added a movie");
+        Console.WriteLine("Now returning to the menu....\n\n");
+        Start();
         
     }
 

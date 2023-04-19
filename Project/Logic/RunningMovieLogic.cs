@@ -47,8 +47,9 @@
     public void Change_Begin_Time(DateTime begin_time , RunningMovieModel runningmovie)
     {
 
-        runningmovie.Begin_Time = begin_time;
+        
         int runningmovieindex = _runningmovies.IndexOf(runningmovie);
+        runningmovie.Begin_Time = begin_time;
         _runningmovies[runningmovieindex] = runningmovie;
         RunningMovieAccess.WriteAll(_runningmovies, File_Name);
 
@@ -60,8 +61,9 @@
     public void Change_End_Time(DateTime end_time, RunningMovieModel runningmovie)
     {
 
-        runningmovie.End_Time = end_time;
+        
         int runningmovieindex = _runningmovies.IndexOf(runningmovie);
+        runningmovie.End_Time = end_time;
         _runningmovies[runningmovieindex] = runningmovie;
         RunningMovieAccess.WriteAll(_runningmovies, File_Name);
 
