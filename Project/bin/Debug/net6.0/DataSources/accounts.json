@@ -33,5 +33,12 @@
     "password": "dfjthtji",
     "fullName": "zuba t",
     "V.I.P.": false
+  },
+  {
+    "id": 5,
+    "emailAddress": "123",
+    "password": "321",
+    "fullName": "weeeeee",
+    "V.I.P.": false
   }
 ]

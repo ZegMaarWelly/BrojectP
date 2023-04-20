@@ -3,12 +3,24 @@ static class NewAccount
 {
     static private AccountsLogic accountsLogic = new AccountsLogic();
     public static void Start()
-    {
+    {       
+        bool passwordSecure = false;
         int id = AccountModel.GetNextId();
+        
         Console.WriteLine("Enter your Email address: ");
         string? emailAddress = Console.ReadLine();
-        Console.WriteLine("Enter your Password: ");
-        string? password = Console.ReadLine();
+        string password;
+        do
+        {
+            Console.WriteLine("Enter your Password: ");
+            password = Console.ReadLine();
+            if (accountsLogic.CheckPasswordSecurity(password))
+            {
+                passwordSecure = true;
+            }
+
+        } while (passwordSecure == false);
+ 
         Console.WriteLine("Enter your Full Name (first and last name): ");
         string? fullName = Console.ReadLine();
 

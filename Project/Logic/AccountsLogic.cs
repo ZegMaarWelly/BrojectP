@@ -66,5 +66,42 @@ class AccountsLogic
         _accounts.Add(newAccount);
         AccountsAccess.WriteAll(_accounts);
     }
+
+    public bool CheckPasswordSecurity(string password)
+    {
+        bool passwordLen = false;
+        bool passwordNum = false;
+        bool passwordSym = false;
+        
+        if (password.Length >= 8)
+        {
+            passwordLen = true;
+        }
+        else
+        {
+           Console.WriteLine("Password must be at least 8 characters long."); 
+        }
+        
+        if (password.Any(char.IsDigit))
+        {
+            passwordNum = true;
+        }
+        else
+        {
+            Console.WriteLine("Password must contain one digit.");
+        }
+         
+        if (password.Any(char.IsSymbol))
+        {
+            passwordSym = true;
+        }
+        else
+        {
+            Console.WriteLine("Password must contain at least one symbol.");
+        }
+
+        bool totalCheck = passwordLen && passwordNum && passwordSym;
+        return totalCheck;
+    }
 }
 
