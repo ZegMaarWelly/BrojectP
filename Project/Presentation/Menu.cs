@@ -6,6 +6,10 @@ static class Menu
     //You could edit this to show different menus depending on the user's role
     static public void Start()
     {
+        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.WriteLine("|__|. _ |_   /  . _  _ _  _   |__)_ |_|_ _ _ _| _  _  \r\n|  ||(_)| )  \\__|| )(-|||(_|  | \\(_)|_|_(-| (_|(_|||| \r\n     _/                                               ");
+        Console.ResetColor();
+        Console.WriteLine();
         Console.WriteLine("Enter 1 to login");
         Console.WriteLine("Enter 2 to add a new account");
         Console.WriteLine("Enter 3 for Cinema Info");
@@ -21,6 +25,7 @@ static class Menu
         }
         else if (input == "3")
         {
+            Console.Clear();
             CinemaInfo.Info();
         }
         else
