@@ -12,11 +12,11 @@ static class AdminManageMovie
         Console.WriteLine("Current Location: Admin Manage Movie \n\n");
         Console.WriteLine("What do you want to do? \n");
         Console.WriteLine("[1] to add a movie and a room to a date.");
-        Console.WriteLine("[2] to remove a movie and a room to a date n/a");
+        Console.WriteLine("[2] to remove a movie and a room to a date ");
         Console.WriteLine("[3] to change the begin and end time  ");
-        Console.WriteLine("[4] to change the movie n/a ");
-        Console.WriteLine("[5] to change the room n/a");
-        Console.WriteLine("[6] to change the date n/a");
+        Console.WriteLine("[4] to change the movie  ");
+        Console.WriteLine("[5] to change the room ");
+        Console.WriteLine("[6] to change the date ");
         Console.WriteLine("[7] to see all the movies on a date");
         Console.WriteLine("[8] to go back \n");
         Console.WriteLine("Your option: ");
@@ -33,11 +33,33 @@ static class AdminManageMovie
             Add_RunningMovie();
 
         }
+        else if (manage_choice == "2")
+        {
+            Console.Clear();
+            Delete_RunningMovie();
+        }
         else if (manage_choice == "3")
         {
             Console.Clear();
             Change_Start_And_End_Time();
 
+        }
+        else if (manage_choice == "4")
+        {
+            Console.Clear();
+            Change_Movie();
+
+        }
+        else if (manage_choice == "5")
+        {
+            Console.Clear();
+            Change_Room();
+
+        }
+        else if (manage_choice == "6")
+        {
+            Console.Clear();
+            Change_Date();
         }
         else if (manage_choice == "7")
         {
@@ -59,6 +81,8 @@ static class AdminManageMovie
 
     }
 
+
+
     // Prints the list of all the rooms available.
     static public void Get_Room_List()
     {
@@ -67,10 +91,7 @@ static class AdminManageMovie
         foreach (RoomModel room in room_list)
         {
             Console.WriteLine($"Room: {room.ID}| Total Seats: {room.Total_Seats}");
-            //foreach (string line in room.Map)
-            //{
-            //    Console.WriteLine(line);
-            //}
+            
         }
     }
 
@@ -103,6 +124,7 @@ static class AdminManageMovie
 
         
     }
+
 
     // Gets the running movie based on a given date and movie name.
     static public RunningMovieModel Get_Running_Movie_To_Be_Changed(string your_date)
@@ -264,6 +286,52 @@ static class AdminManageMovie
         return correct_start_date;
     }
 
+
+    // Deletes a running movie from the list (and the json file)
+    static public void Delete_RunningMovie()
+    {
+        // Gets the date in a string.
+        string your_date = Get_String_Date();
+
+
+        // Finds your selected movie.
+        RunningMovieModel running_movie = Get_Running_Movie_To_Be_Changed(your_date);
+
+        //Prints your selected running movie.
+        Console.Clear();
+        Console.WriteLine("Your Movie: ");
+        Console.WriteLine($"Movie: {running_movie.Movie.Name} | Time: [{running_movie.Begin_Time.ToString("HH:mm")}-{running_movie.End_Time.ToString("HH:mm")}]");
+
+        bool confirmation_success = false;
+        while (!confirmation_success)
+        {
+            Console.WriteLine("\n\n Do you want to delete the movie? [Y/N]]\n\n");
+            var confirmation_input = Console.ReadLine()!.ToUpper();
+
+            // If choice is no, then go back to menu without any changes.
+            if (confirmation_input == "N")
+            {
+                Console.Clear();
+                Console.WriteLine("your changes have been discarded");
+                Console.WriteLine("now returning to the menu....\n\n");
+                Start();
+            }
+            // If choice is yes, it will change the begin and end time to the json file.
+            else if (confirmation_input == "Y")
+            {
+                Console.Clear();
+                runningmovieLogic.Delete_From_List(running_movie);
+                Console.WriteLine("Your changes have been made!");
+                Console.WriteLine("now returning to the menu....\n\n");
+                Start();
+            }
+            else
+            {
+                Console.WriteLine("Invalid input");
+            }
+        }
+    }
+
     // Changes the start and the end time of a running movie.
     static public void Change_Start_And_End_Time()
     {
@@ -297,7 +365,7 @@ static class AdminManageMovie
         while(!confirmation_success)
         {
             Console.WriteLine("\n\n Do you want to confirm the changes? [Y/N]]\n\n");
-            var confirmation_input = Console.ReadLine()!;
+            var confirmation_input = Console.ReadLine()!.ToUpper();
 
             // If choice is no, then go back to menu without any changes.
             if (confirmation_input == "N")
@@ -324,12 +392,173 @@ static class AdminManageMovie
                 Console.WriteLine("Invalid input");
             }
         }
-
-
-
-
     }
     
+
+    static public void Change_Movie()
+    {
+        // Gets the date in a string.
+        string your_date = Get_String_Date();
+
+
+        // Finds your selected movie.
+        RunningMovieModel running_movie = Get_Running_Movie_To_Be_Changed(your_date);
+
+        //Prints your selected running movie.
+        Console.Clear();
+        Console.WriteLine("Current Movie: ");
+        Console.WriteLine($"Movie: {running_movie.Movie.Name} | Time: [{running_movie.Begin_Time.ToString("HH:mm")}-{running_movie.End_Time.ToString("HH:mm")}]");
+
+        // Asks the user for the moviee.
+        Console.WriteLine("\n\n You are now changing the  movie \n\n");
+        MovieListModel movie = Get_Movie_From_Name();
+
+        //Prints the new movie and asks the user for confirmation.
+        Console.WriteLine("New movie: ");
+        Console.WriteLine($"Movie: {movie.Name} | Time: [{running_movie.Begin_Time.ToString("HH:mm")}-{running_movie.End_Time.ToString("HH:mm")}]");
+        bool confirmation_success = false;
+        while (!confirmation_success)
+        {
+            Console.WriteLine("\n\n Do you want to confirm the changes? [Y/N]]\n\n");
+            var confirmation_input = Console.ReadLine()!.ToUpper();
+
+            // If choice is no, then go back to menu without any changes.
+            if (confirmation_input == "N")
+            {
+                Console.Clear();
+                Console.WriteLine("your changes have been discarded");
+                Console.WriteLine("now returning to the menu....\n\n");
+                Start();
+            }
+            // If choice is yes, it will change the movie to the json file.
+            else if (confirmation_input == "Y")
+            {
+                runningmovieLogic.Change_Movie(movie, running_movie);
+                Console.Clear();
+                Console.WriteLine("Your changes have been made!");
+                Console.WriteLine("now returning to the menu....\n\n");
+                Start();
+
+
+            }
+            else
+            {
+                Console.WriteLine("Invalid input");
+            }
+        }
+    }
+
+    static public void Change_Room()
+    {
+        // Gets the date in a string.
+        string your_date = Get_String_Date();
+
+
+        // Finds your selected movie.
+        RunningMovieModel running_movie = Get_Running_Movie_To_Be_Changed(your_date);
+
+        //Prints your selected running movie.
+        Console.Clear();
+        Console.WriteLine("Current Movie: ");
+        Console.WriteLine($"Movie: {running_movie.Movie.Name} | Time: [{running_movie.Begin_Time.ToString("HH:mm")}-{running_movie.End_Time.ToString("HH:mm")}]| Room: {running_movie.Room.ID} ");
+
+        // Asks the user for the room of the movie.
+        Console.WriteLine("\n\n You are now changing the room \n\n");
+        RoomModel room = Get_Room_From_Id();
+
+        //Prints the new movie and asks the user for confirmation.
+        Console.WriteLine("New movie: ");
+        Console.WriteLine($"Movie: {running_movie.Movie.Name} | Time: [{running_movie.Begin_Time.ToString("HH:mm")}-{running_movie.End_Time.ToString("HH:mm")}] Room: {room.ID}");
+        bool confirmation_success = false;
+        while (!confirmation_success)
+        {
+            Console.WriteLine("\n\n Do you want to confirm the changes? [Y/N]]\n\n");
+            var confirmation_input = Console.ReadLine()!.ToUpper();
+
+            // If choice is no, then go back to menu without any changes.
+            if (confirmation_input == "N")
+            {
+                Console.Clear();
+                Console.WriteLine("your changes have been discarded");
+                Console.WriteLine("now returning to the menu....\n\n");
+                Start();
+            }
+            // If choice is yes, it will change the room to the json file.
+            else if (confirmation_input == "Y")
+            {
+                runningmovieLogic.Change_Room(room, running_movie);
+                Console.Clear();
+                Console.WriteLine("Your changes have been made!");
+                Console.WriteLine("now returning to the menu....\n\n");
+                Start();
+
+
+            }
+            else
+            {
+                Console.WriteLine("Invalid input");
+            }
+        }
+    }
+
+
+    static public void Change_Date()
+    {
+        // Gets the date in a string.
+        string your_date = Get_String_Date();
+
+
+        // Finds your selected movie.
+        RunningMovieModel running_movie = Get_Running_Movie_To_Be_Changed(your_date);
+
+        //Prints your selected running movie.
+        Console.Clear();
+        Console.WriteLine("Current Movie: ");
+        Console.WriteLine($"Movie: {running_movie.Movie.Name} | Time: [{running_movie.Begin_Time.ToString("HH:mm")}-{running_movie.End_Time.ToString("HH:mm")}]|" +
+            $" Date: {running_movie.Date.ToString("yyyy-MM-dd")} ");
+
+        // Asks the user for the date of the movie.
+        Console.WriteLine("\n\n You are now changing the date \n\n");
+        DateTime date = Get_Date();
+
+        //Prints the new movie and asks the user for confirmation.
+        Console.WriteLine("New movie: ");
+        Console.WriteLine($"Movie: {running_movie.Movie.Name} | Time: [{running_movie.Begin_Time.ToString("HH:mm")}-{running_movie.End_Time.ToString("HH:mm")}]" +
+            $"Date: {date}");
+
+
+        bool confirmation_success = false;
+        while (!confirmation_success)
+        {
+            Console.WriteLine("\n\n Do you want to confirm the changes? [Y/N]]\n\n");
+            var confirmation_input = Console.ReadLine()!.ToUpper();
+
+            // If choice is no, then go back to menu without any changes.
+            if (confirmation_input == "N")
+            {
+                Console.Clear();
+                Console.WriteLine("your changes have been discarded");
+                Console.WriteLine("now returning to the menu....\n\n");
+                Start();
+            }
+            // If choice is yes, it will change the date to the json file.
+            else if (confirmation_input == "Y")
+            {
+                runningmovieLogic.Change_Date(date, running_movie);
+                Console.Clear();
+                Console.WriteLine("Your changes have been made!");
+                Console.WriteLine("now returning to the menu....\n\n");
+                Start();
+
+
+            }
+            else
+            {
+                Console.WriteLine("Invalid input");
+            }
+        }
+    }
+
     // See all the running movies running on a certain date.
     static public void See_All_Movies_On_A_Date()
     {

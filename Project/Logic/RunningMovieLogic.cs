@@ -15,7 +15,7 @@
         return _runningmovies;
     }
 
-    // Returns a list of running movies where the name is the same as the given argument.
+    // Returns a list of running movies where the  movie name is the same as the given argument.
     public List<RunningMovieModel> Return_RunningMovie_List_Based_On_Movie(string movie)
     {
         List<RunningMovieModel> runningmovie_list = new();
@@ -42,6 +42,35 @@
         _runningmovies.Remove(runningmovie);
         RunningMovieAccess.WriteAll(_runningmovies, File_Name);
     }
+
+    // Changes the movie to the given argument
+    public void Change_Movie(MovieListModel movie, RunningMovieModel runningmovie)
+    {
+        int runningmovieindex = _runningmovies.IndexOf(runningmovie);
+        runningmovie.Movie = movie;
+        _runningmovies[runningmovieindex] = runningmovie;
+        RunningMovieAccess.WriteAll(_runningmovies, File_Name);
+
+    }
+
+    public void Change_Room(RoomModel room, RunningMovieModel runningmovie)
+    {
+        int runningmovieindex = _runningmovies.IndexOf(runningmovie);
+        runningmovie.Room = room ;
+        _runningmovies[runningmovieindex] = runningmovie;
+        RunningMovieAccess.WriteAll(_runningmovies, File_Name);
+
+    }
+
+    public void Change_Date(DateTime date, RunningMovieModel runningmovie)
+    {
+        int runningmovieindex = _runningmovies.IndexOf(runningmovie);
+        runningmovie.Date = date;
+        _runningmovies[runningmovieindex] = runningmovie;
+        RunningMovieAccess.WriteAll(_runningmovies, File_Name);
+
+    }
+
 
     // Changes the begin time to the given argument.
     public void Change_Begin_Time(DateTime begin_time , RunningMovieModel runningmovie)
