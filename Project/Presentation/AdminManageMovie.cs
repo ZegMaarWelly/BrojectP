@@ -545,6 +545,10 @@ static class AdminManageMovie
             else if (confirmation_input == "Y")
             {
                 runningmovieLogic.Change_Date(date, running_movie);
+                runningmovieLogic.Delete_From_List(running_movie);
+                string date_string = date.ToString("yyyy-MM-dd");
+                runningmovieLogic = new RunningMovieLogic(date_string);
+                runningmovieLogic.Add_To_List(running_movie);
                 Console.Clear();
                 Console.WriteLine("Your changes have been made!");
                 Console.WriteLine("now returning to the menu....\n\n");
