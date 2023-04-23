@@ -253,7 +253,7 @@ static class AdminManageMovie
     static public DateTime Get_Date()
     {
         
-        Console.WriteLine("Which date do you want to add?");
+        //Console.WriteLine("Which date do you want to add?");
         Console.WriteLine("Your date: [YYYY-MM-DD]");
         string dateString = Console.ReadLine()!;
         DateTime date = DateTime.ParseExact(dateString, "yyyy-MM-dd", CultureInfo.InvariantCulture);
