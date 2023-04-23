@@ -8,6 +8,7 @@ static class Menu
     {
         Console.WriteLine("Enter 1 to login");
         Console.WriteLine("Enter 2 to add a new account");
+        Console.WriteLine("Enter 3 for Cinema Info");
 
         string input = Console.ReadLine();
         if (input == "1")
@@ -17,6 +18,10 @@ static class Menu
         else if (input == "2")
         {
             NewAccount.Start();
+        }
+        else if (input == "3")
+        {
+            CinemaInfo.Info();
         }
         else
         {
