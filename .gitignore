@@ -272,6 +272,8 @@ __pycache__/
 # tools/
 
 # End of https://www.toptal.com/developers/gitignore/api/aspnetcore
-.vs/slnx.sqlite
-.vs/slnx.sqlite
-.vs/BrojectP/v17/.wsuo
+Project/.vs/Project/FileContentIndex/5c25cf14-c4c9-4aea-817d-0463a53f8294.vsidx
+*.vsidx
+Project/.vs/Project/FileContentIndex/5c25cf14-c4c9-4aea-817d-0463a53f8294.vsidx
+Project/.vs/Project/FileContentIndex/9ee91b90-f462-4712-bf34-08bb5c58955f.vsidx
+*.vsidx

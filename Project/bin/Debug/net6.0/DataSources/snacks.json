@@ -20,7 +20,7 @@
   {
     "name": "Edible Water",
     "price": 3,
-    "type_of_food": "Drink",
+    "type_of_food": "Snack",
     "allergies": "none"
   },
   {
@@ -31,7 +31,7 @@
   },
   {
     "name": "Oreo",
-    "price": 3.5,
+    "price": 3,
     "type_of_food": "Snack",
     "allergies": "none"
   }

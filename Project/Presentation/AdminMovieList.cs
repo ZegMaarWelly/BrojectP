@@ -3,7 +3,7 @@ static class AdminMovieList
     static private MovieListLogic movieLogic = new MovieListLogic();
     static public void Start()
     {
-        Console.WriteLine("What would you like to do?\n1) Add a movie to the list of movies\n2) Remove a movie from the list\n3) See the current list of movies\n4) Return to the main menu\n");
+        Console.WriteLine("Admin movie list menu\n\nWhat would you like to do?\n1) Add a movie to the list of movies\n2) Remove a movie from the list\n3) See the current list of movies\n4) Return to the main menu\n");
         string input = Console.ReadLine()!;
         int int_input = Convert.ToInt32(input);
         switch (int_input)
@@ -12,13 +12,12 @@ static class AdminMovieList
                 Add_Movie();
                 break;
             case 2:
-                Console.WriteLine("Not yet implented, we're working on it");
-                Start();
+                Remove_Movie();
                 break;
             case 3:
                 Console.Clear();
                 Console.WriteLine("The current list of movies consists of:\n");
-                Get_Movie_list();
+                Get_Movie_Names();
                 Console.WriteLine("\nPress any button to return to the main menu");
                 Console.ReadKey();
                 Console.Clear();
@@ -29,19 +28,35 @@ static class AdminMovieList
                 Menu.Start();
                 break;
             default:
+                Console.Clear();
                 Console.WriteLine("Invalid input\n");
                 Start();
                 break;
         }
     }
 
-    static public void Get_Movie_list()
+    static public void Get_Movie_List()
+    {
+        List<MovieListModel> movie_list = movieLogic.Return_Movie_List();
+        foreach (MovieListModel movie in movie_list)
+        {
+            Console.WriteLine($"{movie}\n");
+        }
+    }
+
+    static public void Get_Movie_Names()
     {
         List<MovieListModel> movie_list = movieLogic.Return_Movie_List();
         foreach(MovieListModel movie in movie_list)
         {
-            Console.WriteLine($"{movie}\n");
+            Console.WriteLine($"ID: {movie.Id}| Name: {movie.Name}\n");
         }
+    }
+
+    static public int New_Movie_id()
+    {
+        int next_id = MovieListLogic.Find_Next_ID();
+        return next_id;
     }
 
     static public string New_Movie_Name()
@@ -117,8 +132,9 @@ static class AdminMovieList
     {
         Console.Clear();
         Console.WriteLine("Current list of movies: ");
-        Get_Movie_list();
+        Get_Movie_Names();
         Console.WriteLine();
+        int movie_id = New_Movie_id();
         string movie_name = New_Movie_Name();
         string movie_genre = New_Movie_Genre();
         int movie_length = New_Movie_Length();
@@ -126,7 +142,7 @@ static class AdminMovieList
         string movie_labels = New_Movie_Labels();
         Console.Clear();
 
-        MovieListModel movie = new(movie_name, movie_genre, movie_length, movie_age, movie_labels);
+        MovieListModel movie = new(movie_id, movie_name, movie_genre, movie_length, movie_age, movie_labels);
         while (true)
         {
             MovieListModel new_movie = movieLogic.Find_Movie(movie.Name);
@@ -145,12 +161,74 @@ static class AdminMovieList
                 Thread.Sleep(10000);
                 Console.Clear();
                 Console.WriteLine("Current list of movies:\n");
-                Get_Movie_list();
+                Get_Movie_Names();
                 Console.WriteLine("Press any button to return to the movie list menu");
                 Console.ReadKey();
                 Console.Clear();
                 Start();
             }
+        }
+    }
+
+    static public void Remove_Movie()
+    {
+        Console.Clear();
+        Console.WriteLine("Current list of movies:\n");
+        Get_Movie_Names();
+        Console.WriteLine();
+        Console.WriteLine("Which movie would you like to remove? (please provide only the ID)");
+        bool correct_input = false;
+        while (!correct_input) 
+        {
+            try
+            {
+                string remove_id = Console.ReadLine();
+                int for_removal = Convert.ToInt32(remove_id);
+                MovieListModel selected_movie = movieLogic.Find_Movie_ID(for_removal);
+                if (selected_movie == null)
+                {
+                    Console.WriteLine("This ID does not belong to any movies\nPress any button to return to Admin Movie list menu");
+                    Console.ReadKey();
+                    Console.Clear();
+                    Start();
+                }
+                else
+                {
+                    Console.WriteLine($"Are you sure you wish to remove the movie {selected_movie.Name}? (Y/N)");
+                    string movie_confirmation = Console.ReadLine()!.ToUpper();
+                    switch (movie_confirmation)
+                    {
+                        case "Y":
+                            movieLogic.Delete_From_List(selected_movie);
+                            Console.Clear();
+                            Console.WriteLine($"{selected_movie.Name} has been succesfully removed from the movie list\nCurrent list of movies:\n");
+                            Get_Movie_Names();
+                            Console.WriteLine("Press any button to return to the movie list menu");
+                            Console.ReadKey();
+                            Console.Clear();
+                            Start();
+                            break;
+
+                        case "N":
+                            Console.WriteLine("\nPress any button to return to the movie list menu");
+                            Console.ReadKey();
+                            Console.Clear();
+                            Start();
+                            break;
+
+                        default:
+                            Console.WriteLine("Invalid input");
+                            break;
+                    }
+                }
+            }
+
+            catch
+            {
+                Console.WriteLine("Invalid input, only numbers are accepted");
+            }
+
+
         }
     }
 }
