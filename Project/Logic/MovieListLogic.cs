@@ -53,4 +53,44 @@ class MovieListLogic
 	{
 		return MovieListAccess.LoadAll().Select(a => a.Id).Max() + 1;
 	}
+
+	public void Update_Movie_Name(string value, MovieListModel movie)
+	{
+		movie.Name = value;
+		int movieindex = _movies.IndexOf(movie);
+		_movies[movieindex] = movie;
+		MovieListAccess.WriteAll(_movies);
+	}
+
+	public void Update_Movie_Genre(string value, MovieListModel movie)
+	{
+		movie.Genre= value;
+        int movieindex = _movies.IndexOf(movie);
+        _movies[movieindex] = movie;
+        MovieListAccess.WriteAll(_movies);
+    }
+
+    public void Update_Movie_Length(int value, MovieListModel movie)
+    {
+        movie.Length = value;
+        int movieindex = _movies.IndexOf(movie);
+        _movies[movieindex] = movie;
+        MovieListAccess.WriteAll(_movies);
+    }
+
+    public void Update_Movie_Age(int value, MovieListModel movie)
+    {
+        movie.Age = value;
+        int movieindex = _movies.IndexOf(movie);
+        _movies[movieindex] = movie;
+        MovieListAccess.WriteAll(_movies);
+    }
+
+    public void Update_Movie_Labels(string value, MovieListModel movie)
+    {
+        movie.Labels = value;
+        int movieindex = _movies.IndexOf(movie);
+        _movies[movieindex] = movie;
+        MovieListAccess.WriteAll(_movies);
+    }
 }
