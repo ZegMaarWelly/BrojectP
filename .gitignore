@@ -274,3 +274,4 @@ __pycache__/
 # End of https://www.toptal.com/developers/gitignore/api/aspnetcore
 .vs/slnx.sqlite
 .vs/slnx.sqlite
+.vs/BrojectP/v17/.wsuo
