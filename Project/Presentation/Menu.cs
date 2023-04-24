@@ -10,6 +10,7 @@ static class Menu
         Console.WriteLine("|__|. _ |_   /  . _  _ _  _   |__)_ |_|_ _ _ _| _  _  \r\n|  ||(_)| )  \\__|| )(-|||(_|  | \\(_)|_|_(-| (_|(_|||| \r\n     _/                                               ");
         Console.ResetColor();
         Console.WriteLine();
+       
         Console.WriteLine("Enter 1 to login");
         Console.WriteLine("Enter 2 to add a new account");
         Console.WriteLine("Enter 3 for Cinema Info");
