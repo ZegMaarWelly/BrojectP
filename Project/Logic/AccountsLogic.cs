@@ -1,4 +1,5 @@
-﻿
+﻿using System.Text.RegularExpressions;
+
 //This class is not static so later on we can use inheritance and interfaces
 class AccountsLogic
 {
@@ -91,7 +92,7 @@ class AccountsLogic
             Console.WriteLine("Password must contain one digit.");
         }
          
-        if (password.Any(char.IsSymbol))
+        if (PasswordSymbolChecker(password))
         {
             passwordSym = true;
         }
@@ -102,6 +103,13 @@ class AccountsLogic
 
         bool totalCheck = passwordLen && passwordNum && passwordSym;
         return totalCheck;
+    }
+
+    public bool PasswordSymbolChecker(string password)
+    {
+        string pattern = ".+*!?-_^$()[]{}|";
+        bool hasSymbols = Regex.IsMatch(password, pattern);
+        return hasSymbols;
     }
 }
 
