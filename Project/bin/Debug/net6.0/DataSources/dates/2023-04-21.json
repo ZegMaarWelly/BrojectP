@@ -1,0 +1,173 @@
+[
+  {
+    "movie": {
+      "id": 0,
+      "name": "Black Lotus",
+      "genre": "Action, Thriller",
+      "length": 90,
+      "age": 16,
+      "labels": "Violence, Harsh language"
+    },
+    "room": {
+      "id": 12,
+      "map": [
+        "20|         O O O O O O O O O O O O O O O O O O O O O O         ",
+        "19|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "18|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "17|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "16|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "15|     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "14|   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "13| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "12| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "11| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "10| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "09| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "08|   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "07|     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "06|     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "05|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "04|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "03|           O O O O O O O O O O O O O O O O O O O O           ",
+        "02|               O O O O O O O O O O O O O O O O               ",
+        "01|                 O O O O O O O O O O O O O O O               ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------------------------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
+        "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
+      ],
+      "total_seats": 500,
+      "available_seats": 500
+    },
+    "begin_time": "2023-04-21T13:30:00",
+    "end_time": "2023-04-21T14:45:00",
+    "date": "2023-04-21T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 0,
+      "name": "65",
+      "genre": "Sci-Fi, Thriller",
+      "length": 93,
+      "age": 12,
+      "labels": "Fear"
+    },
+    "room": {
+      "id": 5,
+      "map": [
+        "19|   O O O O O O O O O O O O O O O O   ",
+        "18|   O O O O O O O O O O O O O O O O   ",
+        "17|   O O O O O O O O O O O O O O O O   ",
+        "16|   O O O O O O O O O O O O O O O O   ",
+        "15|   O O O O O O O O O O O O O O O O   ",
+        "14|   O O O O O O O O O O O O O O O O   ",
+        "13| O O O O O O O O O O O O O O O O O O ",
+        "12| O O O O O O O O O O O O O O O O O O ",
+        "11| O O O O O O O O O O O O O O O O O O ",
+        "10| O O O O O O O O O O O O O O O O O O ",
+        "09| O O O O O O O O O O O O O O O O O O ",
+        "08|   O O O O O O O O O O O O O O O O   ",
+        "07|   O O O O O O O O O O O O O O O O   ",
+        "06|   O O O O O O O O O O O O O O O O   ",
+        "05|     O O O O O O O O O O O O O O     ",
+        "04|     O O O O O O O O O O O O O O     ",
+        "03|     O O O O O O O O O O O O O O     ",
+        "02|       O O O O O O O O O O O O       ",
+        "01|       O O O O O O O O O O O O       ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 ",
+        "                      0 1 2 3 4 5 6 7 8 "
+      ],
+      "total_seats": 300,
+      "available_seats": 300
+    },
+    "begin_time": "2023-04-21T12:16:00",
+    "end_time": "2023-04-21T14:11:00",
+    "date": "2023-04-21T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 0,
+      "name": "Akira",
+      "genre": "Sci-Fi, Thriller",
+      "length": 124,
+      "age": 16,
+      "labels": "Harsh language, Violence, Fear"
+    },
+    "room": {
+      "id": 12,
+      "map": [
+        "20|         O O O O O O O O O O O O O O O O O O O O O O         ",
+        "19|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "18|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "17|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "16|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "15|     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "14|   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "13| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "12| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "11| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "10| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "09| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "08|   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "07|     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "06|     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "05|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "04|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "03|           O O O O O O O O O O O O O O O O O O O O           ",
+        "02|               O O O O O O O O O O O O O O O O               ",
+        "01|                 O O O O O O O O O O O O O O O               ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------------------------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
+        "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
+      ],
+      "total_seats": 500,
+      "available_seats": 500
+    },
+    "begin_time": "2023-04-21T12:12:00",
+    "end_time": "2023-04-21T14:14:00",
+    "date": "2023-04-21T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 14,
+      "name": "Akira",
+      "genre": "Sci-Fi, Thriller",
+      "length": 124,
+      "age": 16,
+      "labels": "Harsh language, Violence, Fear"
+    },
+    "room": {
+      "id": 12,
+      "map": [
+        "20|         O O O O O O O O O O O O O O O O O O O O O O         ",
+        "19|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "18|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "17|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "16|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "15|     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "14|   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "13| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "12| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "11| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "10| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "09| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "08|   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "07|     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "06|     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "05|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "04|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "03|           O O O O O O O O O O O O O O O O O O O O           ",
+        "02|               O O O O O O O O O O O O O O O O               ",
+        "01|                 O O O O O O O O O O O O O O O               ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------------------------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
+        "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
+      ],
+      "total_seats": 500,
+      "available_seats": 500
+    },
+    "begin_time": "2023-04-21T13:15:00",
+    "end_time": "2023-04-21T15:15:00",
+    "date": "2023-04-21T00:00:00"
+  }
+]

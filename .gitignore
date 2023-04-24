@@ -15,14 +15,13 @@
 *.userprefs
 
 # Build results
-[Dd]ebug/
+
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
 x64/
 x86/
 bld/
-[Bb]in/
 [Oo]bj/
 [Ll]og/
 
@@ -278,3 +277,7 @@ Project/.vs/Project/FileContentIndex/5c25cf14-c4c9-4aea-817d-0463a53f8294.vsidx
 Project/.vs/Project/FileContentIndex/9ee91b90-f462-4712-bf34-08bb5c58955f.vsidx
 *.vsidx
 Project/.vs/Project/FileContentIndex/fe71fc41-b4c4-4e7a-a40b-496b015f2436.vsidx
+Project/bin/Debug/net6.0/Project.deps.json
+Project/bin/Debug/net6.0/Project.dll
+Project/bin/Debug/net6.0/Project.exe
+Project/bin/Debug/net6.0/Project.runtimeconfig.json

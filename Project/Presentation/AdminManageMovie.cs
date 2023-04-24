@@ -30,6 +30,7 @@ static class AdminManageMovie
         if (manage_choice == "1")
         {
             Console.Clear();
+
             Add_RunningMovie();
 
         }
@@ -253,7 +254,7 @@ static class AdminManageMovie
     static public DateTime Get_Date()
     {
         
-        Console.WriteLine("Which date do you want to add?");
+        //Console.WriteLine("Which date do you want to add?");
         Console.WriteLine("Your date: [YYYY-MM-DD]");
         string dateString = Console.ReadLine()!;
         DateTime date = DateTime.ParseExact(dateString, "yyyy-MM-dd", CultureInfo.InvariantCulture);
