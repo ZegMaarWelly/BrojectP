@@ -30,6 +30,7 @@ static class AdminManageMovie
         if (manage_choice == "1")
         {
             Console.Clear();
+
             Add_RunningMovie();
 
         }
