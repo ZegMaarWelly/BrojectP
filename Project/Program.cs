@@ -1,3 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Welcome to this hamazing program");
+﻿Console.ForegroundColor = ConsoleColor.Magenta;
+Console.WriteLine("|__|. _ |_   /  . _  _ _  _   |__)_ |_|_ _ _ _| _  _  \r\n|  ||(_)| )  \\__|| )(-|||(_|  | \\(_)|_|_(-| (_|(_|||| \r\n     _/                                               ");
+Console.ResetColor();
+Console.WriteLine();
 Menu.Start();
+

@@ -8,8 +8,7 @@ static class Menu
     {
         Console.WriteLine("Enter 1 to login");
         Console.WriteLine("Enter 2 to add a new account");
-        
-        //Console.WriteLine("Enter 3 to get to admin thingies");
+        Console.WriteLine("Enter 3 for Cinema Info");
 
         string input = Console.ReadLine();
         if (input == "1")
@@ -20,10 +19,10 @@ static class Menu
         {
             NewAccount.Start();
         }
-        //else if (input == "3")
-        //{
-        //    AdminMenu.Start();
-        //}
+        else if (input == "3")
+        {
+            CinemaInfo.Info();
+        }
         else
         {
             Console.WriteLine("Invalid input");

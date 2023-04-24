@@ -35,8 +35,7 @@ public class AccountModel
     {
         return AccountsAccess.LoadAll().Select(a => a.Id).Max() + 1;
     }
-    
-    
+
 }
 
 

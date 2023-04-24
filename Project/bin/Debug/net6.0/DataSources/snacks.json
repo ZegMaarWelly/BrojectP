@@ -1,6 +1,6 @@
 [
   {
-    "name": "Balls",
+    "name": "Meatballs",
     "price": 5,
     "type_of_food": "Snack",
     "allergies": "PP"
@@ -8,12 +8,6 @@
   {
     "name": "Popcorn",
     "price": 6.5,
-    "type_of_food": "Snack",
-    "allergies": "none"
-  },
-  {
-    "name": "Poep",
-    "price": 6.29,
     "type_of_food": "Snack",
     "allergies": "none"
   },
@@ -26,12 +20,18 @@
   {
     "name": "Edible Water",
     "price": 3,
-    "type_of_food": "Drink",
+    "type_of_food": "Snack",
     "allergies": "none"
   },
   {
-    "name": "yo",
-    "price": 53.345,
+    "name": "Koekje",
+    "price": 6.29,
+    "type_of_food": "Snack",
+    "allergies": "none"
+  },
+  {
+    "name": "Oreo",
+    "price": 3,
     "type_of_food": "Snack",
     "allergies": "none"
   }

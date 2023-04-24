@@ -1,22 +1,22 @@
 ﻿static class MenuSnack
 {
     static private SnacksLogic snacksLogic = new SnacksLogic();
-    static public ShoppingCartLogic shoppingcartLogic = new ShoppingCartLogic();
+    static public  ShoppingCartLogic shoppingcartLogic = new ShoppingCartLogic();
     static public void Start()
     {
         Console.WriteLine("What do you want to order?");
         Console.WriteLine("Enter 1 to order food");
         Console.WriteLine("Enter 2 to order drinks");
         Console.WriteLine("Enter 3 to see your shopping cart");
-        Console.WriteLine("Enter 4 to quit");
+        Console.WriteLine("Enter 4 screening room test small.");
 
         string input = Console.ReadLine()!;
+        Console.Clear();
         if (input == "1")
         {
             Food_Menu();
             Console.WriteLine();
             Console.WriteLine("What Snack are you going to choose \n Type the name: ");
-            
             string snack_choice = Console.ReadLine()!;
             SnackModel your_snack = snacksLogic.Find_Snack(snack_choice);
             if (your_snack == null || your_snack.Type_Of_Food == "Drink")
@@ -27,6 +27,8 @@
             {
                 Console.WriteLine($"{your_snack.Name} has been added to your shopping cart");
                 shoppingcartLogic.AddCountedSnack(your_snack);
+                Thread.Sleep(3000);
+                Console.Clear();
             }
             Start();
 
@@ -47,16 +49,18 @@
             {
                 Console.WriteLine($"{your_snack.Name} has been added to your shopping cart");
                 shoppingcartLogic.AddCountedSnack(your_snack);
+                Thread.Sleep(3000);
+                Console.Clear();
             }
             Start();
         }
         else if(input == "3")
         {
-            ShoppingCart.Show_Shopping_Cart();
+            ShoppingCart.Start();
         }
-        else if (input == "4")
+        else if(input == "4")
         {
-            Environment.Exit(0);
+            ScreeningRoom.Start();
         }
         else
         {
