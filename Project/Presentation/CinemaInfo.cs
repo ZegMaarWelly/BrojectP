@@ -25,7 +25,7 @@
             foreach (char c in line)
             {
                 Console.Write(c);
-                System.Threading.Thread.Sleep(40); // wait 25 milliseconds before writing the next character
+                System.Threading.Thread.Sleep(30); 
             }
             Console.WriteLine();
         }
