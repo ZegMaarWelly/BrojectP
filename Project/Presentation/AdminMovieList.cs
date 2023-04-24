@@ -3,7 +3,7 @@ static class AdminMovieList
     static private MovieListLogic movieLogic = new MovieListLogic();
     static public void Start()
     {
-        Console.WriteLine("Admin movie list menu\n\nWhat would you like to do?\n1) Add a movie to the list of movies\n2) Remove a movie from the list\n3) See the current list of movies\n4) Return to the main menu\n");
+        Console.WriteLine("You are currently on the admin movie list menu\n\nWhat would you like to do?\n[1] Add a movie to the list of movies\n[2] Remove a movie from the list\n[3] See the current list of movies (Only the ID's and names)\n[4] Edit a movie's information\n[5] Return to the main menu\n");
         string input = Console.ReadLine()!;
         int int_input = Convert.ToInt32(input);
         switch (int_input)
@@ -24,6 +24,10 @@ static class AdminMovieList
                 Start();
                 break;
             case 4:
+                Console.Clear();
+                Change_Movie();
+                break;
+            case 5:
                 Console.Clear();
                 Menu.Start();
                 break;
@@ -131,6 +135,7 @@ static class AdminMovieList
     static public void Add_Movie()
     {
         Console.Clear();
+        Console.WriteLine("You are currently on the add a movie page\n\n");
         Console.WriteLine("Current list of movies: ");
         Get_Movie_Names();
         Console.WriteLine();
@@ -173,12 +178,11 @@ static class AdminMovieList
     static public void Remove_Movie()
     {
         Console.Clear();
-        Console.WriteLine("Current list of movies:\n");
+        Console.WriteLine("You are currently on the remove a movie page\n\nCurrent list of movies:\n");
         Get_Movie_Names();
         Console.WriteLine();
         Console.WriteLine("Which movie would you like to remove? (please provide only the ID)");
-        bool correct_input = false;
-        while (!correct_input) 
+        while (true) 
         {
             try
             {
@@ -229,6 +233,101 @@ static class AdminMovieList
             }
 
 
+        }
+    }
+
+    static public void Change_Movie()
+    {
+        Console.WriteLine("You are currently on the edit movie information page\n\nCurrent list of movies: \n");
+        Get_Movie_List();
+        Console.WriteLine();
+        Console.WriteLine("Which movie's information would you like to change? (Please provide only the ID)\n");
+        while (true)
+        {
+            try
+            {
+                string for_update = Console.ReadLine();
+                int update_id = Convert.ToInt32(for_update);
+                MovieListModel selected_movie = movieLogic.Find_Movie_ID(update_id);
+                if (selected_movie == null)
+                {
+                    Console.WriteLine("This ID does not belong to any movies\nPress any button to return to Admin Movie list menu");
+                    Console.ReadKey();
+                    Console.Clear();
+                    Start();
+                }
+                else
+                {
+                    while (true)
+                    {
+                        Console.Clear();
+                        Console.WriteLine($"You have selected the movie {selected_movie.Name}\n");
+                        Console.WriteLine($"Information of the selected movie: \n{selected_movie}\n");
+                        Console.WriteLine("What part would you like to edit?\n[1] Change the name of the movie\n[2] Change the genre of the movie\n[3] Change the length of the movie\n[4] Change the minimum age of the movie\n[5] Change the labels of the movie\n[6] Select a different movie\n[7] Return to the admin movie list menu");
+                        string movie_edit = Console.ReadLine()!;
+                        switch (movie_edit)
+                        {
+                            case "1":
+                                string new_name_value = New_Movie_Name();
+                                movieLogic.Update_Movie_Name(new_name_value, selected_movie);
+                                Console.WriteLine($"The name of {selected_movie.Name} has been updated\n\nUpdated information of this movie\n {selected_movie}\nPress any key to return to the movie list menu");
+                                Console.ReadKey();
+                                Console.Clear();
+                                Start();
+                                break;
+                            case "2":
+                                string new_genre_value = New_Movie_Genre();
+                                movieLogic.Update_Movie_Genre(new_genre_value, selected_movie);
+                                Console.WriteLine($"The genre of {selected_movie.Name} has been updated\n\nUpdated information of this movie\n {selected_movie}Press any key to return to the movie list menu");
+                                Console.ReadKey();
+                                Console.Clear();
+                                Start();
+                                break;
+                            case "3":
+                                int new_length_value = New_Movie_Length();
+                                movieLogic.Update_Movie_Length(new_length_value, selected_movie);
+                                Console.WriteLine($"The length of {selected_movie.Name} has been updated\n\nUpdated information of this movie\n {selected_movie}\nPress any key to return to the movie list menu");
+                                Console.ReadKey();
+                                Console.Clear();
+                                Start();
+                                break;
+                            case "4":
+                                int new_age_value = New_Movie_Age();
+                                movieLogic.Update_Movie_Age(new_age_value, selected_movie);
+                                Console.WriteLine($"The age of {selected_movie.Name} has been updated\n\nUpdated information of this movie\n {selected_movie}\nPress any key to return to the movie list menu");
+                                Console.ReadKey();
+                                Console.Clear();
+                                Start();
+                                break;
+                            case "5":
+                                string new_label_value = New_Movie_Labels();
+                                movieLogic.Update_Movie_Labels(new_label_value, selected_movie);
+                                Console.WriteLine($"The label(s) of {selected_movie.Name} has been updated\n\nUpdated information of this movie\n {selected_movie}\nPress any key to return to the movie list menu");
+                                Console.ReadKey();
+                                Console.Clear();
+                                Start();
+                                break;
+                            case "6":
+                                Console.Clear();
+                                Change_Movie();
+                                Console.Clear();
+                                break;
+                            case "7":
+                                Console.Clear();
+                                Console.Clear();
+                                Start(); 
+                                break;
+                            default:
+                                Console.WriteLine("Invalid input");
+                                break;
+                        }
+                    }
+                }
+            }
+            catch
+            {
+                Console.WriteLine("Invalid input, only numbers are accepted");
+            }
         }
     }
 }
