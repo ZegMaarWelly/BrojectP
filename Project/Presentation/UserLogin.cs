@@ -25,7 +25,7 @@ static class UserLogin
             }
             else if (acc != null)
             {
-                Console.WriteLine("Welcome back " + acc.FullName);
+                Console.WriteLine("Welcome " + acc.FullName);
                 MenuSnack.Start();
             }
             else
