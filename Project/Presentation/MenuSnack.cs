@@ -1,14 +1,19 @@
-﻿static class MenuSnack
+﻿using ConsoleTables;
+
+static class MenuSnack
 {
     static private SnacksLogic snacksLogic = new SnacksLogic();
     static public  ShoppingCartLogic shoppingcartLogic = new ShoppingCartLogic();
     static public void Start()
     {
+        Console.ForegroundColor= ConsoleColor.Red;
+        Console.WriteLine("\r\n  ___              _     __  __              \r\n / __|_ _  __ _ __| |__ |  \\/  |___ _ _ _  _ \r\n \\__ \\ ' \\/ _` / _| / / | |\\/| / -_) ' \\ || |\r\n |___/_||_\\__,_\\__|_\\_\\ |_|  |_\\___|_||_\\_,_|\r\n                                             \r\n");
+        Console.ResetColor();
         Console.WriteLine("What do you want to order?");
-        Console.WriteLine("Enter 1 to order food");
-        Console.WriteLine("Enter 2 to order drinks");
-        Console.WriteLine("Enter 3 to see your shopping cart");
-        Console.WriteLine("Enter 4 screening room test small.");
+        Console.WriteLine("> Enter 1 to order food");
+        Console.WriteLine("> Enter 2 to order drinks");
+        Console.WriteLine("> Enter 3 to see your shopping cart");
+        Console.WriteLine("> Enter 4 screening room test small.");
 
         string input = Console.ReadLine()!;
         Console.Clear();
@@ -74,12 +79,13 @@
     static public void Food_Menu()
     {
         List<SnackModel> snack_list = snacksLogic.Return_Snack_List_Based_On_Type("Snack");
-        int snack_number = 1;
-        foreach (SnackModel snack in snack_list)
-        {
-            Console.WriteLine($"{snack_number}|{snack.Name}| ${snack.Price}");
-            snack_number += 1;
-        }
+        //int snack_number = 1;
+        //foreach (SnackModel snack in snack_list)
+        //{
+        //    //Console.WriteLine($"{snack_number}|{snack.Name}| ${snack.Price}");
+        //    //snack_number += 1;
+        //}
+         ConsoleTable.From<SnackModel>(snack_list).Write();
                 
     }
 

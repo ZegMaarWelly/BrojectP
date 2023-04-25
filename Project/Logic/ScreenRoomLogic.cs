@@ -106,7 +106,6 @@ class ScreenRoomLogic
                     Console.Clear();
                     Console.WriteLine($"You chose chair {input_column / 2 - 1} on row {indrow} , do you want to confirm this chair place?");
                     Console.WriteLine("Y/N");
-                    Thread.Sleep(3000);
                     string conf = Console.ReadLine();
                     conf.ToUpper();
                     if (conf == "Y")
@@ -255,7 +254,6 @@ class ScreenRoomLogic
                     Console.Clear();
                     Console.WriteLine($"You chose chair {input_column / 2 - 1} on row {indrow} , do you want to confirm this chair place?");
                     Console.WriteLine("Y/N");
-                    Thread.Sleep(3000);
                     string conf = Console.ReadLine();
                     conf.ToUpper();
                     if (conf == "Y")
@@ -264,7 +262,7 @@ class ScreenRoomLogic
 
                         screening_room[row] = your_line;
                         Console.Clear();
-                        Console.WriteLine($"You have selected this chair {input_column / 2 - 1} on row {indrow}.");
+                        Console.WriteLine($"You have selected chair {input_column / 2 - 1} on row {indrow}.");
                         Thread.Sleep(5000);
                         Console.Clear();
                         count++;
@@ -403,7 +401,6 @@ class ScreenRoomLogic
                     Console.Clear();
                     Console.WriteLine($"You chose chair {input_column / 2 - 1} on row {indrow} , do you want to confirm this chair place?");
                     Console.WriteLine("Y/N");
-                    Thread.Sleep(3000);
                     string conf = Console.ReadLine();
                     conf.ToUpper();
                     if (conf == "Y")
