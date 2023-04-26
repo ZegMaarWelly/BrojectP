@@ -13,6 +13,19 @@ class MovieListLogic
 		return _movies;
 	}
 
+	public List<MovieListModel> Return_By_Genre(string genre)
+	{
+		List<MovieListModel> movies = new List<MovieListModel>();
+		foreach (var movie in _movies)
+		{
+			if (movie.Genre.Contains(genre))
+			{
+				movies.Add(movie);
+			}
+		}
+		return movies;
+	}
+
 	public void Add_To_List(MovieListModel movie)
 	{
 		_movies.Add(movie);

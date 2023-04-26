@@ -107,7 +107,7 @@ class AccountsLogic
 
     public bool PasswordSymbolChecker(string password)
     {
-        string pattern = @"\.\+\*\!\?\-\_\^\$\(\)\[\]\{\}\|";
+        string pattern = @"[\p{P}\p{S}]";
         bool hasSymbols = Regex.IsMatch(password, pattern);
         return hasSymbols;
     }
