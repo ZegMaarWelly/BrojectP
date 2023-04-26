@@ -78,16 +78,16 @@ class AccountsLogic
         bool passwordLen = false;
         bool passwordNum = false;
         bool passwordSym = false;
-
+        
         if (password.Length >= 8)
         {
             passwordLen = true;
         }
         else
         {
-            Console.WriteLine("Password must be at least 8 characters long.");
+           Console.WriteLine("Password must be at least 8 characters long."); 
         }
-
+        
         if (password.Any(char.IsDigit))
         {
             passwordNum = true;
@@ -96,7 +96,7 @@ class AccountsLogic
         {
             Console.WriteLine("Password must contain one digit.");
         }
-
+         
         if (PasswordSymbolChecker(password))
         {
             passwordSym = true;
@@ -112,8 +112,9 @@ class AccountsLogic
 
     public bool PasswordSymbolChecker(string password)
     {
-        string pattern = @"[\p{P}\p{S}]";
+        string pattern = @"\.\+\*\!\?\-\_\^\$\(\)\[\]\{\}\|";
         bool hasSymbols = Regex.IsMatch(password, pattern);
         return hasSymbols;
     }
 }
+
