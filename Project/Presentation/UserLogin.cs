@@ -1,7 +1,7 @@
 
-static class UserLogin
+static class UserLogin 
 {
-    static private AccountsLogic accountsLogic = new AccountsLogic();
+    static public AccountsLogic accountsLogic = new AccountsLogic();
 
 
     public static void Start()

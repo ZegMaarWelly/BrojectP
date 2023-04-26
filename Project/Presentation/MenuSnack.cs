@@ -14,6 +14,7 @@ static class MenuSnack
         Console.WriteLine("> Enter 2 to order drinks");
         Console.WriteLine("> Enter 3 to see your shopping cart");
         Console.WriteLine("> Enter 4 screening room test small.");
+        User.CurrentUser();
 
         string input = Console.ReadLine()!;
         Console.Clear();
@@ -100,4 +101,5 @@ static class MenuSnack
         }
 
     }
+
 }
