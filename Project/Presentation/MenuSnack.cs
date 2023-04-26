@@ -21,7 +21,7 @@ static class MenuSnack
         {
             Food_Menu();
             Console.WriteLine();
-            Console.WriteLine("What Snack are you going to choose \n Type the name: ");
+            Console.WriteLine("What Snack are you going to choose \n > Type the name: ");
             string snack_choice = Console.ReadLine()!;
             SnackModel your_snack = snacksLogic.Find_Snack(snack_choice);
             if (your_snack == null || your_snack.Type_Of_Food == "Drink")
@@ -85,7 +85,7 @@ static class MenuSnack
         //    //Console.WriteLine($"{snack_number}|{snack.Name}| ${snack.Price}");
         //    //snack_number += 1;
         //}
-         ConsoleTable.From<SnackModel>(snack_list).Write();
+         ConsoleTable.From<SnackModel>(snack_list).Write(Format.Alternative);
                 
     }
 
