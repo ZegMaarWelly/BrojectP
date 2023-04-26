@@ -1,3 +1,5 @@
+using ConsoleTables;
+
 static class AdminMovieList
 {
     static private MovieListLogic movieLogic = new MovieListLogic();
@@ -31,12 +33,24 @@ static class AdminMovieList
                 Console.Clear();
                 Menu.Start();
                 break;
+            case 6:
+                Console.Clear();
+                Sort_By_Genre();
+                break;
             default:
                 Console.Clear();
                 Console.WriteLine("Invalid input\n");
                 Start();
                 break;
         }
+    }
+    static public void Sort_By_Genre()
+    {
+        Console.WriteLine("Type the genre you would like to filter on");
+        string given_genre = Console.ReadLine();
+        var movie_genres = movieLogic.Return_By_Genre(given_genre);
+        ConsoleTable.From<MovieListModel>(movie_genres).Write();
+
     }
 
     static public void Get_Movie_List()
