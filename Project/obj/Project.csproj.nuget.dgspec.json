@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/tb/RiderProjects/BrojectP/Project/Project.csproj": {}
+    "/Users/tb/Documents/GitHub/BrojectP/BrojectP/Project/Project.csproj": {}
   },
   "projects": {
-    "/Users/tb/RiderProjects/BrojectP/Project/Project.csproj": {
+    "/Users/tb/Documents/GitHub/BrojectP/BrojectP/Project/Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/tb/RiderProjects/BrojectP/Project/Project.csproj",
+        "projectUniqueName": "/Users/tb/Documents/GitHub/BrojectP/BrojectP/Project/Project.csproj",
         "projectName": "Project",
-        "projectPath": "/Users/tb/RiderProjects/BrojectP/Project/Project.csproj",
+        "projectPath": "/Users/tb/Documents/GitHub/BrojectP/BrojectP/Project/Project.csproj",
         "packagesPath": "/Users/tb/.nuget/packages/",
-        "outputPath": "/Users/tb/RiderProjects/BrojectP/Project/obj/",
+        "outputPath": "/Users/tb/Documents/GitHub/BrojectP/BrojectP/Project/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/tb/.nuget/NuGet/NuGet.Config"
