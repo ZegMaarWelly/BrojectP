@@ -1,42 +1,57 @@
-﻿static class AdminMenuSnack
+﻿using ConsoleTables;
+
+static class AdminMenuSnack
 {
 
     static private SnacksLogic snacksLogic = new SnacksLogic();
     static public void Start()
     {
+        Console.Clear();
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        Console.WriteLine("    _      _       _        ___              _     __  __              \r\n   /_\\  __| |_ __ (_)_ _   / __|_ _  __ _ __| |__ |  \\/  |___ _ _ _  _ \r\n  / _ \\/ _` | '  \\| | ' \\  \\__ \\ ' \\/ _` / _| / / | |\\/| / -_) ' \\ || |\r\n /_/ \\_\\__,_|_|_|_|_|_||_| |___/_||_\\__,_\\__|_\\_\\ |_|  |_\\___|_||_\\_,_|\r\n                                                                      ");
+        Console.ResetColor();
         Console.WriteLine("What do you want to do?");
-        Console.WriteLine("Enter 1 to add a snack to the snack list");
-        Console.WriteLine("Enter 2 to remove a snack from the snack list");
-        Console.WriteLine("Enter 3 to change a value of snacks from the snack list");
-        Console.WriteLine("Enter 4 see current snack list");
-        Console.WriteLine("Enter 5 to go back to");
+        Console.WriteLine(" > Enter 1 to add a snack to the snack list");
+        Console.WriteLine(" > Enter 2 to remove a snack from the snack list");
+        Console.WriteLine(" > Enter 3 to change a value of snacks from the snack list");
+        Console.WriteLine(" > Enter 4 see current snack list");
+        Console.WriteLine(" > Enter 5 to go back to");
 
         string input = Console.ReadLine()!;
         if (input == "1")
         {
+            Console.Clear() ;
             Add_Snack();
         }
         else if (input == "2")
         {
+            Console.Clear();
             Remove_Snack();
         }
         else if (input == "3")
         {
+            Console.Clear();
             Change_Snack();
         }
         else if (input == "4")
         {
             Console.Clear();
             Get_Snack_List();
+            Console.WriteLine(" > Press 'Enter' to continue");
+            Console.ReadLine();
             Start();
         }
         else if (input == "5")
         {
+            Console.Clear();
             AdminMenu.Start();
         }
         else
         {
+            Console.Clear();
             Console.WriteLine("Invalid input");
+            Thread.Sleep(3000);
+            Console.Clear();
             Start();
         }
     }
@@ -44,14 +59,15 @@
     static public void Get_Snack_List()
     {
         List<SnackModel> snack_list = snacksLogic.Return_Snack_List();
-        foreach(SnackModel snack in snack_list)
-        {
-            Console.WriteLine(snack);
-        }
+        //foreach(SnackModel snack in snack_list)
+        //{
+        //    Console.WriteLine(snack);
+        //}
+        ConsoleTable.From<SnackModel>(snack_list).Write(Format.Alternative);
     }
     static public string Get_Snack_Name()
     {
-        Console.WriteLine("Your Snack name: ");
+        Console.WriteLine(" > Your Snack name: ");
         string snack_name = Console.ReadLine()!;
         return snack_name;
     }
@@ -61,7 +77,7 @@
         bool price_success = false;
         while (!price_success)
         {
-            Console.WriteLine("Your Price: ");
+            Console.WriteLine(" > Your Price: ");
             try
             {
                 snack_price = Convert.ToDouble(Console.ReadLine());
@@ -83,7 +99,7 @@
         string type_of_food = "";
         while (!type_success)
         {
-            Console.WriteLine("Type of food (Snack or Drink): ");
+            Console.WriteLine(" > Type of food (Snack or Drink): ");
             type_of_food = Console.ReadLine()!;
             if (type_of_food == "Snack" || type_of_food == "Drink")
             {
@@ -99,7 +115,7 @@
 
     static public string Get_Snack_Allergies()
     {
-        Console.WriteLine("Your Allergies: ");
+        Console.WriteLine(" > Your Allergies: ");
         string allergies = Console.ReadLine()!;
         if (allergies == "")
         {
@@ -141,7 +157,7 @@
             }
             else
             {
-                Console.WriteLine("Proceed to add the snack to the snack list? (Y/N) ");
+                Console.WriteLine(" > Proceed to add the snack to the snack list? (Y/N) ");
                 string snack_confirmation = Console.ReadLine()!.ToUpper();
                 //If the answer is Yes, it will add it to the list (and also the json file)
                 if (snack_confirmation == "Y")
@@ -180,7 +196,7 @@
         Console.WriteLine();
 
         //Asks the user want snack they want to remove
-        Console.WriteLine("What Snack do you want to remove?");
+        Console.WriteLine(" > What Snack do you want to remove?");
         string snack_name = Console.ReadLine()!;
 
         //Finds the Snack if it is present in the snack list, if snack isnt present, you will be sent back to the menu.
@@ -193,7 +209,7 @@
         else
         {
             //Asks the user for confirmation, If the answer is yes, it will delete it from the list. If the answer is no, you will be sent back to the menu.
-            Console.WriteLine($"Are you sure you want to remove the {your_snack.Name}? (Y/N)");
+            Console.WriteLine($" > Are you sure you want to remove the {your_snack.Name}? (Y/N)");
             string snack_confirmation = Console.ReadLine()!.ToUpper();
             if (snack_confirmation == "Y")
             {
@@ -226,7 +242,7 @@
         Console.WriteLine();
 
         //Asks the user want snack they want to change
-        Console.WriteLine("What Snack do you want to change?");
+        Console.WriteLine(" > What Snack do you want to change?");
         string snack_name = Console.ReadLine()!;
 
         //Finds the Snack if it is present in the snack list, if snack isnt present, you will be sent back to the menu.
@@ -243,11 +259,11 @@
                 //Asks the user which value they want to change of the snack.
                 Console.WriteLine(your_snack);
                 Console.WriteLine("What value do you want to change? \n You have the options to choose the following values.");
-                Console.WriteLine("Enter 1 to change the name");
-                Console.WriteLine("Enter 2 to change the price");
-                Console.WriteLine("Enter 3 to change the type of food");
-                Console.WriteLine("Enter 4 to change the allergies");
-                Console.WriteLine("Enter 5 to go back to the menu");
+                Console.WriteLine(" > Enter 1 to change the name");
+                Console.WriteLine(" > Enter 2 to change the price");
+                Console.WriteLine(" > Enter 3 to change the type of food");
+                Console.WriteLine(" > Enter 4 to change the allergies");
+                Console.WriteLine(" > Enter 5 to go back to the menu");
                 string change_snack_choice = Console.ReadLine()!;
                 if (change_snack_choice == "1")
                 {

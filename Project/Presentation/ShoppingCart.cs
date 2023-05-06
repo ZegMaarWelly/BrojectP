@@ -1,4 +1,6 @@
-﻿static class ShoppingCart
+﻿using ConsoleTables;
+
+static class ShoppingCart
 {
     
     static private SnacksLogic snacksLogic = new SnacksLogic();
@@ -25,7 +27,7 @@
         }
         else if (choice == "3")
         {
-            Console.WriteLine("Örder confirmed");
+            Console.WriteLine("Order confirmed");
         }
         else
         {
@@ -46,6 +48,7 @@
         Console.WriteLine("--------------------------------------------");
         Console.WriteLine($"                  Total: $ {MenuSnack.shoppingcartLogic.Get_Total_Price()}");
         Console.WriteLine();
+        
     }
 
     static public void Delete_Snack()

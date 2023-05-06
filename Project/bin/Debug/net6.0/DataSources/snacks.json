@@ -34,5 +34,11 @@
     "price": 3,
     "type_of_food": "Snack",
     "allergies": "none"
+  },
+  {
+    "name": "Chips",
+    "price": 2.99,
+    "type_of_food": "Snack",
+    "allergies": "none"
   }
 ]
