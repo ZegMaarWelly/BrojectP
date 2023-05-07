@@ -1,28 +1,35 @@
 
+using System.Runtime.CompilerServices;
+
 class ScreenRoomLogic
 {
-
-    public static void screening_room_small()
+    static private RoomLogic roomLogic = new RoomLogic();
+    public static void screening_room()
     {
 
-        List<string> screening_room = new List<string>
-            {"N |     O O O O O O O O    ",
-             "M |   O O O O O O O O O O  ",
-             "L |   O O O O O O O O O O  ",
-             "K | O O O O O O O O O O O O",
-             "J | O O O O O O O O O O O O",
-             "I | O O O O O O O O O O O O",
-             "H | O O O O O O O O O O O O",
-             "G | O O O O O O O O O O O O",
-             "F | O O O O O O O O O O O O",
-             "E | O O O O O O O O O O O O",
-             "D | O O O O O O O O O O O O",
-             "C |   O O O O O O O O O O  ",
-             "B |     O O O O O O O O    ",
-             "A |     O O O O O O O O    ",
-             "  x————————————————————————",
-             "    1 2 3 4 5 6 7 8 9 1 1 1",
-             "                      0 1 2"};
+        //List<string> screening_room = new List<string>
+        //    {"N |     O O O O O O O O    ",
+        //     "M |   O O O O O O O O O O  ",
+        //     "L |   O O O O O O O O O O  ",
+        //     "K | O O O O O O O O O O O O",
+        //     "J | O O O O O O O O O O O O",
+        //     "I | O O O O O O O O O O O O",
+        //     "H | O O O O O O O O O O O O",
+        //     "G | O O O O O O O O O O O O",
+        //     "F | O O O O O O O O O O O O",
+        //     "E | O O O O O O O O O O O O",
+        //     "D | O O O O O O O O O O O O",
+        //     "C |   O O O O O O O O O O  ",
+        //     "B |     O O O O O O O O    ",
+        //     "A |     O O O O O O O O    ",
+        //     "  x————————————————————————",
+        //     "    1 2 3 4 5 6 7 8 9 1 1 1",
+        //     "                      0 1 2"};
+
+        Console.WriteLine("What room ID do you want to use.");
+        int ID = Convert.ToInt32(Console.ReadLine());
+        RoomModel room = roomLogic.Find_Room(ID);
+        List<string> screening_room = room.Map;
 
         while (true)
         {
@@ -118,6 +125,7 @@ class ScreenRoomLogic
                         Thread.Sleep(5000);
                         Console.Clear();
                         count++;
+                        roomLogic.Update_list(screening_room, room);
                     }
                     else if (conf == "N")
                     {
@@ -135,6 +143,7 @@ class ScreenRoomLogic
                     Console.Clear();
                 }
             }
+            
         }
     }
 

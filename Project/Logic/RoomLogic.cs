@@ -31,6 +31,13 @@
         return null;
     }
 
+    public void Update_list(List<string> scr_room,RoomModel room)
+    {
+        room.Map = scr_room;
+        int roomindex = _rooms.IndexOf(room);
+        _rooms[roomindex] = room;
+        RoomAccess.WriteAll(_rooms);
+    }
 
 
 }
