@@ -124,8 +124,6 @@ static class AdminManageMovie
             Console.WriteLine($"There are no movies running on {your_date}\n");
             Start();
         }
-
-        
     }
 
 
