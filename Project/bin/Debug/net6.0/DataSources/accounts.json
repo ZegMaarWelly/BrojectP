@@ -40,5 +40,12 @@
     "password": "grtf",
     "fullName": "ggrtgrtr e",
     "V.I.P.": false
+  },
+  {
+    "id": 6,
+    "emailAddress": "a@a.com",
+    "password": "balletjes12#",
+    "fullName": "Bert Alletjes",
+    "V.I.P.": false
   }
 ]

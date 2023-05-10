@@ -6,9 +6,23 @@ static class NewAccount
     {       
         bool passwordSecure = false;
         int id = AccountModel.GetNextId();
-        
-        Console.WriteLine("Enter your Email address: ");
-        string? emailAddress = Console.ReadLine();
+        bool ValidEmail = false;
+        string emailAddress;
+        do
+        {
+            Console.WriteLine("Enter your Email address: ");
+            emailAddress = Console.ReadLine();
+            if (accountsLogic.EmailVerification(emailAddress))
+            {
+                ValidEmail = true;
+            }
+            else
+            {
+                Console.WriteLine("Please enter a valid email address.");
+            }
+
+        } while (!ValidEmail);
+
         string password;
         do
         {

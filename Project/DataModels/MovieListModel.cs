@@ -18,7 +18,7 @@ class MovieListModel
         public int Age { get; set; }
 
         [JsonPropertyName("labels")]
-        public string Labels { get; set; }
+        public string Labels { get; set; }         
 
         public MovieListModel(int id, string name, string genre, int length, int age, string labels)
         {
