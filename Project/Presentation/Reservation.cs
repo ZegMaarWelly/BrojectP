@@ -113,6 +113,9 @@
         //Adds the reservation to the users reservations list.
         reservationLogic.Add_To_List(reservation);
 
+        Console.Clear();
+        Menu.Start();
+
     }
 
     // Asks the user for confirmation. You are also able to see the total price here.
