@@ -2,8 +2,8 @@
 
 static class MenuSnack
 {
-    static private SnacksLogic snacksLogic = new SnacksLogic();
-    static public  ShoppingCartLogic shoppingcartLogic = new ShoppingCartLogic();
+    static private SnacksLogic snacksLogic = Factory.snacksLogic;
+    static public  ShoppingCartLogic shoppingcartLogic = Factory.shoppingcartLogic;
     static public void Start()
     {
         Console.ForegroundColor= ConsoleColor.DarkGreen;

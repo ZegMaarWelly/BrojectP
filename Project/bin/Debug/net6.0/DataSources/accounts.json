@@ -47,5 +47,12 @@
     "password": ".!Bhidciifigtiu",
     "fullName": "lars lars",
     "V.I.P.": false
+  },
+  {
+    "id": 7,
+    "emailAddress": "A",
+    "password": "A",
+    "fullName": "Admin",
+    "V.I.P.": true
   }
 ]

@@ -1,7 +1,7 @@
 
 static class NewAccount
 {
-    static private AccountsLogic accountsLogic = new AccountsLogic();
+    static private AccountsLogic accountsLogic = Factory.accountsLogic;
     public static void Start()
     {       
         bool passwordSecure = false;

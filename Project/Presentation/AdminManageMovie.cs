@@ -3,10 +3,11 @@
 static class AdminManageMovie
 {
 
-    static private RoomLogic roomLogic = new RoomLogic();
-    static private MovieListLogic movieLogic = new MovieListLogic();
-    static private RunningMovieLogic runningmovieLogic = new RunningMovieLogic("empty_file");
-        
+    static private RoomLogic roomLogic = Factory.roomLogic;
+    static private MovieListLogic movieLogic = Factory.movieLogic;
+    static private RunningMovieLogic runningmovieLogic = Factory.runningmovieLogic;
+    static private AccountsLogic accountsLogic = Factory.accountsLogic;
+
     static public void Start()
     {
         Console.ForegroundColor = ConsoleColor.DarkGreen;
@@ -22,6 +23,7 @@ static class AdminManageMovie
         Console.WriteLine(" > [7] to see all the movies on a date");
         Console.WriteLine(" > [8] to go back \n");
         Console.WriteLine("");
+        User.CurrentUser();
         //DateTime date = new DateTime(2012, 5, 5);
         //Console.WriteLine(date.ToString("yyyy-MM-dd"));
         //DateTime time = new DateTime(1, 1, 1, 13, 15, 0);
