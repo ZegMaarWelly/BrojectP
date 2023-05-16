@@ -90,7 +90,8 @@ class AccountsLogic
         _accounts.Add(newAccount);
         AccountsAccess.WriteAll(_accounts);
     }
-
+    
+    // Checks if password meets security requirements
     public bool CheckPasswordSecurity(string password)
     {
         bool passwordLen = false;
@@ -128,11 +129,21 @@ class AccountsLogic
         return totalCheck;
     }
 
+    // verifies if password contains symbols
     public bool PasswordSymbolChecker(string password)
     {
         string pattern = @"[\p{P}\p{S}]";
         bool hasSymbols = Regex.IsMatch(password, pattern);
         return hasSymbols;
+    }
+
+    // verifies if email contains an @ symbol or has a valid suffix
+    public bool EmailVerification(string email)
+    {
+        bool containsAtSymbol = email.Contains("@");
+        bool containsDotNet = email.Contains(".com") || email.Contains(".net") || email.Contains(".nl");
+        bool validEmail = containsAtSymbol && containsDotNet;
+        return validEmail;
     }
 }
 

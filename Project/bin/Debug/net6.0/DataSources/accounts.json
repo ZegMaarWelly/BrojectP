@@ -43,23 +43,9 @@
   },
   {
     "id": 6,
-    "emailAddress": "Giiodhh@.com",
-    "password": ".!Bhidciifigtiu",
-    "fullName": "lars lars",
-    "V.I.P.": false
-  },
-  {
-    "id": 7,
-    "emailAddress": "A",
-    "password": "A",
-    "fullName": "Admin",
-    "V.I.P.": true
-  },
-  {
-    "id": 8,
-    "emailAddress": "Piet@waterfles.com",
-    "password": "MarioLuigiLuuk123.",
-    "fullName": "Luuk",
+    "emailAddress": "a@a.com",
+    "password": "balletjes12#",
+    "fullName": "Bert Alletjes",
     "V.I.P.": false
   }
 ]
