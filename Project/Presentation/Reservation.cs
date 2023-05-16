@@ -114,7 +114,7 @@
         reservationLogic.Add_To_List(reservation);
 
         Console.Clear();
-        Menu.Start();
+        Menu.Menu_When_Logged_In();
 
     }
 
@@ -135,7 +135,7 @@
             Console.WriteLine("Sending you back to menu");
             Thread.Sleep(2000);
             Console.Clear();
-            Menu.Start();
+            Menu.Menu_When_Logged_In();
         }
         else
         {
