@@ -99,8 +99,7 @@ static class Menu
             
             
             Console.Clear();
-            Console.WriteLine("n/a");
-            Thread.Sleep(1000);
+            //Thread.Sleep(1000);
             AdminMenu.Start();
             Menu_When_Logged_In();
         }

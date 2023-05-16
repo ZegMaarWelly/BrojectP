@@ -71,6 +71,7 @@
             //if the answer is yes, you will be send to the shoppingcart file.
             if (input == "Y")
             {
+                Console.Clear();
                 ShoppingCart.Start();
 
                 var snack_price = shoppingcartLogic.Get_Total_Price();
@@ -102,7 +103,6 @@
 
         //updates the room map in the json file.
         runningmovieLogic.Change_Running_Movie_From_RoomIDMovieStarDate(runningmovie);
-        Console.WriteLine("lol");
 
         // Creates a ReservationModel.
         ReservationModel reservation = new(runningmovie,accountsLogic.Return_Current_User(),list_of_seats,shoppingcartLogic.Return_Counted_Snack_List());

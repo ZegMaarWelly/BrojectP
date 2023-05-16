@@ -48,7 +48,7 @@ static class AdminMenu
         else if (input == "4")
         {
             Console.Clear() ;
-            Menu.Start();
+            Menu.Menu_When_Logged_In();
         }
         else if (input == "5")
         {
