@@ -142,7 +142,7 @@ class ScreenRoomLogic
                 Console.WriteLine("This chair is not available, please select an empty chair.");
                 Thread.Sleep(300);
                 Console.Clear();
-                screening_room_reservation(screening_room);
+                //screening_room_reservation(screening_room);
             }
 
 
