@@ -28,11 +28,11 @@ static class UserLogin
             AccountModel acc = accountsLogic.CheckLogin(email, password);
             if (email == "Admin" && password == "Admin" || email == "A" && password == "A" )
             {
-                AdminMenu.Start();
-            }
+                    Menu.Menu_When_Logged_In();
+                }
             else if (acc != null)
             {
-                MenuSnack.Start();
+                    Menu.Menu_When_Logged_In();
             }
             else
             {

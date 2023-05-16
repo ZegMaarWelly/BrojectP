@@ -690,19 +690,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\woodf\\.nuget\\packages\\": {}
+    "C:\\Users\\glgvo.LAPTOP-VVR8ENRB\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\woodf\\Desktop\\Project B\\project B\\BrojectP\\Project\\Project.csproj",
+      "projectUniqueName": "C:\\Users\\glgvo.LAPTOP-VVR8ENRB\\OneDrive\\BrojectP\\Project\\Project.csproj",
       "projectName": "Project",
-      "projectPath": "C:\\Users\\woodf\\Desktop\\Project B\\project B\\BrojectP\\Project\\Project.csproj",
-      "packagesPath": "C:\\Users\\woodf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\woodf\\Desktop\\Project B\\project B\\BrojectP\\Project\\obj\\",
+      "projectPath": "C:\\Users\\glgvo.LAPTOP-VVR8ENRB\\OneDrive\\BrojectP\\Project\\Project.csproj",
+      "packagesPath": "C:\\Users\\glgvo.LAPTOP-VVR8ENRB\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\glgvo.LAPTOP-VVR8ENRB\\OneDrive\\BrojectP\\Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\woodf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\glgvo.LAPTOP-VVR8ENRB\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -749,7 +749,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

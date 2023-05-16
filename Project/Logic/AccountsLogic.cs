@@ -48,6 +48,24 @@ class AccountsLogic
         return _accounts.Find(i => i.Id == id);
     }
 
+    public void LogOut()
+    {
+        CurrentAccount = null;
+    }
+
+    public bool CheckAccountAdmin()
+    {
+        if (CurrentAccount.EmailAddress == "Admin" && CurrentAccount.Password == "Admin"
+            || CurrentAccount.EmailAddress == "A" && CurrentAccount.Password == "A")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public AccountModel CheckLogin(string email, string password)
     {
         if (email == null || password == null)

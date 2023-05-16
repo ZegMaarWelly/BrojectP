@@ -49,5 +49,66 @@
       "K-3"
     ],
     "snacks": []
+  },
+  {
+    "running_movie": {
+      "movie": {
+        "id": 0,
+        "name": "Dune",
+        "genre": "Sci-Fi, Adventure",
+        "length": 155,
+        "age": 13,
+        "labels": "Violence \u0026 Gore"
+      },
+      "room": {
+        "id": 2,
+        "map": [
+          "N |     O X X O O O O O    ",
+          "M |   X X O O O O O O O O  ",
+          "L |   O O O O O O O O O O  ",
+          "K | O O X X X O O O O O O O",
+          "J | O O O O O O O O O O O O",
+          "I | O O O O O O O O O O O O",
+          "H | O O O O O O O O O O O O",
+          "G | O O O O O O O O O O O O",
+          "F | O O O O O O O O O O O O",
+          "E | O O O O O O O O O O O O",
+          "D | O O O O O O O O O O O O",
+          "C |   O X X O O O O O O O  ",
+          "B |     O O O O O O O O    ",
+          "A |     O X X X O O O O    ",
+          "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014",
+          "    1 2 3 4 5 6 7 8 9 1 1 1",
+          "                      0 1 2"
+        ],
+        "total_seats": 150,
+        "available_seats": 150
+      },
+      "begin_time": "2023-04-20T11:49:00",
+      "end_time": "2023-04-20T12:59:00",
+      "date": "2023-04-20T00:00:00"
+    },
+    "account": {
+      "id": 7,
+      "emailAddress": "A",
+      "password": "A",
+      "fullName": "Admin",
+      "V.I.P.": true
+    },
+    "seats": [
+      "C-3",
+      "C-4"
+    ],
+    "snacks": [
+      {
+        "Snack": {
+          "name": "Popcorn",
+          "price": 6.5,
+          "type_of_food": "Snack",
+          "allergies": "none"
+        },
+        "Quantity": 1
+      }
+    ]
   }
 ]
