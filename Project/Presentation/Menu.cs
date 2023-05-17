@@ -10,6 +10,12 @@ static class Menu
     static private AccountsLogic accountsLogic = Factory.accountsLogic;
     static public void Start()
     {
+<<<<<<< Updated upstream
+=======
+        Console.WriteLine("Enter 1 to login");
+        Console.WriteLine("Enter 2 to add a new account");
+        Console.WriteLine("Enter 3 for Cinema Info");
+>>>>>>> Stashed changes
         Console.Clear();
         Console.ForegroundColor = ConsoleColor.Magenta;
         Console.WriteLine("  _  _ _      _       ___ _                       ___     _   _              _            \r\n | || (_)__ _| |_    / __(_)_ _  ___ _ __  __ _  | _ \\___| |_| |_ ___ _ _ __| |__ _ _ __  \r\n | __ | / _` | ' \\  | (__| | ' \\/ -_) '  \\/ _` | |   / _ \\  _|  _/ -_) '_/ _` / _` | '  \\ \r\n |_||_|_\\__, |_||_|  \\___|_|_||_\\___|_|_|_\\__,_| |_|_\\___/\\__|\\__\\___|_| \\__,_\\__,_|_|_|_|\r\n        |___/                                                                            ");
@@ -18,10 +24,13 @@ static class Menu
         Console.WriteLine("> Enter 1 to login");
         Console.WriteLine("> Enter 2 to add a new account");
         Console.WriteLine("> Enter 3 for Cinema Info");
+<<<<<<< Updated upstream
         Console.WriteLine("> Enter 4 to go to the movies");
 
         
 
+=======
+>>>>>>> Stashed changes
         string input = Console.ReadLine();
         if (input == "1")
         {

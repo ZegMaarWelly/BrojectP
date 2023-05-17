@@ -10,6 +10,20 @@ static class AdminManageMovie
 
     static public void Start()
     {
+<<<<<<< Updated upstream
+=======
+        Console.WriteLine("Current Location: Admin Manage Movie \n\n");
+        Console.WriteLine("What do you want to do? \n");
+        Console.WriteLine("[1] to add a movie and a room to a date.");
+        Console.WriteLine("[2] to remove a movie and a room to a date ");
+        Console.WriteLine("[3] to change the begin and end time  ");
+        Console.WriteLine("[4] to change the movie  ");
+        Console.WriteLine("[5] to change the room ");
+        Console.WriteLine("[6] to change the date ");
+        Console.WriteLine("[7] to see all the movies on a date");
+        Console.WriteLine("[8] to go back \n");
+        Console.WriteLine("Your option: ");
+>>>>>>> Stashed changes
         Console.ForegroundColor = ConsoleColor.DarkGreen;
         Console.WriteLine("    _      _       _        __  __         _       __  __                             \r\n   /_\\  __| |_ __ (_)_ _   |  \\/  |_____ _(_)___  |  \\/  |__ _ _ _  __ _ __ _ ___ _ _ \r\n  / _ \\/ _` | '  \\| | ' \\  | |\\/| / _ \\ V / / -_) | |\\/| / _` | ' \\/ _` / _` / -_) '_|\r\n /_/ \\_\\__,_|_|_|_|_|_||_| |_|  |_\\___/\\_/|_\\___| |_|  |_\\__,_|_||_\\__,_\\__, \\___|_|  \r\n                                                                        |___/        ");
         Console.ResetColor();
@@ -23,7 +37,10 @@ static class AdminManageMovie
         Console.WriteLine(" > [7] to see all the movies on a date");
         Console.WriteLine(" > [8] to go back \n");
         Console.WriteLine("");
+<<<<<<< Updated upstream
         User.CurrentUser();
+=======
+>>>>>>> Stashed changes
         //DateTime date = new DateTime(2012, 5, 5);
         //Console.WriteLine(date.ToString("yyyy-MM-dd"));
         //DateTime time = new DateTime(1, 1, 1, 13, 15, 0);
@@ -600,6 +617,11 @@ static class AdminManageMovie
     {
 
         // Asks the user for their movie.
+<<<<<<< Updated upstream
+=======
+
+        Console.WriteLine("You are now adding a movie\n\n");
+>>>>>>> Stashed changes
         Console.ForegroundColor = ConsoleColor.DarkGreen;
         Console.WriteLine("    _      _    _   __  __         _     \r\n   /_\\  __| |__| | |  \\/  |_____ _(_)___ \r\n  / _ \\/ _` / _` | | |\\/| / _ \\ V / / -_)\r\n /_/ \\_\\__,_\\__,_| |_|  |_\\___/\\_/|_\\___|\r\n                                         \n\n");
         Console.ResetColor();

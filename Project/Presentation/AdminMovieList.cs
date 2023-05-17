@@ -5,6 +5,24 @@ static class AdminMovieList
     static private MovieListLogic movieLogic = new MovieListLogic();
     static public void Start()
     {
+<<<<<<< Updated upstream
+=======
+        Console.WriteLine("You are currently on the admin movie list menu\n\nWhat would you like to do?\n[1] Add a movie to the list of movies\n[2] Remove a movie from the list\n[3] See the current list of movies (Only the ID's and names)\n[4] Edit a movie's information\n[5] Return to the main menu\n");
+        string input = Console.ReadLine()!;
+        int int_input = Convert.ToInt32(input);
+        switch (int_input)
+        {
+            case 1:
+                Add_Movie();
+                break;
+            case 2:
+                Remove_Movie();
+                break;
+            case 3:
+                Console.Clear();
+                Console.WriteLine("The current list of movies consists of:\n");
+                Get_Movie_Names();
+>>>>>>> Stashed changes
         Console.ForegroundColor = ConsoleColor.DarkGreen;
         Console.WriteLine("    _      _       _        __  __         _       __  __ ___          \r\n   /_\\  __| |_ __ (_)_ _   |  \\/  |_____ _(_)___  |  \\/  | __|_ _ _  _ \r\n  / _ \\/ _` | '  \\| | ' \\  | |\\/| / _ \\ V / / -_) | |\\/| | _|| ' \\ || |\r\n /_/ \\_\\__,_|_|_|_|_|_||_| |_|  |_\\___/\\_/|_\\___| |_|  |_|___|_||_\\_,_|\r\n                                                                      ");
         Console.ResetColor();
@@ -27,6 +45,16 @@ static class AdminMovieList
                 Console.Clear();
                 Start();
                 break;
+<<<<<<< Updated upstream
+=======
+            case 4:
+                Console.Clear();
+                Change_Movie();
+                break;
+            case 5:
+                Console.Clear();
+                Menu.Start();
+>>>>>>> Stashed changes
             case "4":
                 Console.Clear();
                 Change_Movie();
@@ -63,6 +91,16 @@ static class AdminMovieList
         }
     }
 
+<<<<<<< Updated upstream
+=======
+    static public void Get_Movie_Names()
+    {
+        List<MovieListModel> movie_list = movieLogic.Return_Movie_List();
+        foreach(MovieListModel movie in movie_list)
+        {
+            Console.WriteLine($"ID: {movie.Id}| Name: {movie.Name}\n");
+        }
+>>>>>>> Stashed changes
     static public void Get_Movie_Table()
     {
         List<MovieListModel> movie_list = movieLogic.Return_Movie_List();
@@ -150,6 +188,10 @@ static class AdminMovieList
         Console.Clear();
         Console.WriteLine("You are currently on the add a movie page\n\n");
         Console.WriteLine("Current list of movies: ");
+<<<<<<< Updated upstream
+=======
+        Get_Movie_Names();
+>>>>>>> Stashed changes
         Get_Movie_Table();
         Console.WriteLine();
         int movie_id = New_Movie_id();
@@ -179,6 +221,10 @@ static class AdminMovieList
                 Thread.Sleep(10000);
                 Console.Clear();
                 Console.WriteLine("Current list of movies:\n");
+<<<<<<< Updated upstream
+=======
+                Get_Movie_Names();
+>>>>>>> Stashed changes
                 Get_Movie_Table();
                 Console.WriteLine("Press any button to return to the movie list menu");
                 Console.ReadKey();
@@ -192,6 +238,12 @@ static class AdminMovieList
     {
         Console.Clear();
         Console.WriteLine("You are currently on the remove a movie page\n\nCurrent list of movies:\n");
+<<<<<<< Updated upstream
+=======
+        Get_Movie_Names();
+        Console.WriteLine();
+        Console.WriteLine("Which movie would you like to remove? (please provide only the ID)");
+>>>>>>> Stashed changes
         Get_Movie_Table();
         Console.WriteLine();
         while (true) 
@@ -211,6 +263,35 @@ static class AdminMovieList
                 }
                 else
                 {
+<<<<<<< Updated upstream
+=======
+                    Console.WriteLine($"Are you sure you wish to remove the movie {selected_movie.Name}? (Y/N)");
+                    string movie_confirmation = Console.ReadLine()!.ToUpper();
+                    switch (movie_confirmation)
+                    {
+                        case "Y":
+                            movieLogic.Delete_From_List(selected_movie);
+                            Console.Clear();
+                            Console.WriteLine($"{selected_movie.Name} has been succesfully removed from the movie list\nCurrent list of movies:\n");
+                            Get_Movie_Names();
+                            Console.WriteLine("Press any button to return to the movie list menu");
+                            Console.ReadKey();
+                            Console.Clear();
+                            Start();
+                            break;
+
+                        case "N":
+                            Console.WriteLine("\nPress any button to return to the movie list menu");
+                            Console.ReadKey();
+                            Console.Clear();
+                            Start();
+                            break;
+
+                        default:
+                            Console.WriteLine("Invalid input");
+                            break;
+                    }
+>>>>>>> Stashed changes
                     while (true)
                     {
                         Console.WriteLine($"Are you sure you wish to remove the movie {selected_movie.Name}? (Y/N)");
@@ -240,7 +321,10 @@ static class AdminMovieList
                                 break;
                         }
                     }
+<<<<<<< Updated upstream
                     
+=======
+>>>>>>> Stashed changes
                 }
             }
 
@@ -256,6 +340,10 @@ static class AdminMovieList
     static public void Change_Movie()
     {
         Console.WriteLine("You are currently on the edit movie information page\n\nCurrent list of movies: \n");
+<<<<<<< Updated upstream
+=======
+        Get_Movie_List();
+>>>>>>> Stashed changes
         Get_Movie_Table();
         Console.WriteLine();
         Console.WriteLine("Which movie's information would you like to change? (Please provide only the ID)\n");
