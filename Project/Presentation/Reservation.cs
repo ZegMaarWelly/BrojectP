@@ -107,7 +107,7 @@
         // Creates a ReservationModel.
         ReservationModel reservation = new(runningmovie,accountsLogic.Return_Current_User(),list_of_seats,shoppingcartLogic.Return_Counted_Snack_List());
 
-        //Creates a new accountlogic, this will have the name of the users email adress.
+        //Creates a new accountlogic , this will have the name of the users email adress.
         reservationLogic = new(accountsLogic.Return_Current_User().EmailAddress);
 
         //Adds the reservation to the users reservations list.
@@ -143,6 +143,36 @@
             Console.WriteLine("Invalid Answer, try again");
             Ask_Confirmation_And_See_Price(total);
         }
+
+    }
+
+    //As a user, you are able to see the reservations you have made.
+    public static void See_Reservations()
+    {
+        //Creates a new accountlogic, this will have the name of the users email adress.
+        reservationLogic = new(accountsLogic.Return_Current_User().EmailAddress);
+
+        Console.Clear();
+        //The list of all the users reservations
+        List<ReservationModel> reservation_list = reservationLogic.Return_RunningMovie_List();
+
+        //If the user has no reservations, return to menu
+        if(reservation_list.Count == 0)
+        {
+            Console.WriteLine("You do not have any reservations on this account");
+            Thread.Sleep(1000);
+            Console.WriteLine("Going back to menu....");
+            Thread.Sleep(1000);
+            Menu.Menu_When_Logged_In();
+        }
+
+        //Prints the reservations
+        foreach(ReservationModel reservation in reservation_list)
+        {
+            Console.WriteLine(reservation);
+
+        }
+        Console.ReadLine();
 
     }
 

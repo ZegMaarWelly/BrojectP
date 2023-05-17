@@ -19,7 +19,8 @@ static class Menu
         Console.WriteLine("> Enter 2 to add a new account");
         Console.WriteLine("> Enter 3 for Cinema Info");
         Console.WriteLine("> Enter 4 to go to the movies");
-        User.CurrentUser();
+
+        
 
         string input = Console.ReadLine();
         if (input == "1")
@@ -63,6 +64,7 @@ static class Menu
         Console.WriteLine("> Enter 2 for Cinema Info");
         Console.WriteLine("> Enter 3 to go to the movies");
         Console.WriteLine("> Enter 4 to see reservations");
+
         if (accountsLogic.CheckAccountAdmin())
         {
             Console.WriteLine("> Enter 5 to go to admin Menu");
@@ -90,7 +92,7 @@ static class Menu
         else if (input == "4")
         {
             Console.Clear();
-            Console.WriteLine("n/a");
+            Reservation.See_Reservations();
             Thread.Sleep(1000);
             Menu_When_Logged_In();
         }
