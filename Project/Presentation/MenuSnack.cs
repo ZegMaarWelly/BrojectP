@@ -2,8 +2,8 @@
 
 static class MenuSnack
 {
-    static private SnacksLogic snacksLogic = new SnacksLogic();
-    static public  ShoppingCartLogic shoppingcartLogic = new ShoppingCartLogic();
+    static private SnacksLogic snacksLogic = Factory.snacksLogic;
+    static public  ShoppingCartLogic shoppingcartLogic = Factory.shoppingcartLogic;
     static public void Start()
     {
         Console.ForegroundColor= ConsoleColor.DarkGreen;
@@ -14,6 +14,7 @@ static class MenuSnack
         Console.WriteLine("> Enter 2 to order drinks");
         Console.WriteLine("> Enter 3 to see your shopping cart");
         Console.WriteLine("> Enter 4 screening room test small.");
+        User.CurrentUser();
 
         string input = Console.ReadLine()!;
         Console.Clear();
@@ -104,4 +105,5 @@ static class MenuSnack
         ConsoleTable.From<SnackModel>(snack_list).Write(Format.Alternative);
 
     }
+
 }

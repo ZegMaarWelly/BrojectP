@@ -1,0 +1,44 @@
+[
+  {
+    "movie": {
+      "id": 14,
+      "name": "Akira",
+      "genre": "Sci-Fi, Thriller",
+      "length": 124,
+      "age": 16,
+      "labels": "Harsh language, Violence, Fear"
+    },
+    "room": {
+      "id": 5,
+      "map": [
+        "S |   O O O O O O O O O O O O O O O O   ",
+        "R |   O O O O O O O O O O O O O O O O   ",
+        "Q |   O O O O O O O O O O O O O O O O   ",
+        "P |   O O O O O O O O O O O O O O O O   ",
+        "O |   O O O O O O O O O O O O O O O O   ",
+        "N |   O O O O O O O O O O O O O O O O   ",
+        "M | O O O O O O O O O O O O O O O O O O ",
+        "L | O O O O O O O O O O O O O O O O O O ",
+        "K | O O O O O O O O O O O O O O O O O O ",
+        "J | O O O O O O O O O O O O O O O O O O ",
+        "I | O O O O O O O O O O O O O O O O O O ",
+        "H |   O O O O O O O O O O O O O O O O   ",
+        "G |   O O O O O O O O O O O O O O O O   ",
+        "F |   O O O O O O O O O O O O O O O O   ",
+        "E |     O O O O O O O O O O O O O O     ",
+        "D |     O O O O O O O O O O O O O O     ",
+        "C |     O O O O O O O O O O O O O O     ",
+        "B |       O O O O O O O O O O O O       ",
+        "A |       O O O O O O O O O O O O       ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 ",
+        "                      0 1 2 3 4 5 6 7 8 "
+      ],
+      "total_seats": 300,
+      "available_seats": 300
+    },
+    "begin_time": "2023-05-12T12:15:00",
+    "end_time": "2023-05-12T16:21:00",
+    "date": "2023-05-12T00:00:00"
+  }
+]

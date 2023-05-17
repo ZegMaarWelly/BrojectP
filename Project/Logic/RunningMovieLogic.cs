@@ -61,6 +61,8 @@
         RunningMovieAccess.WriteAll(_runningmovies, File_Name);
 
     }
+   
+
 
     public void Change_Date(DateTime date, RunningMovieModel runningmovie)
     {
@@ -97,6 +99,40 @@
         RunningMovieAccess.WriteAll(_runningmovies, File_Name);
 
     }
+
+    
+    //Changes the old running movie to the new running movie.
+    public void Change_Running_Movie(RunningMovieModel old_movie, RunningMovieModel new_movie)
+    {
+        int runningmovieindex = _runningmovies.IndexOf(old_movie);
+        _runningmovies[runningmovieindex] = new_movie;
+        RunningMovieAccess.WriteAll(_runningmovies, File_Name);
+    }
+
+    public void Change_Running_Movie_From_RoomIDMovieStarDate(RunningMovieModel new_runningmovie)
+    {
+        RunningMovieModel movie_to_be_changed = null;
+        bool change_success = false;
+        foreach(RunningMovieModel runningmovie in _runningmovies)
+        {
+            if(runningmovie.Begin_Time == new_runningmovie.Begin_Time && runningmovie.Movie.Name == new_runningmovie.Movie.Name
+                && runningmovie.Room.ID == new_runningmovie.Room.ID)
+            {
+                movie_to_be_changed = runningmovie;
+                change_success = true;
+            }
+        }
+
+        if(change_success)
+        {
+            int runningmovieindex = _runningmovies.IndexOf(movie_to_be_changed!);
+            _runningmovies[runningmovieindex] = new_runningmovie;
+            RunningMovieAccess.WriteAll(_runningmovies, File_Name);
+        }
+    }
+
+
+
 
 
 
