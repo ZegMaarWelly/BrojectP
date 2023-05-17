@@ -19,6 +19,11 @@ class AccountsLogic
         return _accounts;
     }
 
+    public AccountModel Return_Current_User()
+    {
+        return CurrentAccount!;
+    }
+
     public void UpdateList(AccountModel acc)
     {
         //Find if there is already an model with the same id
@@ -41,6 +46,24 @@ class AccountsLogic
     public AccountModel GetById(int id)
     {
         return _accounts.Find(i => i.Id == id);
+    }
+
+    public void LogOut()
+    {
+        CurrentAccount = null;
+    }
+
+    public bool CheckAccountAdmin()
+    {
+        if (CurrentAccount.EmailAddress == "Admin" && CurrentAccount.Password == "Admin"
+            || CurrentAccount.EmailAddress == "A" && CurrentAccount.Password == "A")
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 
     public AccountModel CheckLogin(string email, string password)

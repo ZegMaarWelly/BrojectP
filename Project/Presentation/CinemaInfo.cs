@@ -33,6 +33,6 @@
         Console.WriteLine("Press enter to go back to the menu screen.");
         Console.ReadLine();
         Console.Clear();
-        Menu.Start();
+        //Menu.Start();
     }
 }
