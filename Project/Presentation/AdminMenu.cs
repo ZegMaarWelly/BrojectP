@@ -48,7 +48,7 @@ static class AdminMenu
         else if (input == "4")
         {
             Console.Clear() ;
-            Menu.Start();
+            Menu.Menu_When_Logged_In();
         }
         else if (input == "5")
         {
@@ -68,6 +68,11 @@ static class AdminMenu
         {
             Environment.Exit(0);
         }
+        else if (input == "9")
+        {
+            Console.Clear();
+            Reservation.Make_Reservation(AdminManageMovie.Get_Running_Movie_To_Be_Changed("2023-04-20"));
+        }
         else
         {
             Console.WriteLine("Invalid input");
@@ -75,4 +80,5 @@ static class AdminMenu
         }
 
     }
+
 }

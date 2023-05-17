@@ -40,5 +40,33 @@
     "password": "grtf",
     "fullName": "ggrtgrtr e",
     "V.I.P.": false
+  },
+  {
+    "id": 6,
+    "emailAddress": "a@a.com",
+    "password": "balletjes12#",
+    "fullName": "Bert Alletjes",
+    "V.I.P.": false
+  },
+  {
+    "id": 7,
+    "emailAddress": "A",
+    "password": "A",
+    "fullName": "Admin",
+    "V.I.P.": false
+  },
+  {
+    "id": 8,
+    "emailAddress": "Admin",
+    "password": "Admin",
+    "fullName": "Admin",
+    "V.I.P.": false
+  },
+  {
+    "id": 9,
+    "emailAddress": "balzak@bal.com",
+    "password": "Maaaasamasaasiyosidimataai123.",
+    "fullName": "lol lol",
+    "V.I.P.": false
   }
 ]

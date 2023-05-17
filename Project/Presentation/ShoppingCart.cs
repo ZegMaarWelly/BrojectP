@@ -2,9 +2,9 @@
 
 static class ShoppingCart
 {
-    
-    static private SnacksLogic snacksLogic = new SnacksLogic();
-    static private ShoppingCartLogic shoppingcartLogic = MenuSnack.shoppingcartLogic;
+
+    static private SnacksLogic snacksLogic = Factory.snacksLogic;
+    static private ShoppingCartLogic shoppingcartLogic = Factory.shoppingcartLogic;
     static private List<CountedSnackModel> inventory = shoppingcartLogic.Return_Counted_Snack_List();
 
     
