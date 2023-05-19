@@ -57,7 +57,7 @@ static class AdminMenu
         }
         else if (input == "6")
         {
-            ScreenRoomLogic.AddRoom();
+            AdminRoom.Start();
         }
         else if (input == "7")
         {
