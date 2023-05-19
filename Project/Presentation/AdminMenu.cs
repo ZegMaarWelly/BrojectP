@@ -13,8 +13,7 @@ static class AdminMenu
         Console.WriteLine("    _      _       _        __  __              \r\n   /_\\  __| |_ __ (_)_ _   |  \\/  |___ _ _ _  _ \r\n  / _ \\/ _` | '  \\| | ' \\  | |\\/| / -_) ' \\ || |\r\n /_/ \\_\\__,_|_|_|_|_|_||_| |_|  |_\\___|_||_\\_,_|\r\n                                               ");
         Console.ResetColor();
         Console.WriteLine("What do you want to do?.");
-<<<<<<< Updated upstream
-=======
+
         Console.WriteLine("Enter 1 to add/remove/change snacks.");
         Console.WriteLine("Enter 2 to add items to shopping cart TEST.");
         Console.WriteLine("Enter 3 to see a list of all registered users.");
@@ -23,7 +22,7 @@ static class AdminMenu
         Console.WriteLine("Enter 6 to do the screening room TEST.");
         Console.WriteLine("Enter 7 to Admin Manage Movie.");
         Console.WriteLine("Enter 8 to Quit the Program.");
->>>>>>> Stashed changes
+
         Console.WriteLine(" > Enter 1 to add/remove/change snacks.");
         Console.WriteLine(" > Enter 2 to add items to shopping cart TEST.");
         Console.WriteLine(" > Enter 3 to see a list of all registered users.");

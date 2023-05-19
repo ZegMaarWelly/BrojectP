@@ -1,21 +1,15 @@
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 static class NewAccount
 {
     static private AccountsLogic accountsLogic = Factory.accountsLogic;
     public static void Start()
-<<<<<<< Updated upstream
-=======
+
     {
         int id = AccountModel.GetNextId();
         Console.WriteLine("Enter your Email address: ");
         string? emailAddress = Console.ReadLine();
         Console.WriteLine("Enter your Password: ");
         string? password = Console.ReadLine();
-=======
->>>>>>> Stashed changes
+
     {       
         bool passwordSecure = false;
         int id = AccountModel.GetNextId();
