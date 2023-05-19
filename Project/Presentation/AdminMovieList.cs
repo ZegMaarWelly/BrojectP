@@ -58,6 +58,11 @@ static class AdminMovieList
                 break;
         }
     }
+    public static void Update_Movie_ID()
+    {
+        MovieListLogic movieListLogic = new MovieListLogic();
+        movieListLogic.Update_Movie_ID();
+    }
     static public void View_Running_Movies()
     {
         runningmovieLogic = new RunningMovieLogic("");
@@ -90,20 +95,10 @@ static class AdminMovieList
         }
     }
 
-    static public void Get_Movie_List()
-    {
-        List<MovieListModel> movie_list = movieLogic.Return_Movie_List();
-        foreach (MovieListModel movie in movie_list)
-        {
-            Console.WriteLine($"{movie}\n");
-        }
-    }
-
     static public void Get_Movie_Table()
     {
         List<MovieListModel> movie_list = movieLogic.Return_Movie_List();
-        ConsoleTable.From<MovieListModel>(movie_list).Write();
-
+        ConsoleTable.From<MovieListModel>(movie_list).Write(Format.Alternative);
     }
 
     static public int New_Movie_id()
@@ -254,6 +249,7 @@ static class AdminMovieList
                                 movieLogic.Delete_From_List(selected_movie);
                                 Console.Clear();
                                 Console.WriteLine($"{selected_movie.Name} has been succesfully removed from the movie list\nCurrent list of movies:\n");
+                                Update_Movie_ID();
                                 Get_Movie_Table();
                                 Console.WriteLine("Press any button to return to the movie list menu");
                                 Console.ReadKey();
