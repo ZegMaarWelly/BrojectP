@@ -12,10 +12,10 @@ static class RoomAccess
     }
 
 
-    public static void WriteAll(List<RoomModel> snacks)
+    public static void WriteAll(List<RoomModel> rooms)
     {
         var options = new JsonSerializerOptions { WriteIndented = true };
-        string json = JsonSerializer.Serialize(snacks, options);
+        string json = JsonSerializer.Serialize(rooms, options);
         File.WriteAllText(path, json);
     }
 

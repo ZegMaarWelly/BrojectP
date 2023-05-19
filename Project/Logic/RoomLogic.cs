@@ -39,5 +39,11 @@
         RoomAccess.WriteAll(_rooms);
     }
 
+    public int Avalaibleseats(RoomModel room)
+    {
+        int seats = room.Available_Seats;
+        return seats;
+    }
+
 
 }
