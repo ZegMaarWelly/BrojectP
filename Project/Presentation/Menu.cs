@@ -41,7 +41,7 @@ static class Menu
         else if (input == "4")
         {
             Console.Clear();
-            Console.WriteLine("n/a");
+            Movies.Start();
             Thread.Sleep(1000);
             Start();
         }
@@ -85,7 +85,7 @@ static class Menu
         else if (input == "3")
         {
             Console.Clear();
-            Console.WriteLine("n/a");
+            Movies.Start();
             Thread.Sleep(1000);
             Menu_When_Logged_In();
         }
