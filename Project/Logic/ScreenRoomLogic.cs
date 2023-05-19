@@ -322,6 +322,7 @@ class ScreenRoomLogic
             { 
                 Console.WriteLine("How many rows would you like to have in the room. (max 20)");
                 rows = Convert.ToInt32(Console.ReadLine());
+                
             }
             if (chairs <= 0 || chairs > 30)
             {
@@ -334,7 +335,10 @@ class ScreenRoomLogic
             }
         Console.WriteLine("Your measurements for the room are not available.");
         }
+        
         int available_Seats = rows * chairs;
+        rows += 1;
+        chairs += 1;
         //initialized the room
         char[][] roomLayout = new char[rows][];
 
@@ -358,7 +362,7 @@ class ScreenRoomLogic
 
         // Convert the room layout to string representation
         List<string> roomList = new List<string>();
-        for (int i = roomLayout.Length - 1; i >= 0; i--)
+        for (int i = 0; i < roomLayout.Length; i++)
         {
             string rowLabel = roomLayout[i][0].ToString();
             string rowContent = string.Join(" ", roomLayout[i].Skip(1));
@@ -424,7 +428,9 @@ class ScreenRoomLogic
         char[][] newLayout = new char[roomLayout.Length + 1][];
         Array.Copy(roomLayout, newLayout, roomLayout.Length);
         newLayout[newLayout.Length - 1] = row;
+
         return newLayout;
+        
     }
 
 
