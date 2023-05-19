@@ -12,7 +12,7 @@ static class Movies
     {
         Console.WriteLine("> Enter 1 to see the movies running today.");
         Console.WriteLine("> Enter 2 to see all the available movies.");
-
+        Console.WriteLine("> Enter 3 to go back to menu");
         var movie_input = Console.ReadLine()!;
 
         if(movie_input == "1")
@@ -23,6 +23,11 @@ static class Movies
         }
         else if(movie_input == "2")
         {
+
+        }
+        else if (movie_input == "2")
+        {
+            Console.Clear();
 
         }
         else
@@ -46,8 +51,32 @@ static class Movies
         {
             List<RunningMovieModel> running_movie_list = See_Movies_On_A_Date(date);
             Console.WriteLine("");
-            Console.WriteLine("Type the number of the movie you want to pick");
-            var movie_input = Convert.ToInt32(Console.ReadLine()!) - 1;
+
+            // Asks the user for the number of their movie.
+            int movie_input = -1;
+            bool movie_success = false;
+            while (!movie_success)
+            {
+                Console.WriteLine("Type the number of the movie you want to pick");
+                try
+                {
+                    movie_input = Convert.ToInt32(Console.ReadLine()!) - 1;
+                    if (movie_input + 1 > running_movie_list.Count() || movie_input<= 0)
+                    {
+                        Console.WriteLine("Invalid number; ");
+                        continue;
+                    }
+                    movie_success = true;
+                    
+
+                }
+                //Catches any type of exception.
+                catch
+                {
+                    Console.WriteLine("Invalid number; please enter a correct number");
+                }
+
+            }
 
             RunningMovieModel running_movie_to_be_watched = running_movie_list[movie_input];
             Reservation.Make_Reservation(running_movie_to_be_watched);
