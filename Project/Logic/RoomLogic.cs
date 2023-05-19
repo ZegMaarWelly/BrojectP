@@ -66,7 +66,7 @@
 
         for (int j = 0; j < column; j++)
         {
-            room.Add($"{alphabet_for_the_list[j]}  |{row_string}");
+            room.Add($"{alphabet_for_the_list[j]} |{row_string}");
         }
 
         string line = "   x";
