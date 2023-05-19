@@ -42,13 +42,6 @@ static class AdminMovieList
                 Console.Clear();
                 Start();
                 break;
-            case 4:
-                Console.Clear();
-                Change_Movie();
-                break;
-            case 5:
-                Console.Clear();
-                Menu.Start();
             case "4":
                 Console.Clear();
                 Change_Movie();
