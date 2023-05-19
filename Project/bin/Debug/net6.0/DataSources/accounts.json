@@ -1,0 +1,72 @@
+[
+  {
+    "id": 0,
+    "emailAddress": "Admin@gmail.com",
+    "password": "Admin",
+    "fullName": "Admin",
+    "V.I.P.": true
+  },
+  {
+    "id": 1,
+    "emailAddress": "n@b.c",
+    "password": "xyz",
+    "fullName": "Nikola Tesla",
+    "V.I.P.": false
+  },
+  {
+    "id": 2,
+    "emailAddress": "t@b.c",
+    "password": "xyz",
+    "fullName": "Thomas Edison",
+    "V.I.P.": false
+  },
+  {
+    "id": 3,
+    "emailAddress": "m@b.c",
+    "password": "2004",
+    "fullName": "De Goat Marcel",
+    "V.I.P.": true
+  },
+  {
+    "id": 4,
+    "emailAddress": "bgfnjn@",
+    "password": "awf",
+    "fullName": "lol lol",
+    "V.I.P.": false
+  },
+  {
+    "id": 5,
+    "emailAddress": "fhrt",
+    "password": "grtf",
+    "fullName": "ggrtgrtr e",
+    "V.I.P.": false
+  },
+  {
+    "id": 6,
+    "emailAddress": "a@a.com",
+    "password": "balletjes12#",
+    "fullName": "Bert Alletjes",
+    "V.I.P.": false
+  },
+  {
+    "id": 7,
+    "emailAddress": "A",
+    "password": "A",
+    "fullName": "Admin",
+    "V.I.P.": false
+  },
+  {
+    "id": 8,
+    "emailAddress": "Admin",
+    "password": "Admin",
+    "fullName": "Admin",
+    "V.I.P.": false
+  },
+  {
+    "id": 9,
+    "emailAddress": "balzak@bal.com",
+    "password": "Maaaasamasaasiyosidimataai123.",
+    "fullName": "lol lol",
+    "V.I.P.": false
+  }
+]
