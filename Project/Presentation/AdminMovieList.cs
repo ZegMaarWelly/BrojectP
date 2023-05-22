@@ -68,7 +68,6 @@ static class AdminMovieList
         runningmovieLogic = new RunningMovieLogic("");
         List<RunningMovieModel> runningmovie_list = runningmovieLogic.Return_RunningMovie_List();
         ConsoleTable.From<RunningMovieModel>(runningmovie_list).Write();
-
     }
 
     static public void Sort_By_Genre()
