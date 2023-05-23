@@ -10,10 +10,10 @@ static class MenuSnack
         Console.WriteLine("\r\n  ___              _     __  __              \r\n / __|_ _  __ _ __| |__ |  \\/  |___ _ _ _  _ \r\n \\__ \\ ' \\/ _` / _| / / | |\\/| / -_) ' \\ || |\r\n |___/_||_\\__,_\\__|_\\_\\ |_|  |_\\___|_||_\\_,_|\r\n                                             \r\n");
         Console.ResetColor();
         Console.WriteLine("What do you want to order?");
-        Console.WriteLine("> Enter 1 to order food");
-        Console.WriteLine("> Enter 2 to order drinks");
-        Console.WriteLine("> Enter 3 to see your shopping cart");
-        Console.WriteLine("> Enter 4 screening room test small.");
+        Console.WriteLine("> Enter [1] to order food");
+        Console.WriteLine("> Enter [2] to order drinks");
+        Console.WriteLine("> Enter [3] to see your shopping cart");
+        Console.WriteLine("> Enter [4] screening room test small.");
         User.CurrentUser();
 
         string input = Console.ReadLine()!;

@@ -11,11 +11,11 @@ static class AdminMenuSnack
         Console.WriteLine("    _      _       _        ___              _     __  __              \r\n   /_\\  __| |_ __ (_)_ _   / __|_ _  __ _ __| |__ |  \\/  |___ _ _ _  _ \r\n  / _ \\/ _` | '  \\| | ' \\  \\__ \\ ' \\/ _` / _| / / | |\\/| / -_) ' \\ || |\r\n /_/ \\_\\__,_|_|_|_|_|_||_| |___/_||_\\__,_\\__|_\\_\\ |_|  |_\\___|_||_\\_,_|\r\n                                                                      ");
         Console.ResetColor();
         Console.WriteLine("What do you want to do?");
-        Console.WriteLine(" > Enter 1 to add a snack to the snack list");
-        Console.WriteLine(" > Enter 2 to remove a snack from the snack list");
-        Console.WriteLine(" > Enter 3 to change a value of snacks from the snack list");
-        Console.WriteLine(" > Enter 4 see current snack list");
-        Console.WriteLine(" > Enter 5 to go back to");
+        Console.WriteLine(" > Enter [1] to add a snack to the snack list");
+        Console.WriteLine(" > Enter [2] to remove a snack from the snack list");
+        Console.WriteLine(" > Enter [3] to change a value of snacks from the snack list");
+        Console.WriteLine(" > Enter [4] see current snack list");
+        Console.WriteLine(" > Enter [5] to go back to");
 
         string input = Console.ReadLine()!;
         if (input == "1")
@@ -259,11 +259,11 @@ static class AdminMenuSnack
                 //Asks the user which value they want to change of the snack.
                 Console.WriteLine(your_snack);
                 Console.WriteLine("What value do you want to change? \n You have the options to choose the following values.");
-                Console.WriteLine(" > Enter 1 to change the name");
-                Console.WriteLine(" > Enter 2 to change the price");
-                Console.WriteLine(" > Enter 3 to change the type of food");
-                Console.WriteLine(" > Enter 4 to change the allergies");
-                Console.WriteLine(" > Enter 5 to go back to the menu");
+                Console.WriteLine(" > Enter [1] to change the name");
+                Console.WriteLine(" > Enter [2] to change the price");
+                Console.WriteLine(" > Enter [3] to change the type of food");
+                Console.WriteLine(" > Enter [4] to change the allergies");
+                Console.WriteLine(" > Enter [5] to go back to the menu");
                 string change_snack_choice = Console.ReadLine()!;
                 if (change_snack_choice == "1")
                 {

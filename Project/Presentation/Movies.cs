@@ -10,9 +10,9 @@ static class Movies
     
     static public void Start()
     {
-        Console.WriteLine("> Enter 1 to see the movies running today.");
-        Console.WriteLine("> Enter 2 to see all the available movies.");
-        Console.WriteLine("> Enter 3 to go back to menu");
+        Console.WriteLine("> Enter [1] to see the movies running today.");
+        Console.WriteLine("> Enter [2] to see all the available movies.");
+        Console.WriteLine("> Enter [3] to go back to menu");
         var movie_input = Console.ReadLine()!;
 
         if(movie_input == "1")
