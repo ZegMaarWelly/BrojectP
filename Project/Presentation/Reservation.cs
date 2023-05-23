@@ -59,10 +59,10 @@
         Console.WriteLine($"You have succesfully ordered seats {joinedSeats}\n\n");
         Console.WriteLine($"0");
 
-        double Total_Price = 0;
+        double total_Price = 0;
 
         
-        Ask_Confirmation_And_See_Price(Total_Price);
+        Ask_Confirmation_And_See_Price(total_Price);
 
 
         //Asks the users if they want to order some snacks.
@@ -77,9 +77,9 @@
                 ShoppingCart.Start();
 
                 var snack_price = shoppingcartLogic.Get_Total_Price();
-                Total_Price += snack_price;
+                total_Price += snack_price;
 
-                Ask_Confirmation_And_See_Price(Total_Price);
+                Ask_Confirmation_And_See_Price(total_Price);
 
                 break;
 
@@ -102,7 +102,7 @@
 
 
 
-
+        
         runningmovieLogic = new(runningmovie.Date.ToString("yyyy-MM-dd"));
         
         //updates the room map in the json file.
