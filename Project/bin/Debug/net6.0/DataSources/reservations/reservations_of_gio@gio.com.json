@@ -172,5 +172,71 @@
       "K-15"
     ],
     "snacks": []
+  },
+  {
+    "running_movie": {
+      "movie": {
+        "id": 12,
+        "name": "John Wick 4",
+        "genre": "Action, Thriller",
+        "length": 169,
+        "age": 15,
+        "labels": "Harsh language, Violence"
+      },
+      "room": {
+        "id": 3,
+        "map": [
+          "S |   O O O O O O O O O O O O O O O O   ",
+          "R |   O O O O O O O O O O O O O O O O   ",
+          "Q |   O O O O O O O O O O O O O O O O   ",
+          "P |   O O O O O O O O O O O O O O O O   ",
+          "O |   O O O O O O O O O O O O O O O O   ",
+          "N |   O O O O O O O O O O O O O O O O   ",
+          "M | X X O O O O O O O O O O O O O O O O ",
+          "L | O O O O O O O O O O O O O O O O O O ",
+          "K | O O O O O O O O O O O O O O O O O O ",
+          "J | O O O O O O O O O O O O O O O O O O ",
+          "I | O O O O O O O O O O O O O O O O O O ",
+          "H |   O O O O O O O O O O O O O O O O   ",
+          "G |   O O O O O O O O O O O O O O O O   ",
+          "F |   O O O O O O O O O O O O O O O O   ",
+          "E |     O O O O O O O O O O O O O O     ",
+          "D |     O O O O O O O O O O O O O O     ",
+          "C |     O O O O O O O O O O O O O O     ",
+          "B |       O O O O O O O O O O O O       ",
+          "A |       O O O O O O O O O O O O       ",
+          "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------",
+          "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 ",
+          "                      0 1 2 3 4 5 6 7 8 "
+        ],
+        "total_seats": 300,
+        "available_seats": 298
+      },
+      "begin_time": "2023-05-25T06:22:00",
+      "end_time": "2023-05-25T09:11:00",
+      "date": "2023-05-25T00:00:00"
+    },
+    "account": {
+      "id": 10,
+      "emailAddress": "gio@gio.com",
+      "password": "Appelsap123.",
+      "fullName": "Giovanni Vonk",
+      "V.I.P.": false
+    },
+    "seats": [
+      "M-2",
+      "M-1"
+    ],
+    "snacks": [
+      {
+        "Snack": {
+          "name": "Brownie",
+          "price": 3.5,
+          "type_of_food": "Snack",
+          "allergies": "none"
+        },
+        "Quantity": 1
+      }
+    ]
   }
 ]

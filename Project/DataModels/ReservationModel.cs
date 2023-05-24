@@ -29,7 +29,7 @@ class ReservationModel
     public int Calculate(string my_string)
     {
         int totalLength = 40;
-        int remainingSpace = totalLength - my_string.Length - 2; // Subtracting 2 for the border characters "| "
+        int remainingSpace = totalLength - my_string.Length - 2; 
         int padding = remainingSpace / 2;
         return padding;
     }
@@ -59,7 +59,7 @@ class ReservationModel
         }
 
 
-
+        string proper_date = $"{Running_Movie.Begin_Time.ToString("HH:mm")} - {Running_Movie.End_Time.ToString("HH:mm")}";
 
         return
 
@@ -72,12 +72,15 @@ class ReservationModel
             $"|                                         |\n" +
             $"| {Running_Movie.Movie.Name.PadLeft(Calculate(Running_Movie.Movie.Name) + Running_Movie.Movie.Name.Length).PadRight(totalLength - 1)} |\n" +
             $"|                                         |\n" +
+            $"| {proper_date.PadLeft(Calculate(proper_date) + proper_date.Length).PadRight(totalLength - 1)} |\n" +
+            $"| {Running_Movie.Date.ToString("yyyy-MM-dd").PadLeft(Calculate(Running_Movie.Date.ToString("yyyy-MM-dd")) + Running_Movie.Date.ToString("yyyy-MM-dd").Length).PadRight(totalLength - 1)} |\n" +
+            $"|                                         |\n" +
             $"| {("Room: " + Running_Movie.Room.ID).PadLeft(Calculate(("Room: " + Running_Movie.Room.ID)) + ("Room: " + Running_Movie.Room.ID).Length).PadRight(totalLength - 1)} |\n" +
             $"| {string.Join(", ", Seats).PadLeft(Calculate(string.Join(", ", Seats)) + string.Join(", ", Seats).Length).PadRight(totalLength - 1)} |\n" +
             $"|                                         |\n" +
             $"{snackstring}" +
             $"|-----------------------------------------|\n " +
-            $"\n\n\n\n\n\n";
+            $"\n\n";
     }
 
 }

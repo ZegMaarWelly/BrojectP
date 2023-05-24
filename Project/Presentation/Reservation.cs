@@ -7,6 +7,9 @@
     static private ReservationLogic reservationLogic = Factory.reservationLogic;
 
 
+    
+    
+    
     // You make your reservation here, after selecting a movie.
     public static void Make_Reservation(RunningMovieModel runningmovie)
     {
@@ -122,6 +125,19 @@
 
     }
 
+
+   
+    
+    
+    //Deletes a reservation
+    public static void Delete_Reservation(ReservationModel reservation)
+    {
+        Console.Clear();
+        ScreenRoomLogic.screening_room_reservation(reservation.Running_Movie.Room.Map);
+
+
+    }
+
     // Asks the user for confirmation. You are also able to see the total price here.
     public static void Ask_Confirmation_And_See_Price(double total)
     {
@@ -160,8 +176,18 @@
         //The list of all the users reservations
         List<ReservationModel> reservation_list = reservationLogic.Return_RunningMovie_List();
 
+        
+        //Turns the list into an array
+        ReservationModel[] reservation_array = reservation_list.ToArray();
+
+        //Creates an array where the begin time is before the currrent date.
+        ReservationModel[] valid_reservations = reservation_array.Where(x => x.Running_Movie.Begin_Time >= DateTime.Now).ToArray();
+
+        //Ceates an array where the begin time is after the current date.
+        ReservationModel[] expired_reservations = reservation_array.Where(x => x.Running_Movie.Begin_Time < DateTime.Now).ToArray();
+
         //If the user has no reservations, return to menu
-        if(reservation_list.Count == 0)
+        if (reservation_list.Count == 0)
         {
             Console.WriteLine("You do not have any reservations on this account");
             Thread.Sleep(1000);
@@ -170,14 +196,100 @@
             Menu.Menu_When_Logged_In();
         }
 
-        //Prints the reservations
-        foreach(ReservationModel reservation in reservation_list)
+        
+
+        //Prints the expired reservations
+        Console.WriteLine("Expired reservations:      ");
+        foreach (ReservationModel reservation in expired_reservations)
         {
             Console.WriteLine(reservation);
 
         }
-        Console.ReadLine();
+        Console.WriteLine("\n\n\n");
 
+        //Prints the valid reservations
+        Console.WriteLine("Valid reservations: ");
+        foreach (ReservationModel reservation in valid_reservations)
+        {
+            Console.WriteLine(reservation);
+
+        }
+
+
+        bool confirmation = false;
+        while(!confirmation)
+        {
+            Console.WriteLine("To go back press ENTER\nTo cancel reservation, press C");
+            var reservation_input= Console.ReadLine()!;
+            if(reservation_input == "")
+            {
+                Menu.Menu_When_Logged_In();
+            }
+            else if (reservation_input == "C")
+            {
+                Cancel_Reservation(valid_reservations.ToList());
+                break;
+            }
+            else
+            {
+                Console.WriteLine("Invalid Input, This is not one of the options.");
+            }
+        }
+        
+        
+        
+    }
+
+    public static void Cancel_Reservation(List<ReservationModel> reservation_list)
+    {
+        Console.Clear();
+        //Turns the list into an array
+        //Prints the reservations
+        int count = 1;
+        foreach (ReservationModel reservation in reservation_list)
+        {
+            Console.WriteLine($"________------------[{count}]------------________");
+            Console.WriteLine(reservation);
+            count++;
+
+        }
+        int reservation_id = -1;
+        bool reservation_success = false;
+        while (!reservation_success)
+        {
+            Console.WriteLine("Your Number: ");
+            try
+            {
+                reservation_id = Convert.ToInt32(Console.ReadLine())-1;
+                if (reservation_id >= reservation_list.Count || reservation_id < 0)
+                {
+                    Console.WriteLine("This number is not a valid option");
+                }
+                else
+                {
+                    reservation_success = true;
+                }
+
+            }
+            //Catches any type of exception.
+            catch
+            {
+                Console.WriteLine("Invalid number; please enter a correct number");
+            }
+        }
+
+
+        Console.Clear();
+        Console.WriteLine("Confirm Deletion?");
+        ReservationModel reservation_to_be_changed = reservation_list[reservation_id];
+        List<string> map = reservation_to_be_changed.Running_Movie.Room.Map;
+
+        foreach(var seat in reservation_to_be_changed.Seats)
+        {
+            ScreenRoomLogic.Remove_Reserved_Seat(seat, map);
+        }
+        
+        
     }
 
 }
