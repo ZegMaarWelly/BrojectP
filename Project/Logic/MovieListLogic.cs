@@ -10,6 +10,7 @@ class MovieListLogic
 
 	public List<MovieListModel> Return_Movie_List()
 	{
+		_movies = MovieListAccess.LoadAll();
 		return _movies;
 	}
 	public List<MovieListModel> Return_By_Genre(string genre)
