@@ -33,6 +33,7 @@ public class MovieListModel
         // This is how the string for the movie will be displayed E.G. Name: (name of movie), Genre etc...
         public override string ToString()
         {
-            return $"ID: {Id}, Name: {Name}, Genre(s): {Genre}, Length: {Length} minutes, Age: {Age} and above, Parental labels: {Labels}";
-        }
+         return $"ID: {Id}, Name: {Name}, Genre(s): {Genre}, Length: {Length} minutes, Age: {Age} and above, Parental labels: {Labels}";
+        //return $"ID: {Id}, Name: {Name}, Genre(s): {Genre}, Length: {Length} minutes";
+    }
     }

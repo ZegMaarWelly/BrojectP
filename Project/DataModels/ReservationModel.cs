@@ -67,10 +67,12 @@ class ReservationModel
             $"|                                         |\n" +
             $"| {"High Cinema Rotterdam".PadLeft(Calculate("High Cinema Rotterdam") + "High Cinema Rotterdam".Length).PadRight(totalLength - 1)} |\n" +
             $"| {"Rotterdam Wijnhaven 107".PadLeft(Calculate("Rotterdam Wijnhaven 107") + "Rotterdam Wijnhaven 107".Length).PadRight(totalLength - 1)} |\n" +
+            $"|-----------------------------------------|\n" +
             $"|                                         |\n" +
             $"|                                         |\n" +
             $"| {Running_Movie.Movie.Name.PadLeft(Calculate(Running_Movie.Movie.Name) + Running_Movie.Movie.Name.Length).PadRight(totalLength - 1)} |\n" +
             $"|                                         |\n" +
+            $"| {("Room: " + Running_Movie.Room.ID).PadLeft(Calculate(("Room: " + Running_Movie.Room.ID)) + ("Room: " + Running_Movie.Room.ID).Length).PadRight(totalLength - 1)} |\n" +
             $"| {string.Join(", ", Seats).PadLeft(Calculate(string.Join(", ", Seats)) + string.Join(", ", Seats).Length).PadRight(totalLength - 1)} |\n" +
             $"|                                         |\n" +
             $"{snackstring}" +

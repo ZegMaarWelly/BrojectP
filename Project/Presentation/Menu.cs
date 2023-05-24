@@ -11,14 +11,14 @@ static class Menu
     static public void Start()
     {
         Console.Clear();
-        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
         Console.WriteLine("  _  _ _      _       ___ _                       ___     _   _              _            \r\n | || (_)__ _| |_    / __(_)_ _  ___ _ __  __ _  | _ \\___| |_| |_ ___ _ _ __| |__ _ _ __  \r\n | __ | / _` | ' \\  | (__| | ' \\/ -_) '  \\/ _` | |   / _ \\  _|  _/ -_) '_/ _` / _` | '  \\ \r\n |_||_|_\\__, |_||_|  \\___|_|_||_\\___|_|_|_\\__,_| |_|_\\___/\\__|\\__\\___|_| \\__,_\\__,_|_|_|_|\r\n        |___/                                                                            ");
         Console.ResetColor();
         Console.WriteLine();
-        Console.WriteLine("> Enter 1 to login");
-        Console.WriteLine("> Enter 2 to add a new account");
-        Console.WriteLine("> Enter 3 for Cinema Info");
-        Console.WriteLine("> Enter 4 to go to the movies");
+        Console.WriteLine("> Enter [1] to login");
+        Console.WriteLine("> Enter [2] to add a new account");
+        Console.WriteLine("> Enter [3] for Cinema Info");
+        Console.WriteLine("> Enter [4] to go to the movies");
 
         
 
@@ -41,7 +41,7 @@ static class Menu
         else if (input == "4")
         {
             Console.Clear();
-            Console.WriteLine("n/a");
+            Movies.Start();
             Thread.Sleep(1000);
             Start();
         }
@@ -56,18 +56,18 @@ static class Menu
     static public void Menu_When_Logged_In()
     {
         Console.Clear();
-        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
         Console.WriteLine("  _  _ _      _       ___ _                       ___     _   _              _            \r\n | || (_)__ _| |_    / __(_)_ _  ___ _ __  __ _  | _ \\___| |_| |_ ___ _ _ __| |__ _ _ __  \r\n | __ | / _` | ' \\  | (__| | ' \\/ -_) '  \\/ _` | |   / _ \\  _|  _/ -_) '_/ _` / _` | '  \\ \r\n |_||_|_\\__, |_||_|  \\___|_|_||_\\___|_|_|_\\__,_| |_|_\\___/\\__|\\__\\___|_| \\__,_\\__,_|_|_|_|\r\n        |___/                                                                            ");
         Console.ResetColor();
         Console.WriteLine();
-        Console.WriteLine("> Enter 1 to log out ");
-        Console.WriteLine("> Enter 2 for Cinema Info");
-        Console.WriteLine("> Enter 3 to go to the movies");
-        Console.WriteLine("> Enter 4 to see reservations");
+        Console.WriteLine("> Enter [1] to log out ");
+        Console.WriteLine("> Enter [2] for Cinema Info");
+        Console.WriteLine("> Enter [3] to go to the movies");
+        Console.WriteLine("> Enter [4] to see reservations");
 
         if (accountsLogic.CheckAccountAdmin())
         {
-            Console.WriteLine("> Enter 5 to go to admin Menu");
+            Console.WriteLine("> Enter [5] to go to admin Menu");
         }
         User.CurrentUser();
 
@@ -85,7 +85,7 @@ static class Menu
         else if (input == "3")
         {
             Console.Clear();
-            Console.WriteLine("n/a");
+            Movies.Start();
             Thread.Sleep(1000);
             Menu_When_Logged_In();
         }

@@ -46,6 +46,8 @@
             // returns the selected seat.
             (List<string> new_map, string seat) = ScreenRoomLogic.screening_room_reservation(runningmovie.Room.Map);
 
+            runningmovie.Room.Available_Seats -= 1;
+
 
             list_of_seats.Add(seat);
         }
@@ -99,8 +101,10 @@
         }
 
 
-        
 
+
+        runningmovieLogic = new(runningmovie.Date.ToString("yyyy-MM-dd"));
+        
         //updates the room map in the json file.
         runningmovieLogic.Change_Running_Movie_From_RoomIDMovieStarDate(runningmovie);
 

@@ -1,0 +1,119 @@
+[
+  {
+    "running_movie": {
+      "movie": {
+        "id": 35,
+        "name": "Up",
+        "genre": "Animation",
+        "length": 96,
+        "age": 0,
+        "labels": "None"
+      },
+      "room": {
+        "id": 3,
+        "map": [
+          "S |   O O O O O O O O O O O O O O O O   ",
+          "R |   O O O O O O O O O O O O O O O O   ",
+          "Q |   O O O O O O O O O O O O O O O O   ",
+          "P |   O O O O O O O O O O O O O O O O   ",
+          "O |   O O O O O O O O O O O O O O O O   ",
+          "N |   O O O O O O O O O O O O O O O O   ",
+          "M | O O O O O O O O O O O O O O O O O O ",
+          "L | O O O O O O O O O O O O O O O O O O ",
+          "K | O O O O O O O O O O O O O O O O O O ",
+          "J | O O O O O O O O O O O O O O O O O O ",
+          "I | O O O O O O O O O O O O O O O O O O ",
+          "H |   O O O O O O O O O O O O O O O O   ",
+          "G |   O O O O O O O O O O O O O O O O   ",
+          "F |   O O O O O O O O O O O O O O O O   ",
+          "E |     O O O O O O O O O O O O O O     ",
+          "D |     O O O O O O O O O O O O O O     ",
+          "C |     O O O O O O O O O O O O O O     ",
+          "B |       O O O O O O O O O O O O       ",
+          "A |       X O O O O O O O O O O O       ",
+          "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------",
+          "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 ",
+          "                      0 1 2 3 4 5 6 7 8 "
+        ],
+        "total_seats": 300,
+        "available_seats": 299
+      },
+      "begin_time": "2023-05-19T15:16:00",
+      "end_time": "2023-05-19T17:15:00",
+      "date": "2023-05-19T00:00:00"
+    },
+    "account": {
+      "id": 10,
+      "emailAddress": "gio@gio.com",
+      "password": "Appelsap123.",
+      "fullName": "Giovanni Vonk",
+      "V.I.P.": false
+    },
+    "seats": [
+      "A-4"
+    ],
+    "snacks": []
+  },
+  {
+    "running_movie": {
+      "movie": {
+        "id": 42,
+        "name": "Logan",
+        "genre": "Action",
+        "length": 137,
+        "age": 0,
+        "labels": "Violence \u0026 Language"
+      },
+      "room": {
+        "id": 14,
+        "map": [
+          "O | O O O O O O O O O O O O O O O",
+          "N | O O O O O O O O O O O O O O O",
+          "M | O O O O O O O O O O O O O O O",
+          "L | O O O O O O O O O O O O O O O",
+          "K | O O O O O O O O O O O O O O O",
+          "J | O O O O O O O O O O O O O O O",
+          "I | O O O O O O O O O O O O O O O",
+          "H | O O O O O O O O O O O O O O O",
+          "G | O O O O O O O O O O O O O O O",
+          "F | O O O O O O O O O O O O O O O",
+          "E | O O O O O O O O O O O O O O O",
+          "D | O O O O O O O O O O O O O O O",
+          "C | O O O O O O O O O O O O O O O",
+          "B | O O O O O O O O O O O O O O O",
+          "A | X X O O O O O O O O O O O O O",
+          "   x------------------------------",
+          "                      1 1 1 1 1 1",
+          "    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5"
+        ],
+        "total_seats": 225,
+        "available_seats": 223
+      },
+      "begin_time": "2023-05-19T12:12:00",
+      "end_time": "2023-05-19T14:14:00",
+      "date": "2023-05-19T00:00:00"
+    },
+    "account": {
+      "id": 10,
+      "emailAddress": "gio@gio.com",
+      "password": "Appelsap123.",
+      "fullName": "Giovanni Vonk",
+      "V.I.P.": false
+    },
+    "seats": [
+      "A-1",
+      "A-2"
+    ],
+    "snacks": [
+      {
+        "Snack": {
+          "name": "Pizza Slices",
+          "price": 6,
+          "type_of_food": "Snack",
+          "allergies": "none"
+        },
+        "Quantity": 1
+      }
+    ]
+  }
+]

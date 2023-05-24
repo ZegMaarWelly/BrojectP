@@ -9,7 +9,9 @@
         }
         else
         {
+            Console.ForegroundColor= ConsoleColor.DarkGreen;
             Console.WriteLine($"\n\nYou are logged in as {current_user.FullName}\n\n ");
+            Console.ResetColor();
         }
     }
 }

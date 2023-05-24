@@ -1,44 +1,215 @@
 [
-  {
-    "name": "Meatballs",
-    "price": 5,
-    "type_of_food": "Drink",
-    "allergies": "PP"
-  },
-  {
-    "name": "Popcorn",
-    "price": 6.5,
-    "type_of_food": "Snack",
-    "allergies": "none"
-  },
-  {
-    "name": "Water",
-    "price": 6,
-    "type_of_food": "Drink",
-    "allergies": "none"
-  },
-  {
-    "name": "Edible Water",
-    "price": 3,
-    "type_of_food": "Snack",
-    "allergies": "none"
-  },
-  {
-    "name": "Koekje",
-    "price": 6.29,
-    "type_of_food": "Snack",
-    "allergies": "none"
-  },
-  {
-    "name": "Oreo",
-    "price": 3,
-    "type_of_food": "Snack",
-    "allergies": "none"
-  },
-  {
-    "name": "Chips",
-    "price": 2.99,
-    "type_of_food": "Snack",
-    "allergies": "none"
-  }
+{
+"name": "Meatballs",
+"price": 5,
+"type_of_food": "Drink",
+"allergies": "PP"
+},
+{
+"name": "Popcorn",
+"price": 6.5,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+{
+"name": "Water",
+"price": 6,
+"type_of_food": "Drink",
+"allergies": "none"
+},
+{
+"name": "Edible Water",
+"price": 3,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+{
+"name": "Koekje",
+"price": 6.29,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+{
+"name": "Oreo",
+"price": 3,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+{
+"name": "Chips",
+"price": 2.99,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+{
+"name": "Nachos",
+"price": 4.5,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+{
+"name": "Hot Dog",
+"price": 7,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+{
+"name": "Pretzel",
+"price": 4,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+{
+"name": "Candy Bar",
+"price": 3.5,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+{
+"name": "Ice Cream",
+"price": 5.5,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+{
+"name": "Cotton Candy",
+"price": 4,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+{
+"name": "Fruit Cup",
+"price": 3.5,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+{
+"name": "Muffin",
+"price": 4,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+{
+"name": "Cheese Sticks",
+"price": 5.5,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+{
+"name": "Soda",
+"price": 3.5,
+"type_of_food": "Drink",
+"allergies": "none"
+},
+{
+"name": "Slushie",
+"price": 4,
+"type_of_food": "Drink",
+"allergies": "none"
+},
+{
+"name": "Chicken Wings",
+"price": 8.5,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+
+{
+"name": "Pizza Slices",
+"price": 6,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+
+{
+"name": "Soft Pretzel Bites",
+"price": 4.5,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+
+{
+"name": "Brownie",
+"price": 3.5,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+
+{
+"name": "Caramel Popcorn",
+"price": 5.5,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+
+{
+"name": "Cheeseburger",
+"price": 9,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+
+{
+"name": "Chicken Tenders",
+"price": 7.5,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+
+{
+"name": "Fries",
+"price": 4,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+
+{
+"name": "Fruit Salad",
+"price": 5,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+
+{
+"name": "Nacho Cheese Dip",
+"price": 3.5,
+"type_of_food": "Snack",
+"allergies": "none"
+},
+
+{
+"name": "Milkshake",
+"price": 5.5,
+"type_of_food": "Drink",
+"allergies": "none"
+},
+
+{
+"name": "Smoothie",
+"price": 6,
+"type_of_food": "Drink",
+"allergies": "none"
+},
+
+{
+"name": "Iced Coffee",
+"price": 4.5,
+"type_of_food": "Drink",
+"allergies": "none"
+},
+
+{
+"name": "Caramel Latte",
+"price": 5,
+"type_of_food": "Drink",
+"allergies": "none"
+},
+
+{
+"name": "Pretzel Dogs",
+"price": 6.5,
+"type_of_food": "Snack",
+"allergies": "none"
+}
+
 ]
