@@ -26,6 +26,7 @@ class ReservationModel
     }
 
 
+    //Calculates the center of the string (used for the ToString() method).
     public int Calculate(string my_string)
     {
         int totalLength = 40;
@@ -33,24 +34,11 @@ class ReservationModel
         int padding = remainingSpace / 2;
         return padding;
     }
+
+
     public override string ToString()
     {
-
-
-
-        //string[] names = { "John Doe", "Jane Smith", "Michael DHDGRDDFGFDGFAFGGRDDGGDDSFDFCVB D GJohnson" };
-        //int totalLength = 40;
-
-        //foreach (string name in names)
-        //{
-        //    int remainingSpace = totalLength - name.Length - 2; // Subtracting 2 for the border characters "| "
-        //    int padding = remainingSpace / 2;
-
-        //    string formattedString = $"| {name.PadLeft(padding + name.Length).PadRight(totalLength - 1)} |";
-        //    Console.WriteLine(formattedString);
-        //}
         int totalLength = 40;
-        int padding = 0;
 
         string snackstring =  $"|      |---------------------------|      |\n";
         foreach(var snack in Snacks)

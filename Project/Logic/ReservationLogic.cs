@@ -20,6 +20,11 @@
         _reservations.Add(reservation);
         ReservationAccess.WriteAll(_reservations, File_Name);
     }
+    public void Delete_From_List(ReservationModel reservation)
+    {
+        _reservations.Remove(reservation);
+        ReservationAccess.WriteAll(_reservations, File_Name);
+    }
 
 
 

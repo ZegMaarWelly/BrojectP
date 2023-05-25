@@ -198,7 +198,8 @@
 
         
 
-        //Prints the expired reservations
+        //Prints the expired reservations.
+
         Console.WriteLine("Expired reservations:      ");
         foreach (ReservationModel reservation in expired_reservations)
         {
@@ -207,7 +208,7 @@
         }
         Console.WriteLine("\n\n\n");
 
-        //Prints the valid reservations
+        //Prints the valid reservations.
         Console.WriteLine("Valid reservations: ");
         foreach (ReservationModel reservation in valid_reservations)
         {
@@ -227,17 +228,36 @@
             }
             else if (reservation_input == "C")
             {
-                Cancel_Reservation(valid_reservations.ToList());
-                break;
+                if(valid_reservations.Length >0)
+                {
+                    Cancel_Reservation(valid_reservations.ToList());
+                    confirmation = true;
+                }
+                else
+                {
+                    Console.Clear();
+                    Console.WriteLine("It appears that you don't have any valid reservations");
+                    Thread.Sleep(1000);
+                    Console.WriteLine("Going back to menu....");
+                    Thread.Sleep(1000);
+                    Menu.Menu_When_Logged_In();
+                }
             }
             else
             {
                 Console.WriteLine("Invalid Input, This is not one of the options.");
             }
+
         }
-        
-        
-        
+
+        Console.Clear();
+        Console.WriteLine("You have successfully cancelled your reservation");
+        Thread.Sleep(1000);
+        Console.WriteLine("Going back to menu....");
+        Thread.Sleep(1000);
+        Menu.Menu_When_Logged_In();
+
+
     }
 
     public static void Cancel_Reservation(List<ReservationModel> reservation_list)
@@ -280,14 +300,43 @@
 
 
         Console.Clear();
-        Console.WriteLine("Confirm Deletion?");
-        ReservationModel reservation_to_be_changed = reservation_list[reservation_id];
-        List<string> map = reservation_to_be_changed.Running_Movie.Room.Map;
-
-        foreach(var seat in reservation_to_be_changed.Seats)
+        bool confirmation = false;
+        while(!confirmation)
         {
-            ScreenRoomLogic.Remove_Reserved_Seat(seat, map);
+            Console.WriteLine("Confirm Deletion? (Y/N)");
+            var confirmation_choice = Console.ReadLine()!.ToUpper();
+            if(confirmation_choice == "Y")
+            {
+                confirmation = true;
+            }
+            else if(confirmation_choice == "N")
+            {
+                Console.WriteLine("Going back to menu....");
+                Thread.Sleep(1000);
+                Menu.Menu_When_Logged_In();
+            }
+            else
+            {
+                Console.WriteLine("Invalid input, please type 'Y' or 'N'");
+            }
         }
+
+
+        ReservationModel reservation_to_be_changed = reservation_list[reservation_id];
+
+        runningmovieLogic = new(reservation_to_be_changed.Running_Movie.Date.ToString("yyyy-MM-dd"));
+        RunningMovieModel[] running_movie_array = runningmovieLogic.Return_RunningMovie_List().ToArray();
+        RunningMovieModel running_movie_to_be_changed = running_movie_array.Where(x => x.Movie.Id == reservation_to_be_changed.Running_Movie.Movie.Id)
+                                                                      .Where(x=> x.Room.ID == reservation_to_be_changed.Running_Movie.Room.ID)
+                                                                      .Where(x => x.Begin_Time == reservation_to_be_changed.Running_Movie.Begin_Time).ToArray()[0];
+        foreach (var seat in reservation_to_be_changed.Seats)
+        {
+            ScreenRoomLogic.Remove_Reserved_Seat(seat, running_movie_to_be_changed.Room.Map);
+            running_movie_to_be_changed.Room.Available_Seats++;
+        }
+
+        runningmovieLogic.Change_Running_Movie_From_RoomIDMovieStarDate(running_movie_to_be_changed);
+        reservationLogic.Delete_From_List(reservation_to_be_changed);
         
         
     }
