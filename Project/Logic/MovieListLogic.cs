@@ -10,9 +10,9 @@ class MovieListLogic
 
 	public List<MovieListModel> Return_Movie_List()
 	{
+		_movies = MovieListAccess.LoadAll();
 		return _movies;
 	}
-
 	public List<MovieListModel> Return_By_Genre(string genre)
 	{
 		List<MovieListModel> movies = new List<MovieListModel>();
@@ -105,5 +105,15 @@ class MovieListLogic
         int movieindex = _movies.IndexOf(movie);
         _movies[movieindex] = movie;
         MovieListAccess.WriteAll(_movies);
+    }
+
+	public void Update_Movie_ID()
+	{
+        List<MovieListModel> movies = MovieListAccess.LoadAll();
+		for (int i = 0; i < movies.Count; i++)
+		{
+			movies[i].Id = i + 1;
+		}
+		MovieListAccess.WriteAll(movies);
     }
 }

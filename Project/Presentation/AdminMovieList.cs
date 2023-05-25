@@ -3,6 +3,8 @@ using ConsoleTables;
 static class AdminMovieList
 {
     static private MovieListLogic movieLogic = new MovieListLogic();
+    static private RunningMovieLogic runningmovieLogic = new RunningMovieLogic("empty_file");
+
     static public void Start()
     {
         Console.ForegroundColor = ConsoleColor.DarkGreen;
@@ -16,6 +18,9 @@ static class AdminMovieList
                 Add_Movie();
                 break;
             case "2":
+                Console.Clear();
+                Console.WriteLine("You are currently on the remove a movie page\n\nCurrent list of movies:\n");
+                Get_Movie_Table();
                 Remove_Movie();
                 break;
             case "3":
@@ -29,6 +34,9 @@ static class AdminMovieList
                 break;
             case "4":
                 Console.Clear();
+                Console.WriteLine("You are currently on the edit movie information page\n\nCurrent list of movies: \n");
+                Get_Movie_Table();
+                Console.WriteLine();
                 Change_Movie();
                 break;
             case "5":
@@ -39,6 +47,10 @@ static class AdminMovieList
                 Console.Clear();
                 AdminMenu.Start();
                 break;
+            case "7":
+                Console.Clear();
+                View_Running_Movies();
+                break;
             default:
                 Console.Clear();
                 Console.WriteLine("Invalid input\n");
@@ -46,28 +58,46 @@ static class AdminMovieList
                 break;
         }
     }
+    public static void Update_Movie_ID()
+    {
+        MovieListLogic movieListLogic = new MovieListLogic();
+        movieListLogic.Update_Movie_ID();
+    }
+    static public void View_Running_Movies()
+    {
+        runningmovieLogic = new RunningMovieLogic("");
+        List<RunningMovieModel> runningmovie_list = runningmovieLogic.Return_RunningMovie_List();
+        ConsoleTable.From<RunningMovieModel>(runningmovie_list).Write();
+    }
+
     static public void Sort_By_Genre()
     {
-        Console.WriteLine("Type the genre you would like to filter on");
+        Console.WriteLine("Type the genre you would like to filter on\n");
         string given_genre = Console.ReadLine();
         var movie_genres = movieLogic.Return_By_Genre(given_genre);
         ConsoleTable.From<MovieListModel>(movie_genres).Write();
-    }
-
-    static public void Get_Movie_List()
-    {
-        List<MovieListModel> movie_list = movieLogic.Return_Movie_List();
-        foreach (MovieListModel movie in movie_list)
+        Console.WriteLine();
+        Console.WriteLine("Please select your next action\n > [1] Edit a movie's information\n > [2] Remove a movie\n > [3] Return to admin movie list\n");
+        string genre_choice = Console.ReadLine();
+        switch(genre_choice)
         {
-            Console.WriteLine($"{movie}\n");
+            case "1":
+                Change_Movie();
+                break;
+            case "2":
+                Remove_Movie();
+                break;
+            case "3":
+                Console.Clear();
+                Start(); 
+                break;
         }
     }
 
     static public void Get_Movie_Table()
     {
         List<MovieListModel> movie_list = movieLogic.Return_Movie_List();
-        ConsoleTable.From<MovieListModel>(movie_list).Write();
-
+        ConsoleTable.From<MovieListModel>(movie_list).Write(Format.Alternative);
     }
 
     static public int New_Movie_id()
@@ -190,9 +220,6 @@ static class AdminMovieList
 
     static public void Remove_Movie()
     {
-        Console.Clear();
-        Console.WriteLine("You are currently on the remove a movie page\n\nCurrent list of movies:\n");
-        Get_Movie_Table();
         Console.WriteLine();
         while (true) 
         {
@@ -221,6 +248,7 @@ static class AdminMovieList
                                 movieLogic.Delete_From_List(selected_movie);
                                 Console.Clear();
                                 Console.WriteLine($"{selected_movie.Name} has been succesfully removed from the movie list\nCurrent list of movies:\n");
+                                Update_Movie_ID();
                                 Get_Movie_Table();
                                 Console.WriteLine("Press any button to return to the movie list menu");
                                 Console.ReadKey();
@@ -255,9 +283,6 @@ static class AdminMovieList
 
     static public void Change_Movie()
     {
-        Console.WriteLine("You are currently on the edit movie information page\n\nCurrent list of movies: \n");
-        Get_Movie_Table();
-        Console.WriteLine();
         Console.WriteLine("Which movie's information would you like to change? (Please provide only the ID)\n");
         while (true)
         {
