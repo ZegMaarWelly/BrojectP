@@ -1,0 +1,297 @@
+[
+  {
+    "movie": {
+      "id": 35,
+      "name": "Up",
+      "genre": "Animation",
+      "length": 96,
+      "age": 0,
+      "labels": "None"
+    },
+    "room": {
+      "id": 9,
+      "map": [
+        "T |         O O O O O O O O O O O O O O O O O O O O O O         ",
+        "S |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "R |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "Q |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "P |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "O |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "N |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "M | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "L | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "K | O O O O O O O O O O O X O O X O O O O O O O O O O O O O O O ",
+        "J | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "I | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "H |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "G |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "F |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "E |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "D |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "C |           O O O O O O O O O O O O O O O O O O O O           ",
+        "B |               O O O O O O O O O O O O O O O O               ",
+        "A |                 O O O O O O O O O O O O O O O               ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------------------------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
+        "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
+      ],
+      "total_seats": 500,
+      "available_seats": 498
+    },
+    "begin_time": "2023-05-23T12:15:00",
+    "end_time": "2023-05-23T13:51:00",
+    "date": "2023-05-23T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 52,
+      "name": "Joker",
+      "genre": "Drama",
+      "length": 122,
+      "age": 0,
+      "labels": "Violence \u0026 Language"
+    },
+    "room": {
+      "id": 12,
+      "map": [
+        "T |         O O O O O O O O O O O O O O O O O O O O O O         ",
+        "S |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "R |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "Q |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "P |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "O |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "N |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "M | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "L | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "K | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "J | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "I | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "H |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "G |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "F |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "E |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "D |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "C |           O O O O O O O O O X O O O O O O O O O O           ",
+        "B |               O O O O O O O X O O O O O O O O               ",
+        "A |                 O O O O O O X O O O O O O O O               ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------------------------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
+        "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
+      ],
+      "total_seats": 500,
+      "available_seats": 497
+    },
+    "begin_time": "2023-05-23T03:58:00",
+    "end_time": "2023-05-23T06:00:00",
+    "date": "2023-05-23T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 11,
+      "name": "The Super Mario Bros. Movie",
+      "genre": "Comedy, Animation",
+      "length": 93,
+      "age": 6,
+      "labels": "Fear, Violence"
+    },
+    "room": {
+      "id": 10,
+      "map": [
+        "T |         O O O O O O O O O O O O O O O O O O O O O O         ",
+        "S |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "R |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "Q |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "P |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "O |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "N |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "M | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "L | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "K | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "J | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "I | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "H |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "G |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "F |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "E |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "D |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "C |           O O O O O O O O O O O O O O O O O O O O           ",
+        "B |               O O O O O O O O O O O O O O O O               ",
+        "A |                 O O O O O O O O O O O O O O O               ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------------------------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
+        "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
+      ],
+      "total_seats": 500,
+      "available_seats": 500
+    },
+    "begin_time": "2023-05-23T01:45:00",
+    "end_time": "2023-05-23T03:18:00",
+    "date": "2023-05-23T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 55,
+      "name": "Knives Out",
+      "genre": "Mystery",
+      "length": 130,
+      "age": 0,
+      "labels": "Violence \u0026 Language"
+    },
+    "room": {
+      "id": 10,
+      "map": [
+        "T |         O O O O O O O O O O O O O O O O O O O O O O         ",
+        "S |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "R |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "Q |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "P |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "O |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "N |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "M | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "L | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "K | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "J | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "I | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "H |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "G |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "F |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "E |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "D |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "C |           O O O O O O O O O O O O O O O O O O O O           ",
+        "B |               O O O O O O O O O O O O O O O O               ",
+        "A |                 O O O O O O O O O O O O O O O               ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------------------------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
+        "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
+      ],
+      "total_seats": 500,
+      "available_seats": 500
+    },
+    "begin_time": "2023-05-23T13:20:00",
+    "end_time": "2023-05-23T15:30:00",
+    "date": "2023-05-23T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 54,
+      "name": "Once Upon a Time in Hollywood",
+      "genre": "Comedy",
+      "length": 161,
+      "age": 0,
+      "labels": "Violence, Language, Nudity \u0026 Drug Use"
+    },
+    "room": {
+      "id": 8,
+      "map": [
+        "T |         O O O O O O O O O O O O O O O O O O O O O O         ",
+        "S |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "R |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "Q |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "P |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "O |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "N |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "M | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "L | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "K | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "J | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "I | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "H |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "G |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "F |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "E |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "D |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "C |           O O O O O O O O O O O O O O O O O O O O           ",
+        "B |               O O O O O O O O O O O O O O O O               ",
+        "A |                 O O O O O O O O O O O O O O O               ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------------------------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
+        "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
+      ],
+      "total_seats": 500,
+      "available_seats": 500
+    },
+    "begin_time": "2023-05-23T10:40:00",
+    "end_time": "2023-05-23T13:21:00",
+    "date": "2023-05-23T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 26,
+      "name": "Pirates of the Caribbean: Dead Man\u0027s Chest",
+      "genre": "Action",
+      "length": 151,
+      "age": 0,
+      "labels": "Violence"
+    },
+    "room": {
+      "id": 11,
+      "map": [
+        "T |         O O O O O O O O O O O O O O O O O O O O O O         ",
+        "S |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "R |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "Q |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "P |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "O |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "N |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "M | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "L | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "K | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "J | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "I | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "H |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "G |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "F |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "E |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "D |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "C |           O O O O O O O O O O O O O O O O O O O O           ",
+        "B |               O O O O O O O O O O O O O O O O               ",
+        "A |                 O O O O O O O O O O O O O O O               ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------------------------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
+        "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
+      ],
+      "total_seats": 500,
+      "available_seats": 500
+    },
+    "begin_time": "2023-05-23T13:56:00",
+    "end_time": "2023-05-23T16:27:00",
+    "date": "2023-05-23T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 2,
+      "name": "Everything Everywhere All at Once",
+      "genre": "Adventure, Sci-Fi, Comedy",
+      "length": 140,
+      "age": 16,
+      "labels": "Harsh language"
+    },
+    "room": {
+      "id": 1,
+      "map": [
+        "N |     O O O O O O O O    ",
+        "M |   O O O O O O O O O O  ",
+        "L |   O O O O O O O O O O  ",
+        "K | O O O X O O O O O O O O",
+        "J | O O O O O O O O O O O O",
+        "I | O O O O O O O O O O O O",
+        "H | O O O O O O O O O O O O",
+        "G | O O O O O O O O O O O O",
+        "F | O O O O O O O O O O O O",
+        "E | O O O O O O O O O O O O",
+        "D | O O X X X O O O O O O O",
+        "C |   O O O O O O O O O O  ",
+        "B |     O O O O O O O O    ",
+        "A |     O O O O O O O O    ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014",
+        "    1 2 3 4 5 6 7 8 9 1 1 1",
+        "                      0 1 2"
+      ],
+      "total_seats": 150,
+      "available_seats": 150
+    },
+    "begin_time": "2023-05-23T05:34:00",
+    "end_time": "2023-05-23T07:54:00",
+    "date": "2023-05-23T00:00:00"
+  }
+]

@@ -1,4 +1,5 @@
 ﻿using ConsoleTables;
+using System.Globalization;
 
 static class Movies
 {
@@ -10,9 +11,9 @@ static class Movies
     
     static public void Start()
     {
-        Console.WriteLine("> Enter [1] to see the movies running today.");
-        Console.WriteLine("> Enter [2] to see all the available movies.");
-        Console.WriteLine("> Enter [3] to go back to menu");
+        Console.WriteLine("> Enter 1 to see the movies running today.");
+        Console.WriteLine("> Enter 2 to see movie on another date.");
+        Console.WriteLine("> Enter 3 to go back to menu");
         var movie_input = Console.ReadLine()!;
 
         if(movie_input == "1")
@@ -23,12 +24,21 @@ static class Movies
         }
         else if(movie_input == "2")
         {
-
+            var next_date = Get_Date();
+            Select_Movie(next_date);
+            Start();
         }
-        else if (movie_input == "2")
+        else if (movie_input == "3")
         {
             Console.Clear();
-
+            if (accountsLogic.Return_Current_User() != null)
+            {
+                Menu.Menu_When_Logged_In();
+            }
+            else
+            {
+                Menu.Start();
+            }
         }
         else
         {
@@ -57,11 +67,37 @@ static class Movies
             bool movie_success = false;
             while (!movie_success)
             {
-                Console.WriteLine("Type the number of the movie you want to pick");
+                
+                Console.WriteLine("Type the number of the movie you want to pick.\nTo leave press B, to change date press C");
+                string input_movie = Console.ReadLine()!.ToUpper();
+
+                //if account is not logged in.
+                if(accountsLogic.Return_Current_User()== null)
+                {
+                    Console.Clear();
+                    Console.WriteLine("You are not logged in yet.");
+                    Thread.Sleep(1000);
+                    Console.WriteLine("Going back to menu....");
+                    Thread.Sleep(1000);
+                    Menu.Start();
+                }
+                // if input is C, you get to change to date.
+                if (input_movie == "C")
+                {
+                    var  next_date = Get_Date();
+                    Select_Movie(next_date);
+                }
+                //if input is B, you get back to the menu.
+                if(input_movie == "B")
+                {
+                    Menu.Menu_When_Logged_In();
+                }
+
                 try
                 {
-                    movie_input = Convert.ToInt32(Console.ReadLine()!) - 1;
-                    if (movie_input + 1 > running_movie_list.Count() || movie_input<= 0)
+                   //Converts it into a number.
+                    movie_input = Convert.ToInt32(input_movie) - 1;
+                    if (movie_input + 1 > running_movie_list.Count() || movie_input + 1<= 0)
                     {
                         Console.WriteLine("Invalid number; ");
                         continue;
@@ -109,5 +145,38 @@ static class Movies
         Console.WriteLine(table);
         return running_movie_list;
 
+    }
+
+    // gets the string of a date.
+    static public DateTime Get_Date()
+    {
+
+        
+        bool movie_success = false;
+        string your_date = "";
+        DateTime date = default;
+        while (!movie_success)
+        {
+            // Asks the user for their date
+            Console.WriteLine("On which date is the movie?\n");
+            Console.WriteLine("Date: [YYYY-MM-DD]");
+            your_date = Console.ReadLine()!;
+            try
+            {
+                //Converts the input into a datetime
+                date = DateTime.ParseExact(your_date, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+
+                movie_success = true;
+
+            }
+            //Catches any type of exception.
+            catch
+            {
+                Console.WriteLine("Invalid number; please enter a correct number");
+            }
+
+        }
+        Console.Clear();
+        return date;
     }
 }

@@ -131,6 +131,32 @@
         }
     }
 
+   
+    //This will add a random movie to the runningmovielist.
+    public void Populate(DateTime date)
+    {
+        Random random = new Random();
+
+        //Gets a random movie
+        List<MovieListModel> movie_list = Factory.movieLogic.Return_Movie_List();
+        int movie_random = random.Next(movie_list.Count);
+        MovieListModel movie = movie_list[movie_random];
+
+        //Gets a random room
+        List<RoomModel> room_list = Factory.roomLogic.Return_Room_List();
+        int room_random = random.Next(room_list.Count);
+        RoomModel room = room_list[room_random];
+
+        //Gets a random begintime and end time
+        int random_number = random.Next(360,1300);
+        DateTime begin_time = date.AddMinutes(random_number);
+        DateTime end_time = begin_time.AddMinutes(movie.Length);
+
+        //Creates a new model and writes it to the list.
+        RunningMovieModel runningMovie = new(movie, room, begin_time, end_time, date);
+        Add_To_List(runningMovie);
+    }
+
 
 
 

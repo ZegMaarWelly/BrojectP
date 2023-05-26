@@ -75,5 +75,12 @@
     "password": "Appelsap123.",
     "fullName": "Giovanni Vonk",
     "V.I.P.": false
+  },
+  {
+    "id": 11,
+    "emailAddress": "lol@lol.com",
+    "password": "Lolllll123.",
+    "fullName": "lol lol",
+    "V.I.P.": false
   }
 ]

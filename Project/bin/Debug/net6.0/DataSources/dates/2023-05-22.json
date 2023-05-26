@@ -1,0 +1,39 @@
+[
+  {
+    "movie": {
+      "id": 45,
+      "name": "Dunkirk",
+      "genre": "War",
+      "length": 107,
+      "age": 0,
+      "labels": "Violence"
+    },
+    "room": {
+      "id": 1,
+      "map": [
+        "N |     O O O O O O O O    ",
+        "M |   O O O O O O O O O O  ",
+        "L |   O O O O O O O O O O  ",
+        "K | O O O X O O O O O O O O",
+        "J | O O O O O O O O O O O O",
+        "I | O O O O O O O O O O O O",
+        "H | O O O O O O O O O O O O",
+        "G | O O O O O O O O O O O O",
+        "F | O O O O O O O O O O O O",
+        "E | O O O O O O O O O O O O",
+        "D | O O X X X O O O O O O O",
+        "C |   O O O O O O O O O O  ",
+        "B |     O O O O O O O O    ",
+        "A |     O O O O O O O O    ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014",
+        "    1 2 3 4 5 6 7 8 9 1 1 1",
+        "                      0 1 2"
+      ],
+      "total_seats": 150,
+      "available_seats": 150
+    },
+    "begin_time": "2023-05-22T12:16:00",
+    "end_time": "2023-05-22T15:14:00",
+    "date": "2023-05-22T00:00:00"
+  }
+]

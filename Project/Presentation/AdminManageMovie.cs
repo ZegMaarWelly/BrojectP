@@ -77,6 +77,11 @@ static class AdminManageMovie
             Console.WriteLine("Going Back to Menu \n ");
             AdminMenu.Start();
         }
+        else if(manage_choice == "populate" || manage_choice == "p")
+        {
+
+            Populate_A_Date();
+        }
         else
         {
             Console.Clear();
@@ -244,10 +249,30 @@ static class AdminManageMovie
     // gets the string of a date.
     static public string Get_String_Date()
     {
-        // Asks the user for their date
-        Console.WriteLine("On which date is the movie?\n");
-        Console.WriteLine("Date: [YYYY-MM-DD]");
-        string your_date = Console.ReadLine()!;
+        
+        
+        bool movie_success = false;
+        string your_date = "";
+        while (!movie_success)
+        {
+            // Asks the user for their date
+            Console.WriteLine("On which date is the movie?\n");
+            Console.WriteLine("Date: [YYYY-MM-DD]");
+            your_date = Console.ReadLine()!;
+            try
+            {
+                DateTime date = DateTime.ParseExact(your_date, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+
+                movie_success = true;
+
+            }
+            //Catches any type of exception.
+            catch
+            {
+                Console.WriteLine("Invalid number; please enter a correct number");
+            }
+
+        }
         Console.Clear();
         return your_date;
     }
@@ -358,7 +383,7 @@ static class AdminManageMovie
 
         // Asks the user for the end time of the movie.
         Console.WriteLine("You are now adding a end time \n\n");
-        DateTime end_time = Get_End_Time(running_movie.Date);
+        DateTime end_time = begin_time.AddMinutes(running_movie.Movie.Length);
         Console.Clear();
 
         //Prints the new movie and asks the user for confirmation.
@@ -636,7 +661,7 @@ static class AdminManageMovie
         DateTime date = Get_Date();
         Console.Clear();
         string date_string = date.ToString("yyyy-MM-dd");
-        RunningMovieLogic runningmovieLogic = new RunningMovieLogic(date_string);
+        runningmovieLogic = new RunningMovieLogic(date_string);
 
 
         // Asks the user for the start time of the movie.
@@ -646,8 +671,7 @@ static class AdminManageMovie
 
         // Asks the user for the end time of the movie.
         Console.WriteLine("You are now adding a end time \n\n");
-        DateTime end_time = Get_End_Time(date);
-        Console.Clear();
+        DateTime end_time = begin_time.AddMinutes(movie.Length);
 
         RunningMovieModel running_movie = new(movie, room, begin_time, end_time, date);
         runningmovieLogic.Add_To_List(running_movie);
@@ -656,6 +680,30 @@ static class AdminManageMovie
         Console.WriteLine("You have succesfully added a movie");
         Console.WriteLine("Now returning to the menu....\n\n");
         Start();
+        
+    }
+
+    public static void Populate_A_Date()
+    {
+        //Gets the date.
+        DateTime date = Get_Date();
+
+        //Converts the date to string and opens a new runningmovielogic.
+        string date_string = date.ToString("yyyy-MM-dd");
+        runningmovieLogic = new RunningMovieLogic(date_string);
+
+        //Asks the user how many random movie they want to add.
+        Console.WriteLine("Enter amount");
+        var population_input = Convert.ToInt32(Console.ReadLine()!);
+
+        //Loops through the amount of movies.
+        for (int i = 0; i <= population_input; i++)
+        {
+            runningmovieLogic.Populate(date);
+        }
+        Console.Clear();
+        AdminMenu.Start();
+
         
     }
 
