@@ -61,7 +61,7 @@ static class Movies
                 try
                 {
                     movie_input = Convert.ToInt32(Console.ReadLine()!) - 1;
-                    if (movie_input + 1 > running_movie_list.Count() || movie_input<= 0)
+                    if (movie_input + 1 > running_movie_list.Count() || movie_input < 0)
                     {
                         Console.WriteLine("Invalid number; ");
                         continue;

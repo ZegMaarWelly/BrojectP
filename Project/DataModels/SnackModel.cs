@@ -1,6 +1,9 @@
 ﻿using System.Text.Json.Serialization;
 class SnackModel
 {
+    [JsonPropertyName("id")]
+    public int ID { get; set; }
+
     [JsonPropertyName("name")]
     public string  Name { get; set; }
 
@@ -13,8 +16,9 @@ class SnackModel
     [JsonPropertyName("allergies")]
     public string Allergies { get; set; }
 
-    public  SnackModel(string name, double price, string type_of_food, string allergies)
+    public  SnackModel(int id, string name, double price, string type_of_food, string allergies)
     {
+        ID = id;
         Name = name;
         Price = price;
         Type_Of_Food = type_of_food;
@@ -23,7 +27,7 @@ class SnackModel
 
     public override string ToString()
     {
-        return $"Name: {Name}, Price: {Price}, Type of Food: {Type_Of_Food}, Allergies: {Allergies}";
+        return $"ID: {ID}, Name: {Name}, Price: {Price}, Type of Food: {Type_Of_Food}, Allergies: {Allergies}";
     }
 }
 
