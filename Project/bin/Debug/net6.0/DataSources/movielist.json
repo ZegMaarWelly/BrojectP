@@ -5,7 +5,8 @@
     "genre": "Family, Adventure",
     "length": 91,
     "age": 5,
-    "labels": "None"
+    "labels": "None",
+    "summary": "Bee fly, buzz, make honey. Bee talk, wear clothes. Bee meet human lady, fall in love. \nBee sue human, because humans take honey.Bee win, stop humans from taking honey. \nBee and human become friends. Bee fly, buzz, make honey. The end."
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "genre": "Adventure, Sci-Fi, Comedy",
     "length": 140,
     "age": 16,
-    "labels": "Harsh language"
+    "labels": "Harsh language",
+    "summary": "The enigmatic odyssey of a woman as she navigates a realm where multiple realities converge. \nGuided by an enigmatic presence, she embarks on a transcendental journey across temporal and spatial boundaries, unraveling the profound intricacies of existence. \nThrough evocative imagery and profound introspection, the film invites viewers to explore the boundless mysteries of the human experience"
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "genre": "Drama, Crime",
     "length": 167,
     "age": 10,
-    "labels": "Sex \u0026 Nudity, Violence and gore, Drugs"
+    "labels": "Sex \u0026 Nudity, Violence and gore, Drugs",
+    "summary": "Set in da Big Apple, back in da day. We got gangs, ya know? Real tough guys. \nDa main guy is played by Leonardo DiCaprio, and he's all about seekin' revenge on da gang leader, Daniel Day-Lewis. \nIt's all about honor, loyalty, and da gritty streets of ol' New York. So, get ready for some action, drama, and a whole lotta New York attitude. \nFuhgeddaboudit!"
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "genre": "Adventure, Comedy",
     "length": 100,
     "age": 5,
-    "labels": "None"
+    "labels": "None",
+    "summary": "A fantastical adventure filled with charm and wit. Our hero, Puss in Boots, embarks on a quest to find a magical artifact that can grant wishes. \nAlong the way, he encounters new allies and faces formidable foes. This animated tale combines humor, action, and heart, as Puss in Boots strives to fulfill his ultimate desire. \nGet ready for a delightful and thrilling journey that will captivate audiences of all ages."
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "genre": "Sci-Fi, Adventure",
     "length": 155,
     "age": 13,
-    "labels": "Violence \u0026 Gore"
+    "labels": "Violence \u0026 Gore",
+    "summary": "\"Dune\" is an epic sci-fi saga set in a vast and arid landscape. Sand, oh, the sand! It blankets \nthe entire planet, shaping its destiny. The story follows a young hero, Paul Atreides, as he \nnavigates treacherous dunes, encountering sandstorms, sandworms, and sand-obsessed \nfactions. The sand, relentless and unforgiving, becomes a character in itself, mirroring the \nharshness of this unforgiving world. Amidst political intrigue and desert battles, sand \nremains a constant force, its grains interwoven with destiny. So, brace yourself for a sand-\nfilled spectacle, where every grain plays its part in the grand tapestry of \"Dune.\""
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "genre": "War, Drama",
     "length": 134,
     "age": 12,
-    "labels": "Violence \u0026 Gore"
+    "labels": "Violence \u0026 Gore",
+    "summary": "\"Waterloo\" is a historical epic that transports us to the fateful battle of Waterloo. The clash of \nnations, the thundering cannons, and the relentless march of soldiers converge on the fields \nof Belgium. The film vividly portrays the strategic brilliance of Napoleon Bonaparte and the \nvaliant efforts of the Duke of Wellington. It captures the intensity, chaos, and heroism of this \nmonumental conflict. With masterful cinematography and powerful performances, \n\"Waterloo\" immerses viewers in the ebb and flow of war, leaving an indelible impression of \nthis pivotal moment in history."
   },
   {
     "id": 7,
@@ -53,7 +59,8 @@
     "genre": "Action, Thriller",
     "length": 90,
     "age": 16,
-    "labels": "Violence & Harsh language"
+    "labels": "Violence & Harsh language",
+    "summary": "An ex-special forces operative wages a one man war through the streets of Amsterdam to rescue his \nfriend's daughter from the local crime syndicate."
   },
   {
     "id": 8,
@@ -61,7 +68,8 @@
     "genre": "Sci-Fi, Thriller",
     "length": 93,
     "age": 12,
-    "labels": "Fear"
+    "labels": "Fear",
+    "summary": "After a catastrophic crash on an unknown planet, pilot Mills quickly discovers he's actually stranded on Earth.\n65 million years ago. Now, with only one chance at rescue, Mills and the only other survivor, Koa, must \nmake their way across an unknown terrain riddled with dangerous prehistoric creatures in an epic fight to survive"
   },
   {
     "id": 9,
@@ -69,7 +77,8 @@
     "genre": "Action, Fantasy, Adventure",
     "length": 192,
     "age": 12,
-    "labels": "Fear, Harsh language & Violence"
+    "labels": "Fear, Harsh language & Violence",
+    "summary": "Several years after the Na'vi repelled the RDA invasion Jake Sully and his family are living on Pandora. \nThings seem peaceful but the RDA has other plans, invading and capturing Pandora. \nSully forms a guerrilla group to try to expel the invaders"
   },
   {
     "id": 10,
@@ -77,7 +86,8 @@
     "genre": "Thriller, Comedy",
     "length": 95,
     "age": 16,
-    "labels": "Drugs, Fear, Harsh language & Violence"
+    "labels": "Drugs, Fear, Harsh language & Violence",
+    "summary": "Inspired by the 1985 true story of a drug runner's plane crash, missing cocaine, and the black bear that ate it, \nthis wild dark comedy finds an oddball group of cops, criminals, tourists and teens converging in a Georgia forest where a \n500- pound apex predator has ingested a staggering amount of cocaine and gone on a coke-fueled rampage for more blow... \nand blood"
   },
   {
     "id": 11,
@@ -85,7 +95,8 @@
     "genre": "Comedy, Animation",
     "length": 93,
     "age": 6,
-    "labels": "Fear & Violence"
+    "labels": "Fear & Violence",
+    "summary": ""
   },
   {
     "id": 12,
@@ -93,7 +104,8 @@
     "genre": "Action, Thriller",
     "length": 169,
     "age": 15,
-    "labels": "Harsh language, Violence"
+    "labels": "Harsh language, Violence",
+    "summary": "A Brooklyn plumber named Mario travels through the Mushroom Kingdom with a princess named Peach and an anthropomorphic \nmushroom named Toad to find Mario's brother, Luigi, and to save the world from a ruthless fire-breathing Koopa named Bowser."
   },
   {
     "id": 13,
@@ -101,7 +113,8 @@
     "genre": "Fantasy, Action, Adventure",
     "length": 134,
     "age": 12,
-    "labels": "Harsh language, Violence, Fear"
+    "labels": "Harsh language, Violence, Fear",
+    "summary": "A charming thief and a band of unlikely adventurers undertake an epic heist to retrieve a lost relic, but things go \ndangerously awry when they run afoul of the wrong people. Dungeons and Dragons: Honor Among Thieves brings the rich world and playful spirit of the \nlegendary roleplaying game to the big screen in a hilarious and action-packed adventure."
   },
   {
     "id": 14,
@@ -109,7 +122,8 @@
     "genre": "Sci-Fi, Thriller",
     "length": 124,
     "age": 16,
-    "labels": "Harsh language, Violence, Fear"
+    "labels": "Harsh language, Violence, Fear",
+    "summary": "In the dystopian metropolis of Neo-Tokyo, a young biker named Kaneda becomes entangled \nin a government experiment gone awry, unlocking telekinetic powers within his friend \nTetsuo. As Tetsuo's powers grow out of control, Kaneda must confront a dangerous\n conspiracy and save his friend from self-destruction."
   },
   {
     "id": 15,
@@ -117,7 +131,8 @@
     "genre": "Action, Comedy",
     "length": 152,
     "age": 17,
-    "labels": "Violence \u0026 Gore, Harsh Language"
+    "labels": "Violence \u0026 Gore, Harsh Language",
+    "summary": "Unlucky assassin Ladybug (Brad Pitt) is determined to do his job peacefully after one too many \ngigs has gone off the rails. Fate has other plans, however: Ladybug's latest mission puts him \non a collision course with lethal adversaries from around the globe--all with connected, \nyet conflicting, objectives--on the world's fastest train. The end of the line is just the beginning in this non-stop \nthrill-ride through modern-day Japan."
   },
   {
     "id": 16,
@@ -125,7 +140,8 @@
     "genre": "Action, Adventure",
     "length": 115,
     "age": 8,
-    "labels": "Violence & fear"
+    "labels": "Violence & fear",
+    "summary": "\n\"The Incredibles\" is a thrilling animated adventure that follows a family of superheroes forced \ninto hiding. When a supervillain threatens the world, they must dust off their powers and \nwork together to save the day. Action-packed and heartwarming, it celebrates the strength \nof family bonds and the power of embracing your true identity."
   },   
   {
   "id": 17,
@@ -133,7 +149,8 @@
   "genre": "Fantasy, Adventure",
   "length": 201,
   "minimum_age": 13,
-  "labels":"Violence"
+  "labels":"Violence", 
+  "summary": "\"Lord of the Rings: Return of the King\" is an epic fantasy film where the fate of Middle-earth \nhangs in the balance. The courageous fellowship faces its ultimate test as they battle against \nthe dark forces of Sauron. It's a tale of heroism, friendship, and the triumph of good over evil \nin a visually stunning and emotionally gripping conclusion to the trilogy."
 },
   {
     "id": 18,
@@ -141,7 +158,8 @@
     "genre": "Action, Adventure",
     "length": 152,
     "minimum_age": 15,
-    "labels": "Violence & Language"
+    "labels": "Violence & Language",
+    "summary": "\"The Dark Knight\" is a gripping superhero film that delves into the dark depths of Gotham \nCity. Batman confronts the chaotic Joker, who tests the hero's resolve and pushes him to his \nlimits. Filled with intense action, psychological suspense, and a stellar performance by Heath Ledger as the Joker, it's a captivating exploration of heroism and morality in the face of \nchaos."
   },
   {
     "id": 19,
@@ -149,7 +167,8 @@
     "genre": "Sci-Fi, Action",
     "length": 162,
     "minimum_age": 13,
-    "labels": "Violence"
+    "labels": "Violence",
+    "summary": "\n\"Avatar\" takes us to the extraordinary world of Pandora, where a paraplegic ex-marine \nnamed Jake Sully becomes immersed in the Na'vi culture. As he navigates a clash between \nhumans and the indigenous species, Jake undergoes a transformative journey of self-\ndiscovery, forging alliances and finding love. With groundbreaking visuals and an immersive storyline, \"Avatar\" explores themes of environmentalism, cultural exchange, and the power \nof connection."
   },
   {
     "id": 20,
@@ -157,7 +176,8 @@
     "genre": "Action, Sci-Fi",
     "length": 143,
     "minimum_age": 13,
-    "labels": "Violence"
+    "labels": "Violence",
+    "summary": "\"The Avengers\" brings together Earth's mightiest heroes as they join forces to protect the \nworld from a formidable threat. Iron Man, Captain America, Thor, Hulk, Black Widow, and \nHawkeye form an extraordinary team, battling Loki and his alien army. Packed with thrilling \naction, witty banter, and superhero camaraderie, \"The Avengers\" is an exhilarating spectacle \nthat showcases the power of unity and heroism."
   },
   {
     "id": 21,
@@ -165,7 +185,8 @@
     "genre": "Sci-Fi, Action",
     "length": 142,
     "minimum_age": 13,
-    "labels": "Violence"
+    "labels": "Violence",
+    "summary": "\"The Hunger Games\" is set in a dystopian future where young tributes from impoverished \ndistricts are forced to participate in a brutal televised fight to the death. Katniss Everdeen \nbecomes the symbol of rebellion as she challenges the oppressive Capitol. This thrilling saga \nexplores themes of survival, sacrifice, and the resilience of the human spirit in the face \nof injustice."
   },
   {
     "id": 22,
@@ -173,7 +194,8 @@
     "genre": "Fantasy, Adventure",
     "length": 169,
     "minimum_age": 13,
-    "labels": "Violence"
+    "labels": "Violence",
+    "summary": "\"The Hobbit\" is an enchanting fantasy adventure that follows Bilbo Baggins, a reluctant \nhobbit, as he embarks on a quest to reclaim the dwarf kingdom of Erebor. Joined by a band \nof dwarves and guided by the wise wizard Gandalf, they face perilous challenges, encounter \nmagical creatures, and confront the fearsome dragon, Smaug. This captivating film brings \nJ.R.R. Tolkien's beloved world to life, filled with breathtaking landscapes, thrilling encounters, \nand the beginnings of an epic journey."
   },
   {
     "id": 23,
@@ -181,7 +203,8 @@
     "genre": "Animation, Children, Musical",
     "length": 102,
     "minimum_age": 0,
-    "labels": "None"
+    "labels": "None",
+    "summary": "\"Frozen\" is a heartwarming animated tale set in the kingdom of Arendelle. When Elsa, a \nprincess with ice powers, accidentally plunges the land into eternal winter, her fearless sister \nAnna teams up with a rugged iceman, Kristoff, and his loyal reindeer, Sven, to find Elsa and \nsave their kingdom. Filled with memorable songs, magical moments, and themes of love and \nsisterhood, \"Frozen\" is a delightful and enchanting adventure for all ages."
   },
   {
     "id": 24,
@@ -189,7 +212,8 @@
     "genre": "Animation, Children, Adventure",
     "length": 103,
     "minimum_age": 0,
-    "parental_labels": "None"
+    "parental_labels": "None",
+    "summary": "\"Toy Story 3\" continues the beloved animated franchise, following Woody, Buzz, and their toy \nfriends as their owner, Andy, prepares to leave for college. Accidentally ending up in a \ndaycare center, they encounter new toys and face the challenges of acceptance and escape. \nThis poignant and humorous film explores themes of friendship, loyalty, and the bittersweet \npassage of time, captivating audiences of all ages with its heartfelt storytelling and \nimaginative world of toys."
   },
   {
     "id": 25,
@@ -197,7 +221,8 @@
     "genre": "Sci-Fi, Thriller",
     "length": 148,
     "minimum_age": 13,
-    "labels": "Violence"
+    "labels": "Violence",
+    "summary": "\"Inception\" is a mind-bending sci-fi thriller that dives into the realm of dreams. Dom Cobb, a \nskilled thief, and his team enter people's minds to extract or implant information. When \ntasked with an impossible mission of \"inception,\" planting an idea, they face a labyrinth of \ndreams within dreams. Christopher Nolan's visually stunning film explores layers of reality, \nblurring the lines between dreams and the waking world, and challenges our perception of \nwhat is real. Prepare for a mesmerizing journey through the depths of the mind."
   },
   {
     "id": 26,
@@ -205,7 +230,8 @@
     "genre": "Action, Adventure",
     "length": 151,
     "minimum_age": 13,
-    "labels": "Violence"
+    "labels": "Violence",
+    "summary": "\"Pirates of the Caribbean: Dead Man's Chest\" takes us on a swashbuckling adventure with \nCaptain Jack Sparrow. Pursued by a cursed ghost, Davy Jones, Jack seeks the fabled chest \ncontaining Jones' heart to save himself. With treachery, battles, and supernatural \nencounters, this thrilling sequel immerses viewers in a world of pirates, curses, and high-\nseas escapades. Brace yourself for an action-packed voyage with memorable characters \nand unexpected twists as Jack Sparrow's fate hangs in the balance."
   },
   {
     "id": 27,
@@ -213,7 +239,8 @@
     "genre": "Animation, Adventure",
     "length": 100,
     "minimum_age": 0,
-    "labels": "None"
+    "labels": "None",
+    "summary": ""
   },
   {
     "id": 29,
@@ -221,7 +248,8 @@
     "genre": "Fantasy, Adventure",
     "length": 152,
     "minimum_age": 7,
-    "labels": "None" 
+    "labels": "None",
+    "summary": "\"Finding Nemo\" is a heartwarming animated film that follows the epic journey of a clownfish \nnamed Marlin searching for his lost son, Nemo. With the help of a forgetful but friendly blue \ntang named Dory, they encounter colorful characters and overcome numerous challenges in \nthe vast ocean. This delightful adventure celebrates the bond between parents and children, \nteaches important life lessons, and immerses viewers in an underwater world of friendship \nand courage."
   },
   {
     "id": 30,
@@ -229,7 +257,8 @@
     "genre": "Action, Fantasy",
     "length": 121,
     "minimum_age": 13,
-    "labels": "Violence"
+    "labels": "Violence",
+    "summary": "Spider-Man, a beloved superhero, balances his double life as Peter Parker and fights crime \nin New York City. With his amazing powers, quick wit, and moral compass, he faces \nformidable villains while navigating personal challenges, protecting his loved ones, and \nupholding the responsibility that comes with great power."
   },
   {    
     "id": 31,    
@@ -237,7 +266,8 @@
     "genre": "Musical, Romance",    
     "length": 128,    
     "minimum_age": 10,    
-    "labels": "Romance & Language"
+    "labels": "Romance & Language",
+    "summary": "La La Land, a captivating musical film, follows the dreams and love story of Mia, an aspiring \nactress, and Sebastian, a jazz pianist. Set in vibrant Los Angeles, their paths intertwine as \nthey chase their passions, face obstacles, and discover the bittersweet reality of pursuing \ntheir artistic aspirations."
   },
   {
     "id": 32,
@@ -245,7 +275,8 @@
     "genre": "Animation, Children, Adventure",
     "length": 108,
     "minimum_age": 0,
-    "labels": "None"
+    "labels": "None",
+    "summary": "Zootopia, an animated adventure, takes place in a modern mammal metropolis. Optimistic \nrookie cop Judy Hopps teams up with sly fox Nick Wilde to solve a mysterious case. \nTogether, they uncover a conspiracy that threatens the harmony between predator and prey, \nchallenging their beliefs and forging an unlikely friendship."
   },
   {
     "id": 33,
@@ -253,7 +284,8 @@
     "genre": "Animation, Children, Musical",
     "length": 88,
     "minimum_age": 0,
-    "labels": "None"
+    "labels": "None",
+    "summary": "The Lion King, a timeless Disney classic, tells the epic journey of Simba, a young lion prince. \nAfter the tragic death of his father, Simba must overcome adversity and reclaim his rightful \nplace as king. With the help of his friends Timon and Pumbaa, he learns valuable lessons \nabout courage, responsibility, and the circle of life."
   },
   {
     "id": 34,
@@ -261,7 +293,8 @@
     "genre": "Fantasy, Romance",
     "length": 123,
     "minimum_age": 17,
-    "labels": "Nudity, Sex, Violence & Language"
+    "labels": "Nudity, Sex, Violence & Language",
+    "summary": "The Shape of Water, an enchanting film, dives into the unconventional love story between \nElisa, a mute janitor, and a mysterious amphibious creature. Set in the Cold War era, their \nbond transcends societal boundaries, highlighting the power of empathy, acceptance, and \nthe beauty of finding love in unexpected places."
   },
   {
     "id": 35,
@@ -269,7 +302,8 @@
     "genre": "Animation, Adventure",
     "length": 96,
     "minimum_age": 0,
-    "labels": "None"
+    "labels": "None",
+    "summary": "Up, a heartwarming animated adventure, follows the journey of Carl Fredricksen, a widowed \nballoon salesman, and young Wilderness Explorer Russell. Tying thousands of balloons to \nhis house, Carl embarks on a whimsical journey to South America. Along the way, they \nencounter unexpected friendships, discover the true meaning of adventure, and learn to let \ngo of past sorrows."
   },
   {
     "id": 36,
@@ -277,7 +311,8 @@
     "genre": "Animation, Children, Comedy",
     "length": 95,
     "minimum_age": 0,
-    "labels": "None"
+    "labels": "None",
+    "summary": "Inside Out, a captivating Pixar film, explores the emotional world of Riley, a young girl \nnavigating life's challenges. Joy, Sadness, Fear, Anger, and Disgust—personified emotions—\nguide Riley through a transformative journey. As her inner world shifts, she learns the \nimportance of embracing all emotions, finding balance, and understanding the complexity of \ngrowing up."
   },
   {
     "id": 37,
@@ -285,7 +320,8 @@
     "genre": "Sci-Fi, Adventure",
     "length": 123,
     "minimum_age": 13,
-    "labels": "Violence"
+    "labels": "Violence",
+    "summary": "The Hunger Games: Mockingjay - Part 1 continues the dystopian saga as Katniss Everdeen \nbecomes the reluctant symbol of rebellion against the Capitol. Amid a divided nation, she \nfights to save Peeta and unite the districts. Facing moral dilemmas, propaganda, and \npersonal sacrifices, Katniss becomes a beacon of hope in the fight for freedom."
   },
   {
     "id": 38,
@@ -293,7 +329,8 @@
     "genre": "Action, Adventure",
     "length": 120,
     "minimum_age": 17,
-    "labels": "Violence & Language"
+    "labels": "Violence & Language",
+    "summary": "Mad Max: Fury Road, an adrenaline-fueled post-apocalyptic spectacle, follows the journey \nof Max and Imperator Furiosa as they rebel against the tyrant Immortan Joe. Racing \nthrough a desert wasteland, they fight for freedom, survival, and a better future. With explosive \naction, intense chases, and stunning visuals, it's a relentless thrill ride in a world gone mad."
   },
   {
     "id": 39,
@@ -301,7 +338,8 @@
     "genre": "Romance, Sci-Fi",
     "length": 126,
     "minimum_age": 17,
-    "labels": "Nudity, Sex & Language"
+    "labels": "Nudity, Sex & Language",
+    "summary": "Her, a poignant sci-fi romance, tells the story of Theodore, a lonely writer who develops an \nunexpected relationship with an intelligent operating system named Samantha. As their \nconnection deepens, Theodore explores love, intimacy, and the complexities of human \nemotions in a technologically advanced yet emotionally disconnected world."
   },
   {
     "id": 40,
@@ -309,7 +347,8 @@
     "genre": "Sci-Fi, Adventure",
     "length": 144,
     "minimum_age": 13,
-    "labels": "Language"
+    "labels": "Language",
+    "summary": ""
   },
   {    
     "id": 41,    
@@ -317,7 +356,8 @@
     "genre": "Drama, Indie",    
     "length": 111,    
     "minimum_age": 17,    
-    "labels": "Language, Sex, Nudity & Violence"
+    "labels": "Language, Sex, Nudity & Violence",
+    "summary": "The Martian, a gripping science fiction tale, follows astronaut Mark Watney as he is \nleft stranded on Mars after a mission gone wrong. Facing impossible odds, he must rely on his \ningenuity and resilience to survive and find a way back home. With limited resources and \nunwavering determination, Watney becomes an inspiring symbol of human endurance."
   },
   {
     "id": 42,
@@ -325,7 +365,8 @@
     "genre": "Action, Sci-Fi",
     "length": 137,
     "minimum_age": 17,
-    "labels": "Violence & Language"
+    "labels": "Violence & Language",
+    "summary": "Logan, a gritty superhero film, delves into the final chapter of Wolverine's story. Aging and \nweary, Logan cares for Professor Xavier in a desolate future. When a young mutant girl with \nextraordinary powers enters their lives, they embark on a dangerous journey. Faced with \ntheir own demons, they confront their past and fight for a chance at redemption."
   },
   {
     "id": 43,
@@ -333,7 +374,8 @@
     "genre": "Action, Adventure",
     "length": 134,
     "minimum_age": 13,
-    "labels": "Violence & Language"
+    "labels": "Violence & Language",
+    "summary": "Black Panther, a groundbreaking superhero film, follows T'Challa, the newly crowned king of \nWakanda. Balancing his royal duties and the mantle of the Black Panther, T'Challa must \ndefend his nation's advanced technology and way of life. Facing a powerful enemy, he must \nconfront the past, embrace his identity, and lead his people toward a brighter future."
   },
   {
     "id": 44,
@@ -341,7 +383,8 @@
     "genre": "Western, Adventure",
     "length": 156,
     "minimum_age": 17,
-    "labels": "Violence, Language & Nudity"
+    "labels": "Violence, Language & Nudity",
+    "summary": "The Revenant, a visceral survival epic, depicts the harrowing journey of Hugh Glass, a \nfrontiersman seeking revenge after being left for dead by his companions. In the unforgiving \nwilderness, Glass battles nature's fury, encounters hostile forces, and endures unimaginable \nhardships. Driven by sheer willpower, he embarks on a relentless quest for justice and \nredemption."
   },
   {
     "id": 45,
@@ -349,7 +392,8 @@
     "genre": "War, Action",
     "length": 107,
     "minimum_age": 13,
-    "labels": "Violence"
+    "labels": "Violence",
+    "summary": "Dunkirk, a gripping war film, recounts the heroic evacuation of Allied soldiers from the \nbeaches of Dunkirk during World War II. Amidst intense enemy fire and against the odds, \nsoldiers on land, sea, and air unite in a race against time. With courage and resilience, they \nstrive to escape the relentless onslaught and bring hope amidst the chaos of war."
   },
   {
     "id": 46,
@@ -357,7 +401,8 @@
     "genre": "Action, Adventure",
     "length": 141,
     "minimum_age": 13,
-    "labels": "Violence"
+    "labels": "Violence",
+    "summary": "Wonder Woman, a empowering superhero film, tells the origin story of Diana, an Amazon \nprincess. Leaving her secluded island, she joins the world of men during World War I. Armed \nwith her lasso of truth and fierce determination, she becomes a symbol of hope, fighting for \njustice and love. With strength and compassion, Wonder Woman inspires us all to be \nheroes."
   },
   {
     "id": 47,
@@ -365,7 +410,8 @@
     "genre": "Sci-Fi, Action",
     "length": 164,
     "minimum_age": 17,
-    "labels": "Violence, Language & Nudity"
+    "labels": "Violence, Language & Nudity",
+    "summary": "Blade Runner 2049, a mesmerizing sci-fi sequel, follows Officer K, a new generation of \nBlade Runner. Uncovering a long-buried secret, he embarks on a quest to find former Blade \nRunner Rick Deckard. Amidst a dystopian world of replicants and intrigue, K questions his \nown identity and the line between humanity and artificial intelligence. A visually stunning \nand thought-provoking exploration of existence."
   },
   {
     "id": 48,
@@ -373,7 +419,8 @@
     "genre": "Crime, Drama",
     "length": 115,
     "minimum_age": 17,
-    "labels": "Violence & Language"
+    "labels": "Violence & Language",
+    "summary": "Three Billboards Outside of Ebbing, Missouri, a compelling dark comedy-drama, revolves \naround Mildred Hayes, a grieving mother seeking justice for her daughter's unsolved \nmurder. Through provocative billboards, she challenges the local police and ignites a small \ntown controversy. As tensions escalate, the film explores themes of grief, redemption, and \nthe complexities of human nature with a blend of wit and raw emotion."
   },
   {
     "id": 49,
@@ -381,7 +428,8 @@
     "genre": "Horror, Thriller",
     "length": 104,
     "minimum_age": 17,
-    "labels": "Violence, Language & Nudity"
+    "labels": "Violence, Language & Nudity",
+    "summary": "\"Get Out, a gripping horror-thriller, follows Chris, an African-American man, who visits his \nwhite girlfriend's family for the weekend. As the visit progresses, he uncovers disturbing \nsecrets and realizes the sinister intentions of the seemingly friendly suburban community. \nThrough its clever social commentary, the film tackles racial tensions, identity, and the \nhorrors of hidden prejudice in a suspenseful and thought-provoking manner."
   },
   {
     "id": 50,
@@ -389,7 +437,8 @@
     "genre": "Drama, Romance, Musical",
     "length": 136,
     "minimum_age": 17,
-    "labels": "Language, Nudity & Drug Use"
+    "labels": "Language, Nudity & Drug Use",
+    "summary": "A Star is Born, a poignant musical drama, portrays the passionate and tragic love story of \nseasoned musician Jackson Maine and aspiring singer Ally. As their careers intertwine, Ally \nrises to stardom while Jackson battles his inner demons. Through heart-wrenching \nperformances and soulful music, the film explores fame, addiction, and the bittersweet \nnature of artistic success."
   },
   {    
     "id": 51,    
@@ -397,7 +446,8 @@
     "genre": "Thriller, Drama",    
     "length": 132,    
     "minimum_age": 17,    
-    "labels": "Violence & Language"
+    "labels": "Violence & Language",
+    "summary": "Parasite, a gripping South Korean film, delves into the lives of two families from different \nsocial classes. The impoverished Kim family infiltrates the affluent Park family's lives, \nblurring the lines between deception and reality. As tensions rise and secrets unravel, the \nfilm masterfully explores themes of class struggle, inequality, and the human condition with \ndark humor and captivating storytelling."
   },
   {
     "id": 52,
@@ -405,7 +455,8 @@
     "genre": "Thriller, Drama",
     "length": 122,
     "minimum_age": 17,
-    "labels": "Violence & Language"
+    "labels": "Violence & Language",
+    "summary": "\"Joker, a chilling psychological thriller, delves into the origins of the iconic Batman villain, \nArthur Fleck. Struggling with mental illness and societal neglect, Fleck descends into \nmadness, adopting the persona of the Joker. Through a haunting performance, the film \nexplores themes of isolation, identity, and the consequences of a society that fails its most \nvulnerable."
   },
   {
     "id": 53,
@@ -413,7 +464,8 @@
     "genre": "War, Drama",
     "length": 119,
     "minimum_age": 17,
-    "labels": "Violence & Language"
+    "labels": "Violence & Language",
+    "summary": "1917, an immersive war film, follows two British soldiers, Schofield and Blake, on a perilous \nmission during World War I. Tasked with delivering a crucial message across enemy territory, \nthey race against time and face unimaginable challenges. Through a single continuous shot, \nthe film captures the brutality and heroism of war, highlighting the bond between soldiers \nand the indomitable spirit in the face of adversity."
   },
   {
     "id": 54,
@@ -421,7 +473,8 @@
     "genre": "Drama, Comedy",
     "length": 161,
     "minimum_age": 17,
-    "labels": "Violence, Language, Nudity & Drug Use"
+    "labels": "Violence, Language, Nudity & Drug Use",
+    "summary": "Once Upon a Time in Hollywood, a nostalgic drama-comedy, transports viewers to 1969 Los \nAngeles. The film weaves together the stories of fading TV star Rick Dalton and his loyal \nstunt double Cliff Booth. As the city undergoes a cultural shift, they navigate the changing \nlandscape while encountering the Manson Family. With a star-studded cast, the film \ncelebrates the golden era of Hollywood and explores themes of friendship, identity, and the \nfading of a bygone era."
   },
   {
     "id": 55,
@@ -429,7 +482,8 @@
     "genre": "Mystery, Comedy",
     "length": 130,
     "minimum_age": 13,
-    "labels": "Violence & Language"
+    "labels": "Violence & Language",
+    "summary": "Knives Out, a clever whodunit mystery, follows renowned detective Benoit Blanc as he \ninvestigates the suspicious death of renowned crime novelist Harlan Thrombey. With a \ndysfunctional and eccentric family as suspects, secrets unravel and tensions rise. Through \nsharp wit and unexpected twists, the film keeps audiences on the edge of their seats while \nexploring themes of deceit, privilege, and the pursuit of truth."
   },
   {
     "id": 56,
@@ -437,7 +491,8 @@
     "genre": "Crime, Drama",
     "length": 209,
     "minimum_age": 17,
-    "labels": "Violence, Language & Nudity"
+    "labels": "Violence, Language & Nudity",
+    "summary": "The Irishman, a sprawling crime drama, tells the story of Frank Sheeran, a truck driver \nturned mob hitman. Spanning decades, the film explores Sheeran's involvement with the \nBufalino crime family and his relationships with union leader Jimmy Hoffa. With stellar \nperformances and masterful storytelling, The Irishman delves into themes of loyalty, regret, \nand the cost of a life immersed in organized crime."
   },
   {
     "id": 57,
@@ -445,7 +500,8 @@
     "genre": "Comedy, War, Drama",
     "length": 108,
     "minimum_age": 13,
-    "labels": "Violence & Language"
+    "labels": "Violence & Language",
+    "summary": "Jojo Rabbit, a satirical war comedy-drama, follows Jojo, a young boy in Nazi Germany whose \nimaginary friend is Adolf Hitler. As Jojo grapples with his beliefs, he discovers a Jewish girl \nhiding in his home, challenging his worldview. With a blend of humor and heart, the film \nexplores themes of prejudice, compassion, and the resilience of the human spirit in the face \nof hate."
   },
   {
     "id": 58,
@@ -453,7 +509,8 @@
     "genre": "Drama, Romance",
     "length": 135,
     "minimum_age": 10,
-    "labels": "None"
+    "labels": "None",
+    "summary": "\"Little Women, a timeless coming-of-age tale, revolves around the lives of the March sisters\n—Meg, Jo, Beth, and Amy—during the Civil War era. As they navigate the challenges of \ngrowing up, pursuing dreams, and finding love, the film beautifully captures the complexities \nof sisterhood, female independence, and the pursuit of personal and artistic fulfillment. With \nits rich characters and emotional depth, Little Women celebrates the strength and resilience \nof women."
   },
   {
     "id": 59,
@@ -461,7 +518,8 @@
     "genre": "Action, Sport",
     "length": 152,
     "minimum_age": 13,
-    "labels": "Violence & Language"
+    "labels": "Violence & Language",
+    "summary": "Ford v Ferrari, a thrilling sports drama, depicts the true story of automotive visionary Carroll \nShelby and British driver Ken Miles. Tasked with building a revolutionary race car for Ford to \nchallenge Ferrari's dominance at the 24 Hours of Le Mans, they face corporate interference \nand personal conflicts. With high-stakes racing and a testament to the pursuit of excellence, \nthe film celebrates the triumph of passion and teamwork."
   },
   {
     "id": 60,
@@ -469,6 +527,7 @@
     "genre": "Action, Thriller",
     "length": 123,
     "minimum_age": 17,
-    "labels": "Violence & Language"
+    "labels": "Violence & Language",
+    "summary": "John Wick, an action-packed revenge thriller, follows the legendary hitman John Wick as he \nseeks vengeance for the killing of his dog, a final gift from his late wife. Unleashing his deadly \nskills, Wick engages in a relentless battle against a powerful criminal organization. With \nintense fight sequences and a charismatic lead, the film delivers high-octane action while \nexploring themes of loyalty, honor, and the consequences of a violent life."
   }
 ]
