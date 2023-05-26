@@ -31,7 +31,14 @@ static class Movies
         else if (movie_input == "3")
         {
             Console.Clear();
-            Menu.Menu_When_Logged_In();
+            if (accountsLogic.Return_Current_User() != null)
+            {
+                Menu.Menu_When_Logged_In();
+            }
+            else
+            {
+                Menu.Start();
+            }
         }
         else
         {
@@ -63,8 +70,19 @@ static class Movies
                 
                 Console.WriteLine("Type the number of the movie you want to pick.\nTo leave press B, to change date press C");
                 string input_movie = Console.ReadLine()!.ToUpper();
+
+                //if account is not logged in.
+                if(accountsLogic.Return_Current_User()== null)
+                {
+                    Console.Clear();
+                    Console.WriteLine("You are not logged in yet.");
+                    Thread.Sleep(1000);
+                    Console.WriteLine("Going back to menu....");
+                    Thread.Sleep(1000);
+                    Menu.Start();
+                }
                 // if input is C, you get to change to date.
-                if(input_movie == "C")
+                if (input_movie == "C")
                 {
                     var  next_date = Get_Date();
                     Select_Movie(next_date);
