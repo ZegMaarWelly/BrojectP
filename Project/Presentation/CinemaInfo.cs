@@ -3,7 +3,7 @@
     public static void Info()
     {
         Console.Clear();
-        Console.ForegroundColor = ConsoleColor.Magenta;
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
         Console.WriteLine("  _  _ _      _       ___ _                       ___     _   _              _            \r\n | || (_)__ _| |_    / __(_)_ _  ___ _ __  __ _  | _ \\___| |_| |_ ___ _ _ __| |__ _ _ __  \r\n | __ | / _` | ' \\  | (__| | ' \\/ -_) '  \\/ _` | |   / _ \\  _|  _/ -_) '_/ _` / _` | '  \\ \r\n |_||_|_\\__, |_||_|  \\___|_|_||_\\___|_|_|_\\__,_| |_|_\\___/\\__|\\__\\___|_| \\__,_\\__,_|_|_|_|\r\n        |___/                                                                            ");
         Console.WriteLine();
         Console.ResetColor();
@@ -25,7 +25,7 @@
             foreach (char c in line)
             {
                 Console.Write(c);
-                System.Threading.Thread.Sleep(30); 
+                Thread.Sleep(30); 
             }
             Console.WriteLine();
         }
