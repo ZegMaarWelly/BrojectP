@@ -662,5 +662,222 @@
     "begin_time": "2023-05-24T03:31:00",
     "end_time": "2023-05-24T05:30:00",
     "date": "2023-05-24T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 5,
+      "name": "Dune",
+      "genre": "Sci-Fi, Adventure",
+      "length": 155,
+      "age": 13,
+      "labels": "Violence \u0026 Gore"
+    },
+    "room": {
+      "id": 13,
+      "map": [
+        "Y | O O O O",
+        "X | O O O O",
+        "W | O O O O",
+        "V | O O O O",
+        "U | O O O O",
+        "T | O O O O",
+        "S | O O O O",
+        "R | O O O O",
+        "Q | O O O O",
+        "P | O O O O",
+        "O | O O O O",
+        "N | O O O O",
+        "M | O O O O",
+        "L | O O O O",
+        "K | O O O O",
+        "J | O O O O",
+        "I | O O O O",
+        "H | O O O O",
+        "G | O O O O",
+        "F | O O O O",
+        "E | O O O O",
+        "D | O O O O",
+        "C | O O O O",
+        "B | O O O O",
+        "A | O O O O",
+        "   x--------",
+        "           ",
+        "    1 2 3 4"
+      ],
+      "total_seats": 100,
+      "available_seats": 100
+    },
+    "begin_time": "2023-05-24T09:53:00",
+    "end_time": "2023-05-24T12:28:00",
+    "date": "2023-05-24T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 4,
+      "name": "Puss in Boots: The Last Wish",
+      "genre": "Adventure, Comedy",
+      "length": 100,
+      "age": 5,
+      "labels": "None"
+    },
+    "room": {
+      "id": 7,
+      "map": [
+        "S |   O O O O O O O O O O O O O O O O   ",
+        "R |   O O O O O O O O O O O O O O O O   ",
+        "Q |   O O O O O O O O O O O O O O O O   ",
+        "P |   O O O O O O O O O O O O O O O O   ",
+        "O |   O O O O O O O O O O O O O O O O   ",
+        "N |   O O O O O O O O O O O O O O O O   ",
+        "M | O O O O O O O O O O O O O O O O O O ",
+        "L | O O O O O O O O O O O O O O O O O O ",
+        "K | O O O O O O O O O O O O O O O O O O ",
+        "J | O O O O O O O O O O O O O O O O O O ",
+        "I | O O O O O O O O O O O O O O O O O O ",
+        "H |   O O O O O O O O O O O O O O O O   ",
+        "G |   O O O O O O O O O O O O O O O O   ",
+        "F |   O O O O O O O O O O O O O O O O   ",
+        "E |     O O O O O O O O O O O O O O     ",
+        "D |     O O O O O O O O O O O O O O     ",
+        "C |     O O O O O O O O O O O O O O     ",
+        "B |       O O O O O O O O O O O O       ",
+        "A |       O O O O O O O O O O O O       ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 ",
+        "                      0 1 2 3 4 5 6 7 8 "
+      ],
+      "total_seats": 300,
+      "available_seats": 300
+    },
+    "begin_time": "2023-05-24T07:23:00",
+    "end_time": "2023-05-24T09:03:00",
+    "date": "2023-05-24T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 33,
+      "name": "The Lion King",
+      "genre": "Animation",
+      "length": 88,
+      "age": 0,
+      "labels": "None"
+    },
+    "room": {
+      "id": 10,
+      "map": [
+        "T |         O O O O O O O O O O O O O O O O O O O O O O         ",
+        "S |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "R |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "Q |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "P |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "O |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "N |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "M | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "L | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "K | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "J | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "I | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "H |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "G |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "F |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "E |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "D |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "C |           O O O O O O O O O O O O O O O O O O O O           ",
+        "B |               O O O O O O O O O O O O O O O O               ",
+        "A |                 O O O O O O O O O O O O O O O               ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------------------------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
+        "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
+      ],
+      "total_seats": 500,
+      "available_seats": 500
+    },
+    "begin_time": "2023-05-24T07:03:00",
+    "end_time": "2023-05-24T08:31:00",
+    "date": "2023-05-24T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 18,
+      "name": "The Dark Knight",
+      "genre": "Action",
+      "length": 152,
+      "age": 0,
+      "labels": "Violence \u0026 Language"
+    },
+    "room": {
+      "id": 6,
+      "map": [
+        "S |   O O O O O O O O O O O O O O O O   ",
+        "R |   O O O O O O O O O O O O O O O O   ",
+        "Q |   O O O O O O O O O O O O O O O O   ",
+        "P |   O O O O O O O O O O O O O O O O   ",
+        "O |   O O O O O O O O O O O O O O O O   ",
+        "N |   O O O O O O O O O O O O O O O O   ",
+        "M | O O O O O O O O O O O O O O O O O O ",
+        "L | O O O O O O O O O O O O O O O O O O ",
+        "K | O O O O O O O O O O O O O O O O O O ",
+        "J | O O O O O O O O O O O O O O O O O O ",
+        "I | O O O O O O O O O O O O O O O O O O ",
+        "H |   O O O O O O O O O O O O O O O O   ",
+        "G |   O O O O O O O O O O O O O O O O   ",
+        "F |   O O O O O O O O O O O O O O O O   ",
+        "E |     O O O O O O O O O O O O O O     ",
+        "D |     O O O O O O O O O O O O O O     ",
+        "C |     O O O O O O O O O O O O O O     ",
+        "B |       O O O O O O O O O O O O       ",
+        "A |       O O O O O O O O O O O O       ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 ",
+        "                      0 1 2 3 4 5 6 7 8 "
+      ],
+      "total_seats": 300,
+      "available_seats": 300
+    },
+    "begin_time": "2023-05-24T13:27:00",
+    "end_time": "2023-05-24T15:59:00",
+    "date": "2023-05-24T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 56,
+      "name": "The Irishman",
+      "genre": "Crime",
+      "length": 209,
+      "age": 0,
+      "labels": "Violence, Language \u0026 Nudity"
+    },
+    "room": {
+      "id": 4,
+      "map": [
+        "S |   O O O O O O O O O O O O O O O O   ",
+        "R |   O O O O O O O O O O O O O O O O   ",
+        "Q |   O O O O O O O O O O O O O O O O   ",
+        "P |   O O O O O O O O O O O O O O O O   ",
+        "O |   O O O O O O O O O O O O O O O O   ",
+        "N |   O O O O O O O O O O O O O O O O   ",
+        "M | O O O O O O O O O O O O O O O O O O ",
+        "L | O O O O O O O O O O O O O O O O O O ",
+        "K | O O O O O O O O O O O O O O O O O O ",
+        "J | O O O O O O O O O O O O O O O O O O ",
+        "I | O O O O O O O O O O O O O O O O O O ",
+        "H |   O O O O O O O O O O O O O O O O   ",
+        "G |   O O O O O O O O O O O O O O O O   ",
+        "F |   O O O O O O O O O O O O O O O O   ",
+        "E |     O O O O O O O O O O O O O O     ",
+        "D |     O O O O O O O O O O O O O O     ",
+        "C |     O O O O O O O O O O O O O O     ",
+        "B |       O O O O O O O O O O O O       ",
+        "A |       O O O O O O O O O O O O       ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 ",
+        "                      0 1 2 3 4 5 6 7 8 "
+      ],
+      "total_seats": 300,
+      "available_seats": 300
+    },
+    "begin_time": "2023-05-24T21:00:00",
+    "end_time": "2023-05-25T00:29:00",
+    "date": "2023-05-24T00:00:00"
   }
 ]
