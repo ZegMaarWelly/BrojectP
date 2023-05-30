@@ -29,6 +29,7 @@ static class Menu
         }
         else if (input == "2")
         {
+            Console.Clear();
             NewAccount.Start();
         }
         else if (input == "3")

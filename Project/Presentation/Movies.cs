@@ -10,9 +10,12 @@ static class Movies
     
     static public void Start()
     {
-        Console.WriteLine("> Enter [1] to see the movies running today.");
-        Console.WriteLine("> Enter [2] to see all the available movies.");
-        Console.WriteLine("> Enter [3] to go back to menu");
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        Console.WriteLine("  __  __         _       ___                          _   _          \r\n |  \\/  |_____ _(_)___  | _ \\___ ___ ___ _ ___ ____ _| |_(_)___ _ _  \r\n | |\\/| / _ \\ V / / -_) |   / -_|_-</ -_) '_\\ V / _` |  _| / _ \\ ' \\ \r\n |_|  |_\\___/\\_/|_\\___| |_|_\\___/__/\\___|_|  \\_/\\__,_|\\__|_\\___/_||_|\r\n                                                                     ");
+        Console.ResetColor();
+        Console.WriteLine(" > Enter [1] to see the movies running today.");
+        Console.WriteLine(" > Enter [2] to see all the available movies.");
+        Console.WriteLine(" > Enter [3] to go back to menu");
         var movie_input = Console.ReadLine()!;
 
         if(movie_input == "1")
@@ -49,6 +52,9 @@ static class Movies
         //Gets all the running movies on a current date.
         while(true)
         {
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine("  __  __         _       ___                          _   _          \r\n |  \\/  |_____ _(_)___  | _ \\___ ___ ___ _ ___ ____ _| |_(_)___ _ _  \r\n | |\\/| / _ \\ V / / -_) |   / -_|_-</ -_) '_\\ V / _` |  _| / _ \\ ' \\ \r\n |_|  |_\\___/\\_/|_\\___| |_|_\\___/__/\\___|_|  \\_/\\__,_|\\__|_\\___/_||_|\r\n                                                                     ");
+            Console.ResetColor();
             List<RunningMovieModel> running_movie_list = See_Movies_On_A_Date(date);
             Console.WriteLine("");
 

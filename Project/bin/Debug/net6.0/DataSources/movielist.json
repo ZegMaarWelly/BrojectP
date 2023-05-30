@@ -1,474 +1,474 @@
 [
   {
-    "id": 1,
-    "name": "Bee Movie",
-    "genre": "Family, Adventure",
-    "length": 91,
-    "age": 5,
-    "labels": "None"
+    "Id": 1,
+    "Name": "Bee Movie",
+    "Genre": "Family, Adventure",
+    "Length": 91,
+    "Age": 5,
+    "Labels": "None"
   },
   {
-    "id": 2,
-    "name": "Everything Everywhere All at Once",
-    "genre": "Adventure, Sci-Fi, Comedy",
-    "length": 140,
-    "age": 16,
-    "labels": "Harsh language"
+    "Id": 2,
+    "Name": "Everything Everywhere All at Once",
+    "Genre": "Adventure, Sci-Fi, Comedy",
+    "Length": 140,
+    "Age": 16,
+    "Labels": "Harsh language"
   },
   {
-    "id": 3,
-    "name": "Gangs of New York",
-    "genre": "Drama, Crime",
-    "length": 167,
-    "age": 10,
-    "labels": "Sex \u0026 Nudity, Violence and gore, Drugs"
+    "Id": 3,
+    "Name": "Gangs of New York",
+    "Genre": "Drama, Crime",
+    "Length": 167,
+    "Age": 10,
+    "Labels": "Sex & Nudity, Violence and gore, Drugs"
   },
   {
-    "id": 4,
-    "name": "Puss in Boots: The Last Wish",
-    "genre": "Adventure, Comedy",
-    "length": 100,
-    "age": 5,
-    "labels": "None"
+    "Id": 4,
+    "Name": "Puss in Boots: The Last Wish",
+    "Genre": "Adventure, Comedy",
+    "Length": 100,
+    "Age": 5,
+    "Labels": "None"
   },
   {
-    "id": 5,
-    "name": "Dune",
-    "genre": "Sci-Fi, Adventure",
-    "length": 155,
-    "age": 13,
-    "labels": "Violence \u0026 Gore"
+    "Id": 5,
+    "Name": "Dune",
+    "Genre": "Sci-Fi, Adventure",
+    "Length": 155,
+    "Age": 13,
+    "Labels": "Violence & Gore"
   },
   {
-    "id": 6,
-    "name": "Waterloo",
-    "genre": "War, Drama",
-    "length": 134,
-    "age": 12,
-    "labels": "Violence \u0026 Gore"
+    "Id": 6,
+    "Name": "Waterloo",
+    "Genre": "War, Drama",
+    "Length": 134,
+    "Age": 12,
+    "Labels": "Violence & Gore"
   },
   {
-    "id": 7,
-    "name": "Black Lotus",
-    "genre": "Action, Thriller",
-    "length": 90,
-    "age": 16,
-    "labels": "Violence, Harsh language"
+    "Id": 7,
+    "Name": "Black Lotus",
+    "Genre": "Action, Thriller",
+    "Length": 90,
+    "Age": 16,
+    "Labels": "Violence, Harsh language"
   },
   {
-    "id": 8,
-    "name": "65",
-    "genre": "Sci-Fi, Thriller",
-    "length": 93,
-    "age": 12,
-    "labels": "Fear"
+    "Id": 8,
+    "Name": "65",
+    "Genre": "Sci-Fi, Thriller",
+    "Length": 93,
+    "Age": 12,
+    "Labels": "Fear"
   },
   {
-    "id": 9,
-    "name": "Avatar: The Way of Water",
-    "genre": "Action, Fantasy, Adventure",
-    "length": 192,
-    "age": 12,
-    "labels": "Fear, Harsh language, Violence"
+    "Id": 9,
+    "Name": "Avatar: The Way of Water",
+    "Genre": "Action, Fantasy, Adventure",
+    "Length": 192,
+    "Age": 12,
+    "Labels": "Fear, Harsh language, Violence"
   },
   {
-    "id": 10,
-    "name": "COCAINE BEAR",
-    "genre": "Thriller",
-    "length": 95,
-    "age": 16,
-    "labels": "Drugs, Fear, Harsh language, Violence"
+    "Id": 10,
+    "Name": "COCAINE BEAR",
+    "Genre": "Thriller",
+    "Length": 95,
+    "Age": 16,
+    "Labels": "Drugs, Fear, Harsh language, Violence"
   },
   {
-    "id": 11,
-    "name": "The Super Mario Bros. Movie",
-    "genre": "Comedy, Animation",
-    "length": 93,
-    "age": 6,
-    "labels": "Fear, Violence"
+    "Id": 11,
+    "Name": "The Super Mario Bros. Movie",
+    "Genre": "Comedy, Animation",
+    "Length": 93,
+    "Age": 6,
+    "Labels": "Fear, Violence"
   },
   {
-    "id": 12,
-    "name": "John Wick 4",
-    "genre": "Action, Thriller",
-    "length": 169,
-    "age": 15,
-    "labels": "Harsh language, Violence"
+    "Id": 12,
+    "Name": "John Wick 4",
+    "Genre": "Action, Thriller",
+    "Length": 169,
+    "Age": 15,
+    "Labels": "Harsh language, Violence"
   },
   {
-    "id": 13,
-    "name": "Dungeons \u0026 Dragons: Honor Among Thieves",
-    "genre": "Fantasy, Action, Adventure",
-    "length": 134,
-    "age": 12,
-    "labels": "Harsh language, Violence, Fear"
+    "Id": 13,
+    "Name": "Dungeons & Dragons: Honor Among Thieves",
+    "Genre": "Fantasy, Action, Adventure",
+    "Length": 134,
+    "Age": 12,
+    "Labels": "Harsh language, Violence, Fear"
   },
   {
-    "id": 14,
-    "name": "Akira",
-    "genre": "Sci-Fi, Thriller",
-    "length": 124,
-    "age": 16,
-    "labels": "Harsh language, Violence, Fear"
+    "Id": 14,
+    "Name": "Akira",
+    "Genre": "Sci-Fi, Thriller",
+    "Length": 124,
+    "Age": 16,
+    "Labels": "Harsh language, Violence, Fear"
   },
   {
-    "id": 15,
-    "name": "Bullet Train",
-    "genre": "Action, Comedy",
-    "length": 152,
-    "age": 17,
-    "labels": "Violence \u0026 Gore, Harsh Language"
+    "Id": 15,
+    "Name": "Bullet Train",
+    "Genre": "Action, Comedy",
+    "Length": 152,
+    "Age": 17,
+    "Labels": "Violence & Gore, Harsh Language"
   },
   {
-    "id": 16,
-    "name": "The Incredibles",
-    "genre": "Action, Adventure",
-    "length": 115,
-    "age": 8,
-    "labels": "None"
-  },   
-  {
-  "id": 17,
-  "name": "The Lord of the Rings: The Return of the King",
-  "genre": "Fantasy",
-  "length": 201,
-  "minimum_age": 13,
-  "labels":"Violence"
-},
-  {
-    "id": 18,
-    "name": "The Dark Knight",
-    "genre": "Action",
-    "length": 152,
-    "minimum_age": 15,
-    "labels": "Violence & Language"
+    "Id": 16,
+    "Name": "The Incredibles",
+    "Genre": "Action, Adventure",
+    "Length": 115,
+    "Age": 8,
+    "Labels": "None"
   },
   {
-    "id": 19,
-    "name": "Avatar",
-    "genre": "Science Fiction",
-    "length": 162,
-    "minimum_age": 13,
-    "labels": "Violence"
+    "Id": 17,
+    "Name": "The Lord of the Rings: The Return of the King",
+    "Genre": "Fantasy, Adventure",
+    "Length": 201,
+    "Age": 13,
+    "Labels": "Violence"
   },
   {
-    "id": 20,
-    "name": "The Avengers",
-    "genre": "Action",
-    "length": 143,
-    "minimum_age": 13,
-    "labels": "Violence"
+    "Id": 18,
+    "Name": "The Dark Knight",
+    "Genre": "Action, Drama",
+    "Length": 152,
+    "Age": 15,
+    "Labels": "Violence & Language"
   },
   {
-    "id": 21,
-    "name": "The Hunger Games",
-    "genre": "Science Fiction",
-    "length": 142,
-    "minimum_age": 13,
-    "labels": "Violence"
+    "Id": 19,
+    "Name": "Avatar",
+    "Genre": "Science Fiction, Adventure",
+    "Length": 162,
+    "Age": 12,
+    "Labels": "Violence"
   },
   {
-    "id": 22,
-    "name": "The Hobbit: An Unexpected Journey",
-    "genre": "Fantasy",
-    "length": 169,
-    "minimum_age": 13,
-    "labels": "Violence"
+    "Id": 20,
+    "Name": "The Avengers",
+    "Genre": "Action, Science Fiction",
+    "Length": 143,
+    "Age": 12,
+    "Labels": "Violence"
   },
   {
-    "id": 23,
-    "name": "Frozen",
-    "genre": "Animation",
-    "length": 102,
-    "minimum_age": 0,
-    "labels": "None"
+    "Id": 21,
+    "Name": "The Hunger Games",
+    "Genre": "Science Fiction, Adventure",
+    "Length": 142,
+    "Age": 13,
+    "Labels": "Violence"
   },
   {
-    "id": 24,
-    "name": "Toy Story 3",
-    "genre": "Animation",
-    "length": 103,
-    "minimum_age": 0,
-    "parental_labels": "None"
+    "Id": 22,
+    "Name": "The Hobbit: An Unexpected Journey",
+    "Genre": "Fantasy, Adventure",
+    "Length": 169,
+    "Age": 10,
+    "Labels": "Violence"
   },
   {
-    "id": 25,
-    "name": "Inception",
-    "genre": "Science Fiction",
-    "length": 148,
-    "minimum_age": 13,
-    "labels": "Violence"
+    "Id": 23,
+    "Name": "Frozen",
+    "Genre": "Animation, Musical",
+    "Length": 102,
+    "Age": 0,
+    "Labels": "None"
   },
   {
-    "id": 26,
-    "name": "Pirates of the Caribbean: Dead Man's Chest",
-    "genre": "Action",
-    "length": 151,
-    "minimum_age": 13,
-    "labels": "Violence"
+    "Id": 24,
+    "Name": "Toy Story 3",
+    "Genre": "Animation, Adventure",
+    "Length": 103,
+    "Age": 0,
+    "Labels": "None"
   },
   {
-    "id": 27,
-    "name": "Finding Nemo",
-    "genre": "Animation",
-    "length": 100,
-    "minimum_age": 0,
-    "labels": "None"
+    "Id": 25,
+    "Name": "Inception",
+    "Genre": "Science Fiction, Thriller",
+    "Length": 148,
+    "Age": 14,
+    "Labels": "Violence"
   },
   {
-    "id": 29,
-    "name": "Harry Potter and the Philosopher's Stone",
-    "genre": "Fantasy",
-    "length": 152,
-    "minimum_age": 7,
-    "labels": "None" 
+    "Id": 26,
+    "Name": "Pirates of the Caribbean: Dead Man's Chest",
+    "Genre": "Action, Adventure",
+    "Length": 151,
+    "Age": 12,
+    "Labels": "Violence"
   },
   {
-    "id": 30,
-    "name": "Spider-Man",
-    "genre": "Action",
-    "length": 121,
-    "minimum_age": 13,
-    "labels": "Violence"
-  },
-  {    
-    "id": 31,    
-    "name": "La La Land",    
-    "genre": "Musical",    
-    "length": 128,    
-    "minimum_age": 10,    
-    "labels": "Romance & Language"
+    "Id": 27,
+    "Name": "Finding Nemo",
+    "Genre": "Animation, Adventure",
+    "Length": 100,
+    "Age": 0,
+    "Labels": "None"
   },
   {
-    "id": 32,
-    "name": "Zootopia",
-    "genre": "Animation",
-    "length": 108,
-    "minimum_age": 0,
-    "labels": "None"
+    "Id": 28,
+    "Name": "Harry Potter and the Philosopher's Stone",
+    "Genre": "Fantasy, Adventure",
+    "Length": 152,
+    "Age": 10,
+    "Labels": "None"
   },
   {
-    "id": 33,
-    "name": "The Lion King",
-    "genre": "Animation",
-    "length": 88,
-    "minimum_age": 0,
-    "labels": "None"
+    "Id": 29,
+    "Name": "Spider-Man",
+    "Genre": "Action, Adventure",
+    "Length": 121,
+    "Age": 12,
+    "Labels": "Violence"
   },
   {
-    "id": 34,
-    "name": "The Shape of Water",
-    "genre": "Fantasy",
-    "length": 123,
-    "minimum_age": 17,
-    "labels": "Nudity, Sex, Violence & Language"
+    "Id": 30,
+    "Name": "La La Land",
+    "Genre": "Musical, Romance",
+    "Length": 128,
+    "Age": 12,
+    "Labels": "Romance & Language"
   },
   {
-    "id": 35,
-    "name": "Up",
-    "genre": "Animation",
-    "length": 96,
-    "minimum_age": 0,
-    "labels": "None"
+    "Id": 31,
+    "Name": "Zootopia",
+    "Genre": "Animation, Adventure",
+    "Length": 108,
+    "Age": 6,
+    "Labels": "None"
   },
   {
-    "id": 36,
-    "name": "Inside Out",
-    "genre": "Animation",
-    "length": 95,
-    "minimum_age": 0,
-    "labels": "None"
+    "Id": 32,
+    "Name": "The Lion King",
+    "Genre": "Animation, Adventure",
+    "Length": 88,
+    "Age": 6,
+    "Labels": "None"
   },
   {
-    "id": 37,
-    "name": "The Hunger Games: Mockingjay - Part 1",
-    "genre": "Science Fiction",
-    "length": 123,
-    "minimum_age": 13,
-    "labels": "Violence"
+    "Id": 33,
+    "Name": "The Shape of Water",
+    "Genre": "Fantasy, Drama",
+    "Length": 123,
+    "Age": 16,
+    "Labels": "Nudity, Sex, Violence & Language"
   },
   {
-    "id": 38,
-    "name": "Mad Max: Fury Road",
-    "genre": "Action",
-    "length": 120,
-    "minimum_age": 17,
-    "labels": "Violence & Language"
+    "Id": 34,
+    "Name": "Up",
+    "Genre": "Animation, Adventure",
+    "Length": 96,
+    "Age": 6,
+    "Labels": "None"
   },
   {
-    "id": 39,
-    "name": "Her",
-    "genre": "Romance",
-    "length": 126,
-    "minimum_age": 17,
-    "labels": "Nudity, Sex & Language"
+    "Id": 35,
+    "Name": "Inside Out",
+    "Genre": "Animation, Adventure",
+    "Length": 95,
+    "Age": 6,
+    "Labels": "None"
   },
   {
-    "id": 40,
-    "name": "The Martian",
-    "genre": "Science Fiction",
-    "length": 144,
-    "minimum_age": 13,
-    "labels": "Language"
-  },
-  {    
-    "id": 41,    
-    "name": "Moonlight",    
-    "genre": "Drama",    
-    "length": 111,    
-    "minimum_age": 17,    
-    "labels": "Language, Sex, Nudity & Violence"
+    "Id": 36,
+    "Name": "The Hunger Games: Mockingjay - Part 1",
+    "Genre": "Science Fiction, Adventure",
+    "Length": 123,
+    "Age": 13,
+    "Labels": "Violence"
   },
   {
-    "id": 42,
-    "name": "Logan",
-    "genre": "Action",
-    "length": 137,
-    "minimum_age": 17,
-    "labels": "Violence & Language"
+    "Id": 37,
+    "Name": "Mad Max: Fury Road",
+    "Genre": "Action, Adventure",
+    "Length": 120,
+    "Age": 15,
+    "Labels": "Violence & Language"
   },
   {
-    "id": 43,
-    "name": "Black Panther",
-    "genre": "Action",
-    "length": 134,
-    "minimum_age": 13,
-    "labels": "Violence & Language"
+    "Id": 38,
+    "Name": "Her",
+    "Genre": "Romance, Drama",
+    "Length": 126,
+    "Age": 16,
+    "Labels": "Nudity, Sex & Language"
   },
   {
-    "id": 44,
-    "name": "The Revenant",
-    "genre": "Adventure",
-    "length": 156,
-    "minimum_age": 17,
-    "labels": "Violence, Language & Nudity"
+    "Id": 39,
+    "Name": "The Martian",
+    "Genre": "Science Fiction, Adventure",
+    "Length": 144,
+    "Age": 12,
+    "Labels": "Language"
   },
   {
-    "id": 45,
-    "name": "Dunkirk",
-    "genre": "War",
-    "length": 107,
-    "minimum_age": 13,
-    "labels": "Violence"
+    "Id": 40,
+    "Name": "Moonlight",
+    "Genre": "Drama",
+    "Length": 111,
+    "Age": 16,
+    "Labels": "Language, Sex, Nudity & Violence"
   },
   {
-    "id": 46,
-    "name": "Wonder Woman",
-    "genre": "Action",
-    "length": 141,
-    "minimum_age": 13,
-    "labels": "Violence"
+    "Id": 41,
+    "Name": "Logan",
+    "Genre": "Action, Drama",
+    "Length": 137,
+    "Age": 15,
+    "Labels": "Violence & Language"
   },
   {
-    "id": 47,
-    "name": "Blade Runner 2049",
-    "genre": "Science Fiction",
-    "length": 164,
-    "minimum_age": 17,
-    "labels": "Violence, Language & Nudity"
+    "Id": 42,
+    "Name": "Black Panther",
+    "Genre": "Action, Adventure",
+    "Length": 134,
+    "Age": 12,
+    "Labels": "Violence & Language"
   },
   {
-    "id": 48,
-    "name": "Three Billboards Outside Ebbing, Missouri",
-    "genre": "Drama",
-    "length": 115,
-    "minimum_age": 17,
-    "labels": "Violence & Language"
+    "Id": 43,
+    "Name": "The Revenant",
+    "Genre": "Adventure, Drama",
+    "Length": 156,
+    "Age": 15,
+    "Labels": "Violence, Language & Nudity"
   },
   {
-    "id": 49,
-    "name": "Get Out",
-    "genre": "Horror",
-    "length": 104,
-    "minimum_age": 17,
-    "labels": "Violence, Language & Nudity"
+    "Id": 44,
+    "Name": "Dunkirk",
+    "Genre": "War, Drama",
+    "Length": 107,
+    "Age": 13,
+    "Labels": "Violence"
   },
   {
-    "id": 50,
-    "name": "A Star is Born",
-    "genre": "Drama",
-    "length": 136,
-    "minimum_age": 17,
-    "labels": "Language, Nudity & Drug Use"
-  },
-  {    
-    "id": 51,    
-    "name": "Parasite",    
-    "genre": "Thriller",    
-    "length": 132,    
-    "minimum_age": 17,    
-    "labels": "Violence & Language"
+    "Id": 45,
+    "Name": "Wonder Woman",
+    "Genre": "Action, Adventure",
+    "Length": 141,
+    "Age": 12,
+    "Labels": "Violence"
   },
   {
-    "id": 52,
-    "name": "Joker",
-    "genre": "Drama",
-    "length": 122,
-    "minimum_age": 17,
-    "labels": "Violence & Language"
+    "Id": 46,
+    "Name": "Blade Runner 2049",
+    "Genre": "Science Fiction, Thriller",
+    "Length": 164,
+    "Age": 15,
+    "Labels": "Violence, Language & Nudity"
   },
   {
-    "id": 53,
-    "name": "1917",
-    "genre": "War",
-    "length": 119,
-    "minimum_age": 17,
-    "labels": "Violence & Language"
+    "Id": 47,
+    "Name": "Three Billboards Outside Ebbing, Missouri",
+    "Genre": "Drama, Crime",
+    "Length": 115,
+    "Age": 16,
+    "Labels": "Violence & Language"
   },
   {
-    "id": 54,
-    "name": "Once Upon a Time in Hollywood",
-    "genre": "Comedy",
-    "length": 161,
-    "minimum_age": 17,
-    "labels": "Violence, Language, Nudity & Drug Use"
+    "Id": 48,
+    "Name": "Get Out",
+    "Genre": "Horror, Mystery",
+    "Length": 104,
+    "Age": 15,
+    "Labels": "Violence, Language & Nudity"
   },
   {
-    "id": 55,
-    "name": "Knives Out",
-    "genre": "Mystery",
-    "length": 130,
-    "minimum_age": 13,
-    "labels": "Violence & Language"
+    "Id": 49,
+    "Name": "A Star is Born",
+    "Genre": "Drama, Music",
+    "Length": 136,
+    "Age": 15,
+    "Labels": "Language, Nudity & Drug Use"
   },
   {
-    "id": 56,
-    "name": "The Irishman",
-    "genre": "Crime",
-    "length": 209,
-    "minimum_age": 17,
-    "labels": "Violence, Language & Nudity"
+    "Id": 50,
+    "Name": "Parasite",
+    "Genre": "Thriller, Drama",
+    "Length": 132,
+    "Age": 16,
+    "Labels": "Violence & Language"
   },
   {
-    "id": 57,
-    "name": "Jojo Rabbit",
-    "genre": "Comedy",
-    "length": 108,
-    "minimum_age": 13,
-    "labels": "Violence & Language"
+    "Id": 51,
+    "Name": "Joker",
+    "Genre": "Drama, Thriller",
+    "Length": 122,
+    "Age": 16,
+    "Labels": "Violence & Language"
   },
   {
-    "id": 58,
-    "name": "Little Women",
-    "genre": "Drama",
-    "length": 135,
-    "minimum_age": 10,
-    "labels": "None"
+    "Id": 52,
+    "Name": "1917",
+    "Genre": "War, Drama",
+    "Length": 119,
+    "Age": 15,
+    "Labels": "Violence & Language"
   },
   {
-    "id": 59,
-    "name": "Ford v Ferrari",
-    "genre": "Action",
-    "length": 152,
-    "minimum_age": 13,
-    "labels": "Violence & Language"
+    "Id": 53,
+    "Name": "Once Upon a Time in Hollywood",
+    "Genre": "Comedy, Drama",
+    "Length": 161,
+    "Age": 16,
+    "Labels": "Violence, Language, Nudity & Drug Use"
   },
   {
-    "id": 60,
-    "name": "The Shape of Water",
-    "genre": "Fantasy",
-    "length": 123,
-    "minimum_age": 17,
-    "labels": "Nudity, Sex & Language"
+    "Id": 54,
+    "Name": "Knives Out",
+    "Genre": "Mystery, Comedy",
+    "Length": 130,
+    "Age": 13,
+    "Labels": "Violence & Language"
+  },
+  {
+    "Id": 55,
+    "Name": "The Irishman",
+    "Genre": "Crime, Drama",
+    "Length": 209,
+    "Age": 16,
+    "Labels": "Violence, Language & Nudity"
+  },
+  {
+    "Id": 56,
+    "Name": "Jojo Rabbit",
+    "Genre": "Comedy, Drama",
+    "Length": 108,
+    "Age": 13,
+    "Labels": "Violence & Language"
+  },
+  {
+    "Id": 57,
+    "Name": "Little Women",
+    "Genre": "Drama, Romance",
+    "Length": 135,
+    "Age": 12,
+    "Labels": "None"
+  },
+  {
+    "Id": 58,
+    "Name": "Ford v Ferrari",
+    "Genre": "Action, Drama",
+    "Length": 152,
+    "Age": 13,
+    "Labels": "Violence & Language"
+  },
+  {
+    "Id": 59,
+    "Name": "The Shape of Water",
+    "Genre": "Fantasy, Drama",
+    "Length": 123,
+    "Age": 16,
+    "Labels": "Nudity, Sex & Language"
   }
 ]
