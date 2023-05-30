@@ -405,13 +405,13 @@
         "D |     O O O O O O O O O O O O O O     ",
         "C |     O O O O O O O O O O O O O O     ",
         "B |       O O O O O O O O O O O O       ",
-        "A |       O O O O O O O O O O O O       ",
+        "A |       O O O X O X O O O O O O       ",
         "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------",
         "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 ",
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 300
+      "available_seats": 298
     },
     "begin_time": "2023-05-31T20:22:00",
     "end_time": "2023-05-31T22:45:00",

@@ -11,20 +11,40 @@ static class Movies
     
     static public void Start()
     {
-        Console.WriteLine("> Enter 1 to see the movies running today.");
-        Console.WriteLine("> Enter 2 to see movie on another date.");
-        Console.WriteLine("> Enter 3 to go back to menu");
+        Console.Clear();
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        Console.WriteLine("  __  __         _        \r\n |  \\/  |_____ _(_)___ ___\r\n | |\\/| / _ \\ V / / -_|_-<\r\n |_|  |_\\___/\\_/|_\\___/__/\r\n                          ");
+        Console.ResetColor();
+        Console.WriteLine("");
+        Console.WriteLine("> [1] See the movies running today.");
+        Console.WriteLine("> [2] See movie on another date.");
+        Console.WriteLine("> [3] Go back to menu");
         var movie_input = Console.ReadLine()!;
 
         if(movie_input == "1")
         {
             DateTime currentDateTime = DateTime.Now;
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine("  __  __         _        \r\n |  \\/  |_____ _(_)___ ___\r\n | |\\/| / _ \\ V / / -_|_-<\r\n |_|  |_\\___/\\_/|_\\___/__/\r\n                          ");
+            Console.ResetColor();
+            Console.WriteLine("");
             Select_Movie(currentDateTime);
             Start();
         }
         else if(movie_input == "2")
         {
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine("  __  __         _        \r\n |  \\/  |_____ _(_)___ ___\r\n | |\\/| / _ \\ V / / -_|_-<\r\n |_|  |_\\___/\\_/|_\\___/__/\r\n                          ");
+            Console.ResetColor();
+            Console.WriteLine("");
             var next_date = Get_Date();
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine("  __  __         _        \r\n |  \\/  |_____ _(_)___ ___\r\n | |\\/| / _ \\ V / / -_|_-<\r\n |_|  |_\\___/\\_/|_\\___/__/\r\n                          ");
+            Console.ResetColor();
+            Console.WriteLine("");
             Select_Movie(next_date);
             Start();
         }
@@ -33,10 +53,16 @@ static class Movies
             Console.Clear();
             if (accountsLogic.Return_Current_User() != null)
             {
+
+                Console.WriteLine("Going back to menu....");
+                Thread.Sleep(1000);
                 Menu.Menu_When_Logged_In();
             }
             else
             {
+                
+                Console.WriteLine("Going back to menu....");
+                Thread.Sleep(1000);
                 Menu.Start();
             }
         }
@@ -50,7 +76,7 @@ static class Movies
     }
     static public void Select_Movie(DateTime your_date)
     {
-        Console.Clear();
+       
 
         //Gets the current date in a form of a string.
         
@@ -84,13 +110,23 @@ static class Movies
                 // if input is C, you get to change to date.
                 if (input_movie == "C")
                 {
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    Console.WriteLine("  __  __         _        \r\n |  \\/  |_____ _(_)___ ___\r\n | |\\/| / _ \\ V / / -_|_-<\r\n |_|  |_\\___/\\_/|_\\___/__/\r\n                          ");
+                    Console.ResetColor();
+                    Console.WriteLine("");
                     var  next_date = Get_Date();
+                    Console.Clear();
+                    Console.ForegroundColor = ConsoleColor.DarkGreen;
+                    Console.WriteLine("  __  __         _        \r\n |  \\/  |_____ _(_)___ ___\r\n | |\\/| / _ \\ V / / -_|_-<\r\n |_|  |_\\___/\\_/|_\\___/__/\r\n                          ");
+                    Console.ResetColor();
+                    Console.WriteLine("");
                     Select_Movie(next_date);
                 }
                 //if input is B, you get back to the menu.
                 if(input_movie == "B")
                 {
-                    Menu.Menu_When_Logged_In();
+                    Start();
                 }
 
                 try

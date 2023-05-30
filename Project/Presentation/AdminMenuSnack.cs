@@ -15,7 +15,7 @@ static class AdminMenuSnack
         Console.WriteLine(" > [2] Remove a snack from the snack list");
         Console.WriteLine(" > [3] Change a value of snacks from the snack list");
         Console.WriteLine(" > [4] See current snack list");
-        Console.WriteLine(" > [5] Go back to");
+        Console.WriteLine(" > [5] Go back ");
 
         string input = Console.ReadLine()!;
         if (input == "1")
@@ -36,6 +36,11 @@ static class AdminMenuSnack
         else if (input == "4")
         {
             Console.Clear();
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine("    _      _       _        ___              _     __  __              \r\n   /_\\  __| |_ __ (_)_ _   / __|_ _  __ _ __| |__ |  \\/  |___ _ _ _  _ \r\n  / _ \\/ _` | '  \\| | ' \\  \\__ \\ ' \\/ _` / _| / / | |\\/| / -_) ' \\ || |\r\n /_/ \\_\\__,_|_|_|_|_|_||_| |___/_||_\\__,_\\__|_\\_\\ |_|  |_\\___|_||_\\_,_|\r\n                                                                      ");
+            Console.ResetColor();
+            Console.WriteLine("");
+            Console.WriteLine("Current List: ");
             Get_Snack_List();
             Console.WriteLine(" > Press 'Enter' to continue");
             Console.ReadLine();
@@ -334,7 +339,16 @@ static class AdminMenuSnack
                 Console.WriteLine("   ___ _                         ___              _   \r\n  / __| |_  __ _ _ _  __ _ ___  / __|_ _  __ _ __| |__\r\n | (__| ' \\/ _` | ' \\/ _` / -_) \\__ \\ ' \\/ _` / _| / /\r\n  \\___|_||_\\__,_|_||_\\__, \\___| |___/_||_\\__,_\\__|_\\_\\\r\n                     |___/                            ");
                 Console.ResetColor();
                 Console.WriteLine("");
-                Console.WriteLine(your_snack);
+
+                //Creates a new table.
+                var table = new ConsoleTable("Name", "Price","Type of Food","Allergies");
+                //Loops through the running movie list, and add the contents to the table.
+                
+                table.AddRow(your_snack.Name,your_snack.Price,your_snack.Type_Of_Food,your_snack.Allergies);
+                
+                table.Options.EnableCount = false;
+
+                Console.WriteLine(table);
                 Console.WriteLine("What would you like to do?");
                 Console.WriteLine(" > [1] Change the name");
                 Console.WriteLine(" > [2] Change the price");
