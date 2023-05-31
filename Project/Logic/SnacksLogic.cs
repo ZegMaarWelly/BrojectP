@@ -10,6 +10,7 @@
 
     public List<SnackModel> Return_Snack_List()
     {
+        _snacks = SnacksAccess.LoadAll();
         return _snacks;
     }
     
@@ -34,13 +35,39 @@
         SnacksAccess.WriteAll(_snacks);
     }
 
+    public void Update_Snack_ID()
+    {
+        List<SnackModel> snacks = SnacksAccess.LoadAll();
+        for (int i = 0; i < snacks.Count; i++)
+        {
+            snacks[i].ID = i + 1;
+        }
+        SnacksAccess.WriteAll(snacks);
+    }
 
-    public SnackModel Find_Snack(string name)
+    public static int Find_Next_ID()
+    {
+        return SnacksAccess.LoadAll().Select(a => a.ID).Max() + 1;
+    }
+
+    public SnackModel Find_Snack_ID(int id)
     {
         // Loops through the snack list and finds the SnackModel based on method's argument
         foreach (SnackModel snack in _snacks)
         {
-            if (snack.Name == name )
+            if (snack.ID == id )
+            {
+                return snack;
+            }
+        }
+        return null;
+    }
+
+    public SnackModel Find_Snack(string name)
+    {
+        foreach (SnackModel snack in _snacks)
+        {
+            if (snack.Name == name)
             {
                 return snack;
             }

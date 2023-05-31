@@ -6,85 +6,93 @@ static class MenuSnack
     static public  ShoppingCartLogic shoppingcartLogic = Factory.shoppingcartLogic;
     static public void Start()
     {
-        Console.ForegroundColor= ConsoleColor.DarkGreen;
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
         Console.WriteLine("\r\n  ___              _     __  __              \r\n / __|_ _  __ _ __| |__ |  \\/  |___ _ _ _  _ \r\n \\__ \\ ' \\/ _` / _| / / | |\\/| / -_) ' \\ || |\r\n |___/_||_\\__,_\\__|_\\_\\ |_|  |_\\___|_||_\\_,_|\r\n                                             \r\n");
         Console.ResetColor();
         Console.WriteLine("What do you want to order?");
-        Console.WriteLine("> [1] Order food");
-        Console.WriteLine("> [2] Order drinks");
-        Console.WriteLine("> [3] See your shopping cart");
+        Console.WriteLine(" > Enter [1] to order food");
+        Console.WriteLine(" > Enter [2] to order drinks");
+        Console.WriteLine(" > Enter [3] to see your shopping cart");
+        Console.WriteLine(" > Enter [4] screening room test small.");
         User.CurrentUser();
 
         string input = Console.ReadLine()!;
         Console.Clear();
         if (input == "1")
-        {
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine("   ___         _           ___             _ \r\n  / _ \\ _ _ __| |___ _ _  | __|__  ___  __| |\r\n | (_) | '_/ _` / -_) '_| | _/ _ \\/ _ \\/ _` |\r\n  \\___/|_| \\__,_\\___|_|   |_|\\___/\\___/\\__,_|\r\n                                             ");
-            Console.ResetColor();
-            Console.WriteLine();
-            Food_Menu();
-            Console.WriteLine();
-            Console.WriteLine("What Snack are you going to choose \n > Type the name: ");
-            string snack_choice = Console.ReadLine()!;
-            SnackModel your_snack = snacksLogic.Find_Snack(snack_choice);
-            if (your_snack == null || your_snack.Type_Of_Food == "Drink")
+        { 
+            while (true)
             {
-                Console.Clear();
-                Console.WriteLine("This Snack doesn't exist in the snack list");
-                Thread.Sleep(1000);
-                Console.WriteLine("Going back...");
-                Thread.Sleep(1000);
-                Console.Clear();
+                try
+                {
+                    Food_Menu();
+                    Console.WriteLine();
+                    Console.WriteLine("What Snack are you going to choose? (Please provide only the ID)\n");
+                    string snack_choice = Console.ReadLine()!;
+                    int converted_snack = Convert.ToInt32(snack_choice);
+                    SnackModel your_snack = snacksLogic.Find_Snack_ID(converted_snack);
+                    if (your_snack == null || your_snack.Type_Of_Food == "Drink")
+                    {
+                        Console.WriteLine("This Snack doesn't exist in the snack list");
+                        Thread.Sleep(3000);
+                        Console.Clear();
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{your_snack.Name} has been added to your shopping cart");
+                        shoppingcartLogic.AddCountedSnack(your_snack);
+                        Thread.Sleep(3000);
+                        Console.Clear();
+                    }
+                    Start();
+                }
+                catch
+                {
+                    Console.WriteLine("Please provide only numbers.\n");
+                }
             }
-            else
-            {
-                Console.Clear();
-                Console.WriteLine($"{your_snack.Name} has been added to your shopping cart");
-                shoppingcartLogic.AddCountedSnack(your_snack);
-                Thread.Sleep(2000);
-                Console.WriteLine("Going back...");
-                Thread.Sleep(1000);
-                Console.Clear();
-            }
-            Start();
+            
 
         }
         else if (input == "2")
         {
-            Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine("   ___         _           ___      _      _   \r\n  / _ \\ _ _ __| |___ _ _  |   \\ _ _(_)_ _ | |__\r\n | (_) | '_/ _` / -_) '_| | |) | '_| | ' \\| / /\r\n  \\___/|_| \\__,_\\___|_|   |___/|_| |_|_||_|_\\_\\\r\n                                               ");
-            Console.ResetColor();
-            Console.WriteLine();
-            Drink_Menu();
-            Console.WriteLine();
-            Console.WriteLine("What  are you going to choose \n > Type the name: ");
-            string snack_choice = Console.ReadLine()!;
-            SnackModel your_snack = snacksLogic.Find_Snack(snack_choice);
-            if (your_snack == null || your_snack.Type_Of_Food == "Snack")
+            while (true)
             {
-                Console.Clear();
-                Console.WriteLine("This Snack doesn't exist in the snack list");
-                Thread.Sleep(2000);
-                Console.WriteLine("Going back...");
-                Thread.Sleep(1000);
-                Console.Clear();
+                try
+                {
+                    Drink_Menu();
+                    Console.WriteLine();
+                    Console.WriteLine("What drink are you going to choose: (Please provide only the ID)");
+                    string snack_choice = Console.ReadLine()!;
+                    int converted_snack = Convert.ToInt32(snack_choice);
+                    SnackModel your_snack = snacksLogic.Find_Snack_ID(converted_snack);
+                    if (your_snack == null || your_snack.Type_Of_Food == "Snack")
+                    {
+                        Console.WriteLine("This Snack doesn't exist in the snack list");
+                        Thread.Sleep(3000);
+                        Console.Clear();
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{your_snack.Name} has been added to your shopping cart");
+                        shoppingcartLogic.AddCountedSnack(your_snack);
+                        Thread.Sleep(3000);
+                        Console.Clear();
+                    }
+                    Start();
+                }
+                catch
+                {
+                    Console.WriteLine("Please provide only numbers.\n");
+                }
             }
-            else
-            {
-                Console.Clear();
-                Console.WriteLine($"{your_snack.Name} has been added to your shopping cart");
-                shoppingcartLogic.AddCountedSnack(your_snack);
-                Thread.Sleep(1000);
-                Console.WriteLine("Going back...");
-                Thread.Sleep(1000);
-                Console.Clear();
-            }
-            Start();
         }
         else if(input == "3")
         {
             ShoppingCart.Start();
+        }
+        else if(input == "4")
+        {
+            ScreeningRoom.Start();
         }
         else
         {

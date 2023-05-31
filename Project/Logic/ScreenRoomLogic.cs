@@ -62,7 +62,9 @@ class ScreenRoomLogic
 
             Console.Clear();
 
-
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
+            Console.WriteLine("   ___ _         _       ___      _        _   _          \r\n  / __| |_  __ _(_)_ _  / __| ___| |___ __| |_(_)___ _ _  \r\n | (__| ' \\/ _` | | '_| \\__ \\/ -_) / -_) _|  _| / _ \\ ' \\ \r\n  \\___|_||_\\__,_|_|_|   |___/\\___|_\\___\\__|\\__|_\\___/_||_|\r\n                                                         ");
+            Console.ResetColor();
             foreach (var chair_row in screening_room)
             {
                 for (int i = 0; i < chair_row.Length; i += 2)
