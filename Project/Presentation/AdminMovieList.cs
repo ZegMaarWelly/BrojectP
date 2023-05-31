@@ -8,7 +8,7 @@ static class AdminMovieList
     static public void Start()
     {
         Console.ForegroundColor = ConsoleColor.DarkGreen;
-        Console.WriteLine("    _      _       _        __  __         _       __  __ ___          \r\n   /_\\  __| |_ __ (_)_ _   |  \\/  |_____ _(_)___  |  \\/  | __|_ _ _  _ \r\n  / _ \\/ _` | '  \\| | ' \\  | |\\/| / _ \\ V / / -_) | |\\/| | _|| ' \\ || |\r\n /_/ \\_\\__,_|_|_|_|_|_||_| |_|  |_\\___/\\_/|_\\___| |_|  |_|___|_||_\\_,_|\r\n                                                                      ");
+        Console.WriteLine("    _      _       _        __  __         _       __  __              \r\n   /_\\  __| |_ __ (_)_ _   |  \\/  |_____ _(_)___  |  \\/  |___ _ _ _  _ \r\n  / _ \\/ _` | '  \\| | ' \\  | |\\/| / _ \\ V / / -_) | |\\/| / -_) ' \\ || |\r\n /_/ \\_\\__,_|_|_|_|_|_||_| |_|  |_\\___/\\_/|_\\___| |_|  |_\\___|_||_\\_,_|\r\n                                                                      ");
         Console.ResetColor();
         Console.WriteLine("What would you like to do?\n > [1] Add a movie to the list of movies\n > [2] Remove a movie from the list\n > [3] See the current list of movies\n > [4] Edit a movie's information\n > [5] Sort movies by genre\n > [6] Return to the main menu\n");
         string input = Console.ReadLine()!;

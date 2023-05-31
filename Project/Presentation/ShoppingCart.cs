@@ -11,10 +11,14 @@ static class ShoppingCart
     // Asks the user what they want to do
     static public void Start()
     {
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        Console.WriteLine(" __   __              ___ _                  _              ___          _   \r\n \\ \\ / /__ _  _ _ _  / __| |_  ___ _ __ _ __(_)_ _  __ _   / __|__ _ _ _| |_ \r\n  \\ V / _ \\ || | '_| \\__ \\ ' \\/ _ \\ '_ \\ '_ \\ | ' \\/ _` | | (__/ _` | '_|  _|\r\n   |_|\\___/\\_,_|_|   |___/_||_\\___/ .__/ .__/_|_||_\\__, |  \\___\\__,_|_|  \\__|\r\n                                  |_|  |_|         |___/                    ");
+        Console.ResetColor();
+        Console.WriteLine();
         Show_Shopping_Cart();
-        Console.WriteLine("Press [1] to get more snacks");
-        Console.WriteLine("Press [2] to delete snacks");
-        Console.WriteLine("Press [3] to confirm your order");
+        Console.WriteLine(" > Press [1] to get more snacks");
+        Console.WriteLine(" > Press [2] to delete snacks");
+        Console.WriteLine(" > Press [3] to confirm your order");
         var choice = Console.ReadLine()!;
         Console.Clear();
         if(choice == "1")
