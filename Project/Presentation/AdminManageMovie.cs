@@ -68,13 +68,13 @@ static class AdminManageMovie
             Console.Clear();
             See_All_Movies_On_A_Date();
         }
-        else if(manage_choice == "9")
+        else if (manage_choice == "9")
         {
             Console.Clear();
             Console.WriteLine("Going Back to Menu \n ");
             AdminMenu.Start();
         }
-        else if(manage_choice == "8")
+        else if (manage_choice == "8")
         {
             Console.Clear();
             Populate_A_Date();
@@ -100,28 +100,28 @@ static class AdminManageMovie
         //Loops through the running movie list, and add the contents to the table.
         foreach (RoomModel room in room_list)
         {
-            table.AddRow(room.ID,room.Total_Seats);
+            table.AddRow(room.ID, room.Total_Seats);
         }
         table.Options.EnableCount = false;
 
         Console.WriteLine(table);
     }
 
-    
-    
-    
+
+
+
 
 
     // Prints the list of all the running movies on a given date.
     static public void Get_Running_Movie_List(string your_date)
     {
-        
+
 
         runningmovieLogic = new RunningMovieLogic(your_date);
 
         List<RunningMovieModel> runningmovie_list = runningmovieLogic.Return_RunningMovie_List();
 
-       
+
 
         //Creates a new table.
         var table = new ConsoleTable("", "Movie", "Time", "Room", "Available Seats");
@@ -148,14 +148,14 @@ static class AdminManageMovie
     // Gets the running movie based on a given date and movie name.
     static public RunningMovieModel Get_Running_Movie_To_Be_Changed(string your_date)
     {
-        
+
 
         runningmovieLogic = new RunningMovieLogic(your_date);
 
         // Prints all the available movies on a date.
         Get_Running_Movie_List(your_date);
 
-        
+
         // Asks the user which running movie they want to change.
         Console.WriteLine("\n Which movie do you want to change?");
         int to_be_changed_id = -1;
@@ -165,7 +165,7 @@ static class AdminManageMovie
             Console.WriteLine("Enter the number of your movie: ");
             try
             {
-                
+
                 to_be_changed_id = Convert.ToInt32(Console.ReadLine());
                 to_be_changed_success = true;
 
@@ -181,8 +181,8 @@ static class AdminManageMovie
         RunningMovieModel your_running_movie = runningmovie_list[to_be_changed_id - 1];
         return your_running_movie;
     }
-    
-    
+
+
     // Prints the list of all the movies available.
     static public void Get_Movie_List()
     {
@@ -193,21 +193,21 @@ static class AdminManageMovie
     // Asks the user for their movie.
     static public MovieListModel Get_Movie_From_Name()
     {
-        
+
         Console.WriteLine("Current movie list: ");
         Get_Movie_List();
         Console.WriteLine("\nWhich movie do you want to choose?");
         Console.WriteLine("Movie: ");
         string movie_name = Console.ReadLine()!;
-        MovieListModel  movie = movieLogic.Find_Movie(movie_name);
+        MovieListModel movie = movieLogic.Find_Movie(movie_name);
         return movie;
     }
 
     // Asks the user for their room.
     static public RoomModel Get_Room_From_Id()
     {
-       
-        
+
+
         Get_Room_List();
         Console.WriteLine("\nWhich room do you want to choose?");
 
@@ -218,9 +218,9 @@ static class AdminManageMovie
             Console.WriteLine("Room ID: ");
             try
             {
-                
+
                 room_id = Convert.ToInt32(Console.ReadLine());
-                if(room_id <= roomLogic.Return_Room_List().Count || room_id > 0)
+                if (room_id <= roomLogic.Return_Room_List().Count || room_id > 0)
                 {
                     room_success = true;
                 }
@@ -244,8 +244,8 @@ static class AdminManageMovie
     // gets the string of a date.
     static public string Get_String_Date()
     {
-        
-        
+
+
         bool movie_success = false;
         string your_date = "";
         while (!movie_success)
@@ -275,7 +275,7 @@ static class AdminManageMovie
     // Asks the user for their date.
     static public DateTime Get_Date()
     {
-        
+
         bool movie_success = false;
         DateTime date = default;
         while (!movie_success)
@@ -309,15 +309,15 @@ static class AdminManageMovie
         string start_string = Console.ReadLine()!;
         DateTime start_date = DateTime.ParseExact(start_string, "HH:mm", CultureInfo.InvariantCulture);
 
-        DateTime correct_start_date= new DateTime(date.Year, date.Month, date.Day, start_date.Hour, start_date.Minute, start_date.Second);
+        DateTime correct_start_date = new DateTime(date.Year, date.Month, date.Day, start_date.Hour, start_date.Minute, start_date.Second);
 
         return correct_start_date;
     }
-    
+
     // Asks the user for the end date of the movie.
     static public DateTime Get_End_Time(DateTime date)
     {
-        
+
         Console.WriteLine("Your end time: [HH:MM]");
         string start_string = Console.ReadLine()!;
         DateTime start_date = DateTime.ParseExact(start_string, "HH:mm", CultureInfo.InvariantCulture);
@@ -435,7 +435,7 @@ static class AdminManageMovie
         Console.WriteLine("New movie: ");
         See_One_Movie(running_movie);
         bool confirmation_success = false;
-        while(!confirmation_success)
+        while (!confirmation_success)
         {
             Console.WriteLine("\n\n Do you want to confirm the changes? [Y/N]]\n\n");
             var confirmation_input = Console.ReadLine()!.ToUpper();
@@ -454,7 +454,7 @@ static class AdminManageMovie
             // If choice is yes, it will change the begin and end time to the json file.
             else if (confirmation_input == "Y")
             {
-                runningmovieLogic.Change_Begin_Time(begin_time,running_movie);
+                runningmovieLogic.Change_Begin_Time(begin_time, running_movie);
                 runningmovieLogic.Change_End_Time(end_time, running_movie);
                 Console.Clear();
                 Console.WriteLine("Your changes have been made!");
@@ -465,14 +465,14 @@ static class AdminManageMovie
                 Start();
 
 
-            }   
+            }
             else
             {
                 Console.WriteLine("Invalid input");
             }
         }
     }
-    
+
 
     static public void Change_Movie()
     {
@@ -760,15 +760,15 @@ static class AdminManageMovie
     {
         //Creates a new table.
         var table = new ConsoleTable("", "Movie", "Time", "Room", "Available Seats");
-        
-         string time = $"{runningmovie.Begin_Time.ToString("HH:mm")}-{runningmovie.End_Time.ToString("HH:mm")}";
-         table.AddRow( 1, runningmovie.Movie.Name, time, runningmovie.Room.ID, runningmovie.Room.Available_Seats);
-        
+
+        string time = $"{runningmovie.Begin_Time.ToString("HH:mm")}-{runningmovie.End_Time.ToString("HH:mm")}";
+        table.AddRow(1, runningmovie.Movie.Name, time, runningmovie.Room.ID, runningmovie.Room.Available_Seats);
+
         table.Options.EnableCount = false;
 
         Console.WriteLine(table);
     }
-    
+
     // Adds a running movie to the running movie list (and also the json file).
     static public void Add_RunningMovie()
     {
@@ -781,7 +781,7 @@ static class AdminManageMovie
         Console.Clear();
 
         //If movie doesn't exist, return to menu. If movie does exist, continue.
-        if(movie == null)
+        if (movie == null)
         {
             Console.Clear();
             Console.WriteLine("Movie not found.");
@@ -825,7 +825,7 @@ static class AdminManageMovie
         }
 
         // Asks the user for a date.
-        
+
         Console.WriteLine("You are now adding a date\n\n");
         DateTime date = Get_Date();
         Console.Clear();
@@ -849,7 +849,7 @@ static class AdminManageMovie
         runningmovieLogic.Add_To_List(running_movie);
 
 
-        
+
         Console.Clear();
         Console.ForegroundColor = ConsoleColor.DarkGreen;
         Console.WriteLine("    _      _    _   __  __         _     \r\n   /_\\  __| |__| | |  \\/  |_____ _(_)___ \r\n  / _ \\/ _` / _` | | |\\/| / _ \\ V / / -_)\r\n /_/ \\_\\__,_\\__,_| |_|  |_\\___/\\_/|_\\___|\r\n                                         \n\n");
@@ -860,10 +860,10 @@ static class AdminManageMovie
         Thread.Sleep(1000);
         Console.Clear();
         Start();
-        
+
     }
 
-    
+
     //Adds a random amount of movies to a date.
     public static void Populate_A_Date()
     {
@@ -896,8 +896,8 @@ static class AdminManageMovie
         Console.Clear();
         Start();
 
-        
+
     }
 
-    
+
 }

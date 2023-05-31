@@ -36,5 +36,48 @@
     "begin_time": "2023-05-31T19:00:00",
     "end_time": "2023-05-31T21:00:00",
     "date": "2023-05-31T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 60,
+      "name": "John Wick",
+      "genre": "Action, Thriller",
+      "length": 123,
+      "age": 17,
+      "labels": "Violence \u0026 Language"
+    },
+    "room": {
+      "id": 12,
+      "map": [
+        "T |         O O O O O O O O O O O O O O O O O O O O O O         ",
+        "S |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "R |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "Q |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "P |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "O |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "N |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "M | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "L | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "K | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "J | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "I | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "H |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "G |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "F |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "E |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "D |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "C |           O O O O O O O O O O O O O O O O O O O O           ",
+        "B |               O O O O O O O O O O O O O O O O               ",
+        "A |                 O O O O O O O O O O O O O O O               ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------------------------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
+        "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
+      ],
+      "total_seats": 500,
+      "available_seats": 500
+    },
+    "begin_time": "2023-05-31T12:12:00",
+    "end_time": "2023-05-31T14:15:00",
+    "date": "2023-05-31T00:00:00"
   }
 ]
