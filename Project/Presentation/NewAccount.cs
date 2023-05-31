@@ -3,14 +3,17 @@ static class NewAccount
 {
     static private AccountsLogic accountsLogic = Factory.accountsLogic;
     public static void Start()
-    {       
+    {   
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        Console.WriteLine("  __  __      _           _            _                      _   \r\n |  \\/  |__ _| |_____    /_\\  _ _     /_\\  __ __ ___ _  _ _ _| |_ \r\n | |\\/| / _` | / / -_)  / _ \\| ' \\   / _ \\/ _/ _/ _ \\ || | ' \\  _|\r\n |_|  |_\\__,_|_\\_\\___| /_/ \\_\\_||_| /_/ \\_\\__\\__\\___/\\_,_|_||_\\__|\r\n                                                                  ");
+        Console.ResetColor();
         bool passwordSecure = false;
         int id = AccountModel.GetNextId();
         bool ValidEmail = false;
         string emailAddress;
         do
         {
-            Console.WriteLine("Enter your Email address: ");
+            Console.WriteLine("\n > Enter your Email address: ");
             emailAddress = Console.ReadLine();
             if (accountsLogic.EmailVerification(emailAddress))
             {
@@ -18,7 +21,7 @@ static class NewAccount
             }
             else
             {
-                Console.WriteLine("Please enter a valid email address.");
+                Console.WriteLine("\nPlease enter a valid email address.");
             }
 
         } while (!ValidEmail);
@@ -26,7 +29,8 @@ static class NewAccount
         string password;
         do
         {
-            Console.WriteLine("Enter your Password: ");
+            Console.WriteLine("\n > Enter your Password: ");
+            Console.WriteLine(" Passwords must consist of 8 character and contain at least 1 digit and special symbol");
             password = Console.ReadLine();
             if (accountsLogic.CheckPasswordSecurity(password))
             {
@@ -35,13 +39,12 @@ static class NewAccount
 
         } while (passwordSecure == false);
  
-        Console.WriteLine("Enter your Full Name (first and last name): ");
+        Console.WriteLine("\n > Enter your Full Name (first and last name): ");
         string? fullName = Console.ReadLine();
 
         while (true)
         {
-            Console.WriteLine("Would you like to use our VIP services? (y/n)");
-            Console.WriteLine("There will be extra charges.");
+            Console.WriteLine("\n > Would you like to use our VIP services? (Y/N)");
             string? input = Console.ReadLine();
             string lowerInput = input.ToLower();
             
@@ -53,12 +56,13 @@ static class NewAccount
                 {
                     bool vip = false;
                 }
-                while (lowerInput != "y" || lowerInput == "n")
+                while (lowerInput == "y" || lowerInput == "n")
                 {
                    
                    AccountModel newAcc = new AccountModel(id, emailAddress, password, fullName, vip: false);
                    accountsLogic.Add_To_List(newAcc);
-                   Console.WriteLine("account has been added :)");
+                   Console.WriteLine("\nYour account has been succesfully created\n > Press any button to return to the main menu");
+                    Console.ReadKey();
                    Menu.Start();
                 } 
             

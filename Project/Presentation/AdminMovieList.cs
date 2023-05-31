@@ -34,9 +34,8 @@ static class AdminMovieList
                 break;
             case "4":
                 Console.Clear();
-                Console.WriteLine("You are currently on the edit movie information page\n\nCurrent list of movies: \n");
+                Console.WriteLine("Current list of movies:\n");
                 Get_Movie_Table();
-                Console.WriteLine();
                 Change_Movie();
                 break;
             case "5":
@@ -72,10 +71,13 @@ static class AdminMovieList
 
     static public void Sort_By_Genre()
     {
-        Console.WriteLine("Type the genre you would like to filter on\n");
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        Console.WriteLine("  ___          _     ___         ___                  \r\n / __| ___ _ _| |_  | _ )_  _   / __|___ _ _  _ _ ___ \r\n \\__ \\/ _ \\ '_|  _| | _ \\ || | | (_ / -_) ' \\| '_/ -_)\r\n |___/\\___/_|  \\__| |___/\\_, |  \\___\\___|_||_|_| \\___|\r\n                         |__/                        ");
+        Console.ResetColor();
+        Console.WriteLine("> Type out the genre you would like to filter on\n");
         string given_genre = Console.ReadLine();
         var movie_genres = movieLogic.Return_By_Genre(given_genre);
-        ConsoleTable.From<MovieListModel>(movie_genres).Write();
+        ConsoleTable.From<MovieListModel>(movie_genres).Write(Format.Alternative);
         Console.WriteLine();
         Console.WriteLine("Please select your next action\n > [1] Edit a movie's information\n > [2] Remove a movie\n > [3] Return to admin movie list\n");
         string genre_choice = Console.ReadLine();
@@ -108,14 +110,14 @@ static class AdminMovieList
 
     static public string New_Movie_Name()
     {
-        Console.WriteLine("Enter the name of the new movie you would like to add: ");
+        Console.WriteLine("\n > Enter the name of the new movie you would like to add: ");
         string movie_name = Console.ReadLine()!;
         return movie_name;
     }
 
     static public string New_Movie_Genre()
     {
-        Console.WriteLine("Enter the genre(s) of this movie: ");
+        Console.WriteLine("\n > Enter the genre(s) of this movie: ");
         string movie_genre = Console.ReadLine()!;
         return movie_genre;
     }
@@ -126,7 +128,7 @@ static class AdminMovieList
         bool correct_price = false;
         while (!correct_price)
         {
-            Console.WriteLine("Enter the length of the movie in minutes in numbers: ");
+            Console.WriteLine("\n > Enter the length of the movie in minutes in numbers: ");
             try
             {
                 string movie_length_string = Console.ReadLine();
@@ -148,7 +150,7 @@ static class AdminMovieList
         bool correct_age = false;
         while (!correct_age)
         {
-            Console.WriteLine("Enter the minumum age of the movie goer for this movie: ");
+            Console.WriteLine("\n > Enter the minumum age of the movie goer for this movie: ");
             try
             {
                 string movie_age_string = Console.ReadLine();
@@ -166,7 +168,7 @@ static class AdminMovieList
 
     static public string New_Movie_Labels()
     {
-        Console.WriteLine("Please enter the parental labels you would like to attach to this movie: ");
+        Console.WriteLine("\n > Please enter the parental labels you would like to attach to this movie: ");
         string movie_labels = Console.ReadLine()!;
         if (movie_labels == "")
         {
@@ -178,10 +180,12 @@ static class AdminMovieList
     static public void Add_Movie()
     {
         Console.Clear();
-        Console.WriteLine("You are currently on the add a movie page\n\n");
         Console.WriteLine("Current list of movies: ");
         Get_Movie_Table();
         Console.WriteLine();
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        Console.WriteLine("    _      _    _     _     __  __         _     \r\n   /_\\  __| |__| |   /_\\   |  \\/  |_____ _(_)___ \r\n  / _ \\/ _` / _` |  / _ \\  | |\\/| / _ \\ V / / -_)\r\n /_/ \\_\\__,_\\__,_| /_/ \\_\\ |_|  |_\\___/\\_/|_\\___|\r\n                                                ");
+        Console.ResetColor();
         int movie_id = New_Movie_id();
         string movie_name = New_Movie_Name();
         string movie_genre = New_Movie_Genre();
@@ -197,7 +201,7 @@ static class AdminMovieList
             Console.WriteLine(movie);
             if (new_movie != null)
             {
-                Console.WriteLine("This movie is already in the list of movies. \nPress any button to return to the main menu...");
+                Console.WriteLine("This movie is already in the list of movies. \n > Press any button to return to the main menu...");
                 Console.ReadKey();
                 Console.Clear();
                 Start();
@@ -210,7 +214,7 @@ static class AdminMovieList
                 Console.Clear();
                 Console.WriteLine("Current list of movies:\n");
                 Get_Movie_Table();
-                Console.WriteLine("Press any button to return to the movie list menu");
+                Console.WriteLine(" > Press any button to return to the movie list menu");
                 Console.ReadKey();
                 Console.Clear();
                 Start();
@@ -225,13 +229,13 @@ static class AdminMovieList
         {
             try
             {
-                Console.WriteLine("Which movie would you like to remove? (please provide only the ID)");
+                Console.WriteLine(" > Which movie would you like to remove? (please provide only the ID)");
                 string remove_id = Console.ReadLine();
                 int for_removal = Convert.ToInt32(remove_id);
                 MovieListModel selected_movie = movieLogic.Find_Movie_ID(for_removal);
                 if (selected_movie == null)
                 {
-                    Console.WriteLine("This ID does not belong to any movies\nPress any button to return to Admin Movie list menu");
+                    Console.WriteLine("This ID does not belong to any movies\n > Press any button to return to Admin Movie list menu");
                     Console.ReadKey();
                     Console.Clear();
                     Start();
@@ -240,7 +244,7 @@ static class AdminMovieList
                 {
                     while (true)
                     {
-                        Console.WriteLine($"Are you sure you wish to remove the movie {selected_movie.Name}? (Y/N)");
+                        Console.WriteLine($" > Are you sure you wish to remove the movie {selected_movie.Name}? (Y/N)");
                         string movie_confirmation = Console.ReadLine()!.ToUpper();
                         switch (movie_confirmation)
                         {
@@ -250,14 +254,14 @@ static class AdminMovieList
                                 Console.WriteLine($"{selected_movie.Name} has been succesfully removed from the movie list\nCurrent list of movies:\n");
                                 Update_Movie_ID();
                                 Get_Movie_Table();
-                                Console.WriteLine("Press any button to return to the movie list menu");
+                                Console.WriteLine(" > Press any button to return to the movie list menu");
                                 Console.ReadKey();
                                 Console.Clear();
                                 Start();
                                 break;
 
                             case "N":
-                                Console.WriteLine("\nPress any button to return to the movie list menu");
+                                Console.WriteLine("\n > Press any button to return to the movie list menu");
                                 Console.ReadKey();
                                 Console.Clear();
                                 Start();
@@ -283,7 +287,10 @@ static class AdminMovieList
 
     static public void Change_Movie()
     {
-        Console.WriteLine("Which movie's information would you like to change? (Please provide only the ID)\n");
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        Console.WriteLine("   ___ _                           _     __  __         _     \r\n  / __| |_  __ _ _ _  __ _ ___    /_\\   |  \\/  |_____ _(_)___ \r\n | (__| ' \\/ _` | ' \\/ _` / -_)  / _ \\  | |\\/| / _ \\ V / / -_)\r\n  \\___|_||_\\__,_|_||_\\__, \\___| /_/ \\_\\ |_|  |_\\___/\\_/|_\\___|\r\n                     |___/                                    ");
+        Console.ResetColor();
+        Console.WriteLine("\n > Which movie's information would you like to change? (Please provide only the ID)\n");
         while (true)
         {
             try
@@ -303,7 +310,10 @@ static class AdminMovieList
                     while (true)
                     {
                         Console.Clear();
-                        Console.WriteLine($"You have selected the movie {selected_movie.Name}\n");
+                        Console.ForegroundColor = ConsoleColor.DarkGreen;
+                        Console.WriteLine("   ___ _                           _     __  __         _     \r\n  / __| |_  __ _ _ _  __ _ ___    /_\\   |  \\/  |_____ _(_)___ \r\n | (__| ' \\/ _` | ' \\/ _` / -_)  / _ \\  | |\\/| / _ \\ V / / -_)\r\n  \\___|_||_\\__,_|_||_\\__, \\___| /_/ \\_\\ |_|  |_\\___/\\_/|_\\___|\r\n                     |___/                                    ");
+                        Console.ResetColor();
+                        Console.WriteLine($"\nYou have selected the movie: {selected_movie.Name}\n");
                         Console.WriteLine($"Information of the selected movie: \n{selected_movie}\n");
                         Console.WriteLine("What part would you like to edit?\n[1] Change the name of the movie\n[2] Change the genre of the movie\n[3] Change the length of the movie\n[4] Change the minimum age of the movie\n[5] Change the labels of the movie\n[6] Select a different movie\n[7] Return to the admin movie list menu");
                         string movie_edit = Console.ReadLine()!;

@@ -56,6 +56,12 @@ static class AdminMenuSnack
         }
     }
 
+    public static void Update_Snack_ID()
+    {
+        SnacksLogic snacksLogic = new SnacksLogic();
+        snacksLogic.Update_Snack_ID();
+    }
+
     static public void Get_Snack_List()
     {
         List<SnackModel> snack_list = snacksLogic.Return_Snack_List();
@@ -65,6 +71,13 @@ static class AdminMenuSnack
         //}
         ConsoleTable.From<SnackModel>(snack_list).Write(Format.Alternative);
     }
+
+    static public int Get_Snack_ID()
+    {
+        int next_id = SnacksLogic.Find_Next_ID();
+        return next_id;
+    }
+
     static public string Get_Snack_Name()
     {
         Console.WriteLine(" > Your Snack name: ");
@@ -131,6 +144,9 @@ static class AdminMenuSnack
         Get_Snack_List();
         Console.WriteLine();
 
+        // Takes the highest ID value in the snack list and returns this number + 1
+        int snack_id = Get_Snack_ID();
+
         //Asks the user for their snack.
         string snack_name = Get_Snack_Name();
 
@@ -144,7 +160,7 @@ static class AdminMenuSnack
         string allergies = Get_Snack_Allergies();
 
         // Creates a snack object and asks the user for confirmation
-        SnackModel snack = new(snack_name,snack_price,type_of_food,allergies);
+        SnackModel snack = new(snack_id,snack_name,snack_price,type_of_food,allergies);
         while(true)
         {
 
@@ -162,23 +178,27 @@ static class AdminMenuSnack
                 //If the answer is Yes, it will add it to the list (and also the json file)
                 if (snack_confirmation == "Y")
                 {
+                    Console.Clear();
                     snacksLogic.Add_To_List(snack);
                     Console.WriteLine($"{snack.Name} has succesfully been added to the snack list");
                     //Prints the new snack list
                     Console.WriteLine("New List: ");
                     Get_Snack_List();
-                    Console.WriteLine();
+                    Console.WriteLine("Press any key to return to the snack menu");
+                    Console.ReadKey();
 
                     Start();
                 }
                 else if (snack_confirmation == "N")
                 {
-                    Console.WriteLine("going back the snack menu");
+                    Console.WriteLine("Press any button to return to the snack menu");
+                    Console.ReadKey();
+                    Console.Clear();
                     Start();
                 }
                 else
                 {
-                    Console.WriteLine("Invalid input, try again!");
+                    Console.WriteLine("Invalid input, try again!\n");
                 }
             }
             
@@ -195,45 +215,62 @@ static class AdminMenuSnack
         Get_Snack_List();
         Console.WriteLine();
 
-        //Asks the user want snack they want to remove
-        Console.WriteLine(" > What Snack do you want to remove?");
-        string snack_name = Console.ReadLine()!;
-
-        //Finds the Snack if it is present in the snack list, if snack isnt present, you will be sent back to the menu.
-        SnackModel your_snack = snacksLogic.Find_Snack(snack_name);
-        if (your_snack == null)
+        while (true)
         {
-            Console.WriteLine("This Snack doesn't exist in the snack list");
-            Start();
-        }
-        else
-        {
-            //Asks the user for confirmation, If the answer is yes, it will delete it from the list. If the answer is no, you will be sent back to the menu.
-            Console.WriteLine($" > Are you sure you want to remove the {your_snack.Name}? (Y/N)");
-            string snack_confirmation = Console.ReadLine()!.ToUpper();
-            if (snack_confirmation == "Y")
+            try
             {
-                snacksLogic.Delete_From_List(your_snack);
-                Console.WriteLine($"{your_snack.Name} has succesfully been deleted from the snack list");
-                //Prints the new snack list
-                Console.WriteLine("New List: ");
-                Get_Snack_List();
-                Console.WriteLine();
+                //Asks the user want snack they want to remove
+                Console.WriteLine(" > What Snack do you want to remove? (Please provide only numbers)");
+                string snack_id = Console.ReadLine()!;
+                int converted_id = Convert.ToInt32(snack_id);
 
-                Start();
+                //Finds the Snack if it is present in the snack list, if snack isnt present, you will be sent back to the menu.
+                SnackModel your_snack = snacksLogic.Find_Snack_ID(converted_id);
+                if (your_snack == null)
+                {
+                    Console.WriteLine("This ID does not belong to any snacks\nPress any button to return to Admin Movie list menu");
+                    Console.ReadKey();
+                    Console.Clear();
+                    Start();
+                }
+                else
+                {
+                    //Asks the user for confirmation, If the answer is yes, it will delete it from the list. If the answer is no, you will be sent back to the menu.
+                    Console.WriteLine($" > Are you sure you want to remove the {your_snack.Name}? (Y/N)");
+                    string snack_confirmation = Console.ReadLine()!.ToUpper();
+                    if (snack_confirmation == "Y")
+                    {
+                        snacksLogic.Delete_From_List(your_snack);
+                        Console.WriteLine($"{your_snack.Name} has succesfully been deleted from the snack list");
+                        //Prints the new snack list
+                        Console.WriteLine("New List: ");
+                        Update_Snack_ID();
+                        Get_Snack_List();
+                        Console.WriteLine("Press any key to return to the snack menu");
+                        Console.ReadKey();
+
+                        Start();
+                    }
+                    else if (snack_confirmation == "N")
+                    {
+                        Console.WriteLine("Press any button to go back to the snack menu");
+                        Console.ReadKey();
+                        Console.Clear();
+                        Start();
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid input, try again!");
+                    }
+                }
             }
-            else if (snack_confirmation == "N")
+            catch
             {
-                Console.WriteLine("going back the snack menu");
-                Start();
-            }
-            else
-            {
-                Console.WriteLine("Invalid input, try again!");
+                Console.WriteLine("Invalid input, only numbers are accepted");
             }
         }
-        
     }
+
     static public void Change_Snack()
     {
         //Prints the current snack list
@@ -241,66 +278,77 @@ static class AdminMenuSnack
         Get_Snack_List();
         Console.WriteLine();
 
-        //Asks the user want snack they want to change
-        Console.WriteLine(" > What Snack do you want to change?");
-        string snack_name = Console.ReadLine()!;
-
-        //Finds the Snack if it is present in the snack list, if snack isnt present, you will be sent back to the menu.
-        SnackModel your_snack = snacksLogic.Find_Snack(snack_name);
-        if (your_snack == null)
+        while (true)
         {
-            Console.WriteLine("This Snack doesn't exist in the snack list");
-            Start();
-        }
-        else
-        {
-           while(true)
+            try
             {
-                //Asks the user which value they want to change of the snack.
-                Console.WriteLine(your_snack);
-                Console.WriteLine("What value do you want to change? \n You have the options to choose the following values.");
-                Console.WriteLine(" > Enter [1] to change the name");
-                Console.WriteLine(" > Enter [2] to change the price");
-                Console.WriteLine(" > Enter [3] to change the type of food");
-                Console.WriteLine(" > Enter [4] to change the allergies");
-                Console.WriteLine(" > Enter [5] to go back to the menu");
-                string change_snack_choice = Console.ReadLine()!;
-                if (change_snack_choice == "1")
+                //Asks the user want snack they want to change
+                Console.WriteLine(" > What Snack do you want to change? (Please provide the ID in numbers)");
+                string snack_id = Console.ReadLine()!;
+                int converted_id = Convert.ToInt32(snack_id);
+
+                //Finds the Snack if it is present in the snack list, if snack isnt present, you will be sent back to the menu.
+                SnackModel your_snack = snacksLogic.Find_Snack_ID(converted_id);
+                if (your_snack == null)
                 {
-                    string value_to_be_changed = Get_Snack_Name();
-                    snacksLogic.Change_Name_Snack(value_to_be_changed,your_snack);
-                }
-                else if (change_snack_choice == "2")
-                {
-                    double value_to_be_changed = Get_Snack_Price();
-                    snacksLogic.Change_Price_Snack(value_to_be_changed, your_snack);
-                }
-                else if (change_snack_choice == "3")
-                {
-                    string value_to_be_changed = Get_Snack_Type();
-                    snacksLogic.Change_Type_Snack(value_to_be_changed, your_snack);
-                }
-                else if (change_snack_choice == "4")
-                {
-                    string value_to_be_changed = Get_Snack_Allergies();
-                    snacksLogic.Change_Allergy_Snack(value_to_be_changed, your_snack);
-                }
-                else if (change_snack_choice == "5")
-                {
-                    Console.WriteLine("Going back to the menu");
+                    Console.WriteLine("This Snack doesn't exist in the snack list");
                     Start();
                 }
+                else
+                {
+                    while (true)
+                    {
+                        //Asks the user which value they want to change of the snack.
+                        Console.WriteLine(your_snack);
+                        Console.WriteLine("What value do you want to change? \n You have the options to choose the following values.");
+                        Console.WriteLine(" > Enter [1] to change the name");
+                        Console.WriteLine(" > Enter [2] to change the price");
+                        Console.WriteLine(" > Enter [3] to change the type of food");
+                        Console.WriteLine(" > Enter [4] to change the allergies");
+                        Console.WriteLine(" > Enter [5] to go back to the menu");
+                        string change_snack_choice = Console.ReadLine()!;
+                        if (change_snack_choice == "1")
+                        {
+                            string value_to_be_changed = Get_Snack_Name();
+                            snacksLogic.Change_Name_Snack(value_to_be_changed, your_snack);
+                        }
+                        else if (change_snack_choice == "2")
+                        {
+                            double value_to_be_changed = Get_Snack_Price();
+                            snacksLogic.Change_Price_Snack(value_to_be_changed, your_snack);
+                        }
+                        else if (change_snack_choice == "3")
+                        {
+                            string value_to_be_changed = Get_Snack_Type();
+                            snacksLogic.Change_Type_Snack(value_to_be_changed, your_snack);
+                        }
+                        else if (change_snack_choice == "4")
+                        {
+                            string value_to_be_changed = Get_Snack_Allergies();
+                            snacksLogic.Change_Allergy_Snack(value_to_be_changed, your_snack);
+                        }
+                        else if (change_snack_choice == "5")
+                        {
+                            Console.WriteLine("Going back to the menu");
+                            Start();
+                        }
 
 
-                //Prints the new snack list
-                Console.WriteLine("Snack succesfully changed");
-                Console.WriteLine("New List: ");
-                Get_Snack_List();
-                Console.WriteLine();
-                Start();
+                        //Prints the new snack list
+                        Console.WriteLine("Snack succesfully changed");
+                        Console.WriteLine("New List: ");
+                        Get_Snack_List();
+                        Console.WriteLine();
+                        Start();
+                    }
+
+
+                }
             }
-            
-
+            catch
+            {
+                Console.WriteLine("Invalid input, only numbers are accepted.\n");
+            }
+            }
         }
-    }
 }

@@ -1,0 +1,40 @@
+[
+  {
+    "movie": {
+      "id": 52,
+      "name": "1917",
+      "genre": "War, Drama",
+      "length": 119,
+      "age": 15,
+      "labels": "Violence \u0026 Language"
+    },
+    "room": {
+      "id": 14,
+      "map": [
+        "O | O O O O O O O O O O O O O O O",
+        "N | O O O O O O O O O O O O O O O",
+        "M | O O O O O O O O O O O O O O O",
+        "L | O O O O O O O O O O O O O O O",
+        "K | O O O O O O O O O O O O O O O",
+        "J | O O O O O O O O O O O O O O O",
+        "I | O O O O O O O O O O O O O O O",
+        "H | O O O O O O O O O O O O O O O",
+        "G | O O O O O O O O O O O O O O O",
+        "F | O O O O O O O O O O O O O O O",
+        "E | O O O O O O O O O O O O O O O",
+        "D | O O O O O O O O O O O O O O O",
+        "C | O O O O O O O O O O O O O O O",
+        "B | O O O O O O O O O O O O O O O",
+        "A | O O O O O O O O O O O O O O O",
+        "   x------------------------------",
+        "                      1 1 1 1 1 1",
+        "    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5"
+      ],
+      "total_seats": 225,
+      "available_seats": 225
+    },
+    "begin_time": "2023-05-31T19:00:00",
+    "end_time": "2023-05-31T21:00:00",
+    "date": "2023-05-31T00:00:00"
+  }
+]

@@ -11,15 +11,17 @@
     public static void Make_Reservation(RunningMovieModel runningmovie)
     {
         Console.Clear();
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
+        Console.WriteLine("  __  __         _       ___                          _   _          \r\n |  \\/  |_____ _(_)___  | _ \\___ ___ ___ _ ___ ____ _| |_(_)___ _ _  \r\n | |\\/| / _ \\ V / / -_) |   / -_|_-</ -_) '_\\ V / _` |  _| / _ \\ ' \\ \r\n |_|  |_\\___/\\_/|_\\___| |_|_\\___/__/\\___|_|  \\_/\\__,_|\\__|_\\___/_||_|\r\n                                                                     ");
+        Console.ResetColor();
         Console.WriteLine($"You are about to make a reservation to the movie {runningmovie.Movie.Name} in room {runningmovie.Room.ID}\n\n");
-        Console.WriteLine("How many seats do you want to reserve?\n");
+        Console.WriteLine(" > How many seats do you want to reserve?\n");
 
         // Asks the user for the amount of seats.
         int seat_amount = -1;
         bool seat_success = false;
         while (!seat_success)
         {
-            Console.WriteLine(" > Your Seats : ");
             try
             {
                 seat_amount = Convert.ToInt32(Console.ReadLine());
@@ -29,7 +31,7 @@
             //Catches any type of exception.
             catch
             {
-                Console.WriteLine("Invalid number; please enter a correct number");
+                Console.WriteLine("Invalid input; please enter a correct number");
             }
 
         }

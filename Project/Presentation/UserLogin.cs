@@ -16,20 +16,20 @@ static class UserLogin
             Console.WriteLine("  _   _               _              _      \r\n | | | |___ ___ _ _  | |   ___  __ _(_)_ _  \r\n | |_| (_-</ -_) '_| | |__/ _ \\/ _` | | ' \\ \r\n  \\___//__/\\___|_|   |____\\___/\\__, |_|_||_|\r\n                               |___/        ");
             Console.WriteLine();
             Console.ResetColor();
-            Console.WriteLine("> Please enter your email address: ");
+            Console.WriteLine(" > Please enter your email address: ");
             string email = Console.ReadLine();
             Console.Clear();
             Console.ForegroundColor= ConsoleColor.DarkGreen;
-            Console.WriteLine("\r\n  _   _               ___                              _ \r\n | | | |___ ___ _ _  | _ \\__ _ _______ __ _____ _ _ __| |\r\n | |_| (_-</ -_) '_| |  _/ _` (_-<_-< V  V / _ \\ '_/ _` |\r\n  \\___//__/\\___|_|   |_| \\__,_/__/__/\\_/\\_/\\___/_| \\__,_|\r\n                                                         \r\n");
+            Console.WriteLine("  _   _               ___                              _ \r\n | | | |___ ___ _ _  | _ \\__ _ _______ __ _____ _ _ __| |\r\n | |_| (_-</ -_) '_| |  _/ _` (_-<_-< V  V / _ \\ '_/ _` |\r\n  \\___//__/\\___|_|   |_| \\__,_/__/__/\\_/\\_/\\___/_| \\__,_|\r\n                                                         \r\n");
             Console.ResetColor();
-            Console.WriteLine("> Please enter your password:  ");
+            Console.WriteLine(" > Please enter your password:  ");
             string password = Console.ReadLine();
             Console.Clear();
             AccountModel acc = accountsLogic.CheckLogin(email, password);
             if (email == "Admin" && password == "Admin" || email == "A" && password == "A" )
             {
                     Menu.Menu_When_Logged_In();
-                }
+            }
             else if (acc != null)
             {
                     Menu.Menu_When_Logged_In();
