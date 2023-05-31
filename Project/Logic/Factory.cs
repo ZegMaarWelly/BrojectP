@@ -7,7 +7,7 @@
     static public RoomLogic roomLogic = new RoomLogic();
     static public MovieListLogic movieLogic = new MovieListLogic();
     static public SnacksLogic snacksLogic = new SnacksLogic();
-    static public ShoppingCartLogic shoppingcartLogic = new ShoppingCartLogic();
+    static public    ShoppingCartLogic shoppingcartLogic = new ShoppingCartLogic();
     static public ReservationLogic reservationLogic = new ReservationLogic("noone");
 
 }

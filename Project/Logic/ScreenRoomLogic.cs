@@ -1,11 +1,12 @@
 
 using System.Data;
+using System.Data.Common;
 using System.Runtime.CompilerServices;
 
 class ScreenRoomLogic
 {
     static private RoomLogic roomLogic = new RoomLogic();
-    static private RunningMovieLogic runningmovieLogic = new RunningMovieLogic("2023-04-20");
+    //static private RunningMovieLogic runningmovieLogic = new RunningMovieLogic("2023-04-20");
     
     // A copy of screening_room method. Its somewhat the same but now it works with the reservation file.
     public static (List<string>, string) screening_room_reservation(List<string> map)
@@ -308,7 +309,32 @@ class ScreenRoomLogic
         }
     }
 
+    //This is where you remove a reserved seat
+    public static void Remove_Reserved_Seat(string seat, List<string> map)
+    {
+        
+        var seat_split = seat.Split("-");
+        string letter = seat_split[0];
+        int string_number =Convert.ToInt32(seat_split[1]) ;
 
+        foreach(var line in map)
+        {
+            if(line.Contains(letter))
+            {
+                //Replace the X symbol with a O symbol.
+                int index = map.IndexOf(line);
+                int replace_int = 2 + (string_number * 2);
+                var new_line = line;
+                new_line = new_line.Remove(replace_int,1).Insert(replace_int, "O");
+                map[index] = new_line;
+                break;
+            }
+            
+            
+        }
+
+       
+    }
     
 }
 
