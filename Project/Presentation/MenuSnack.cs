@@ -6,7 +6,7 @@ static class MenuSnack
     static public  ShoppingCartLogic shoppingcartLogic = Factory.shoppingcartLogic;
     static public void Start()
     {
-        Console.ForegroundColor= ConsoleColor.DarkGreen;
+        Console.ForegroundColor = ConsoleColor.DarkGreen;
         Console.WriteLine("\r\n  ___              _     __  __              \r\n / __|_ _  __ _ __| |__ |  \\/  |___ _ _ _  _ \r\n \\__ \\ ' \\/ _` / _| / / | |\\/| / -_) ' \\ || |\r\n |___/_||_\\__,_\\__|_\\_\\ |_|  |_\\___|_||_\\_,_|\r\n                                             \r\n");
         Console.ResetColor();
         Console.WriteLine("What do you want to order?");
