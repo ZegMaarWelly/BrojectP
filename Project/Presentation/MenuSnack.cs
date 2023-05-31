@@ -32,7 +32,7 @@ static class MenuSnack
             {
                 Console.Clear();
                 Console.WriteLine("This Snack doesn't exist in the snack list");
-                Thread.Sleep(2000);
+                Thread.Sleep(1000);
                 Console.WriteLine("Going back...");
                 Thread.Sleep(1000);
                 Console.Clear();
@@ -75,7 +75,7 @@ static class MenuSnack
                 Console.Clear();
                 Console.WriteLine($"{your_snack.Name} has been added to your shopping cart");
                 shoppingcartLogic.AddCountedSnack(your_snack);
-                Thread.Sleep(2000);
+                Thread.Sleep(1000);
                 Console.WriteLine("Going back...");
                 Thread.Sleep(1000);
                 Console.Clear();
