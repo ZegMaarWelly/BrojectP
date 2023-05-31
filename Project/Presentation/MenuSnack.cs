@@ -10,10 +10,10 @@ static class MenuSnack
         Console.WriteLine("\r\n  ___              _     __  __              \r\n / __|_ _  __ _ __| |__ |  \\/  |___ _ _ _  _ \r\n \\__ \\ ' \\/ _` / _| / / | |\\/| / -_) ' \\ || |\r\n |___/_||_\\__,_\\__|_\\_\\ |_|  |_\\___|_||_\\_,_|\r\n                                             \r\n");
         Console.ResetColor();
         Console.WriteLine("What do you want to order?");
-        Console.WriteLine("> Enter [1] to order food");
-        Console.WriteLine("> Enter [2] to order drinks");
-        Console.WriteLine("> Enter [3] to see your shopping cart");
-        Console.WriteLine("> Enter [4] screening room test small.");
+        Console.WriteLine(" > Enter [1] to order food");
+        Console.WriteLine(" > Enter [2] to order drinks");
+        Console.WriteLine(" > Enter [3] to see your shopping cart");
+        Console.WriteLine(" > Enter [4] screening room test small.");
         User.CurrentUser();
 
         string input = Console.ReadLine()!;
@@ -61,9 +61,10 @@ static class MenuSnack
                 {
                     Drink_Menu();
                     Console.WriteLine();
-                    Console.WriteLine("What are you going to choose \n > Type the name: ");
+                    Console.WriteLine("What drink are you going to choose: (Please provide only the ID)");
                     string snack_choice = Console.ReadLine()!;
-                    SnackModel your_snack = snacksLogic.Find_Snack(snack_choice);
+                    int converted_snack = Convert.ToInt32(snack_choice);
+                    SnackModel your_snack = snacksLogic.Find_Snack_ID(converted_snack);
                     if (your_snack == null || your_snack.Type_Of_Food == "Snack")
                     {
                         Console.WriteLine("This Snack doesn't exist in the snack list");

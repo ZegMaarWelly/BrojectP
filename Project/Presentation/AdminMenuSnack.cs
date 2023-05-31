@@ -283,7 +283,7 @@ static class AdminMenuSnack
             try
             {
                 //Asks the user want snack they want to change
-                Console.WriteLine(" > What Snack do you want to change? (Please provide only numbers)");
+                Console.WriteLine(" > What Snack do you want to change? (Please provide the ID in numbers)");
                 string snack_id = Console.ReadLine()!;
                 int converted_id = Convert.ToInt32(snack_id);
 

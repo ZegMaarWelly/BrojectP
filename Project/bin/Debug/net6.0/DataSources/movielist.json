@@ -146,7 +146,7 @@
   {
     "Id": 19,
     "Name": "Avatar",
-    "Genre": "Science Fiction, Adventure",
+    "Genre": "Sci-Fi, Adventure",
     "Length": 162,
     "Age": 12,
     "Labels": "Violence"
@@ -154,7 +154,7 @@
   {
     "Id": 20,
     "Name": "The Avengers",
-    "Genre": "Action, Science Fiction",
+    "Genre": "Action, Sci-Fi",
     "Length": 143,
     "Age": 12,
     "Labels": "Violence"
@@ -162,7 +162,7 @@
   {
     "Id": 21,
     "Name": "The Hunger Games",
-    "Genre": "Science Fiction, Adventure",
+    "Genre": "Sci-Fi, Adventure",
     "Length": 142,
     "Age": 13,
     "Labels": "Violence"
@@ -194,7 +194,7 @@
   {
     "Id": 25,
     "Name": "Inception",
-    "Genre": "Science Fiction, Thriller",
+    "Genre": "Sci-Fi, Thriller",
     "Length": 148,
     "Age": 14,
     "Labels": "Violence"
@@ -282,7 +282,7 @@
   {
     "Id": 36,
     "Name": "The Hunger Games: Mockingjay - Part 1",
-    "Genre": "Science Fiction, Adventure",
+    "Genre": "Sci-Fi, Adventure",
     "Length": 123,
     "Age": 13,
     "Labels": "Violence"
@@ -306,7 +306,7 @@
   {
     "Id": 39,
     "Name": "The Martian",
-    "Genre": "Science Fiction, Adventure",
+    "Genre": "Sci-Fi, Adventure",
     "Length": 144,
     "Age": 12,
     "Labels": "Language"
@@ -362,7 +362,7 @@
   {
     "Id": 46,
     "Name": "Blade Runner 2049",
-    "Genre": "Science Fiction, Thriller",
+    "Genre": "Sci-Fi, Thriller",
     "Length": 164,
     "Age": 15,
     "Labels": "Violence, Language & Nudity"
