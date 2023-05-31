@@ -1,11 +1,5 @@
 [
   {
-    "name": "Meatballs",
-    "price": 5,
-    "type_of_food": "Drink",
-    "allergies": "PP"
-  },
-  {
     "name": "Popcorn",
     "price": 6.5,
     "type_of_food": "Snack",
@@ -18,22 +12,10 @@
     "allergies": "none"
   },
   {
-    "name": "Edible Water",
-    "price": 3,
-    "type_of_food": "Snack",
-    "allergies": "none"
-  },
-  {
-    "name": "Koekje",
-    "price": 6.29,
-    "type_of_food": "Snack",
-    "allergies": "none"
-  },
-  {
     "name": "Oreo",
     "price": 3,
     "type_of_food": "Snack",
-    "allergies": "none"
+    "allergies": "gluten"
   },
   {
     "name": "Chips",
@@ -45,7 +27,7 @@
     "name": "Nachos",
     "price": 4.5,
     "type_of_food": "Snack",
-    "allergies": "none"
+    "allergies": "dairy"
   },
   {
     "name": "Hot Dog",
@@ -57,25 +39,13 @@
     "name": "Pretzel",
     "price": 4,
     "type_of_food": "Snack",
-    "allergies": "none"
+    "allergies": "gluten"
   },
   {
     "name": "Candy Bar",
     "price": 3.5,
     "type_of_food": "Snack",
-    "allergies": "none"
-  },
-  {
-    "name": "Ice Cream",
-    "price": 5.5,
-    "type_of_food": "Snack",
-    "allergies": "none"
-  },
-  {
-    "name": "Cotton Candy",
-    "price": 4,
-    "type_of_food": "Snack",
-    "allergies": "none"
+    "allergies": "nuts"
   },
   {
     "name": "Fruit Cup",
@@ -87,13 +57,7 @@
     "name": "Muffin",
     "price": 4,
     "type_of_food": "Snack",
-    "allergies": "none"
-  },
-  {
-    "name": "Cheese Sticks",
-    "price": 5.5,
-    "type_of_food": "Snack",
-    "allergies": "none"
+    "allergies": "gluten"
   },
   {
     "name": "Soda",
@@ -108,52 +72,22 @@
     "allergies": "none"
   },
   {
-    "name": "Chicken Wings",
-    "price": 8.5,
-    "type_of_food": "Snack",
-    "allergies": "none"
-  },
-  {
-    "name": "Pizza Slices",
-    "price": 6,
-    "type_of_food": "Snack",
-    "allergies": "none"
-  },
-  {
     "name": "Soft Pretzel Bites",
     "price": 4.5,
     "type_of_food": "Snack",
-    "allergies": "none"
+    "allergies": "gluten"
   },
   {
     "name": "Brownie",
     "price": 3.5,
     "type_of_food": "Snack",
-    "allergies": "none"
+    "allergies": "nuts"
   },
   {
     "name": "Caramel Popcorn",
     "price": 5.5,
     "type_of_food": "Snack",
-    "allergies": "none"
-  },
-  {
-    "name": "Cheeseburger",
-    "price": 9,
-    "type_of_food": "Snack",
-    "allergies": "none"
-  },
-  {
-    "name": "Chicken Tenders",
-    "price": 7.5,
-    "type_of_food": "Snack",
-    "allergies": "none"
-  },
-  {
-    "name": "Fries",
-    "price": 4,
-    "type_of_food": "Snack",
-    "allergies": "none"
+    "allergies": "dairy"
   },
   {
     "name": "Fruit Salad",
@@ -165,13 +99,13 @@
     "name": "Nacho Cheese Dip",
     "price": 3.5,
     "type_of_food": "Snack",
-    "allergies": "none"
+    "allergies": "dairy"
   },
   {
     "name": "Milkshake",
     "price": 5.5,
     "type_of_food": "Drink",
-    "allergies": "none"
+    "allergies": "dairy"
   },
   {
     "name": "Smoothie",
@@ -195,12 +129,6 @@
     "name": "Pretzel Dogs",
     "price": 6.5,
     "type_of_food": "Snack",
-    "allergies": "rdgkoihrt"
-  },
-  {
-    "name": "Pretzel Dogs",
-    "price": 5,
-    "type_of_food": "Drink",
-    "allergies": "everything"
+    "allergies": "gluten"
   }
 ]
