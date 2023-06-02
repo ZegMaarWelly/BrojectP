@@ -1,134 +1,149 @@
 [
   {
-    "name": "Popcorn",
-    "price": 6.5,
-    "type_of_food": "Snack",
-    "allergies": "none"
+    "ID": 1,
+    "Name": "Popcorn",
+    "Price": 6.5,
+    "Type_Of_Food": "Snack",
+    "Allergies": "none"
   },
   {
-    "name": "Water",
-    "price": 6,
-    "type_of_food": "Drink",
-    "allergies": "none"
+    "ID": 2,
+    "Name": "Water",
+    "Price": 6.0,
+    "Type_Of_Food": "Drink",
+    "Allergies": "none"
   },
   {
-    "name": "Oreo",
-    "price": 3,
-    "type_of_food": "Snack",
-    "allergies": "gluten"
+    "ID": 3,
+    "Name": "Oreo",
+    "Price": 3.0,
+    "Type_Of_Food": "Snack",
+    "Allergies": "gluten"
   },
   {
-    "name": "Chips",
-    "price": 2.99,
-    "type_of_food": "Snack",
-    "allergies": "none"
+    "ID": 4,
+    "Name": "Chips",
+    "Price": 2.99,
+    "Type_Of_Food": "Snack",
+    "Allergies": "none"
   },
   {
-    "name": "Nachos",
-    "price": 4.5,
-    "type_of_food": "Snack",
-    "allergies": "dairy"
+    "ID": 5,
+    "Name": "Nachos",
+    "Price": 4.5,
+    "Type_Of_Food": "Snack",
+    "Allergies": "dairy"
   },
   {
-    "name": "Hot Dog",
-    "price": 7,
-    "type_of_food": "Snack",
-    "allergies": "none"
+    "ID": 6,
+    "Name": "Hot Dog",
+    "Price": 7.0,
+    "Type_Of_Food": "Snack",
+    "Allergies": "none"
   },
   {
-    "name": "Pretzel",
-    "price": 4,
-    "type_of_food": "Snack",
-    "allergies": "gluten"
+    "ID": 7,
+    "Name": "Pretzel",
+    "Price": 4.0,
+    "Type_Of_Food": "Snack",
+    "Allergies": "gluten"
   },
   {
-    "name": "Candy Bar",
-    "price": 3.5,
-    "type_of_food": "Snack",
-    "allergies": "nuts"
+    "ID": 8,
+    "Name": "Candy Bar",
+    "Price": 3.5,
+    "Type_Of_Food": "Snack",
+    "Allergies": "nuts"
   },
   {
-    "name": "Fruit Cup",
-    "price": 3.5,
-    "type_of_food": "Snack",
-    "allergies": "none"
+    "ID": 9,
+    "Name": "Fruit Cup",
+    "Price": 3.5,
+    "Type_Of_Food": "Snack",
+    "Allergies": "none"
   },
   {
-    "name": "Muffin",
-    "price": 4,
-    "type_of_food": "Snack",
-    "allergies": "gluten"
+    "ID": 10,
+    "Name": "Muffin",
+    "Price": 4.0,
+    "Type_Of_Food": "Snack",
+    "Allergies": "gluten"
   },
   {
-    "name": "Soda",
-    "price": 3.5,
-    "type_of_food": "Drink",
-    "allergies": "none"
+    "ID": 11,
+    "Name": "Soda",
+    "Price": 3.5,
+    "Type_Of_Food": "Drink",
+    "Allergies": "none"
   },
   {
-    "name": "Slushie",
-    "price": 4,
-    "type_of_food": "Drink",
-    "allergies": "none"
+    "ID": 12,
+    "Name": "Slushie",
+    "Price": 4.0,
+    "Type_Of_Food": "Drink",
+    "Allergies": "none"
   },
   {
-    "name": "Soft Pretzel Bites",
-    "price": 4.5,
-    "type_of_food": "Snack",
-    "allergies": "gluten"
+    "ID": 13,
+    "Name": "Soft Pretzel Bites",
+    "Price": 4.5,
+    "Type_Of_Food": "Snack",
+    "Allergies": "gluten"
   },
   {
-    "name": "Brownie",
-    "price": 3.5,
-    "type_of_food": "Snack",
-    "allergies": "nuts"
+    "ID": 14,
+    "Name": "Brownie",
+    "Price": 3.5,
+    "Type_Of_Food": "Snack",
+    "Allergies": "nuts"
   },
   {
-    "name": "Caramel Popcorn",
-    "price": 5.5,
-    "type_of_food": "Snack",
-    "allergies": "dairy"
+    "ID": 15,
+    "Name": "Caramel Popcorn",
+    "Price": 5.5,
+    "Type_Of_Food": "Snack",
+    "Allergies": "dairy"
   },
   {
-    "name": "Fruit Salad",
-    "price": 5,
-    "type_of_food": "Snack",
-    "allergies": "none"
+    "ID": 16,
+    "Name": "Fruit Salad",
+    "Price": 5.0,
+    "Type_Of_Food": "Snack",
+    "Allergies": "none"
   },
   {
-    "name": "Nacho Cheese Dip",
-    "price": 3.5,
-    "type_of_food": "Snack",
-    "allergies": "dairy"
+    "ID": 17,
+    "Name": "Nacho Cheese Dip",
+    "Price": 3.5,
+    "Type_Of_Food": "Snack",
+    "Allergies": "dairy"
   },
   {
-    "name": "Milkshake",
-    "price": 5.5,
-    "type_of_food": "Drink",
-    "allergies": "dairy"
+    "ID": 18,
+    "Name": "Milkshake",
+    "Price": 5.5,
+    "Type_Of_Food": "Drink",
+    "Allergies": "dairy"
   },
   {
-    "name": "Smoothie",
-    "price": 6,
-    "type_of_food": "Drink",
-    "allergies": "none"
+    "ID": 19,
+    "Name": "Smoothie",
+    "Price": 6.0,
+    "Type_Of_Food": "Drink",
+    "Allergies": "none"
   },
   {
-    "name": "Iced Coffee",
-    "price": 4.5,
-    "type_of_food": "Drink",
-    "allergies": "none"
+    "ID": 20,
+    "Name": "Iced Coffee",
+    "Price": 4.5,
+    "Type_Of_Food": "Drink",
+    "Allergies": "none"
   },
   {
-    "name": "Caramel Latte",
-    "price": 5,
-    "type_of_food": "Drink",
-    "allergies": "none"
-  },
-  {
-    "name": "Pretzel Dogs",
-    "price": 6.5,
-    "type_of_food": "Snack",
-    "allergies": "gluten"
+    "ID": 21,
+    "Name": "Caramel Latte",
+    "Price": 5.0,
+    "Type_Of_Food": "Drink",
+    "Allergies": "none"
   }
 ]

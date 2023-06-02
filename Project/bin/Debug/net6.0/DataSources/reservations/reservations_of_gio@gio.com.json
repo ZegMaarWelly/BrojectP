@@ -107,6 +107,7 @@
     "snacks": [
       {
         "Snack": {
+          "id": 0,
           "name": "Pizza Slices",
           "price": 6,
           "type_of_food": "Snack",
@@ -230,6 +231,7 @@
     "snacks": [
       {
         "Snack": {
+          "id": 0,
           "name": "Brownie",
           "price": 3.5,
           "type_of_food": "Snack",
@@ -352,6 +354,7 @@
     "snacks": [
       {
         "Snack": {
+          "id": 0,
           "name": "Fries",
           "price": 4,
           "type_of_food": "Snack",
@@ -360,5 +363,67 @@
         "Quantity": 1
       }
     ]
+  },
+  {
+    "running_movie": {
+      "movie": {
+        "id": 39,
+        "name": "Her",
+        "genre": "Romance, Sci-Fi",
+        "length": 126,
+        "age": 17,
+        "labels": "Nudity, Sex \u0026 Language"
+      },
+      "room": {
+        "id": 13,
+        "map": [
+          "Y | O O O O",
+          "X | O O O O",
+          "W | O O O O",
+          "V | O O O O",
+          "U | O O O O",
+          "T | O O O O",
+          "S | O O O O",
+          "R | O O O O",
+          "Q | O O O O",
+          "P | O O O O",
+          "O | O O O O",
+          "N | O O O O",
+          "M | O O O O",
+          "L | O O O O",
+          "K | O O O O",
+          "J | O O O O",
+          "I | O O O O",
+          "H | O O O O",
+          "G | O O O O",
+          "F | O O O O",
+          "E | O O O O",
+          "D | O O O O",
+          "C | O O O O",
+          "B | O O O O",
+          "A | X X O O",
+          "   x--------",
+          "           ",
+          "    1 2 3 4"
+        ],
+        "total_seats": 100,
+        "available_seats": 98
+      },
+      "begin_time": "2023-06-02T08:02:00",
+      "end_time": "2023-06-02T10:08:00",
+      "date": "2023-06-02T00:00:00"
+    },
+    "account": {
+      "id": 10,
+      "emailAddress": "gio@gio.com",
+      "password": "Appelsap123.",
+      "fullName": "Giovanni Vonk",
+      "V.I.P.": false
+    },
+    "seats": [
+      "A-1",
+      "A-2"
+    ],
+    "snacks": []
   }
 ]
