@@ -1,5 +1,5 @@
 
-static class UserLogin 
+public static class UserLogin 
 {
     static public AccountsLogic accountsLogic = new AccountsLogic();
 
@@ -25,8 +25,8 @@ static class UserLogin
             Console.WriteLine(" > Please enter your password:  ");
             string password = Console.ReadLine();
             Console.Clear();
-            AccountModel acc = accountsLogic.CheckLogin(email, password);
-            if (email == "Admin" && password == "Admin" || email == "A" && password == "A" )
+            bool acc = Isloginvalid(email, password);
+            if (IsAdmin(email, password))
             {
                     Menu.Menu_When_Logged_In();
             }
@@ -46,5 +46,15 @@ static class UserLogin
         Console.WriteLine("You have reached the maximum number of login attempts. You are locked for 30 seconds.");
         Thread.Sleep(30000);
         }
+    }
+
+    public static bool IsAdmin(string email, string password)
+    {
+        return (email == "Admin" && password == "Admin") || (email == "A" && password == "A");
+    }
+
+    public static bool Isloginvalid(string email, string password)
+    {
+        return accountsLogic.CheckLogin(email, password) != null;
     }
 }

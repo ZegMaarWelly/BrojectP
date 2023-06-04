@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 
 //This class is not static so later on we can use inheritance and interfaces
-class AccountsLogic
+public class AccountsLogic : IAccountsLogic
 {
     static private List<AccountModel> _accounts;
 
