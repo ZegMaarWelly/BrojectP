@@ -1,0 +1,345 @@
+[
+  {
+    "ID": 1,
+    "Name": "Popcorn",
+    "Price": 6.5,
+    "Type_Of_Food": "Snack",
+    "Allergies": "none"
+  },
+  {
+    "ID": 2,
+    "Name": "Water",
+    "Price": 6.0,
+    "Type_Of_Food": "Drink",
+    "Allergies": "none"
+  },
+  {
+    "ID": 3,
+    "Name": "Oreo",
+    "Price": 3.0,
+    "Type_Of_Food": "Snack",
+    "Allergies": "gluten"
+  },
+  {
+    "ID": 4,
+    "Name": "Chips",
+    "Price": 2.99,
+    "Type_Of_Food": "Snack",
+    "Allergies": "none"
+  },
+  {
+    "ID": 5,
+    "Name": "Nachos",
+    "Price": 4.5,
+    "Type_Of_Food": "Snack",
+    "Allergies": "dairy"
+  },
+  {
+    "ID": 6,
+    "Name": "Hot Dog",
+    "Price": 7.0,
+    "Type_Of_Food": "Snack",
+    "Allergies": "none"
+  },
+  {
+    "ID": 7,
+    "Name": "Pretzel",
+    "Price": 4.0,
+    "Type_Of_Food": "Snack",
+    "Allergies": "gluten"
+  },
+  {
+    "ID": 8,
+    "Name": "Candy Bar",
+    "Price": 3.5,
+    "Type_Of_Food": "Snack",
+    "Allergies": "nuts"
+  },
+  {
+    "ID": 9,
+    "Name": "Fruit Cup",
+    "Price": 3.5,
+    "Type_Of_Food": "Snack",
+    "Allergies": "none"
+  },
+  {
+    "ID": 10,
+    "Name": "Muffin",
+    "Price": 4.0,
+    "Type_Of_Food": "Snack",
+    "Allergies": "gluten"
+  },
+  {
+    "ID": 11,
+    "Name": "Soda",
+    "Price": 3.5,
+    "Type_Of_Food": "Drink",
+    "Allergies": "none"
+  },
+  {
+    "ID": 12,
+    "Name": "Slushie",
+    "Price": 4.0,
+    "Type_Of_Food": "Drink",
+    "Allergies": "none"
+  },
+  {
+    "ID": 13,
+    "Name": "Soft Pretzel Bites",
+    "Price": 4.5,
+    "Type_Of_Food": "Snack",
+    "Allergies": "gluten"
+  },
+  {
+    "ID": 14,
+    "Name": "Brownie",
+    "Price": 3.5,
+    "Type_Of_Food": "Snack",
+    "Allergies": "nuts"
+  },
+  {
+    "ID": 15,
+    "Name": "Caramel Popcorn",
+    "Price": 5.5,
+    "Type_Of_Food": "Snack",
+    "Allergies": "dairy"
+  },
+  {
+    "ID": 16,
+    "Name": "Fruit Salad",
+    "Price": 5.0,
+    "Type_Of_Food": "Snack",
+    "Allergies": "none"
+  },
+  {
+    "ID": 17,
+    "Name": "Nacho Cheese Dip",
+    "Price": 3.5,
+    "Type_Of_Food": "Snack",
+    "Allergies": "dairy"
+  },
+  {
+    "ID": 18,
+    "Name": "Milkshake",
+    "Price": 5.5,
+    "Type_Of_Food": "Drink",
+    "Allergies": "dairy"
+  },
+  {
+    "ID": 19,
+    "Name": "Smoothie",
+    "Price": 6.0,
+    "Type_Of_Food": "Drink",
+    "Allergies": "none"
+  },
+  {
+    "ID": 20,
+    "Name": "Iced Coffee",
+    "Price": 4.5,
+    "Type_Of_Food": "Drink",
+    "Allergies": "none"
+  },
+  {
+    "ID": 21,
+    "Name": "Caramel Latte",
+    "Price": 5.0,
+    "Type_Of_Food": "Drink",
+    "Allergies": "none"
+  },
+  {
+    "ID": 22,
+    "Name": "test",
+    "Price": 5.0,
+    "Type_Of_Food": "Snack",
+    "Allergies": "none"
+  },
+  {
+    "ID": 23,
+    "Name": "test",
+    "Price": 5.0,
+    "Type_Of_Food": "Snack",
+    "Allergies": "none"
+  },
+  {
+    "ID": 24,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 24,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 25,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 26,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 27,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 28,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 29,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 30,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 31,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 32,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 33,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 34,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 35,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 36,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 37,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 38,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 39,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 40,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 41,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 42,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 43,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 44,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 45,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 46,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 47,
+    "Name": "New Name",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "Peanuts"
+  },
+  {
+    "ID": 48,
+    "Name": "Chocolate Bar",
+    "Price": 3.99,
+    "Type_Of_Food": "Candy",
+    "Allergies": "None"
+  }
+]

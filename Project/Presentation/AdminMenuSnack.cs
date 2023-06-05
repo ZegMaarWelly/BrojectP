@@ -1,6 +1,6 @@
 ﻿using ConsoleTables;
 
-static class AdminMenuSnack
+public static class AdminMenuSnack
 {
 
     static private SnacksLogic snacksLogic = new SnacksLogic();

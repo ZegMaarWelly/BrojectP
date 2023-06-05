@@ -1,5 +1,5 @@
 ﻿using System.Text.Json.Serialization;
-class SnackModel
+public class SnackModel
 {
     [JsonPropertyName("id")]
     public int ID { get; set; }
