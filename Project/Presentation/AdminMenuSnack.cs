@@ -122,7 +122,7 @@ public static class AdminMenuSnack
     {
         Console.WriteLine(" > Your Allergies: ");
         string allergies = Console.ReadLine()!;
-        if (allergies == "")
+        if (allergies == ""|| allergies == " ")
         {
             allergies = "none";
         }
