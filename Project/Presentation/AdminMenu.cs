@@ -13,13 +13,13 @@ static class AdminMenu
         Console.WriteLine("    _      _       _        __  __              \r\n   /_\\  __| |_ __ (_)_ _   |  \\/  |___ _ _ _  _ \r\n  / _ \\/ _` | '  \\| | ' \\  | |\\/| / -_) ' \\ || |\r\n /_/ \\_\\__,_|_|_|_|_|_||_| |_|  |_\\___|_||_\\_,_|\r\n                                               ");
         Console.ResetColor();
         Console.WriteLine("What do you want to do?.");
-        Console.WriteLine(" > Enter [1] to add/remove/change snacks.");
-        Console.WriteLine(" > Enter [2] to add items to shopping cart TEST.");
-        Console.WriteLine(" > Enter [3] to see a list of all registered users.");
-        Console.WriteLine(" > Enter [4] to go the the beginning of the program.");
-        Console.WriteLine(" > Enter [5] to add/remove movies.");
-        Console.WriteLine(" > Enter [6] to Admin Manage Movie.");
-        Console.WriteLine(" > Enter [7] to Quit the Program.");
+        Console.WriteLine(" > [1  add/remove/change snacks.");
+        Console.WriteLine(" > [2] add items to shopping cart TEST.");
+        Console.WriteLine(" > [3] see a list of all registered users.");
+        Console.WriteLine(" > [4] go the the beginning of the program.");
+        Console.WriteLine(" > [5] add/remove movies.");
+        Console.WriteLine(" > [6] Admin Manage Movie.");
+        Console.WriteLine(" > [7] Quit the Program.");
 
         string input = Console.ReadLine()!;
         if (input == "1")
