@@ -1,4 +1,6 @@
 
+using System.Globalization;
+
 static class NewAccount
 {
     static private AccountsLogic accountsLogic = Factory.accountsLogic;
@@ -38,7 +40,30 @@ static class NewAccount
             }
 
         } while (passwordSecure == false);
- 
+
+        static DateTime Get_Date()
+        {
+            DateTime date = default;
+            while (true)
+            {
+                // Asks the user for their date
+                string your_date = Console.ReadLine()!;
+                try
+                {
+                    date = DateTime.ParseExact(your_date, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+                }
+                //Catches any type of exception.
+                catch
+                {
+                    Console.WriteLine("Invalid date, please enter a correct date");
+                }
+                return date.Date;
+            }
+        }
+
+        Console.WriteLine("\n > Enter your date of birth: \n (YYYY-MM-DD) ");
+        DateTime date_of_birth = Get_Date();
+         
         Console.WriteLine("\n > Enter your Full Name (first and last name): ");
         string? fullName = Console.ReadLine();
 
@@ -59,7 +84,7 @@ static class NewAccount
                 while (lowerInput == "y" || lowerInput == "n")
                 {
                    
-                   AccountModel newAcc = new AccountModel(id, emailAddress, password, fullName, vip: false);
+                   AccountModel newAcc = new AccountModel(id, emailAddress, password, date_of_birth, fullName, vip: false);
                    accountsLogic.Add_To_List(newAcc);
                    Console.WriteLine("\nYour account has been succesfully created\n > Press any button to return to the main menu");
                     Console.ReadKey();

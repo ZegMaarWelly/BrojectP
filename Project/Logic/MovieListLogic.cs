@@ -8,11 +8,14 @@ class MovieListLogic
 		_movies = MovieListAccess.LoadAll();
 	}
 
+	// Returns all the movie's information based on the MovieListModel, also loads the list every time so it is updated in every time it needs to be displayed
 	public List<MovieListModel> Return_Movie_List()
 	{
 		_movies = MovieListAccess.LoadAll();
 		return _movies;
 	}
+
+	// Checks the genres to see if a certain string is in the list
 	public List<MovieListModel> Return_By_Genre(string genre)
 	{
 		List<MovieListModel> movies = new List<MovieListModel>();
@@ -62,6 +65,7 @@ class MovieListLogic
 		return null;
 	}
 
+	// Finds highest ID in the list and returns this value +1
 	public static int Find_Next_ID()
 	{
 		return MovieListAccess.LoadAll().Select(a => a.Id).Max() + 1;
@@ -107,6 +111,7 @@ class MovieListLogic
         MovieListAccess.WriteAll(_movies);
     }
 
+	// Provides movies with ID's based on their position on the list
 	public void Update_Movie_ID()
 	{
         List<MovieListModel> movies = MovieListAccess.LoadAll();
