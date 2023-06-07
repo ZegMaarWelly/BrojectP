@@ -57,11 +57,13 @@ static class AdminMovieList
                 break;
         }
     }
+    // This changes all the ID's to be relevant to their relative position in the list, this so that no gaps can fall whenever you remove a movie
     public static void Update_Movie_ID()
     {
         MovieListLogic movieListLogic = new MovieListLogic();
         movieListLogic.Update_Movie_ID();
     }
+    
     static public void View_Running_Movies()
     {
         runningmovieLogic = new RunningMovieLogic("");
@@ -69,6 +71,7 @@ static class AdminMovieList
         ConsoleTable.From<RunningMovieModel>(runningmovie_list).Write();
     }
 
+    // Allows you to see what movies in the list currently have a certain genre defined
     static public void Sort_By_Genre()
     {
         Console.ForegroundColor = ConsoleColor.DarkGreen;
@@ -96,12 +99,15 @@ static class AdminMovieList
         }
     }
 
+
+    // Prints all the movies from the list in the table we use for this
     static public void Get_Movie_Table()
     {
         List<MovieListModel> movie_list = movieLogic.Return_Movie_List();
         ConsoleTable.From<MovieListModel>(movie_list).Write(Format.Alternative);
     }
 
+    // Finds the highest ID in the list and returns this value +1 for the new movie
     static public int New_Movie_id()
     {
         int next_id = MovieListLogic.Find_Next_ID();
@@ -197,6 +203,7 @@ static class AdminMovieList
         MovieListModel movie = new(movie_id, movie_name, movie_genre, movie_length, movie_age, movie_labels);
         while (true)
         {
+            // Checks if a movie with the same name isn't already in the list and makes it so that it doesn't get added if it is the case
             MovieListModel new_movie = movieLogic.Find_Movie(movie.Name);
             Console.WriteLine(movie);
             if (new_movie != null)
@@ -275,13 +282,10 @@ static class AdminMovieList
                     
                 }
             }
-
             catch
             {
                 Console.WriteLine("Invalid input, only numbers are accepted");
             }
-
-
         }
     }
 

@@ -34,6 +34,5 @@ public class MovieListModel
         public override string ToString()
         {
          return $"ID: {Id}, Name: {Name}, Genre(s): {Genre}, Length: {Length} minutes, Age: {Age} and above, Parental labels: {Labels}";
-        //return $"ID: {Id}, Name: {Name}, Genre(s): {Genre}, Length: {Length} minutes";
-    }
+        }
     }
