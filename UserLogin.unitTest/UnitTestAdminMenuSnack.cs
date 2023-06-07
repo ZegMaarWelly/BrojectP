@@ -114,6 +114,7 @@ namespace UnitTesting
         }
 
         [TestMethod]
+        //Test the method to see if it succesfully returns "none" when the input is nothing.
         public void GetSnackAllergy_SuccessfulButEmpty()
         {
 
@@ -127,6 +128,11 @@ namespace UnitTesting
             Assert.AreEqual(expectedAllergy, actualAllergy);
         }
 
+        [TestMethod]
+        public void Add()
+        {
+            string[] inputs = {  "Snack Name" ,"5","Drink", " Balls", "5","7"};
+        }
 
     }
 }
