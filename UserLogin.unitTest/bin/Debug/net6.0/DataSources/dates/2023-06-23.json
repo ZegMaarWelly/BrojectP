@@ -1,0 +1,194 @@
+[
+  {
+    "movie": {
+      "id": 1,
+      "name": "Bee Movie",
+      "genre": "Family, Adventure",
+      "length": 91,
+      "age": 5,
+      "labels": "None"
+    },
+    "room": {
+      "id": 2,
+      "map": [
+        "14|     O O O O O O O O    ",
+        "13|   O O O O O O O O O O  ",
+        "12|   O O O O O O O O O O  ",
+        "11| O O O O O O O O O O O O",
+        "10| O O O O O O O O O O O O",
+        "09| O O O O O O O O O O O O",
+        "08| O O O O O O O O O O O O",
+        "07| O O O O O O O O O O O O",
+        "06| O O O O O O O O O O O O",
+        "05| O O O O O O O O O O O O",
+        "04| O O O O O O O O O O O O",
+        "03|   O O O O O O O O O O  ",
+        "02|     O O O O O O O O    ",
+        "01|     O O O O O O O O    ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014",
+        "    1 2 3 4 5 6 7 8 9 1 1 1",
+        "                      0 1 2"
+      ],
+      "total_seats": 150,
+      "available_seats": 150
+    },
+    "begin_time": "2023-06-23T12:15:00",
+    "end_time": "2023-06-23T14:14:00",
+    "date": "2023-06-23T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 25,
+      "name": "Inception",
+      "genre": "Sci-Fi, Thriller",
+      "length": 148,
+      "age": 13,
+      "labels": "Violence"
+    },
+    "room": {
+      "id": 1,
+      "map": [
+        "N |     O O O O O O O O    ",
+        "M |   O O O O O O O O O O  ",
+        "L |   O O O O O O O O O O  ",
+        "K | O O O X O O O O O O O O",
+        "J | O O O O O O O O O O O O",
+        "I | O O O O O O O O O O O O",
+        "H | O O O O O O O O O O O O",
+        "G | O O O O O O O O O O O O",
+        "F | O O O O O O O O O O O O",
+        "E | O O O O O O O O O O O O",
+        "D | O O X X X O O O O O O O",
+        "C |   O O O O O O O O O O  ",
+        "B |     O O O O O O O O    ",
+        "A |     O O O O O O O O    ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014",
+        "    1 2 3 4 5 6 7 8 9 1 1 1",
+        "                      0 1 2"
+      ],
+      "total_seats": 150,
+      "available_seats": 150
+    },
+    "begin_time": "2023-06-23T16:44:00",
+    "end_time": "2023-06-23T19:12:00",
+    "date": "2023-06-23T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 29,
+      "name": "Harry Potter and the Philosopher\u0027s Stone",
+      "genre": "Fantasy, Adventure",
+      "length": 152,
+      "age": 7,
+      "labels": "None"
+    },
+    "room": {
+      "id": 10,
+      "map": [
+        "T |         O O O O O O O O O O O O O O O O O O O O O O         ",
+        "S |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "R |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "Q |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "P |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "O |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "N |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "M | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "L | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "K | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "J | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "I | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "H |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "G |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "F |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "E |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "D |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "C |           O O O O O O O O O O O O O O O O O O O O           ",
+        "B |               O O O O O O O O O O O O O O O O               ",
+        "A |                 O O O O O O O O O O O O O O O               ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------------------------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
+        "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
+      ],
+      "total_seats": 500,
+      "available_seats": 500
+    },
+    "begin_time": "2023-06-23T08:18:00",
+    "end_time": "2023-06-23T10:50:00",
+    "date": "2023-06-23T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 42,
+      "name": "Logan",
+      "genre": "Action, Sci-Fi",
+      "length": 137,
+      "age": 17,
+      "labels": "Violence \u0026 Language"
+    },
+    "room": {
+      "id": 14,
+      "map": [
+        "O | O O O O O O O O O O O O O O O",
+        "N | O O O O O O O O O O O O O O O",
+        "M | O O O O O O O O O O O O O O O",
+        "L | O O O O O O O O O O O O O O O",
+        "K | O O O O O O O O O O O O O O O",
+        "J | O O O O O O O O O O O O O O O",
+        "I | O O O O O O O O O O O O O O O",
+        "H | O O O O O O O O O O O O O O O",
+        "G | O O O O O O O O O O O O O O O",
+        "F | O O O O O O O O O O O O O O O",
+        "E | O O O O O O O O O O O O O O O",
+        "D | O O O O O O O O O O O O O O O",
+        "C | O O O O O O O O O O O O O O O",
+        "B | O O O O O O O O O O O O O O O",
+        "A | O O O O O O O O O O O O O O O",
+        "   x------------------------------",
+        "                      1 1 1 1 1 1",
+        "    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5"
+      ],
+      "total_seats": 225,
+      "available_seats": 225
+    },
+    "begin_time": "2023-06-23T07:02:00",
+    "end_time": "2023-06-23T09:19:00",
+    "date": "2023-06-23T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 23,
+      "name": "Frozen",
+      "genre": "Animation, Children, Musical",
+      "length": 102,
+      "age": 0,
+      "labels": "None"
+    },
+    "room": {
+      "id": 2,
+      "map": [
+        "N |     O O O O O O O O    ",
+        "M |   O O O O O O O O O O  ",
+        "L |   O O O O O O O O O O  ",
+        "K | O O O O O O O O O O O O",
+        "J | O O O O O O O O O O O O",
+        "I | O O O O O O O O O O O O",
+        "H | O O O O O O O O O O O O",
+        "G | O O O O O O O O O O O O",
+        "F | O O O O O O O O O O O O",
+        "E | O O O O O O O O O O O O",
+        "D | O O O O O O O O O O O O",
+        "C |   O O O O O O O O O O  ",
+        "B |     O O O O O O O O    ",
+        "A |     O O O O O O O O    ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014",
+        "    1 2 3 4 5 6 7 8 9 1 1 1",
+        "                      0 1 2"
+      ],
+      "total_seats": 150,
+      "available_seats": 150
+    },
+    "begin_time": "2023-06-23T13:07:00",
+    "end_time": "2023-06-23T14:49:00",
+    "date": "2023-06-23T00:00:00"
+  }
+]

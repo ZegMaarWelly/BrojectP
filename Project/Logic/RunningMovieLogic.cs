@@ -1,4 +1,4 @@
-﻿class RunningMovieLogic
+﻿public class RunningMovieLogic
 {
     private List<RunningMovieModel> _runningmovies;
 

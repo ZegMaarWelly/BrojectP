@@ -128,11 +128,7 @@ namespace UnitTesting
             Assert.AreEqual(expectedAllergy, actualAllergy);
         }
 
-        [TestMethod]
-        public void Add()
-        {
-            string[] inputs = {  "Snack Name" ,"5","Drink", " Balls", "5","7"};
-        }
+       
 
     }
 }

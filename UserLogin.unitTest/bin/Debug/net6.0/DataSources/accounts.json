@@ -1,0 +1,98 @@
+[
+  {
+    "id": 0,
+    "emailAddress": "Admin@gmail.com",
+    "password": "Admin",
+    "date_of_birth": "0001-01-01T00:00:00",
+    "fullName": "Admin",
+    "V.I.P.": true
+  },
+  {
+    "id": 1,
+    "emailAddress": "n@b.c",
+    "password": "xyz",
+    "date_of_birth": "1856-07-10T00:00:00",
+    "fullName": "Nikola Tesla",
+    "V.I.P.": false
+  },
+  {
+    "id": 2,
+    "emailAddress": "t@b.c",
+    "password": "xyz",
+    "date_of_birth": "1847-02-11",
+    "fullName": "Thomas Edison",
+    "V.I.P.": false
+  },
+  {
+    "id": 3,
+    "emailAddress": "m@b.c",
+    "password": "2004",
+    "date_of_birth": "0001-01-01T00:00:00",
+    "fullName": "De Goat Marcel",
+    "V.I.P.": true
+  },
+  {
+    "id": 4,
+    "emailAddress": "bgfnjn@",
+    "password": "awf",
+    "date_of_birth": "0001-01-01T00:00:00",
+    "fullName": "lol lol",
+    "V.I.P.": false
+  },
+  {
+    "id": 5,
+    "emailAddress": "fhrt",
+    "password": "grtf",
+    "date_of_birth": "0001-01-01T00:00:00",
+    "fullName": "ggrtgrtr e",
+    "V.I.P.": false
+  },
+  {
+    "id": 6,
+    "emailAddress": "a@a.com",
+    "password": "balletjes12#",
+    "date_of_birth": "0001-01-01T00:00:00",
+    "fullName": "Bert Alletjes",
+    "V.I.P.": false
+  },
+  {
+    "id": 7,
+    "emailAddress": "A",
+    "password": "A",
+    "date_of_birth": "0001-01-01T00:00:00",
+    "fullName": "Admin",
+    "V.I.P.": false
+  },
+  {
+    "id": 8,
+    "emailAddress": "Admin",
+    "password": "Admin",
+    "date_of_birth": "0001-01-01T00:00:00",
+    "fullName": "Admin",
+    "V.I.P.": false
+  },
+  {
+    "id": 9,
+    "emailAddress": "balzak@bal.com",
+    "password": "Maaaasamasaasiyosidimataai123.",
+    "date_of_birth": "0001-01-01T00:00:00",
+    "fullName": "lol lol",
+    "V.I.P.": false
+  },
+  {
+    "id": 10,
+    "emailAddress": "gio@gio.com",
+    "password": "Appelsap123.",
+    "date_of_birth": "0001-01-01T00:00:00",
+    "fullName": "Giovanni Vonk",
+    "V.I.P.": false
+  },
+  {
+    "id": 11,
+    "emailAddress": "lol@lol.com",
+    "password": "Lolllll123.",
+    "date_of_birth": "0001-01-01T00:00:00",
+    "fullName": "lol lol",
+    "V.I.P.": false
+  }
+]

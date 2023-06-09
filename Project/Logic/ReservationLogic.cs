@@ -1,4 +1,4 @@
-﻿class ReservationLogic
+﻿public class ReservationLogic
 {
     private List<ReservationModel> _reservations;
 

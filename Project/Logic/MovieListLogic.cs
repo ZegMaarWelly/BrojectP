@@ -1,4 +1,4 @@
-class MovieListLogic
+public class MovieListLogic
 {
 	private List<MovieListModel> _movies;
 

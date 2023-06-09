@@ -1,5 +1,5 @@
 ﻿
-class ShoppingCartLogic
+public class ShoppingCartLogic
 {
     private List<CountedSnackModel> _shoppingcart;
 
