@@ -36,10 +36,10 @@ static class Menu
         Console.Write("\n        |___/      \n");
         Console.ResetColor();
         Console.WriteLine();
-        Console.WriteLine("> Enter [1] to login");
-        Console.WriteLine("> Enter [2] to add a new account");
-        Console.WriteLine("> Enter [3] for Cinema Info");
-        Console.WriteLine("> Enter [4] to go to the movies");
+        Console.WriteLine("> [1] login");
+        Console.WriteLine("> [2] add a new account");
+        Console.WriteLine("> [3] Cinema Info");
+        Console.WriteLine("> [4] go to the movies");
 
         
 
@@ -82,10 +82,10 @@ static class Menu
         Console.WriteLine("  _  _ _      _       ___ _                       ___     _   _              _            \r\n | || (_)__ _| |_    / __(_)_ _  ___ _ __  __ _  | _ \\___| |_| |_ ___ _ _ __| |__ _ _ __  \r\n | __ | / _` | ' \\  | (__| | ' \\/ -_) '  \\/ _` | |   / _ \\  _|  _/ -_) '_/ _` / _` | '  \\ \r\n |_||_|_\\__, |_||_|  \\___|_|_||_\\___|_|_|_\\__,_| |_|_\\___/\\__|\\__\\___|_| \\__,_\\__,_|_|_|_|\r\n        |___/                                                                            ");
         Console.ResetColor();
         Console.WriteLine();
-        Console.WriteLine("> Enter [1] to log out ");
-        Console.WriteLine("> Enter [2] for Cinema Info");
-        Console.WriteLine("> Enter [3] to go to the movies");
-        Console.WriteLine("> Enter [4] to see reservations");
+        Console.WriteLine("> [1] to log out ");
+        Console.WriteLine("> [2] for Cinema Info");
+        Console.WriteLine("> [3] to go to the movies");
+        Console.WriteLine("> [4] to see reservations");
 
         if (accountsLogic.CheckAccountAdmin())
         {
