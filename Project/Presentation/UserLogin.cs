@@ -30,9 +30,9 @@ public static class UserLogin
             {
                     Menu.Menu_When_Logged_In();
             }
-            else if (acc != null)
+            else if (acc == true)
             {
-                    Menu.Menu_When_Logged_In();
+                Menu.Menu_When_Logged_In();
             }
             else
             {
