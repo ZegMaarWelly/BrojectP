@@ -66,7 +66,7 @@ namespace UnitTesting
         public void FindSnack_ReturnsMatchingSnack()
         {
            
-            string name = "Chocolate Bar";
+            string name = "New Name";
 
             SnackModel snack = _snacksLogic.Find_Snack(name);
 
@@ -98,11 +98,11 @@ namespace UnitTesting
         {
            
             double newPrice = 3.99;
-            SnackModel snack = _snacksLogic.Find_Snack("Chocolate Bar");
+            SnackModel snack = _snacksLogic.Find_Snack("New Name");
 
             _snacksLogic.Change_Price_Snack(newPrice, snack);
 
-            SnackModel updatedSnack = _snacksLogic.Find_Snack("Chocolate Bar");
+            SnackModel updatedSnack = _snacksLogic.Find_Snack("New Name");
             Assert.IsNotNull(updatedSnack);
             Assert.AreEqual(newPrice, updatedSnack.Price);
         }
@@ -113,11 +113,11 @@ namespace UnitTesting
         {
          
             string newType = "Candy";
-            SnackModel snack = _snacksLogic.Find_Snack("Chocolate Bar");
+            SnackModel snack = _snacksLogic.Find_Snack("New Name");
 
             _snacksLogic.Change_Type_Snack(newType, snack);
 
-            SnackModel updatedSnack = _snacksLogic.Find_Snack("Chocolate Bar");
+            SnackModel updatedSnack = _snacksLogic.Find_Snack("New Name");
             Assert.IsNotNull(updatedSnack);
             Assert.AreEqual(newType, updatedSnack.Type_Of_Food);
         }

@@ -10,7 +10,7 @@
         _reservations = ReservationAccess.LoadAll(File_Name);
     }
 
-    public List<ReservationModel> Return_RunningMovie_List()
+    public List<ReservationModel> Return_Reservation_List()
     {
         return _reservations;
     }

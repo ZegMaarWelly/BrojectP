@@ -183,7 +183,7 @@
 
         Console.Clear();
         //The list of all the users reservations
-        List<ReservationModel> reservation_list = reservationLogic.Return_RunningMovie_List();
+        List<ReservationModel> reservation_list = reservationLogic.Return_Reservation_List();
 
         
         //Turns the list into an array

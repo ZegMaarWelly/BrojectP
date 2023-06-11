@@ -109,6 +109,8 @@
         RunningMovieAccess.WriteAll(_runningmovies, File_Name);
     }
 
+
+    //Changes the running movie from the roomID, the movie and the start date
     public void Change_Running_Movie_From_RoomIDMovieStarDate(RunningMovieModel new_runningmovie)
     {
         RunningMovieModel movie_to_be_changed = null;
