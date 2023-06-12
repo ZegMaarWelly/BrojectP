@@ -450,6 +450,7 @@ static class AdminMenuSnack
                         //Prints the new snack list
                         Console.Clear();
                         Console.ForegroundColor = ConsoleColor.DarkGreen;
+                        Console.ResetColor();
                         Console.WriteLine("Snack succesfully changed");
                         Console.WriteLine("New List: ");
                         Get_Snack_List();
