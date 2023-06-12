@@ -33,7 +33,6 @@
             {
                 "This is our Cinema named 'High Cinema Rotterdam'.",
                 "It is located at Wijnhaven 107 in the bustling city of Rotterdam.",
-                "Our cinema consists of a grand total of 12 screening rooms.",
                 "We provide movies in 2D, 3D, 4D and IMAX quality.",
                 "We also provide snacks and drinks for our customers to go alongside with the best movie experience of your life.",
                 "For further information, do not hesitate to contact our lovely customer support.",

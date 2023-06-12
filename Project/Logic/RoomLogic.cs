@@ -45,7 +45,7 @@
         return seats;
     }
 
-    // makes a new room for the amdin
+    // makes a new room for the amdin depending on the inputs it sets the size of the room.
     public void Add_Room(int row, int column)
     {
         List<string> alphabet_String = new List<string> { "Z", "Y", "X", "W", "V", "U", "T", "S", "R", "Q", "P", "O", "N", "M", "L", "K", "J", "I", "H", "G", "F", "E", "D", "C", "B", "A" };
