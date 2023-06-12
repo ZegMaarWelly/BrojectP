@@ -11,25 +11,6 @@ class ScreenRoomLogic
     // A copy of screening_room method. Its somewhat the same but now it works with the reservation file.
     public static (List<string>, string) screening_room_reservation(List<string> map)
     {
-        //List<string> screening_room = new List<string>
-        //    {"N |     O O O O O O O O    ",
-        //     "M |   O O O O O O O O O O  ",
-        //     "L |   O O O O O O O O O O  ",
-        //     "K | O O O O O O O O O O O O",
-        //     "J | O O O O O O O O O O O O",
-        //     "I | O O O O O O O O O O O O",
-        //     "H | O O O O O O O O O O O O",
-        //     "G | O O O O O O O O O O O O",
-        //     "F | O O O O O O O O O O O O",
-        //     "E | O O O O O O O O O O O O",
-        //     "D | O O O O O O O O O O O O",
-        //     "C |   O O O O O O O O O O  ",
-        //     "B |     O O O O O O O O    ",
-        //     "A |     O O O O O O O O    ",
-        //     "  x————————————————————————",
-        //     "    1 2 3 4 5 6 7 8 9 1 1 1",
-        //     "                      0 1 2"};
-
         
         List<string> screening_room = map;
 
