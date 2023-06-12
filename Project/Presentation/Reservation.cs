@@ -17,8 +17,9 @@
         Console.ForegroundColor = ConsoleColor.DarkGreen;
         Console.WriteLine("  __  __         _       ___                          _   _          \r\n |  \\/  |_____ _(_)___  | _ \\___ ___ ___ _ ___ ____ _| |_(_)___ _ _  \r\n | |\\/| / _ \\ V / / -_) |   / -_|_-</ -_) '_\\ V / _` |  _| / _ \\ ' \\ \r\n |_|  |_\\___/\\_/|_\\___| |_|_\\___/__/\\___|_|  \\_/\\__,_|\\__|_\\___/_||_|\r\n                                                                     ");
         Console.ResetColor();
-        Console.WriteLine($"You are about to make a reservation to the movie {runningmovie.Movie.Name} in room {runningmovie.Room.ID}\n\n");
-        Console.WriteLine(" > How many seats do you want to reserve?\n");
+        Console.WriteLine($"You are about to make a reservation to the movie {runningmovie.Movie.Name} in room {runningmovie.Room.ID}");
+        Console.WriteLine($"There are currently {runningmovie.Room.Available_Seats} seats aviable");
+        Console.WriteLine("\n > How many seats do you want to reserve?\n");
 
         // Asks the user for the amount of seats.
         int seat_amount = -1;
@@ -28,8 +29,14 @@
             try
             {
                 seat_amount = Convert.ToInt32(Console.ReadLine());
-                seat_success = true;
-
+                if (runningmovie.Room.Available_Seats > seat_amount)
+                {
+                    seat_success = true;
+                }
+                else
+                {
+                    Console.WriteLine("Error.\nYou have selected more chairs then there are are aviable at this moment, please try again");
+                }
             }
             //Catches any type of exception.
             catch
@@ -61,7 +68,7 @@
 
         // Prints the seats you just reserverd.
         string joinedSeats = String.Join(",", list_of_seats);
-        Console.WriteLine($"You have succesfully ordered seats {joinedSeats}\n\n");
+        Console.WriteLine($"You have succesfully ordered seat(s) {joinedSeats}\n\n");
         Console.WriteLine($"0");
 
         double total_Price = 0;
@@ -223,7 +230,7 @@
         while(!confirmation)
         {
             Console.WriteLine("To go back press ENTER\nTo cancel reservation, press C");
-            var reservation_input= Console.ReadLine()!;
+            var reservation_input= Console.ReadLine().ToUpper()!;
             if(reservation_input == "")
             {
                 Menu.Menu_When_Logged_In();
