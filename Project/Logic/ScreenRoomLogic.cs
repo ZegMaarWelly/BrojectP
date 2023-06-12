@@ -6,33 +6,12 @@ using System.Runtime.CompilerServices;
 public class ScreenRoomLogic
 {
     static private RoomLogic roomLogic = new RoomLogic();
-    //static private RunningMovieLogic runningmovieLogic = new RunningMovieLogic("2023-04-20");
     
-    // A copy of screening_room method. Its somewhat the same but now it works with the reservation file.
     public static (List<string>, string) screening_room_reservation(List<string> map)
     {
-        //List<string> screening_room = new List<string>
-        //    {"N |     O O O O O O O O    ",
-        //     "M |   O O O O O O O O O O  ",
-        //     "L |   O O O O O O O O O O  ",
-        //     "K | O O O O O O O O O O O O",
-        //     "J | O O O O O O O O O O O O",
-        //     "I | O O O O O O O O O O O O",
-        //     "H | O O O O O O O O O O O O",
-        //     "G | O O O O O O O O O O O O",
-        //     "F | O O O O O O O O O O O O",
-        //     "E | O O O O O O O O O O O O",
-        //     "D | O O O O O O O O O O O O",
-        //     "C |   O O O O O O O O O O  ",
-        //     "B |     O O O O O O O O    ",
-        //     "A |     O O O O O O O O    ",
-        //     "  x————————————————————————",
-        //     "    1 2 3 4 5 6 7 8 9 1 1 1",
-        //     "                      0 1 2"};
-
         
         List<string> screening_room = map;
-
+        //takes the screening room and prints it out with the available and unaivalable chairs
         while (true)
         {
             try
@@ -118,10 +97,13 @@ public class ScreenRoomLogic
                 Console.WriteLine("Select a chair:");
                 var input_column = (Convert.ToInt32(Console.ReadLine()) - 1) * 2 + 4;
                 var your_line = screening_room[row];
+
+                //prints out the chair you want to select and confirm the order
+
                 if (your_line[input_column] == 'O')
                 {
                     Console.Clear();
-                    Console.WriteLine($"You chose chair {input_column / 2 - 1} on row {indrow} , do you want to confirm this chair place?");
+                    Console.WriteLine($"You chose chair {input_column / 2 - 1} on row {input_row} , do you want to confirm this chair place?");
                     Console.WriteLine("Y/N");
                     string conf = Console.ReadLine().ToUpper();
                     conf.ToUpper();
@@ -131,7 +113,7 @@ public class ScreenRoomLogic
 
                         screening_room[row] = your_line;
                         Console.Clear();
-                        Console.WriteLine($"You have selected this chair {input_column / 2 - 1} on row {indrow}.");
+                        Console.WriteLine($"You have selected this chair {input_column / 2 - 1} on row {input_row}.");
                         Thread.Sleep(500);
                         Console.Clear();
                         string string_seat = $"{input_row}-{Convert.ToString(input_column / 2 - 1)}";
@@ -142,7 +124,7 @@ public class ScreenRoomLogic
                     else if (conf == "N")
                     {
                         Console.Clear();
-                        Console.WriteLine($"You did not confirm chair {input_column / 2 - 1} on row {indrow}.");
+                        Console.WriteLine($"You did not confirm chair {input_column / 2 - 1} on row {input_row}.");
                         Thread.Sleep(500);
                         Console.Clear();
                         screening_room_reservation(screening_room);
@@ -167,7 +149,7 @@ public class ScreenRoomLogic
             
         }
 
-
+    //unused old adjsuted code below here
     public static void screening_room()
     {
 

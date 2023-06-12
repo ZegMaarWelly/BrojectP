@@ -10,8 +10,10 @@ public static class UserLogin
         {
         Console.Clear();
         int loginAttempts = 0;
+            // this code makes use of a while loop so that you have 3 tries to log in, then it locks the console app for 30 seconds.
         while (loginAttempts < 3)
         {
+                //asks for inputs to log in
             Console.ForegroundColor= ConsoleColor.DarkGreen;
             Console.WriteLine("  _   _               _              _      \r\n | | | |___ ___ _ _  | |   ___  __ _(_)_ _  \r\n | |_| (_-</ -_) '_| | |__/ _ \\/ _` | | ' \\ \r\n  \\___//__/\\___|_|   |____\\___/\\__, |_|_||_|\r\n                               |___/        ");
             Console.WriteLine();
@@ -30,9 +32,9 @@ public static class UserLogin
             {
                     Menu.Menu_When_Logged_In();
             }
-            else if (acc != null)
+            else if (acc == true)
             {
-                    Menu.Menu_When_Logged_In();
+                Menu.Menu_When_Logged_In();
             }
             else
             {
@@ -47,12 +49,12 @@ public static class UserLogin
         Thread.Sleep(30000);
         }
     }
-
+    // checks for Admin if he's loggin in if it is you get send to the admin menu.
     public static bool IsAdmin(string email, string password)
     {
         return (email == "Admin" && password == "Admin") || (email == "A" && password == "A");
     }
-
+    //checks for valid login credentials and based on that you can log in or not.
     public static bool Isloginvalid(string email, string password)
     {
         return accountsLogic.CheckLogin(email, password) != null;
