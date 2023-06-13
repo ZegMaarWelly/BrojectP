@@ -19,7 +19,7 @@
     "id": 2,
     "emailAddress": "t@b.c",
     "password": "xyz",
-    "date_of_birth": "1847-02-11",
+    "date_of_birth": "1847-02-11T00:00:00",
     "fullName": "Thomas Edison",
     "V.I.P.": false
   },
@@ -93,6 +93,14 @@
     "password": "Lolllll123.",
     "date_of_birth": "0001-01-01T00:00:00",
     "fullName": "lol lol",
+    "V.I.P.": false
+  },
+  {
+    "id": 12,
+    "emailAddress": "ar\u0022\u0022\u0022Rfer\u0022\u0022@gmail.com",
+    "password": "fkKDKCSGKKksd1341243/.",
+    "date_of_birth": "0001-01-01T00:00:00",
+    "fullName": "grdf",
     "V.I.P.": false
   }
 ]

@@ -1,0 +1,262 @@
+[
+  {
+    "movie": {
+      "id": 39,
+      "name": "Her",
+      "genre": "Romance, Sci-Fi",
+      "length": 126,
+      "age": 17,
+      "labels": "Nudity, Sex \u0026 Language"
+    },
+    "room": {
+      "id": 13,
+      "map": [
+        "Y | O O O O",
+        "X | O O O O",
+        "W | O O O O",
+        "V | O O O O",
+        "U | O O O O",
+        "T | O O O O",
+        "S | O O O O",
+        "R | O O O O",
+        "Q | O O O O",
+        "P | O O O O",
+        "O | O O O O",
+        "N | O O O O",
+        "M | O O O O",
+        "L | O O O O",
+        "K | O O O O",
+        "J | O O O O",
+        "I | O O O O",
+        "H | O O O O",
+        "G | O O O O",
+        "F | O O O O",
+        "E | O O O O",
+        "D | O O O O",
+        "C | O O O O",
+        "B | O O O O",
+        "A | X X O O",
+        "   x--------",
+        "           ",
+        "    1 2 3 4"
+      ],
+      "total_seats": 100,
+      "available_seats": 98
+    },
+    "begin_time": "2023-06-02T08:02:00",
+    "end_time": "2023-06-02T10:08:00",
+    "date": "2023-06-02T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 8,
+      "name": "65",
+      "genre": "Sci-Fi, Thriller",
+      "length": 93,
+      "age": 12,
+      "labels": "Fear"
+    },
+    "room": {
+      "id": 3,
+      "map": [
+        "S |   O O O O O O O O O O O O O O O O   ",
+        "R |   O O O O O O O O O O O O O O O O   ",
+        "Q |   O O O O O O O O O O O O O O O O   ",
+        "P |   O O O O O O O O O O O O O O O O   ",
+        "O |   O O O O O O O O O O O O O O O O   ",
+        "N |   O O O O O O O O O O O O O O O O   ",
+        "M | O O O O O O O O O O O O O O O O O O ",
+        "L | O O O O O O O O O O O O O O O O O O ",
+        "K | O O O O O O O O O O O O O O O O O O ",
+        "J | O O O O O O O O O O O O O O O O O O ",
+        "I | O O O O O O O O O O O O O O O O O O ",
+        "H |   O O O O O O O O O O O O O O O O   ",
+        "G |   O O O O O O O O O O O O O O O O   ",
+        "F |   O O O O O O O O O O O O O O O O   ",
+        "E |     O O O O O O O O O O O O O O     ",
+        "D |     O O O O O O O O O O O O O O     ",
+        "C |     O O O O O O O O O O O O O O     ",
+        "B |       O O O O O O O O O O O O       ",
+        "A |       O O O O O O O O O O O O       ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 ",
+        "                      0 1 2 3 4 5 6 7 8 "
+      ],
+      "total_seats": 300,
+      "available_seats": 300
+    },
+    "begin_time": "2023-06-02T18:14:00",
+    "end_time": "2023-06-02T19:47:00",
+    "date": "2023-06-02T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 3,
+      "name": "Gangs of New York",
+      "genre": "Drama, Crime",
+      "length": 167,
+      "age": 10,
+      "labels": "Sex \u0026 Nudity, Violence and gore, Drugs"
+    },
+    "room": {
+      "id": 9,
+      "map": [
+        "T |         O O O O O O O O O O O O O O O O O O O O O O         ",
+        "S |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "R |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "Q |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "P |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "O |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "N |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "M | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "L | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "K | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "J | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "I | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "H |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "G |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "F |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "E |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "D |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "C |           O O O O O O O O O O O O O O O O O O O O           ",
+        "B |               O O O O O O O O O O O O O O O O               ",
+        "A |                 O O O O O O O O O O O O O O O               ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------------------------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
+        "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
+      ],
+      "total_seats": 500,
+      "available_seats": 500
+    },
+    "begin_time": "2023-06-02T08:43:00",
+    "end_time": "2023-06-02T11:30:00",
+    "date": "2023-06-02T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 17,
+      "name": "The Lord of the Rings: The Return of the King",
+      "genre": "Fantasy, Adventure",
+      "length": 201,
+      "age": 13,
+      "labels": "Violence"
+    },
+    "room": {
+      "id": 4,
+      "map": [
+        "S |   O O O O O O O O O O O O O O O O   ",
+        "R |   O O O O O O O O O O O O O O O O   ",
+        "Q |   O O O O O O O O O O O O O O O O   ",
+        "P |   O O O O O O O O O O O O O O O O   ",
+        "O |   O O O O O O O O O O O O O O O O   ",
+        "N |   O O O O O O O O O O O O O O O O   ",
+        "M | O O O O O O O O O O O O O O O O O O ",
+        "L | O O O O O O O O O O O O O O O O O O ",
+        "K | O O O O O O O O O O O O O O O O O O ",
+        "J | O O O O O O O O O O O O O O O O O O ",
+        "I | O O O O O O O O O O O O O O O O O O ",
+        "H |   O O O O O O O O O O O O O O O O   ",
+        "G |   O O O O O O O O O O O O O O O O   ",
+        "F |   O O O O O O O O O O O O O O O O   ",
+        "E |     O O O O O O O O O O O O O O     ",
+        "D |     O O O O O O O O O O O O O O     ",
+        "C |     O O O O O O O O O O O O O O     ",
+        "B |       O O O O O O O O O O O O       ",
+        "A |       O O O O O O O O O O O O       ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 ",
+        "                      0 1 2 3 4 5 6 7 8 "
+      ],
+      "total_seats": 300,
+      "available_seats": 300
+    },
+    "begin_time": "2023-06-02T09:48:00",
+    "end_time": "2023-06-02T13:09:00",
+    "date": "2023-06-02T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 50,
+      "name": "A Star is Born",
+      "genre": "Drama, Romance, Musical",
+      "length": 136,
+      "age": 17,
+      "labels": "Language, Nudity \u0026 Drug Use"
+    },
+    "room": {
+      "id": 13,
+      "map": [
+        "Y | O O O O",
+        "X | O O O O",
+        "W | O O O O",
+        "V | O O O O",
+        "U | O O O O",
+        "T | O O O O",
+        "S | O O O O",
+        "R | O O O O",
+        "Q | O O O O",
+        "P | O O O O",
+        "O | O O O O",
+        "N | O O O O",
+        "M | O O O O",
+        "L | O O O O",
+        "K | O O O O",
+        "J | O O O O",
+        "I | O O O O",
+        "H | O O O O",
+        "G | O O O O",
+        "F | O O O O",
+        "E | O O O O",
+        "D | O O O O",
+        "C | O O O O",
+        "B | O O O O",
+        "A | O O O O",
+        "   x--------",
+        "           ",
+        "    1 2 3 4"
+      ],
+      "total_seats": 100,
+      "available_seats": 100
+    },
+    "begin_time": "2023-06-02T13:37:00",
+    "end_time": "2023-06-02T15:53:00",
+    "date": "2023-06-02T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 58,
+      "name": "Little Women",
+      "genre": "Drama, Romance",
+      "length": 135,
+      "age": 10,
+      "labels": "None"
+    },
+    "room": {
+      "id": 1,
+      "map": [
+        "N |     O O O O O O O O    ",
+        "M |   O O O O O O O O O O  ",
+        "L |   O O O O O O O O O O  ",
+        "K | O O O X O O O O O O O O",
+        "J | O O O O O O O O O O O O",
+        "I | O O O O O O O O O O O O",
+        "H | O O O O O O O O O O O O",
+        "G | O O O O O O O O O O O O",
+        "F | O O O O O O O O O O O O",
+        "E | O O O O O O O O O O O O",
+        "D | O O X X X O O O O O O O",
+        "C |   O O O O O O O O O O  ",
+        "B |     O O O O O O O O    ",
+        "A |     O O O O O O O O    ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014",
+        "    1 2 3 4 5 6 7 8 9 1 1 1",
+        "                      0 1 2"
+      ],
+      "total_seats": 150,
+      "available_seats": 150
+    },
+    "begin_time": "2023-06-02T16:17:00",
+    "end_time": "2023-06-02T18:32:00",
+    "date": "2023-06-02T00:00:00"
+  }
+]

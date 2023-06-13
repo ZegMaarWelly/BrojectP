@@ -1,5 +1,5 @@
 ﻿using System.Text.Json.Serialization;
-class RunningMovieModel
+public class RunningMovieModel
 {
     [JsonPropertyName("movie")]
     public MovieListModel Movie { get; set; }

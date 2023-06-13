@@ -135,7 +135,17 @@ static class Movies
                     movie_input = Convert.ToInt32(input_movie) - 1;
                     if (movie_input + 1 > running_movie_list.Count() || movie_input + 1 <= 0)
                     {
-                        Console.WriteLine("Invalid number; ");
+                        Console.WriteLine("Invalid number. ");
+                        continue;
+                    }
+                    if (running_movie_list[movie_input].Begin_Time < DateTime.Now)
+                    {
+                        Console.WriteLine("This movie has already started.\n");
+                        continue;
+                    }
+                    if (accountsLogic.Age_Of_Current_User() <= running_movie_list[movie_input].Movie.Age)
+                    {
+                        Console.WriteLine("You are too young to watch this movie.\n");
                         continue;
                     }
                     movie_success = true;
@@ -145,7 +155,7 @@ static class Movies
                 //Catches any type of exception.
                 catch
                 {
-                    Console.WriteLine("Invalid number; please enter a correct number");
+                    Console.WriteLine("Invalid number, please enter a correct number");
                 }
 
             }

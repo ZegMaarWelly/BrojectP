@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Xml.Linq;
 
-class CountedSnackModel
+public class CountedSnackModel
 {
     
     public SnackModel Snack { get; set; }

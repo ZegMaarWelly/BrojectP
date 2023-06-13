@@ -1,4 +1,5 @@
 ﻿using ConsoleTables;
+using System;
 
 static class MenuSnack
 {
@@ -61,9 +62,30 @@ static class MenuSnack
             }
             else
             {
-                Console.WriteLine("How many would you like to order?");
-                string amount = Console.ReadLine();
-                int intAmount = Convert.ToInt32(amount);
+                int intAmount = 0;
+                while(true)
+                {
+                    Console.WriteLine("How many would you like to order?");
+                    string amount = Console.ReadLine();
+                    try
+                    {
+                        intAmount = Convert.ToInt32(amount);
+                        if(intAmount < 1)
+                        {
+                            Console.WriteLine("Number too low");
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+                    //Catches any type of exception.
+                    catch
+                    {
+                        Console.WriteLine("Invalid number, please enter a correct number");
+                    }
+                }
+                
                 Console.Clear();
                 for (int i = 0; i < intAmount; i++)
                 {
@@ -86,7 +108,7 @@ static class MenuSnack
             Console.WriteLine();
             Drink_Menu();
             Console.WriteLine();
-            Console.WriteLine("What Snack are you going to choose? (Please provide either the ID or the name)");
+            Console.WriteLine("What Drink are you going to choose? (Please provide either the ID or the name)");
             var selected_snack = Console.ReadLine();
 
             int intInput;
@@ -122,8 +144,29 @@ static class MenuSnack
             }
             else
             {
-                string amount = Console.ReadLine();
-                int intAmount = Convert.ToInt32(amount);
+                int intAmount = 0;
+                while (true)
+                {
+                    Console.WriteLine("How many would you like to order?");
+                    string amount = Console.ReadLine();
+                    try
+                    {
+                        intAmount = Convert.ToInt32(amount);
+                        if (intAmount < 1)
+                        {
+                            Console.WriteLine("Number too low");
+                        }
+                        else
+                        {
+                            break;
+                        }
+                    }
+                    //Catches any type of exception.
+                    catch
+                    {
+                        Console.WriteLine("Invalid number, please enter a correct number");
+                    }
+                }
                 Console.Clear();
                 for (int i = 0; i < intAmount; i++)
                 {

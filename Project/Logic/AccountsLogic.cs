@@ -8,7 +8,7 @@ public class AccountsLogic : IAccountsLogic
     //Static properties are shared across all instances of the class
     //This can be used to get the current logged in account from anywhere in the program
     //private set, so this can only be set by the class itself
-    static public AccountModel? CurrentAccount { get; private set; }
+    static public AccountModel? CurrentAccount { get;  set; }
 
     public AccountsLogic()
     {
@@ -24,29 +24,7 @@ public class AccountsLogic : IAccountsLogic
         return CurrentAccount!;
     }
 
-    public void UpdateList(AccountModel acc)
-    {
-        //Find if there is already an model with the same id
-        int index = _accounts.FindIndex(s => s.Id == acc.Id);
-
-        if (index != -1)
-        {
-            //update existing model
-            _accounts[index] = acc;
-        }
-        else
-        {
-            //add new model
-            _accounts.Add(acc);
-        }
-        AccountsAccess.WriteAll(_accounts);
-
-    }
-
-    public AccountModel GetById(int id)
-    {
-        return _accounts.Find(i => i.Id == id);
-    }
+   
 
     public void LogOut()
     {
@@ -155,6 +133,21 @@ public class AccountsLogic : IAccountsLogic
             return false;
 
         return true;
+    }
+
+
+    //gets the age of the user from their date of birth and returns it.
+    public int Age_Of_Current_User()
+    {
+        var date_of_birth = CurrentAccount.Date_Of_Birth;
+        DateTime currentDate = DateTime.Now;
+        int age = currentDate.Year - date_of_birth.Year;
+        if (currentDate.Month < date_of_birth.Month || (currentDate.Month == date_of_birth.Month && currentDate.Day < date_of_birth.Day))
+        {
+            age--;
+        }
+
+        return age;
     }
 }
 

@@ -1,4 +1,4 @@
-﻿class SnacksLogic
+﻿public class SnacksLogic
 {
     private List<SnackModel> _snacks;
 
