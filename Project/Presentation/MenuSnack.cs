@@ -172,6 +172,7 @@ static class MenuSnack
                 {
                     shoppingcartLogic.AddCountedSnack(your_snack);
                 }
+                Console.WriteLine($"{your_snack.Name} has been added to your shopping cart");
                 Thread.Sleep(2000);
                 Console.WriteLine("Going back...");
                 Thread.Sleep(1000);

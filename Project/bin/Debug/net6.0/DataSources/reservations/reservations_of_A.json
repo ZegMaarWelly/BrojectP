@@ -590,13 +590,13 @@
           "D |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
           "C |           O O O O O O O O O O O O O O O O O O O O           ",
           "B |               O O O O O O O O O O O O O O O O               ",
-          "A |                 O O O O O O O O O O O O O O O               ",
+          "A |                 O O O O O O X O O O O O O O O               ",
           "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------------------------------",
           "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
           "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
         ],
         "total_seats": 500,
-        "available_seats": 500
+        "available_seats": 499
       },
       "begin_time": "2023-06-13T17:59:00",
       "end_time": "2023-06-13T19:30:00",
@@ -610,7 +610,20 @@
       "fullName": "Admin",
       "V.I.P.": false
     },
-    "seats": [],
-    "snacks": []
+    "seats": [
+      "A-15"
+    ],
+    "snacks": [
+      {
+        "Snack": {
+          "id": 1,
+          "name": "Popcorn",
+          "price": 6.5,
+          "type_of_food": "Snack",
+          "allergies": "none"
+        },
+        "Quantity": 2
+      }
+    ]
   }
 ]

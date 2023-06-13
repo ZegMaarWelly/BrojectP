@@ -18,24 +18,31 @@
         Console.WriteLine("  __  __         _       ___                          _   _          \r\n |  \\/  |_____ _(_)___  | _ \\___ ___ ___ _ ___ ____ _| |_(_)___ _ _  \r\n | |\\/| / _ \\ V / / -_) |   / -_|_-</ -_) '_\\ V / _` |  _| / _ \\ ' \\ \r\n |_|  |_\\___/\\_/|_\\___| |_|_\\___/__/\\___|_|  \\_/\\__,_|\\__|_\\___/_||_|\r\n                                                                     ");
         Console.ResetColor();
         Console.WriteLine($"You are about to make a reservation to the movie {runningmovie.Movie.Name} in room {runningmovie.Room.ID}");
-        Console.WriteLine($"There are currently {runningmovie.Room.Available_Seats} seats aviable");
-        Console.WriteLine("\n > How many seats do you want to reserve?\n");
+        Console.WriteLine($"There are currently {runningmovie.Room.Available_Seats} seats available");
 
         // Asks the user for the amount of seats.
         int seat_amount = -1;
         bool seat_success = false;
         while (!seat_success)
         {
+            Console.WriteLine("\n > How many seats do you want to reserve?\n");
             try
             {
                 seat_amount = Convert.ToInt32(Console.ReadLine());
                 if (runningmovie.Room.Available_Seats > seat_amount)
                 {
-                    seat_success = true;
+                    if(seat_amount > 0)
+                    {
+                        seat_success = true;
+                    }
+                    else
+                    {
+                        Console.WriteLine("You can't add a number below 0!");
+                    }
                 }
                 else
                 {
-                    Console.WriteLine("Error.\nYou have selected more chairs then there are are aviable at this moment, please try again");
+                    Console.WriteLine("Error.\nYou have selected more chairs then there are are available at this moment, please try again");
                 }
             }
             //Catches any type of exception.
