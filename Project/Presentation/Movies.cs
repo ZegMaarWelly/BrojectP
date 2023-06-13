@@ -143,6 +143,11 @@ static class Movies
                         Console.WriteLine("This movie has already started.\n");
                         continue;
                     }
+                    if (accountsLogic.Age_Of_Current_User() <= running_movie_list[movie_input].Movie.Age)
+                    {
+                        Console.WriteLine("You are too young to watch this movie.\n");
+                        continue;
+                    }
                     movie_success = true;
 
 

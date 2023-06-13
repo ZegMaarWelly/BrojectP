@@ -123,5 +123,20 @@ public class AccountsLogic : IAccountsLogic
         bool validEmail = containsAtSymbol && containsDotNet;
         return validEmail;
     }
+
+
+    //gets the age of the user from their date of birth and returns it.
+    public int Age_Of_Current_User()
+    {
+        var date_of_birth = CurrentAccount.Date_Of_Birth;
+        DateTime currentDate = DateTime.Now;
+        int age = currentDate.Year - date_of_birth.Year;
+        if (currentDate.Month < date_of_birth.Month || (currentDate.Month == date_of_birth.Month && currentDate.Day < date_of_birth.Day))
+        {
+            age--;
+        }
+
+        return age;
+    }
 }
 
