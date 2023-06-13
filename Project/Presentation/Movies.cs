@@ -133,6 +133,7 @@ static class Movies
                 {
                     //Converts it into a number.
                     movie_input = Convert.ToInt32(input_movie) - 1;
+                    
                     if (movie_input + 1 > running_movie_list.Count() || movie_input + 1 <= 0)
                     {
                         Console.WriteLine("Invalid number. ");
@@ -161,7 +162,22 @@ static class Movies
             }
 
             RunningMovieModel running_movie_to_be_watched = running_movie_list[movie_input];
-            Reservation.Make_Reservation(running_movie_to_be_watched);
+            string summary = running_movie_to_be_watched.Movie.Summary;
+            Console.WriteLine();
+            Console.WriteLine($"Here is some additional information about the movie:\nGenre(s): {running_movie_to_be_watched.Movie.Genre}\n\nParental labels: {running_movie_to_be_watched.Movie.Labels}\n\nSynopsis: {running_movie_to_be_watched.Movie.Summary}\n");
+            Console.WriteLine($"Do you want to make a reservation for {running_movie_to_be_watched.Movie.Name}? (Y/N)\n");
+            while (true)
+            {
+                string choice = Console.ReadLine().ToUpper();
+                if (choice == "Y")
+                {
+                    Reservation.Make_Reservation(running_movie_to_be_watched);
+                }
+                else
+                {
+                    Start();
+                }
+            }
             break;
         }
 

@@ -9,20 +9,15 @@ public class MovieListLogic
 	}
 
 	// Returns all the movie's information based on the MovieListModel, also loads the list every time so it is updated in every time it needs to be displayed
-	public List<MovieListModel> Return_Movie_List()
-	{
+    public List<MovieListModel> Return_Movie_List()
+    {
 		_movies = MovieListAccess.LoadAll();
-        // Remove the Summary property from each movie
-        foreach (MovieListModel movie in _movies)
-        {
-            movie.Summary = null;
-        }
-
         return _movies;
     }
 
-	// Checks the genres to see if a certain string is in the list
-	public List<MovieListModel> Return_By_Genre(string genre)
+
+    // Checks the genres to see if a certain string is in the list
+    public List<MovieListModel> Return_By_Genre(string genre)
 	{
 		List<MovieListModel> movies = new List<MovieListModel>();
 		foreach (var movie in _movies)

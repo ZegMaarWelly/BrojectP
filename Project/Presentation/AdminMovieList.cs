@@ -75,7 +75,9 @@ static class AdminMovieList
             {
                 int int_id = Convert.ToInt32(movie_ID);
                 string synopsis = movieLogic.Return_Movie_Synopsis(int_id);
+                Console.WriteLine();
                 Console.WriteLine(synopsis);
+                Console.WriteLine("\n\n > Press any key to return to the admin movie list menu");
                 Console.ReadKey();
                 Start();
             }
@@ -126,7 +128,13 @@ static class AdminMovieList
     static public void Get_Movie_Table()
     {
         List<MovieListModel> movie_list = movieLogic.Return_Movie_List();
-        ConsoleTable.From<MovieListModel>(movie_list).Write(Format.Alternative);
+        var table = new ConsoleTable("ID", "Movie", "Genre", "Length", "Age", "Labels");
+        foreach (MovieListModel segment in movie_list)
+        {
+            table.AddRow(segment.Id, segment.Name, segment.Genre, segment.Length, segment.Age, segment.Labels);
+        }
+        table.Options.EnableCount = false;
+        Console.WriteLine(table);
     }
 
     // Finds the highest ID in the list and returns this value +1 for the new movie
