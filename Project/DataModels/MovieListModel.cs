@@ -18,9 +18,13 @@ public class MovieListModel
         public int Age { get; set; }
 
         [JsonPropertyName("labels")]
-        public string Labels { get; set; }         
+        public string Labels { get; set; }
 
-        public MovieListModel(int id, string name, string genre, int length, int age, string labels)
+        [JsonPropertyName("summary")]
+        public string Summary { get; set; }
+
+
+    public MovieListModel(int id, string name, string genre, int length, int age, string labels, string summary)
         {
             Id = id;
             Name = name;
@@ -28,6 +32,7 @@ public class MovieListModel
             Length = length;
             Age = age;
             Labels = labels;
+            Summary = summary;
         }
 
         // This is how the string for the movie will be displayed E.G. Name: (name of movie), Genre etc...

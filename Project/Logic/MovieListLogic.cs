@@ -12,8 +12,14 @@ public class MovieListLogic
 	public List<MovieListModel> Return_Movie_List()
 	{
 		_movies = MovieListAccess.LoadAll();
-		return _movies;
-	}
+        // Remove the Summary property from each movie
+        foreach (MovieListModel movie in _movies)
+        {
+            movie.Summary = null;
+        }
+
+        return _movies;
+    }
 
 	// Checks the genres to see if a certain string is in the list
 	public List<MovieListModel> Return_By_Genre(string genre)
@@ -120,5 +126,29 @@ public class MovieListLogic
 			movies[i].Id = i + 1;
 		}
 		MovieListAccess.WriteAll(movies);
+    }
+
+	public void Update_Movie_Synopsis(string value, MovieListModel movie)
+	{
+        movie.Summary = value;
+        int movieindex = _movies.IndexOf(movie);
+        _movies[movieindex] = movie;
+        MovieListAccess.WriteAll(_movies);
+    }
+
+    public string Return_Movie_Synopsis(int movieId)
+    {
+        List<MovieListModel> movies = MovieListAccess.LoadAll();
+
+        string synopsis = null;
+        foreach (MovieListModel movie in movies)
+        {
+            if (movie.Id == movieId)
+            {
+                synopsis = movie.Summary;
+                break;
+            }
+        }
+        return synopsis;
     }
 }

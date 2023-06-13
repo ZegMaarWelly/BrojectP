@@ -48,7 +48,7 @@ static class AdminMovieList
                 break;
             case "7":
                 Console.Clear();
-                View_Running_Movies();
+                View_Movie_Synopsis();
                 break;
             default:
                 Console.Clear();
@@ -63,7 +63,29 @@ static class AdminMovieList
         MovieListLogic movieListLogic = new MovieListLogic();
         movieListLogic.Update_Movie_ID();
     }
-    
+
+    static public void View_Movie_Synopsis()
+    {
+        while (true)
+        {
+            Get_Movie_Table();
+            Console.WriteLine("\nPlease provide the ID of the movie you would like to see the summary of: ");
+            string movie_ID = Console.ReadLine();
+            try
+            {
+                int int_id = Convert.ToInt32(movie_ID);
+                string synopsis = movieLogic.Return_Movie_Synopsis(int_id);
+                Console.WriteLine(synopsis);
+                Console.ReadKey();
+                Start();
+            }
+            catch
+            {
+                Console.WriteLine("Invalid input\n");
+            }
+        }
+        
+    }
     static public void View_Running_Movies()
     {
         runningmovieLogic = new RunningMovieLogic("");
@@ -183,6 +205,17 @@ static class AdminMovieList
         return movie_labels;
     }
 
+    static public string New_Movie_Summary()
+    {
+        Console.WriteLine("\n > Please enter the summary of the movie here: ");
+        string movie_summary = Console.ReadLine()!;
+        if (movie_summary == "")
+        {
+            movie_summary = "No summary given";
+        }
+        return movie_summary;
+    }
+
     static public void Add_Movie()
     {
         Console.Clear();
@@ -198,9 +231,10 @@ static class AdminMovieList
         int movie_length = New_Movie_Length();
         int movie_age = New_Movie_Age();
         string movie_labels = New_Movie_Labels();
+        string movie_summary = New_Movie_Summary();
         Console.Clear();
 
-        MovieListModel movie = new(movie_id, movie_name, movie_genre, movie_length, movie_age, movie_labels);
+        MovieListModel movie = new(movie_id, movie_name, movie_genre, movie_length, movie_age, movie_labels, movie_summary);
         while (true)
         {
             // Checks if a movie with the same name isn't already in the list and makes it so that it doesn't get added if it is the case
@@ -390,10 +424,13 @@ static class AdminMovieList
                                 break;
                             case "6":
                                 Console.Clear();
-                                Change_Movie();
-                                Console.Clear();
+                                
                                 break;
                             case "7":
+                                Console.Clear();
+                                Change_Movie();
+                                break;
+                            case "8":
                                 Console.Clear();
                                 Console.Clear();
                                 Start(); 
