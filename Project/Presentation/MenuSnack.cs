@@ -25,9 +25,31 @@ static class MenuSnack
             Console.WriteLine();
             Food_Menu();
             Console.WriteLine();
-            Console.WriteLine("What Snack are you going to choose \n > Type the name: ");
-            string snack_choice = Console.ReadLine()!;
-            SnackModel your_snack = snacksLogic.Find_Snack(snack_choice);
+            Console.WriteLine("What Snack are you going to choose? (Please provide either the ID or the name)");
+            var selected_snack = Console.ReadLine();
+
+            int intInput;
+            SnackModel your_snack = null;
+
+            if (int.TryParse(selected_snack, out intInput))
+            {
+                // User input is an integer
+                your_snack = snacksLogic.Find_Snack(intInput);
+            }
+
+            if (your_snack == null)
+            {
+                // Either user input is a string or the integer input didn't match any movie
+                your_snack = snacksLogic.Find_Snack(selected_snack);
+
+                if (selected_snack == null)
+                {
+                    Console.WriteLine("This ID does not belong to any movies\nPress any button to return to Admin Movie list menu");
+                    Console.ReadKey();
+                    Console.Clear();
+                    Start();
+                }
+            }
             if (your_snack == null || your_snack.Type_Of_Food == "Drink")
             {
                 Console.Clear();
@@ -39,9 +61,15 @@ static class MenuSnack
             }
             else
             {
+                Console.WriteLine("How many would you like to order?");
+                string amount = Console.ReadLine();
+                int intAmount = Convert.ToInt32(amount);
                 Console.Clear();
+                for (int i = 0; i < intAmount; i++)
+                {
+                    shoppingcartLogic.AddCountedSnack(your_snack);
+                }
                 Console.WriteLine($"{your_snack.Name} has been added to your shopping cart");
-                shoppingcartLogic.AddCountedSnack(your_snack);
                 Thread.Sleep(2000);
                 Console.WriteLine("Going back...");
                 Thread.Sleep(1000);
@@ -58,9 +86,31 @@ static class MenuSnack
             Console.WriteLine();
             Drink_Menu();
             Console.WriteLine();
-            Console.WriteLine("What  are you going to choose \n > Type the name: ");
-            string snack_choice = Console.ReadLine()!;
-            SnackModel your_snack = snacksLogic.Find_Snack(snack_choice);
+            Console.WriteLine("What Snack are you going to choose? (Please provide either the ID or the name)");
+            var selected_snack = Console.ReadLine();
+
+            int intInput;
+            SnackModel your_snack = null;
+
+            if (int.TryParse(selected_snack, out intInput))
+            {
+                // User input is an integer
+                your_snack = snacksLogic.Find_Snack(intInput);
+            }
+
+            if (your_snack == null)
+            {
+                // Either user input is a string or the integer input didn't match any movie
+                your_snack = snacksLogic.Find_Snack(selected_snack);
+
+                if (selected_snack == null)
+                {
+                    Console.WriteLine("This ID does not belong to any movies\nPress any button to return to Admin Movie list menu");
+                    Console.ReadKey();
+                    Console.Clear();
+                    Start();
+                }
+            }
             if (your_snack == null || your_snack.Type_Of_Food == "Snack")
             {
                 Console.Clear();
@@ -72,9 +122,13 @@ static class MenuSnack
             }
             else
             {
+                string amount = Console.ReadLine();
+                int intAmount = Convert.ToInt32(amount);
                 Console.Clear();
-                Console.WriteLine($"{your_snack.Name} has been added to your shopping cart");
-                shoppingcartLogic.AddCountedSnack(your_snack);
+                for (int i = 0; i < intAmount; i++)
+                {
+                    shoppingcartLogic.AddCountedSnack(your_snack);
+                }
                 Thread.Sleep(2000);
                 Console.WriteLine("Going back...");
                 Thread.Sleep(1000);

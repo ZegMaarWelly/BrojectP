@@ -36,7 +36,7 @@ static class Menu
         Console.Write("\n        |___/      \n");
         Console.ResetColor();
         Console.WriteLine();
-        Console.WriteLine("> [1] login");
+        Console.WriteLine("> [1] login with an existing account");
         Console.WriteLine("> [2] add a new account");
         Console.WriteLine("> [3] Cinema Info");
         Console.WriteLine("> [4] go to the movies");

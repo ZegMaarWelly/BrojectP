@@ -246,22 +246,31 @@ public static class AdminMenuSnack
             try
             {
                 //Asks the user want snack they want to remove
-                Console.WriteLine(" > What Snack do you want to remove? (Please provide only numbers)");
-                string snack_id = Console.ReadLine()!;
-                int converted_id = Convert.ToInt32(snack_id);
-                //Finds the Snack if it is present in the snack list, if snack isnt present, you will be sent back to the menu.
-                SnackModel your_snack = snacksLogic.Find_Snack_ID(converted_id);
-                if (your_snack == null)
+                Console.WriteLine("What snack would you like to remove? (Please provide either the ID or the name of the snack)");
+                var for_removal = Console.ReadLine();
+
+                int intInput;
+                SnackModel selected_snack = null;
+
+                if (int.TryParse(for_removal, out intInput))
                 {
-                    Console.Clear();
-                    Console.WriteLine("This Snack doesn't exist in the snack list");
-                    Thread.Sleep(2000);
-                    Console.WriteLine("Going back to menu....");
-                    Thread.Sleep(1000);
-                    Console.Clear();
-                    Start();
+                    // User input is an integer
+                    selected_snack = snacksLogic.Find_Snack(intInput);
                 }
-                else
+
+                if (selected_snack == null)
+                {
+                    // Either user input is a string or the integer input didn't match any movie
+                    selected_snack = snacksLogic.Find_Snack(for_removal);
+
+                    if (selected_snack == null)
+                    {
+                        Console.WriteLine($"Snack {selected_snack} is not in the list, press any button to return to the admin snack menu");
+                        Console.ReadKey();
+                        Console.Clear();
+                        Start();
+                    }
+                }
                 {
                     Console.Clear();
                     Console.ForegroundColor = ConsoleColor.DarkGreen;
@@ -269,18 +278,18 @@ public static class AdminMenuSnack
                     Console.ResetColor();
                     Console.WriteLine("");
                     //Asks the user for confirmation, If the answer is yes, it will delete it from the list. If the answer is no, you will be sent back to the menu.
-                    Console.WriteLine($" > Are you sure you want to remove the {your_snack.Name}? (Y/N)");
+                    Console.WriteLine($" > Are you sure you want to remove the {selected_snack}? (Y/N)");
                     string snack_confirmation = Console.ReadLine()!.ToUpper();
                     if (snack_confirmation == "Y")
                     {
 
-                        snacksLogic.Delete_From_List(your_snack);
+                        snacksLogic.Delete_From_List(selected_snack);
                         Console.Clear();
                         Console.ForegroundColor = ConsoleColor.DarkGreen;
                         Console.WriteLine("    _      _    _   ___              _   \r\n   /_\\  __| |__| | / __|_ _  __ _ __| |__\r\n  / _ \\/ _` / _` | \\__ \\ ' \\/ _` / _| / /\r\n /_/ \\_\\__,_\\__,_| |___/_||_\\__,_\\__|_\\_\\\r\n                                         ");
                         Console.ResetColor();
                         Console.WriteLine("");
-                        Console.WriteLine($"\n{your_snack.Name} has succesfully been deleted from the snack list\n");
+                        Console.WriteLine($"\n{selected_snack.Name} has succesfully been deleted from the snack list\n");
                         //Prints the new snack list
                         Console.WriteLine("New List: ");
                         Get_Snack_List();
@@ -338,24 +347,30 @@ public static class AdminMenuSnack
             try
             {
                 //Asks the user want snack they want to change
-                Console.WriteLine(" > What Snack do you want to change? (Please provide the ID in numbers)");
-                string snack_id = Console.ReadLine()!;
-                int converted_id = Convert.ToInt32(snack_id);
+                var for_change = Console.ReadLine();
 
-                //Finds the Snack if it is present in the snack list, if snack isnt present, you will be sent back to the menu.
-                SnackModel your_snack = snacksLogic.Find_Snack_ID(converted_id);
-                if (your_snack == null)
+                int intInput;
+                SnackModel selected_snack = null;
+
+                if (int.TryParse(for_change, out intInput))
                 {
-                    Console.Clear();
-                    Console.WriteLine("This Snack doesn't exist in the snack list");
-                    Thread.Sleep(2000);
-                    Console.WriteLine("Going back to menu....");
-                    Thread.Sleep(1000);
-                    Console.Clear();
-                    Start();
-
+                    // User input is an integer
+                    selected_snack = snacksLogic.Find_Snack(intInput);
                 }
-                else
+
+                if (selected_snack == null)
+                {
+                    // Either user input is a string or the integer input didn't match any movie
+                    selected_snack = snacksLogic.Find_Snack(for_change);
+
+                    if (selected_snack == null)
+                    {
+                        Console.WriteLine($"Snack {selected_snack} is not in the list, press any button to return to the admin snack menu");
+                        Console.ReadKey();
+                        Console.Clear();
+                        Start();
+                    }
+                }
                 {
                     while (true)
                     {
@@ -370,7 +385,7 @@ public static class AdminMenuSnack
                         var table = new ConsoleTable("Name", "Price", "Type of Food", "Allergies");
                         //Loops through the running movie list, and add the contents to the table.
 
-                        table.AddRow(your_snack.Name, your_snack.Price, your_snack.Type_Of_Food, your_snack.Allergies);
+                        table.AddRow(selected_snack.Name, selected_snack.Price, selected_snack.Type_Of_Food, selected_snack.Allergies);
 
                         table.Options.EnableCount = false;
 
@@ -390,7 +405,7 @@ public static class AdminMenuSnack
                             Console.ResetColor();
                             Console.WriteLine("");
                             string value_to_be_changed = Get_Snack_Name();
-                            snacksLogic.Change_Name_Snack(value_to_be_changed, your_snack);
+                            snacksLogic.Change_Name_Snack(value_to_be_changed, selected_snack);
                         }
                         else if (change_snack_choice == "2")
                         {
@@ -400,7 +415,7 @@ public static class AdminMenuSnack
                             Console.ResetColor();
                             Console.WriteLine("");
                             double value_to_be_changed = Get_Snack_Price();
-                            snacksLogic.Change_Price_Snack(value_to_be_changed, your_snack);
+                            snacksLogic.Change_Price_Snack(value_to_be_changed, selected_snack);
                         }
                         else if (change_snack_choice == "3")
                         {
@@ -410,7 +425,7 @@ public static class AdminMenuSnack
                             Console.ResetColor();
                             Console.WriteLine("");
                             string value_to_be_changed = Get_Snack_Type();
-                            snacksLogic.Change_Type_Snack(value_to_be_changed, your_snack);
+                            snacksLogic.Change_Type_Snack(value_to_be_changed, selected_snack);
                         }
                         else if (change_snack_choice == "4")
                         {
@@ -420,7 +435,7 @@ public static class AdminMenuSnack
                             Console.ResetColor();
                             Console.WriteLine("");
                             string value_to_be_changed = Get_Snack_Allergies();
-                            snacksLogic.Change_Allergy_Snack(value_to_be_changed, your_snack);
+                            snacksLogic.Change_Allergy_Snack(value_to_be_changed, selected_snack);
                         }
                         else if (change_snack_choice == "5")
                         {
@@ -435,6 +450,7 @@ public static class AdminMenuSnack
                         //Prints the new snack list
                         Console.Clear();
                         Console.ForegroundColor = ConsoleColor.DarkGreen;
+                        Console.ResetColor();
                         Console.WriteLine("Snack succesfully changed");
                         Console.WriteLine("New List: ");
                         Get_Snack_List();

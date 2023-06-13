@@ -118,10 +118,21 @@ public class AccountsLogic : IAccountsLogic
     // verifies if email contains an @ symbol or has a valid suffix
     public bool EmailVerification(string email)
     {
-        bool containsAtSymbol = email.Contains("@");
-        bool containsDotNet = email.Contains(".com") || email.Contains(".net") || email.Contains(".nl");
-        bool validEmail = containsAtSymbol && containsDotNet;
-        return validEmail;
+        // Check for exactly one @ symbol
+        int atSymbolCount = email.Count(c => c == '@');
+        if (atSymbolCount != 1)
+            return false;
+
+        // Check if email ends with .com, .net, or .nl
+        bool endsWithValidDomain = Regex.IsMatch(email, @"\.(com|net|nl)$");
+        if (!endsWithValidDomain)
+            return false;
+
+        bool hasNoSpaces = email.Contains(" ");
+        if (hasNoSpaces)
+            return false;
+
+        return true;
     }
 
 

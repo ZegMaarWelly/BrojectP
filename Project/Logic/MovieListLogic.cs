@@ -45,15 +45,15 @@ public class MovieListLogic
 	{
 		foreach (MovieListModel movie in _movies)
 		{
-			if (movie.Name == name)
-			{
-				return movie;
+            if (movie.Name.IndexOf(name, StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                return movie;
 			}
 		}
 		return null;
 	}
 
-	public MovieListModel Find_Movie_ID(int id)
+	public MovieListModel Find_Movie(int id)
 	{
 		foreach (MovieListModel movie in _movies)
 		{
