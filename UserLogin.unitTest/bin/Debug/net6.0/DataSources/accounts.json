@@ -326,5 +326,13 @@
     "date_of_birth": "2023-06-11T19:19:34.7001826+02:00",
     "fullName": "Full name Last name",
     "V.I.P.": false
+  },
+  {
+    "id": 41,
+    "emailAddress": "Test@gmail.com",
+    "password": "TestWachtwoord123.",
+    "date_of_birth": "2023-06-13T13:16:47.9214563+02:00",
+    "fullName": "Full name Last name",
+    "V.I.P.": false
   }
 ]

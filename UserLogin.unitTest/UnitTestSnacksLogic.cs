@@ -55,7 +55,7 @@ namespace UnitTesting
             int id = 1;
 
             
-            SnackModel snack = _snacksLogic.Find_Snack_ID(id);
+            SnackModel snack = _snacksLogic.Find_Snack(id);
 
             
             Assert.AreEqual(id, snack.ID);

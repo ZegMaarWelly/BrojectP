@@ -60,7 +60,7 @@
         public void Find_Movie_ID_Successful()
         {
             int movieId = 1;
-            MovieListModel movie = _movieListLogic.Find_Movie_ID(movieId);
+            MovieListModel movie = _movieListLogic.Find_Movie(movieId);
 
             Assert.AreEqual(movie.Id,movieId);
         }
@@ -70,13 +70,13 @@
         {
             
             string newValue = "New Movie Name";
-            MovieListModel movie = _movieListLogic.Find_Movie_ID(55);
+            MovieListModel movie = _movieListLogic.Find_Movie(55);
 
             // Act
             _movieListLogic.Update_Movie_Name(newValue, movie);
 
             // Assert
-            MovieListModel updatedMovie = _movieListLogic.Find_Movie_ID(movie.Id);
+            MovieListModel updatedMovie = _movieListLogic.Find_Movie(movie.Id);
             Assert.AreEqual(newValue, updatedMovie.Name);
         }
 
@@ -85,12 +85,12 @@
         {
             
             string newValue = "New Genre";
-            MovieListModel movie = _movieListLogic.Find_Movie_ID(55);
+            MovieListModel movie = _movieListLogic.Find_Movie(55);
 
             _movieListLogic.Update_Movie_Genre(newValue, movie);
 
       
-            MovieListModel updatedMovie = _movieListLogic.Find_Movie_ID(movie.Id);
+            MovieListModel updatedMovie = _movieListLogic.Find_Movie(movie.Id);
             Assert.AreEqual(newValue, updatedMovie.Genre);
         }
 
@@ -99,13 +99,13 @@
         {
             
             int newValue = 150;
-            MovieListModel movie = _movieListLogic.Find_Movie_ID(55);
+            MovieListModel movie = _movieListLogic.Find_Movie(55);
    
 
             _movieListLogic.Update_Movie_Length(newValue, movie);
 
 
-            MovieListModel updatedMovie = _movieListLogic.Find_Movie_ID(movie.Id);
+            MovieListModel updatedMovie = _movieListLogic.Find_Movie(movie.Id);
             Assert.AreEqual(newValue, updatedMovie.Length);
         }
 
@@ -114,13 +114,13 @@
         {
            
             int newValue = 16;
-            MovieListModel movie = _movieListLogic.Find_Movie_ID(55);
+            MovieListModel movie = _movieListLogic.Find_Movie(55);
 
          
             _movieListLogic.Update_Movie_Age(newValue, movie);
 
       
-            MovieListModel updatedMovie = _movieListLogic.Find_Movie_ID(movie.Id);
+            MovieListModel updatedMovie = _movieListLogic.Find_Movie(movie.Id);
             Assert.AreEqual(newValue, updatedMovie.Age);
         }
 
@@ -129,12 +129,12 @@
         {
            
             string newValue = "New Labels";
-            MovieListModel movie = _movieListLogic.Find_Movie_ID(55);
+            MovieListModel movie = _movieListLogic.Find_Movie(55);
 
        
             _movieListLogic.Update_Movie_Labels(newValue, movie);
 
-            MovieListModel updatedMovie = _movieListLogic.Find_Movie_ID(movie.Id);
+            MovieListModel updatedMovie = _movieListLogic.Find_Movie(movie.Id);
             Assert.AreEqual(newValue, updatedMovie.Labels);
         }
 
