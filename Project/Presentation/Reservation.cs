@@ -47,7 +47,7 @@
         }
 
 
-
+        double total_Price = 0;
 
         List<string> list_of_seats = new();
 
@@ -59,7 +59,7 @@
             (List<string> new_map, string seat) = ScreenRoomLogic.screening_room_reservation(runningmovie.Room.Map);
 
             runningmovie.Room.Available_Seats -= 1;
-
+            total_Price += 11.99;
 
             list_of_seats.Add(seat);
         }
@@ -71,7 +71,7 @@
         Console.WriteLine($"You have succesfully ordered seat(s) {joinedSeats}\n\n");
         Console.WriteLine($"0");
 
-        double total_Price = 0;
+ 
 
         
         Ask_Confirmation_And_See_Price(total_Price);
