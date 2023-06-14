@@ -13,13 +13,13 @@ static class AdminMenu
         Console.WriteLine("    _      _       _        __  __              \r\n   /_\\  __| |_ __ (_)_ _   |  \\/  |___ _ _ _  _ \r\n  / _ \\/ _` | '  \\| | ' \\  | |\\/| / -_) ' \\ || |\r\n /_/ \\_\\__,_|_|_|_|_|_||_| |_|  |_\\___|_||_\\_,_|\r\n                                               ");
         Console.ResetColor();
         Console.WriteLine("What do you want to do?.");
-        Console.WriteLine(" > [1  add/remove/change snacks.");
+        Console.WriteLine(" > [1] add/remove/change snacks.");
         Console.WriteLine(" > [2] add items to shopping cart TEST.");
-        Console.WriteLine(" > [3] see a list of all registered users.");
+        Console.WriteLine(" > [3] admin manage accounts.");
         Console.WriteLine(" > [4] go the the beginning of the program.");
-        Console.WriteLine(" > [5] add/remove movies.");
-        Console.WriteLine(" > [6] Admin Manage Movie.");
-        Console.WriteLine(" > [7] Add a Movie Room");
+        Console.WriteLine(" > [5] add/remove/change movies.");
+        Console.WriteLine(" > [6] admin manage movie.");
+        Console.WriteLine(" > [7] add a movie room");
         Console.WriteLine(" > [8] Quit the Program.");
 
         string input = Console.ReadLine()!;
@@ -41,7 +41,7 @@ static class AdminMenu
             //    Console.WriteLine(account);
             //}
             ConsoleTable.From<AccountModel>(Account_list).Write(Format.Alternative);
-            Console.WriteLine(" > Press 'Enter' to continue");
+            Console.WriteLine(" > Press [Enter] to return to the admin menu");
             Console.ReadLine();
             Console.Clear();
             AdminMenu.Start();

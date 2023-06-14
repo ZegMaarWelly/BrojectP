@@ -17,6 +17,7 @@ public class AccountsLogic : IAccountsLogic
     }
     public List<AccountModel> Return_Account_List()
     {
+        _accounts = AccountsAccess.LoadAll();
         return _accounts;
     }
 
@@ -62,6 +63,12 @@ public class AccountsLogic : IAccountsLogic
             return account;
         }
         return null;
+    }
+
+    public void Delete_From_List(AccountModel account)
+    {
+        _accounts.Remove(account);
+        AccountsAccess.WriteAll(_accounts);
     }
 
     public void Add_To_List(AccountModel newAccount)
