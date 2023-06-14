@@ -102,5 +102,13 @@
     "date_of_birth": "0001-01-01T00:00:00",
     "fullName": "grdf",
     "V.I.P.": false
+  },
+  {
+    "id": 13,
+    "emailAddress": "gio@gio.nl",
+    "password": "kol",
+    "date_of_birth": "2023-02-02T00:00:00",
+    "fullName": "gio o o van ei",
+    "V.I.P.": true
   }
 ]

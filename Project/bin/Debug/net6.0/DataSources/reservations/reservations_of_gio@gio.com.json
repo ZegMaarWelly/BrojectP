@@ -7,7 +7,8 @@
         "genre": "Animation",
         "length": 96,
         "age": 0,
-        "labels": "None"
+        "labels": "None",
+        "summary": null
       },
       "room": {
         "id": 3,
@@ -46,6 +47,7 @@
       "id": 10,
       "emailAddress": "gio@gio.com",
       "password": "Appelsap123.",
+      "date_of_birth": "0001-01-01T00:00:00",
       "fullName": "Giovanni Vonk",
       "V.I.P.": false
     },
@@ -62,7 +64,8 @@
         "genre": "Action",
         "length": 137,
         "age": 0,
-        "labels": "Violence \u0026 Language"
+        "labels": "Violence \u0026 Language",
+        "summary": null
       },
       "room": {
         "id": 14,
@@ -97,6 +100,7 @@
       "id": 10,
       "emailAddress": "gio@gio.com",
       "password": "Appelsap123.",
+      "date_of_birth": "0001-01-01T00:00:00",
       "fullName": "Giovanni Vonk",
       "V.I.P.": false
     },
@@ -125,7 +129,8 @@
         "genre": "Animation",
         "length": 96,
         "age": 0,
-        "labels": "None"
+        "labels": "None",
+        "summary": null
       },
       "room": {
         "id": 9,
@@ -165,6 +170,7 @@
       "id": 10,
       "emailAddress": "gio@gio.com",
       "password": "Appelsap123.",
+      "date_of_birth": "0001-01-01T00:00:00",
       "fullName": "Giovanni Vonk",
       "V.I.P.": false
     },
@@ -182,7 +188,8 @@
         "genre": "Action, Thriller",
         "length": 169,
         "age": 15,
-        "labels": "Harsh language, Violence"
+        "labels": "Harsh language, Violence",
+        "summary": null
       },
       "room": {
         "id": 3,
@@ -221,6 +228,7 @@
       "id": 10,
       "emailAddress": "gio@gio.com",
       "password": "Appelsap123.",
+      "date_of_birth": "0001-01-01T00:00:00",
       "fullName": "Giovanni Vonk",
       "V.I.P.": false
     },
@@ -249,7 +257,8 @@
         "genre": "Science Fiction",
         "length": 164,
         "age": 0,
-        "labels": "Violence, Language \u0026 Nudity"
+        "labels": "Violence, Language \u0026 Nudity",
+        "summary": null
       },
       "room": {
         "id": 8,
@@ -289,6 +298,7 @@
       "id": 10,
       "emailAddress": "gio@gio.com",
       "password": "Appelsap123.",
+      "date_of_birth": "0001-01-01T00:00:00",
       "fullName": "Giovanni Vonk",
       "V.I.P.": false
     },
@@ -305,7 +315,8 @@
         "genre": "Action",
         "length": 143,
         "age": 0,
-        "labels": "Violence"
+        "labels": "Violence",
+        "summary": null
       },
       "room": {
         "id": 4,
@@ -344,6 +355,7 @@
       "id": 10,
       "emailAddress": "gio@gio.com",
       "password": "Appelsap123.",
+      "date_of_birth": "0001-01-01T00:00:00",
       "fullName": "Giovanni Vonk",
       "V.I.P.": false
     },
@@ -372,7 +384,8 @@
         "genre": "Romance, Sci-Fi",
         "length": 126,
         "age": 17,
-        "labels": "Nudity, Sex \u0026 Language"
+        "labels": "Nudity, Sex \u0026 Language",
+        "summary": null
       },
       "room": {
         "id": 13,
@@ -417,6 +430,7 @@
       "id": 10,
       "emailAddress": "gio@gio.com",
       "password": "Appelsap123.",
+      "date_of_birth": "0001-01-01T00:00:00",
       "fullName": "Giovanni Vonk",
       "V.I.P.": false
     },
@@ -434,7 +448,8 @@
         "genre": "Sci-Fi, Thriller",
         "length": 124,
         "age": 16,
-        "labels": "Harsh language, Violence, Fear"
+        "labels": "Harsh language, Violence, Fear",
+        "summary": null
       },
       "room": {
         "id": 7,
@@ -473,11 +488,216 @@
       "id": 10,
       "emailAddress": "gio@gio.com",
       "password": "Appelsap123.",
+      "date_of_birth": "0001-01-01T00:00:00",
       "fullName": "Giovanni Vonk",
       "V.I.P.": false
     },
     "seats": [
       "A-5"
+    ],
+    "snacks": []
+  },
+  {
+    "running_movie": {
+      "movie": {
+        "id": 58,
+        "name": "Little Women",
+        "genre": "Drama, Romance",
+        "length": 135,
+        "age": 10,
+        "labels": "None",
+        "summary": null
+      },
+      "room": {
+        "id": 4,
+        "map": [
+          "S |   O O O O O O O O O O O O O O O O   ",
+          "R |   O O O O O O O O O O O O O O O O   ",
+          "Q |   O O O O O O O O O O O O O O O O   ",
+          "P |   O O O O O O O O O O O O O O O O   ",
+          "O |   O O O O O O O O O O O O O O O O   ",
+          "N |   O O O O O O O O O O O O O O O O   ",
+          "M | O O O O O O O O O O O O O O O O O O ",
+          "L | O O O O O O O O O O O O O O O O O O ",
+          "K | O O O O O O O O O O O O O O O O O O ",
+          "J | O O O O O O O O O O O O O O O O O O ",
+          "I | O O O O O O O O O O O O O O O O O O ",
+          "H |   O O O O O O O O O O O O O O O O   ",
+          "G |   O O O O O O O O O O O O O O O O   ",
+          "F |   O O O O O O O O O O O O O O O O   ",
+          "E |     O O O O O O O O O O O O O O     ",
+          "D |     O O O O O O O O O O O O O O     ",
+          "C |     O O O O O O O O O O O O O O     ",
+          "B |       O O O O O O O O O O O O       ",
+          "A |       O X X O O O O O O O O O       ",
+          "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------",
+          "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 ",
+          "                      0 1 2 3 4 5 6 7 8 "
+        ],
+        "total_seats": 300,
+        "available_seats": 298
+      },
+      "begin_time": "2023-06-14T19:11:00",
+      "end_time": "2023-06-14T21:26:00",
+      "date": "2023-06-14T00:00:00"
+    },
+    "account": {
+      "id": 10,
+      "emailAddress": "gio@gio.com",
+      "password": "Appelsap123.",
+      "date_of_birth": "0001-01-01T00:00:00",
+      "fullName": "Giovanni Vonk",
+      "V.I.P.": false
+    },
+    "seats": [
+      "A-5",
+      "A-6"
+    ],
+    "snacks": [
+      {
+        "Snack": {
+          "id": 7,
+          "name": "Pretzel",
+          "price": 4,
+          "type_of_food": "Snack",
+          "allergies": "gluten"
+        },
+        "Quantity": 23
+      },
+      {
+        "Snack": {
+          "id": 11,
+          "name": "Soda",
+          "price": 3.5,
+          "type_of_food": "Drink",
+          "allergies": "none"
+        },
+        "Quantity": 1
+      }
+    ]
+  },
+  {
+    "running_movie": {
+      "movie": {
+        "id": 58,
+        "name": "Little Women",
+        "genre": "Drama, Romance",
+        "length": 135,
+        "age": 10,
+        "labels": "None",
+        "summary": null
+      },
+      "room": {
+        "id": 4,
+        "map": [
+          "S |   O O O O O O O O O O O O O O O O   ",
+          "R |   O O O O O O O O O O O O O O O O   ",
+          "Q |   O O O X O O O O O O O O O O O O   ",
+          "P |   O O O O O O O O O O O O O O O O   ",
+          "O |   O O O O O O O O O O O O O O O O   ",
+          "N |   O O O O O O O O O O O O O O O O   ",
+          "M | O O O O O O O O O O O O O O O O O O ",
+          "L | O O O O O O O O O O O O O O O O O O ",
+          "K | O O O O O O O O O O O O O O O O O O ",
+          "J | O O O O O O O O O O O O O O O O O O ",
+          "I | O O O O O O O O O O O O O O O O O O ",
+          "H |   O O O O O O O O O O O O O O O O   ",
+          "G |   O O O O O O O O O O O O O O O O   ",
+          "F |   O O O O O O O O O O O O O O O O   ",
+          "E |     O O O O O O O O O O O O O O     ",
+          "D |     O O O O O O O O O O O O O O     ",
+          "C |     O O O O O O O O O O O O O O     ",
+          "B |       O O O O O O O O O O O O       ",
+          "A |       O X X O O O O O O O O O       ",
+          "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------",
+          "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 ",
+          "                      0 1 2 3 4 5 6 7 8 "
+        ],
+        "total_seats": 300,
+        "available_seats": 297
+      },
+      "begin_time": "2023-06-14T19:11:00",
+      "end_time": "2023-06-14T21:26:00",
+      "date": "2023-06-14T00:00:00"
+    },
+    "account": {
+      "id": 10,
+      "emailAddress": "gio@gio.com",
+      "password": "Appelsap123.",
+      "date_of_birth": "0001-01-01T00:00:00",
+      "fullName": "Giovanni Vonk",
+      "V.I.P.": false
+    },
+    "seats": [
+      "Q-5"
+    ],
+    "snacks": [
+      {
+        "Snack": {
+          "id": 6,
+          "name": "Hot Dog",
+          "price": 7,
+          "type_of_food": "Snack",
+          "allergies": "none"
+        },
+        "Quantity": 1
+      }
+    ]
+  },
+  {
+    "running_movie": {
+      "movie": {
+        "id": 58,
+        "name": "Little Women",
+        "genre": "Drama, Romance",
+        "length": 135,
+        "age": 10,
+        "labels": "None",
+        "summary": null
+      },
+      "room": {
+        "id": 4,
+        "map": [
+          "S |   O O O O O O O O O O O O O O O O   ",
+          "R |   O O O O O O O O O O O O O O O O   ",
+          "Q |   O O O X O O O O O O O O O O O O   ",
+          "P |   O O O O O O O O O O O O O O O O   ",
+          "O |   O O O X O O O O O O O O O O O O   ",
+          "N |   O O O X O O O O O O O O O O O O   ",
+          "M | O O O O O O O O O O O O O O O O O O ",
+          "L | O O O O O O O O O O O O O O O O O O ",
+          "K | O O O O O O O O O O O O O O O O O O ",
+          "J | O O O O O O O O O O O O O O O O O O ",
+          "I | O O O O O O O O O O O O O O O O O O ",
+          "H |   O O O O O O O O O O O O O O O O   ",
+          "G |   O O O O O O O O O O O O O O O O   ",
+          "F |   O O O O O O O O O O O O O O O O   ",
+          "E |     O O O O O O O O O O O O O O     ",
+          "D |     O O O O O O O O O O O O O O     ",
+          "C |     O O O O O O O O O O O O O O     ",
+          "B |       O O O O O O O O O O O O       ",
+          "A |       O X X O O O O O O O O O       ",
+          "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------",
+          "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 ",
+          "                      0 1 2 3 4 5 6 7 8 "
+        ],
+        "total_seats": 300,
+        "available_seats": 295
+      },
+      "begin_time": "2023-06-14T19:11:00",
+      "end_time": "2023-06-14T21:26:00",
+      "date": "2023-06-14T00:00:00"
+    },
+    "account": {
+      "id": 10,
+      "emailAddress": "gio@gio.com",
+      "password": "Appelsap123.",
+      "date_of_birth": "0001-01-01T00:00:00",
+      "fullName": "Giovanni Vonk",
+      "V.I.P.": false
+    },
+    "seats": [
+      "N-5"
     ],
     "snacks": []
   }

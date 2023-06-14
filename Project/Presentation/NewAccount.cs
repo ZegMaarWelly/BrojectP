@@ -19,7 +19,14 @@ static class NewAccount
             emailAddress = Console.ReadLine();
             if (accountsLogic.EmailVerification(emailAddress))
             {
-                ValidEmail = true;
+                if(!accountsLogic.Existing_Account(emailAddress))
+                {
+                    ValidEmail = true;
+                }
+                else
+                {
+                    Console.WriteLine($"There is already someone registered with the emailadress {emailAddress}");
+                }
             }
             else
             {
@@ -44,21 +51,30 @@ static class NewAccount
         static DateTime Get_Date()
         {
             DateTime date = default;
-            while (true)
+            bool while_loop = true;
+            while (while_loop)
             {
                 // Asks the user for their date
                 string your_date = Console.ReadLine()!;
                 try
                 {
                     date = DateTime.ParseExact(your_date, "yyyy-MM-dd", CultureInfo.InvariantCulture);
+                    if(date > DateTime.Now)
+                    {
+                        Console.WriteLine("You can't be born in the future, stupid!");
+                    }
+                    else
+                    {
+                        while_loop = false;
+                    }
                 }
                 //Catches any type of exception.
                 catch
                 {
                     Console.WriteLine("Invalid date, please enter a correct date");
                 }
-                return date.Date;
             }
+            return date.Date;
         }
 
         Console.WriteLine("\n > Enter your date of birth: \n (YYYY-MM-DD) ");
@@ -72,19 +88,20 @@ static class NewAccount
             Console.WriteLine("\n > Would you like to use our VIP services? (Y/N)");
             string? input = Console.ReadLine();
             string lowerInput = input.ToLower();
+            bool vip = false;
             
                 if (lowerInput == "y")
                 {
-                    bool vip = true;
+                    vip = true;
                 }
                 else if (lowerInput == "n")
                 {
-                    bool vip = false;
+                    vip = false;
                 }
                 while (lowerInput == "y" || lowerInput == "n")
                 {
                    
-                   AccountModel newAcc = new AccountModel(id, emailAddress, password, date_of_birth, fullName, vip: false);
+                   AccountModel newAcc = new AccountModel(id, emailAddress, password, date_of_birth, fullName, vip);
                    accountsLogic.Add_To_List(newAcc);
                    Console.WriteLine("\nYour account has been succesfully created\n > Press any button to return to the main menu");
                     Console.ReadKey();

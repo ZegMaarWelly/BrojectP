@@ -162,5 +162,19 @@ public class AccountsLogic : IAccountsLogic
 
         return age;
     }
+
+    // Checks if the email adress argument is already an existing email in the list.
+    public bool Existing_Account(string email)
+    {
+        bool It_Exist = false;
+        foreach(var account in _accounts)
+        {
+            if(account.EmailAddress == email)
+            {
+                It_Exist = true;
+            }
+        }
+        return It_Exist;
+    }
 }
 

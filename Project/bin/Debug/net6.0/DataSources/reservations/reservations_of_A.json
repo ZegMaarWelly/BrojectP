@@ -7,7 +7,8 @@
         "genre": "Sci-Fi, Adventure",
         "length": 155,
         "age": 13,
-        "labels": "Violence \u0026 Gore"
+        "labels": "Violence \u0026 Gore",
+        "summary": null
       },
       "room": {
         "id": 2,
@@ -59,7 +60,8 @@
         "genre": "Sci-Fi, Adventure",
         "length": 155,
         "age": 13,
-        "labels": "Violence \u0026 Gore"
+        "labels": "Violence \u0026 Gore",
+        "summary": null
       },
       "room": {
         "id": 2,
@@ -122,7 +124,8 @@
         "genre": "Sci-Fi, Adventure",
         "length": 155,
         "age": 13,
-        "labels": "Violence \u0026 Gore"
+        "labels": "Violence \u0026 Gore",
+        "summary": null
       },
       "room": {
         "id": 2,
@@ -174,7 +177,8 @@
         "genre": "Adventure, Comedy",
         "length": 100,
         "age": 5,
-        "labels": "None"
+        "labels": "None",
+        "summary": null
       },
       "room": {
         "id": 8,
@@ -253,7 +257,8 @@
         "genre": "Fantasy, Action, Adventure",
         "length": 134,
         "age": 12,
-        "labels": "Harsh language, Violence, Fear"
+        "labels": "Harsh language, Violence, Fear",
+        "summary": null
       },
       "room": {
         "id": 2,
@@ -305,7 +310,8 @@
         "genre": "Drama, Crime",
         "length": 167,
         "age": 10,
-        "labels": "Sex \u0026 Nudity, Violence and gore, Drugs"
+        "labels": "Sex \u0026 Nudity, Violence and gore, Drugs",
+        "summary": null
       },
       "room": {
         "id": 9,
@@ -413,7 +419,8 @@
         "genre": "Sci-Fi, Adventure",
         "length": 155,
         "age": 13,
-        "labels": "Violence \u0026 Gore"
+        "labels": "Violence \u0026 Gore",
+        "summary": null
       },
       "room": {
         "id": 2,
@@ -464,7 +471,8 @@
         "genre": "Sci-Fi, Adventure",
         "length": 155,
         "age": 13,
-        "labels": "Violence \u0026 Gore"
+        "labels": "Violence \u0026 Gore",
+        "summary": null
       },
       "room": {
         "id": 2,
@@ -515,7 +523,8 @@
         "genre": "Action",
         "length": 152,
         "age": 0,
-        "labels": "Violence \u0026 Language"
+        "labels": "Violence \u0026 Language",
+        "summary": null
       },
       "room": {
         "id": 2,
@@ -566,7 +575,8 @@
         "genre": "Family, Adventure",
         "length": 91,
         "age": 5,
-        "labels": "None"
+        "labels": "None",
+        "summary": null
       },
       "room": {
         "id": 8,
@@ -625,5 +635,62 @@
         "Quantity": 2
       }
     ]
+  },
+  {
+    "running_movie": {
+      "movie": {
+        "id": 58,
+        "name": "Little Women",
+        "genre": "Drama, Romance",
+        "length": 135,
+        "age": 10,
+        "labels": "None",
+        "summary": null
+      },
+      "room": {
+        "id": 4,
+        "map": [
+          "S |   O O O O O O O O O O O O O O O O   ",
+          "R |   O O O O O O O O O O O O O O O O   ",
+          "Q |   O O O X O O O O O O O O O O O O   ",
+          "P |   O O O O O O O O O O O O O O O O   ",
+          "O |   O O O X O O O O O O O O O O O O   ",
+          "N |   O O O O O O O O O O O O O O O O   ",
+          "M | O O O O O O O O O O O O O O O O O O ",
+          "L | O O O O O O O O O O O O O O O O O O ",
+          "K | O O O O O O O O O O O O O O O O O O ",
+          "J | O O O O O O O O O O O O O O O O O O ",
+          "I | O O O O O O O O O O O O O O O O O O ",
+          "H |   O O O O O O O O O O O O O O O O   ",
+          "G |   O O O O O O O O O O O O O O O O   ",
+          "F |   O O O O O O O O O O O O O O O O   ",
+          "E |     O O O O O O O O O O O O O O     ",
+          "D |     O O O O O O O O O O O O O O     ",
+          "C |     O O O O O O O O O O O O O O     ",
+          "B |       O O O O O O O O O O O O       ",
+          "A |       O X X O O O O O O O O O       ",
+          "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------",
+          "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 ",
+          "                      0 1 2 3 4 5 6 7 8 "
+        ],
+        "total_seats": 300,
+        "available_seats": 296
+      },
+      "begin_time": "2023-06-14T19:11:00",
+      "end_time": "2023-06-14T21:26:00",
+      "date": "2023-06-14T00:00:00"
+    },
+    "account": {
+      "id": 7,
+      "emailAddress": "A",
+      "password": "A",
+      "date_of_birth": "0001-01-01T00:00:00",
+      "fullName": "Admin",
+      "V.I.P.": false
+    },
+    "seats": [
+      "O-5"
+    ],
+    "snacks": []
   }
 ]

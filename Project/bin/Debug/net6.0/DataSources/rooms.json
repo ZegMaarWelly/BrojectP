@@ -401,5 +401,18 @@
     ],
     "total_seats": 225,
     "available_seats": 225
+  },
+  {
+    "id": 15,
+    "map": [
+      "C | O O O O O",
+      "B | O O O O O",
+      "A | O O O O O",
+      "   x----------",
+      "              ",
+      "     1 2 3 4 5"
+    ],
+    "total_seats": 15,
+    "available_seats": 15
   }
 ]
