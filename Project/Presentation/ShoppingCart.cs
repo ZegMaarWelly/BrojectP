@@ -48,17 +48,49 @@ static class ShoppingCart
     // Prints the shopping Cart
     static public void Show_Shopping_Cart()
     {
-        
-        Console.WriteLine("-");
-        foreach (var CountedSnack in inventory)
+
+        int maxLength = GetMaxLength(inventory);
+
+        Console.WriteLine(new string('-', maxLength));
+        foreach (var countedSnack in inventory)
         {
-            Console.WriteLine($"{CountedSnack}| $ {CountedSnack.Snack.Price * CountedSnack.Quantity}");
+            string quantityString = $"{countedSnack.Quantity} item{(countedSnack.Quantity != 1 ? "s" : "")}";
+            string formattedString = $"{countedSnack.Snack.Name.PadRight(maxLength)} | Quantity: {quantityString.PadRight(10)} | Price: $ {countedSnack.Snack.Price * countedSnack.Quantity}";
+            Console.WriteLine(formattedString);
         }
-        Console.WriteLine("--------------------------------------------");
-        Console.WriteLine($"                  Total: $ {MenuSnack.shoppingcartLogic.Get_Total_Price()}");
+        Console.WriteLine(new string('-', maxLength));
+        Console.WriteLine($"Total: {GetTotalQuantity(inventory)} item{(GetTotalQuantity(inventory) != 1 ? "s" : "")} | $ {shoppingcartLogic.Get_Total_Price()}");
         Console.WriteLine();
-        
+
     }
+
+    static int GetTotalQuantity(List<CountedSnackModel> snacks)
+    {
+        int totalQuantity = 0;
+
+        foreach (CountedSnackModel snack in snacks)
+        {
+            totalQuantity += snack.Quantity;
+        }
+
+        return totalQuantity;
+    }
+    static int GetMaxLength(List<CountedSnackModel> snacks)
+    {
+        int maxLength = 0;
+
+        foreach (CountedSnackModel snack in snacks)
+        {
+            int snackLength = snack.Snack.Name.Length;
+            if (snackLength > maxLength)
+            {
+                maxLength = snackLength;
+            }
+        }
+
+        return maxLength;
+    }
+
 
     static public void Delete_Snack()
     {

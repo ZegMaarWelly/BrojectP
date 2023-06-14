@@ -38,7 +38,7 @@ public class ShoppingCartLogic
         // Loops through the snack list and finds the SnackModel based on method's argument
         foreach (CountedSnackModel counted_snack in _shoppingcart)
         {
-            if (counted_snack.Snack.Name == name)
+            if (counted_snack.Snack.Name.IndexOf(name, StringComparison.OrdinalIgnoreCase) >= 0)
             {
                 return counted_snack;
             }

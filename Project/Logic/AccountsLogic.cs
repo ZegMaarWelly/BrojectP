@@ -1,4 +1,5 @@
 ﻿using System.Text.RegularExpressions;
+using System;
 
 //This class is not static so later on we can use inheritance and interfaces
 public class AccountsLogic : IAccountsLogic
@@ -132,6 +133,11 @@ public class AccountsLogic : IAccountsLogic
         if (hasNoSpaces)
             return false;
 
+        string pattern = @"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$";
+        bool hasSymbols = Regex.IsMatch(email, pattern);
+        if (!hasSymbols)
+            return false;
+        
         return true;
     }
 
