@@ -45,7 +45,7 @@ static class MenuSnack
 
                 if (selected_snack == null)
                 {
-                    Console.WriteLine("This ID does not belong to any movies\nPress any button to return to Admin Movie list menu");
+                    Console.WriteLine("Snack not found\nPress any button to return to the snack menu");
                     Console.ReadKey();
                     Console.Clear();
                     Start();
@@ -172,6 +172,7 @@ static class MenuSnack
                 {
                     shoppingcartLogic.AddCountedSnack(your_snack);
                 }
+                Console.WriteLine($"{your_snack.Name} has been added to your shopping cart");
                 Thread.Sleep(2000);
                 Console.WriteLine("Going back...");
                 Thread.Sleep(1000);

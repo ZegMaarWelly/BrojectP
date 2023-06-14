@@ -187,7 +187,13 @@ static class AdminManageMovie
     static public void Get_Movie_List()
     {
         List<MovieListModel> movie_list = movieLogic.Return_Movie_List();
-        ConsoleTable.From<MovieListModel>(movie_list).Write(Format.Alternative);
+        var table = new ConsoleTable("ID", "Movie", "Genre", "Length", "Age", "Labels");
+        foreach (MovieListModel segment in movie_list)
+        {
+            table.AddRow(segment.Id, segment.Name, segment.Genre, segment.Length, segment.Age, segment.Labels);
+        }
+        table.Options.EnableCount = false;
+        Console.WriteLine(table);
     }
 
     // Asks the user for their movie.
