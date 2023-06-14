@@ -19,7 +19,8 @@ static class AdminMenu
         Console.WriteLine(" > [4] go the the beginning of the program.");
         Console.WriteLine(" > [5] add/remove movies.");
         Console.WriteLine(" > [6] Admin Manage Movie.");
-        Console.WriteLine(" > [7] Quit the Program.");
+        Console.WriteLine(" > [7] Add a Movie Room");
+        Console.WriteLine(" > [8] Quit the Program.");
 
         string input = Console.ReadLine()!;
         if (input == "1")
@@ -61,6 +62,11 @@ static class AdminMenu
             AdminManageMovie.Start();
         }
         else if (input == "7")
+        {
+            Console.Clear();
+            AdminRoom.Start();
+        }
+        else if (input == "8")
         {
             Environment.Exit(0);
         }
