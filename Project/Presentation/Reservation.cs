@@ -217,6 +217,10 @@
         //Prints the expired reservations.
 
         Console.WriteLine("Expired reservations:      ");
+        if(expired_reservations.Length == 0)
+        {
+            Console.WriteLine("\n You have no expired reservations \n");
+        }
         foreach (ReservationModel reservation in expired_reservations)
         {
             Console.WriteLine(reservation);
@@ -226,6 +230,10 @@
 
         //Prints the valid reservations.
         Console.WriteLine("Valid reservations: ");
+        if (valid_reservations.Length == 0)
+        {
+            Console.WriteLine("\n You have no valid reservations \n");
+        }
         foreach (ReservationModel reservation in valid_reservations)
         {
             Console.WriteLine(reservation);

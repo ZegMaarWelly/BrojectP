@@ -6,31 +6,21 @@
       "genre": "Family, Adventure",
       "length": 91,
       "age": 5,
-      "labels": "None"
+      "labels": "None",
+      "summary": null
     },
     "room": {
-      "id": 2,
+      "id": 15,
       "map": [
-        "14|     O O O O O O O O    ",
-        "13|   O O O O O O O O O O  ",
-        "12|   O O O O O O O O O O  ",
-        "11| O O O O O O O O O O O O",
-        "10| O O O O O O O O O O O O",
-        "09| O O O O O O O O O O O O",
-        "08| O O O O O O O O O O O O",
-        "07| O O O O O O O O O O O O",
-        "06| O O O O O O O O O O O O",
-        "05| O O O O O O O O O O O O",
-        "04| O O O O O O O O O O O O",
-        "03|   O O O O O O O O O O  ",
-        "02|     O O O O O O O O    ",
-        "01|     O O O O O O O O    ",
-        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014",
-        "    1 2 3 4 5 6 7 8 9 1 1 1",
-        "                      0 1 2"
+        "C | O O O O O",
+        "B | O O O O O",
+        "A | O O O O O",
+        "   x----------",
+        "              ",
+        "     1 2 3 4 5"
       ],
-      "total_seats": 150,
-      "available_seats": 150
+      "total_seats": 15,
+      "available_seats": 15
     },
     "begin_time": "2023-06-23T12:15:00",
     "end_time": "2023-06-23T14:14:00",
@@ -43,7 +33,8 @@
       "genre": "Sci-Fi, Thriller",
       "length": 148,
       "age": 13,
-      "labels": "Violence"
+      "labels": "Violence",
+      "summary": null
     },
     "room": {
       "id": 1,
@@ -80,7 +71,8 @@
       "genre": "Fantasy, Adventure",
       "length": 152,
       "age": 7,
-      "labels": "None"
+      "labels": "None",
+      "summary": null
     },
     "room": {
       "id": 10,
@@ -123,7 +115,8 @@
       "genre": "Action, Sci-Fi",
       "length": 137,
       "age": 17,
-      "labels": "Violence \u0026 Language"
+      "labels": "Violence \u0026 Language",
+      "summary": null
     },
     "room": {
       "id": 14,
@@ -161,7 +154,8 @@
       "genre": "Animation, Children, Musical",
       "length": 102,
       "age": 0,
-      "labels": "None"
+      "labels": "None",
+      "summary": null
     },
     "room": {
       "id": 2,

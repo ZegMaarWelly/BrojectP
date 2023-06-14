@@ -11,16 +11,31 @@
         bool switch1 = true;
         while (switch1 == true)
         {
+
             if (rows <= 0 || rows > 20)
             {
                 Console.WriteLine("\n > How many rows would you like to have in the room. (max 20)");
-                rows = Convert.ToInt32(Console.ReadLine());
+                try
+                {
+                    rows = Convert.ToInt32(Console.ReadLine());
+                }
+                catch
+                {
+                    Console.WriteLine("Invalid Number!");
+                }
 
             }
             if (chairs <= 0 || chairs > 30)
             {
                 Console.WriteLine("\n > How many chairs would you like per row? (Max 30)");
-                chairs = Convert.ToInt32(Console.ReadLine());
+                try
+                {
+                    chairs = Convert.ToInt32(Console.ReadLine());
+                }
+                catch
+                {
+                    Console.WriteLine("Invalid Number!");
+                }
             }
             if (rows > 0 && rows <= 30 && chairs > 0 && chairs <= 30)
             {

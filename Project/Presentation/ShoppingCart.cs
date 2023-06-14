@@ -35,7 +35,7 @@ static class ShoppingCart
         else if (choice == "3")
         {
             Console.WriteLine("Order confirmed");
-            shoppingcartLogic = new();
+            shoppingcartLogic.Empty_Cart();
             Console.Clear();
         }
         else
@@ -49,13 +49,12 @@ static class ShoppingCart
     static public void Show_Shopping_Cart()
     {
         
-        Console.WriteLine("-");
         foreach (var CountedSnack in inventory)
         {
             Console.WriteLine($"{CountedSnack}| $ {CountedSnack.Snack.Price * CountedSnack.Quantity}");
         }
         Console.WriteLine("--------------------------------------------");
-        Console.WriteLine($"                  Total: $ {MenuSnack.shoppingcartLogic.Get_Total_Price()}");
+        Console.WriteLine($"                  Total: $ {shoppingcartLogic.Get_Total_Price()}");
         Console.WriteLine();
         
     }

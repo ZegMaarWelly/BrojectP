@@ -101,6 +101,13 @@ public class ShoppingCartLogic
     }
 
 
+    //Empties the shopping cart
+    public void Empty_Cart()
+    {
+        _shoppingcart.Clear();
+    }
+
+
 
 
 }
