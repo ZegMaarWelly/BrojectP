@@ -1,5 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 using System;
+using System.Security.Principal;
 
 //This class is not static so later on we can use inheritance and interfaces
 public class AccountsLogic : IAccountsLogic
@@ -175,6 +176,40 @@ public class AccountsLogic : IAccountsLogic
             }
         }
         return It_Exist;
+    }
+
+    public AccountModel Find_User(string email)
+    {
+        foreach (AccountModel user in _accounts)
+        {
+            if (user.EmailAddress == email)
+            {
+                return user;
+            }
+        }
+        return null;
+    }
+
+    public void Update_User_VIP(bool value, AccountModel user)
+    {
+        user.Vip = value;
+        int accountsindex = _accounts.IndexOf(user);
+        _accounts[accountsindex] = user;
+        AccountsAccess.WriteAll(_accounts);
+    }
+
+    // Checks if a given user's name is in the list and returns the opposite of their VIP status
+    public AccountModel Return_User_VIP(string name)
+    {
+        foreach (AccountModel user in _accounts)
+        {
+            if (user.FullName.IndexOf(name, StringComparison.OrdinalIgnoreCase) >= 0)
+            {
+                user.Vip = !user.Vip;
+                return user;
+            }
+        }
+        return null;
     }
 }
 

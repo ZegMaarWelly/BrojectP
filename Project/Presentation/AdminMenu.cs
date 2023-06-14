@@ -34,17 +34,7 @@ static class AdminMenu
         }
         else if (input == "3")
         {
-            Console.Clear();
-            List<AccountModel> Account_list = accountsLogic.Return_Account_List();
-            //foreach (AccountModel account in Account_list)
-            //{
-            //    Console.WriteLine(account);
-            //}
-            ConsoleTable.From<AccountModel>(Account_list).Write(Format.Alternative);
-            Console.WriteLine(" > Press [Enter] to return to the admin menu");
-            Console.ReadLine();
-            Console.Clear();
-            AdminMenu.Start();
+            AdminMananageAccount.Start();
         }
         else if (input == "4")
         {
