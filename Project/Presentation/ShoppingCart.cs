@@ -11,6 +11,7 @@ static class ShoppingCart
     // Asks the user what they want to do
     static public void Start()
     {
+        Console.Clear();
         Console.ForegroundColor = ConsoleColor.DarkGreen;
         Console.WriteLine(" __   __              ___ _                  _              ___          _   \r\n \\ \\ / /__ _  _ _ _  / __| |_  ___ _ __ _ __(_)_ _  __ _   / __|__ _ _ _| |_ \r\n  \\ V / _ \\ || | '_| \\__ \\ ' \\/ _ \\ '_ \\ '_ \\ | ' \\/ _` | | (__/ _` | '_|  _|\r\n   |_|\\___/\\_,_|_|   |___/_||_\\___/ .__/ .__/_|_||_\\__, |  \\___\\__,_|_|  \\__|\r\n                                  |_|  |_|         |___/                    ");
         Console.ResetColor();
@@ -24,14 +25,18 @@ static class ShoppingCart
         if(choice == "1")
         {
             MenuSnack.Start();
+            Console.Clear();
         }
         else if (choice == "2")
         {
             Delete_Snack();
+            Console.Clear();
         }
         else if (choice == "3")
         {
             Console.WriteLine("Order confirmed");
+            shoppingcartLogic = new();
+            Console.Clear();
         }
         else
         {
@@ -90,7 +95,7 @@ static class ShoppingCart
                 {
                     Console.WriteLine($"Your snack has not been deleted from your inventory");
                     Console.WriteLine($"You tried removing {quantity_to_be_deleted}, but you only have {your_counted_snack.Quantity}");
-                    Thread.Sleep( 8000 );
+                    Thread.Sleep( 3000 );
                     Start();
 
                 }
@@ -98,7 +103,7 @@ static class ShoppingCart
                 {
                     shoppingcartLogic.Decrease_Quantity(your_counted_snack, quantity_to_be_deleted);
                     Console.WriteLine($"You have decreased your quantity of {your_counted_snack.Snack.Name}");
-                    Thread.Sleep( 8000 );
+                    Thread.Sleep( 3000 );
                     Start();
 
                 }
@@ -122,7 +127,14 @@ static class ShoppingCart
             try
             {
                 quantity = Convert.ToInt32(Console.ReadLine());
-                success = true;
+                if(quantity < 1)
+                {
+                    Console.WriteLine("Amount must be higher than 0!");
+                }
+                else
+                {
+                    success = true;
+                }
 
             }
             //Catches any type of exception.
