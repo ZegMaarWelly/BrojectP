@@ -16,6 +16,7 @@ public class ScreenRoomLogic
         {
             try
             {
+                // paints the room for available chairs.
                 foreach (var chair_row in screening_room)
                 {
                     for (int i = 0; i < chair_row.Length; i += 2)
