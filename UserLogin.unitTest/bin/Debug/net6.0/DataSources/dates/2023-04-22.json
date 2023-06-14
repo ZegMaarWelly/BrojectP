@@ -1,0 +1,119 @@
+[
+  {
+    "movie": {
+      "id": 0,
+      "name": "John Wick 4",
+      "genre": "Action, Thriller",
+      "length": 169,
+      "age": 15,
+      "labels": "Harsh language, Violence"
+    },
+    "room": {
+      "id": 10,
+      "map": [
+        "20|         O O O O O O O O O O O O O O O O O O O O O O         ",
+        "19|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "18|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "17|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "16|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "15|     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "14|   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "13| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "12| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "11| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "10| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "09| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+        "08|   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+        "07|     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "06|     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+        "05|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "04|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+        "03|           O O O O O O O O O O O O O O O O O O O O           ",
+        "02|               O O O O O O O O O O O O O O O O               ",
+        "01|                 O O O O O O O O O O O O O O O               ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------------------------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
+        "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
+      ],
+      "total_seats": 500,
+      "available_seats": 500
+    },
+    "begin_time": "2023-04-21T16:40:00",
+    "end_time": "2023-04-21T18:25:00",
+    "date": "2023-04-22T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 0,
+      "name": "Bee Movie",
+      "genre": "Family, Adventure",
+      "length": 91,
+      "age": 5,
+      "labels": "None"
+    },
+    "room": {
+      "id": 1,
+      "map": [
+        "14|     O O O O O O O O    ",
+        "13|   O O O O O O O O O O  ",
+        "12|   O O O O O O O O O O  ",
+        "11| O O O O O O O O O O O O",
+        "10| O O O O O O O O O O O O",
+        "09| O O O O O O O O O O O O",
+        "08| O O O O O O O O O O O O",
+        "07| O O O O O O O O O O O O",
+        "06| O O O O O O O O O O O O",
+        "05| O O O O O O O O O O O O",
+        "04| O O O O O O O O O O O O",
+        "03|   O O O O O O O O O O  ",
+        "02|     O O O O O O O O    ",
+        "01|     O O O O O O O O    ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014",
+        "    1 2 3 4 5 6 7 8 9 1 1 1",
+        "                      0 1 2"
+      ],
+      "total_seats": 150,
+      "available_seats": 150
+    },
+    "begin_time": "2023-04-21T12:15:00",
+    "end_time": "2023-04-21T13:45:00",
+    "date": "2023-04-22T00:00:00"
+  },
+  {
+    "movie": {
+      "id": 13,
+      "name": "Dungeons \u0026 Dragons: Honor Among Thieves",
+      "genre": "Fantasy, Action, Adventure",
+      "length": 134,
+      "age": 12,
+      "labels": "Harsh language, Violence, Fear"
+    },
+    "room": {
+      "id": 2,
+      "map": [
+        "N |     O O O O O O O O    ",
+        "M |   O O O O O O O O O O  ",
+        "L |   O O O O O O O O O O  ",
+        "K | O O O O O O O O O O O O",
+        "J | O O O O O O O O O O O O",
+        "I | O O O O O O O O O O O O",
+        "H | O O O O O O O O O O O O",
+        "G | O O O O O O O O O O O O",
+        "F | O O O O O O O O O O O O",
+        "E | O O O O O O O O O O O O",
+        "D | O O O O O O O O O O O O",
+        "C |   O O O O O O O O O O  ",
+        "B |     O O O O O O O O    ",
+        "A |     O O O O O O O O    ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014",
+        "    1 2 3 4 5 6 7 8 9 1 1 1",
+        "                      0 1 2"
+      ],
+      "total_seats": 150,
+      "available_seats": 150
+    },
+    "begin_time": "2023-04-22T13:15:00",
+    "end_time": "2023-04-22T15:14:00",
+    "date": "2023-04-22T00:00:00"
+  }
+]

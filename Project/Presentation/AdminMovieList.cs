@@ -236,18 +236,30 @@ static class AdminMovieList
         {
             try
             {
-                Console.WriteLine(" > Which movie would you like to remove? (please provide only the ID)");
-                string remove_id = Console.ReadLine();
-                int for_removal = Convert.ToInt32(remove_id);
-                MovieListModel selected_movie = movieLogic.Find_Movie_ID(for_removal);
+                var for_removal = Console.ReadLine();
+
+                int intInput;
+                MovieListModel selected_movie = null;
+
+                if (int.TryParse(for_removal, out intInput))
+                {
+                    // User input is an integer
+                    selected_movie = movieLogic.Find_Movie(intInput);
+                }
+
                 if (selected_movie == null)
                 {
-                    Console.WriteLine("This ID does not belong to any movies\n > Press any button to return to Admin Movie list menu");
-                    Console.ReadKey();
-                    Console.Clear();
-                    Start();
+                    // Either user input is a string or the integer input didn't match any movie
+                    selected_movie = movieLogic.Find_Movie(for_removal);
+
+                    if (selected_movie == null)
+                    {
+                        Console.WriteLine("This ID does not belong to any movies\nPress any button to return to Admin Movie list menu");
+                        Console.ReadKey();
+                        Console.Clear();
+                        Start();
+                    }
                 }
-                else
                 {
                     while (true)
                     {
@@ -294,22 +306,35 @@ static class AdminMovieList
         Console.ForegroundColor = ConsoleColor.DarkGreen;
         Console.WriteLine("   ___ _                           _     __  __         _     \r\n  / __| |_  __ _ _ _  __ _ ___    /_\\   |  \\/  |_____ _(_)___ \r\n | (__| ' \\/ _` | ' \\/ _` / -_)  / _ \\  | |\\/| / _ \\ V / / -_)\r\n  \\___|_||_\\__,_|_||_\\__, \\___| /_/ \\_\\ |_|  |_\\___/\\_/|_\\___|\r\n                     |___/                                    ");
         Console.ResetColor();
-        Console.WriteLine("\n > Which movie's information would you like to change? (Please provide only the ID)\n");
+        Console.WriteLine("\n > Which movie's information would you like to change? (Please provide either the ID or the name)\n");
         while (true)
         {
             try
             {
-                string for_update = Console.ReadLine();
-                int update_id = Convert.ToInt32(for_update);
-                MovieListModel selected_movie = movieLogic.Find_Movie_ID(update_id);
+                var for_update = Console.ReadLine();
+
+                int intInput;
+                MovieListModel selected_movie = null;
+
+                if (int.TryParse(for_update, out intInput))
+                {
+                    // User input is an integer
+                    selected_movie = movieLogic.Find_Movie(intInput);
+                }
+
                 if (selected_movie == null)
                 {
-                    Console.WriteLine("This ID does not belong to any movies\nPress any button to return to Admin Movie list menu");
-                    Console.ReadKey();
-                    Console.Clear();
-                    Start();
+                    // Either user input is a string or the integer input didn't match any movie
+                    selected_movie = movieLogic.Find_Movie(for_update);
+
+                    if (selected_movie == null)
+                    {
+                        Console.WriteLine("This ID does not belong to any movies\nPress any button to return to Admin Movie list menu");
+                        Console.ReadKey();
+                        Console.Clear();
+                        Start();
+                    }
                 }
-                else
                 {
                     while (true)
                     {

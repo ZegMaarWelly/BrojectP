@@ -1,4 +1,4 @@
-﻿class Factory
+﻿public class Factory
 {
     //this is where the Logic is created, so that you don't need to create a new logic everytime.
 

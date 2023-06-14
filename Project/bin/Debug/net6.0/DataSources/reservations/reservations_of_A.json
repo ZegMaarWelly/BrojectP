@@ -41,6 +41,7 @@
       "id": 7,
       "emailAddress": "A",
       "password": "A",
+      "date_of_birth": "0001-01-01T00:00:00",
       "fullName": "Admin",
       "V.I.P.": true
     },
@@ -92,6 +93,7 @@
       "id": 7,
       "emailAddress": "A",
       "password": "A",
+      "date_of_birth": "0001-01-01T00:00:00",
       "fullName": "Admin",
       "V.I.P.": true
     },
@@ -102,6 +104,7 @@
     "snacks": [
       {
         "Snack": {
+          "id": 0,
           "name": "Popcorn",
           "price": 6.5,
           "type_of_food": "Snack",
@@ -153,6 +156,7 @@
       "id": 7,
       "emailAddress": "A",
       "password": "A",
+      "date_of_birth": "0001-01-01T00:00:00",
       "fullName": "Admin",
       "V.I.P.": false
     },
@@ -210,6 +214,7 @@
       "id": 7,
       "emailAddress": "A",
       "password": "A",
+      "date_of_birth": "0001-01-01T00:00:00",
       "fullName": "Admin",
       "V.I.P.": false
     },
@@ -220,6 +225,7 @@
     "snacks": [
       {
         "Snack": {
+          "id": 0,
           "name": "Water",
           "price": 6,
           "type_of_food": "Drink",
@@ -229,6 +235,7 @@
       },
       {
         "Snack": {
+          "id": 0,
           "name": "Popcorn",
           "price": 6.5,
           "type_of_food": "Snack",
@@ -280,6 +287,7 @@
       "id": 7,
       "emailAddress": "A",
       "password": "A",
+      "date_of_birth": "0001-01-01T00:00:00",
       "fullName": "Admin",
       "V.I.P.": false
     },
@@ -337,6 +345,7 @@
       "id": 7,
       "emailAddress": "A",
       "password": "A",
+      "date_of_birth": "0001-01-01T00:00:00",
       "fullName": "Admin",
       "V.I.P.": false
     },
@@ -346,6 +355,7 @@
     "snacks": [
       {
         "Snack": {
+          "id": 0,
           "name": "Brownie",
           "price": 3.5,
           "type_of_food": "Snack",
@@ -355,6 +365,7 @@
       },
       {
         "Snack": {
+          "id": 0,
           "name": "Soda",
           "price": 3.5,
           "type_of_food": "Drink",
@@ -364,6 +375,7 @@
       },
       {
         "Snack": {
+          "id": 0,
           "name": "Meatballs",
           "price": 5,
           "type_of_food": "Drink",
@@ -373,6 +385,7 @@
       },
       {
         "Snack": {
+          "id": 0,
           "name": "Iced Coffee",
           "price": 4.5,
           "type_of_food": "Drink",
@@ -382,6 +395,7 @@
       },
       {
         "Snack": {
+          "id": 0,
           "name": "Fries",
           "price": 4,
           "type_of_food": "Snack",
@@ -433,6 +447,7 @@
       "id": 7,
       "emailAddress": "A",
       "password": "A",
+      "date_of_birth": "0001-01-01T00:00:00",
       "fullName": "Admin",
       "V.I.P.": false
     },
@@ -483,6 +498,7 @@
       "id": 7,
       "emailAddress": "A",
       "password": "A",
+      "date_of_birth": "0001-01-01T00:00:00",
       "fullName": "Admin",
       "V.I.P.": false
     },
@@ -533,12 +549,68 @@
       "id": 7,
       "emailAddress": "A",
       "password": "A",
+      "date_of_birth": "0001-01-01T00:00:00",
       "fullName": "Admin",
       "V.I.P.": false
     },
     "seats": [
       "N-3"
     ],
+    "snacks": []
+  },
+  {
+    "running_movie": {
+      "movie": {
+        "id": 1,
+        "name": "Bee Movie",
+        "genre": "Family, Adventure",
+        "length": 91,
+        "age": 5,
+        "labels": "None"
+      },
+      "room": {
+        "id": 8,
+        "map": [
+          "T |         O O O O O O O O O O O O O O O O O O O O O O         ",
+          "S |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+          "R |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+          "Q |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+          "P |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+          "O |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+          "N |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+          "M | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+          "L | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+          "K | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+          "J | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+          "I | O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+          "H |   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+          "G |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+          "F |     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+          "E |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+          "D |       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+          "C |           O O O O O O O O O O O O O O O O O O O O           ",
+          "B |               O O O O O O O O O O O O O O O O               ",
+          "A |                 O O O O O O O O O O O O O O O               ",
+          "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------------------------------",
+          "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
+          "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
+        ],
+        "total_seats": 500,
+        "available_seats": 500
+      },
+      "begin_time": "2023-06-13T17:59:00",
+      "end_time": "2023-06-13T19:30:00",
+      "date": "2023-06-13T00:00:00"
+    },
+    "account": {
+      "id": 7,
+      "emailAddress": "A",
+      "password": "A",
+      "date_of_birth": "0001-01-01T00:00:00",
+      "fullName": "Admin",
+      "V.I.P.": false
+    },
+    "seats": [],
     "snacks": []
   }
 ]

@@ -1,4 +1,4 @@
-﻿class RoomLogic
+﻿public class RoomLogic
 {
     private List<RoomModel> _rooms;
 

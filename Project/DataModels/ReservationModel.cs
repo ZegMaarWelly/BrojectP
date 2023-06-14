@@ -1,7 +1,7 @@
 ﻿using System.Text.Json.Serialization;
 using System.Xml.Linq;
 
-class ReservationModel
+public class ReservationModel
 {
     [JsonPropertyName("running_movie")]
     public RunningMovieModel Running_Movie { get; set; }

@@ -105,13 +105,6 @@
     "Allergies": "dairy"
   },
   {
-    "ID": 16,
-    "Name": "Fruit Salad",
-    "Price": 5.0,
-    "Type_Of_Food": "Snack",
-    "Allergies": "none"
-  },
-  {
     "ID": 17,
     "Name": "Nacho Cheese Dip",
     "Price": 3.5,

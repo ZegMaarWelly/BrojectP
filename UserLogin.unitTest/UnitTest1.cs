@@ -38,7 +38,7 @@ namespace UnitTesting
             }
 
             [TestMethod]
-            //test if A User can't log in with a false password
+            //A user logs in and tests if the user is not an admin.
             public void IsUserLoginFalse()
             {
                 // Arrange

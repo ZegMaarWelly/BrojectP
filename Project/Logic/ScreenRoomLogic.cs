@@ -3,7 +3,7 @@ using System.Data;
 using System.Data.Common;
 using System.Runtime.CompilerServices;
 
-class ScreenRoomLogic
+public class ScreenRoomLogic
 {
     static private RoomLogic roomLogic = new RoomLogic();
     

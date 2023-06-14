@@ -1,4 +1,4 @@
-﻿class SnacksLogic
+﻿public class SnacksLogic
 {
     private List<SnackModel> _snacks;
 
@@ -50,7 +50,7 @@
         return SnacksAccess.LoadAll().Select(a => a.ID).Max() + 1;
     }
 
-    public SnackModel Find_Snack_ID(int id)
+    public SnackModel Find_Snack(int id)
     {
         // Loops through the snack list and finds the SnackModel based on method's argument
         foreach (SnackModel snack in _snacks)
@@ -67,7 +67,7 @@
     {
         foreach (SnackModel snack in _snacks)
         {
-            if (snack.Name == name)
+            if (snack.Name.IndexOf(name, StringComparison.OrdinalIgnoreCase) >= 0)
             {
                 return snack;
             }

@@ -1,8 +1,8 @@
 ﻿using Newtonsoft.Json;
 
-static class SnacksAccess
+public static class SnacksAccess
 {
-    static string path = System.IO.Path.GetFullPath(System.IO.Path.Combine(Environment.CurrentDirectory, @"DataSources/snacks.json"));
+    static string path = System.IO.Path.GetFullPath(System.IO.Path.Combine(Environment.CurrentDirectory, @"DataSources\snacks.json"));
 
 
     public static List<SnackModel> LoadAll()

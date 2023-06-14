@@ -1,5 +1,5 @@
 ﻿using System.Text.Json.Serialization;
-class RoomModel
+public class RoomModel
 {
     [JsonPropertyName("id")]
     public int ID { get; set; }

@@ -1,0 +1,544 @@
+[
+  {
+    "running_movie": {
+      "movie": {
+        "id": 0,
+        "name": "Dune",
+        "genre": "Sci-Fi, Adventure",
+        "length": 155,
+        "age": 13,
+        "labels": "Violence \u0026 Gore"
+      },
+      "room": {
+        "id": 2,
+        "map": [
+          "N |     O X X O O O O O    ",
+          "M |   X X O O O O O O O O  ",
+          "L |   O O O O O O O O O O  ",
+          "K | O O X X X O O O O O O O",
+          "J | O O O O O O O O O O O O",
+          "I | O O O O O O O O O O O O",
+          "H | O O O O O O O O O O O O",
+          "G | O O O O O O O O O O O O",
+          "F | O O O O O O O O O O O O",
+          "E | O O O O O O O O O O O O",
+          "D | O O O O O O O O O O O O",
+          "C |   O O O O O O O O O O  ",
+          "B |     O O O O O O O O    ",
+          "A |     O X X X O O O O    ",
+          "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014",
+          "    1 2 3 4 5 6 7 8 9 1 1 1",
+          "                      0 1 2"
+        ],
+        "total_seats": 150,
+        "available_seats": 150
+      },
+      "begin_time": "2023-04-20T11:49:00",
+      "end_time": "2023-04-20T12:59:00",
+      "date": "2023-04-20T00:00:00"
+    },
+    "account": {
+      "id": 7,
+      "emailAddress": "A",
+      "password": "A",
+      "fullName": "Admin",
+      "V.I.P.": true
+    },
+    "seats": [
+      "K-4",
+      "K-3"
+    ],
+    "snacks": []
+  },
+  {
+    "running_movie": {
+      "movie": {
+        "id": 0,
+        "name": "Dune",
+        "genre": "Sci-Fi, Adventure",
+        "length": 155,
+        "age": 13,
+        "labels": "Violence \u0026 Gore"
+      },
+      "room": {
+        "id": 2,
+        "map": [
+          "N |     O X X O O O O O    ",
+          "M |   X X O O O O O O O O  ",
+          "L |   O O O O O O O O O O  ",
+          "K | O O X X X O O O O O O O",
+          "J | O O O O O O O O O O O O",
+          "I | O O O O O O O O O O O O",
+          "H | O O O O O O O O O O O O",
+          "G | O O O O O O O O O O O O",
+          "F | O O O O O O O O O O O O",
+          "E | O O O O O O O O O O O O",
+          "D | O O O O O O O O O O O O",
+          "C |   O X X O O O O O O O  ",
+          "B |     O O O O O O O O    ",
+          "A |     O X X X O O O O    ",
+          "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014",
+          "    1 2 3 4 5 6 7 8 9 1 1 1",
+          "                      0 1 2"
+        ],
+        "total_seats": 150,
+        "available_seats": 150
+      },
+      "begin_time": "2023-04-20T11:49:00",
+      "end_time": "2023-04-20T12:59:00",
+      "date": "2023-04-20T00:00:00"
+    },
+    "account": {
+      "id": 7,
+      "emailAddress": "A",
+      "password": "A",
+      "fullName": "Admin",
+      "V.I.P.": true
+    },
+    "seats": [
+      "C-3",
+      "C-4"
+    ],
+    "snacks": [
+      {
+        "Snack": {
+          "name": "Popcorn",
+          "price": 6.5,
+          "type_of_food": "Snack",
+          "allergies": "none"
+        },
+        "Quantity": 1
+      }
+    ]
+  },
+  {
+    "running_movie": {
+      "movie": {
+        "id": 0,
+        "name": "Dune",
+        "genre": "Sci-Fi, Adventure",
+        "length": 155,
+        "age": 13,
+        "labels": "Violence \u0026 Gore"
+      },
+      "room": {
+        "id": 2,
+        "map": [
+          "N |     O X X O O O O O    ",
+          "M |   X X O O O O O O O O  ",
+          "L |   X X O O O O O O O O  ",
+          "K | O O X X X O O O O O O O",
+          "J | O O O O O O O O O O O O",
+          "I | O O O O O O O O O O O O",
+          "H | O O O O O O O O O O O O",
+          "G | O O O O O O O O O O O O",
+          "F | O O O O O O O O O O O O",
+          "E | O O O O O O O O O O O O",
+          "D | O O O O O O O O O O O O",
+          "C |   X X X X X X O O O O  ",
+          "B |     O O O O O O O O    ",
+          "A |     O X X X O O O O    ",
+          "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014",
+          "    1 2 3 4 5 6 7 8 9 1 1 1",
+          "                      0 1 2"
+        ],
+        "total_seats": 150,
+        "available_seats": 150
+      },
+      "begin_time": "2023-04-20T11:49:00",
+      "end_time": "2023-04-20T12:59:00",
+      "date": "2023-04-20T00:00:00"
+    },
+    "account": {
+      "id": 7,
+      "emailAddress": "A",
+      "password": "A",
+      "fullName": "Admin",
+      "V.I.P.": false
+    },
+    "seats": [
+      "L-2",
+      "L-3"
+    ],
+    "snacks": []
+  },
+  {
+    "running_movie": {
+      "movie": {
+        "id": 0,
+        "name": "Puss in Boots: The Last Wish",
+        "genre": "Adventure, Comedy",
+        "length": 100,
+        "age": 5,
+        "labels": "None"
+      },
+      "room": {
+        "id": 8,
+        "map": [
+          "20|         O O O O O O O O O O O O O O O O O O O O O O         ",
+          "19|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+          "18|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+          "17|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+          "16|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+          "15|     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+          "14|   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+          "13| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+          "12| O X O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+          "11| O X O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+          "10| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+          "09| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+          "08|   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+          "07|     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+          "06|     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+          "05|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+          "04|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+          "03|           O O O O O O O O O O O O O O O O O O O O           ",
+          "02|               O O O O O O O O O O O O O O O O               ",
+          "01|                 O O O O O O O O O O O O O O O               ",
+          "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------------------------------",
+          "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
+          "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
+        ],
+        "total_seats": 500,
+        "available_seats": 500
+      },
+      "begin_time": "2023-04-20T15:50:00",
+      "end_time": "2023-04-20T17:15:00",
+      "date": "2023-04-20T00:00:00"
+    },
+    "account": {
+      "id": 7,
+      "emailAddress": "A",
+      "password": "A",
+      "fullName": "Admin",
+      "V.I.P.": false
+    },
+    "seats": [
+      "K-2",
+      "L-2"
+    ],
+    "snacks": [
+      {
+        "Snack": {
+          "name": "Water",
+          "price": 6,
+          "type_of_food": "Drink",
+          "allergies": "none"
+        },
+        "Quantity": 2
+      },
+      {
+        "Snack": {
+          "name": "Popcorn",
+          "price": 6.5,
+          "type_of_food": "Snack",
+          "allergies": "none"
+        },
+        "Quantity": 1
+      }
+    ]
+  },
+  {
+    "running_movie": {
+      "movie": {
+        "id": 13,
+        "name": "Dungeons \u0026 Dragons: Honor Among Thieves",
+        "genre": "Fantasy, Action, Adventure",
+        "length": 134,
+        "age": 12,
+        "labels": "Harsh language, Violence, Fear"
+      },
+      "room": {
+        "id": 2,
+        "map": [
+          "N |     X X O O O O O O    ",
+          "M |   O O O O O O O O O O  ",
+          "L |   O O O O O O O O O O  ",
+          "K | O O O O O O O O O O O O",
+          "J | O O O O O O O O O O O O",
+          "I | O O O O O O O O O O O O",
+          "H | O O O O O O O O O O O O",
+          "G | O O O O O O O O O O O O",
+          "F | O O O O O O O O O O O O",
+          "E | O O O O O O O O O O O O",
+          "D | O O O O O O O O O O O O",
+          "C |   O O O O O O O O O O  ",
+          "B |     O O O O O O O O    ",
+          "A |     O O O O O O O O    ",
+          "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014",
+          "    1 2 3 4 5 6 7 8 9 1 1 1",
+          "                      0 1 2"
+        ],
+        "total_seats": 150,
+        "available_seats": 150
+      },
+      "begin_time": "2023-04-20T21:15:00",
+      "end_time": "2023-04-20T23:15:00",
+      "date": "2023-04-20T00:00:00"
+    },
+    "account": {
+      "id": 7,
+      "emailAddress": "A",
+      "password": "A",
+      "fullName": "Admin",
+      "V.I.P.": false
+    },
+    "seats": [
+      "N-3",
+      "N-4"
+    ],
+    "snacks": []
+  },
+  {
+    "running_movie": {
+      "movie": {
+        "id": 0,
+        "name": "Gangs of New York",
+        "genre": "Drama, Crime",
+        "length": 167,
+        "age": 10,
+        "labels": "Sex \u0026 Nudity, Violence and gore, Drugs"
+      },
+      "room": {
+        "id": 9,
+        "map": [
+          "20|         O O O O O O O O O O O O O O O O O O O O O O         ",
+          "19|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+          "18|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+          "17|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+          "16|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+          "15|     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+          "14|   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+          "13| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+          "12| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+          "11| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+          "10| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+          "09| O O O O O O O O O O O O O O O O O O O O O O O O O O O O O O ",
+          "08|   O O O O O O O O O O O O O O O O O O O O O O O O O O O O   ",
+          "07|     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+          "06|     O O O O O O O O O O O O O O O O O O O O O O O O O O     ",
+          "05|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+          "04|       O O O O O O O O O O O O O O O O O O O O O O O O       ",
+          "03|           O O O O O O O O O O O O O O O O O O O O           ",
+          "02|               O O O O O O O O O O O O O O O O               ",
+          "01|                 O O O O O O O O O O O O O O X               ",
+          "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------------------------------",
+          "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 ",
+          "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
+        ],
+        "total_seats": 500,
+        "available_seats": 500
+      },
+      "begin_time": "2023-04-20T15:15:00",
+      "end_time": "2023-04-20T16:55:00",
+      "date": "2023-04-20T00:00:00"
+    },
+    "account": {
+      "id": 7,
+      "emailAddress": "A",
+      "password": "A",
+      "fullName": "Admin",
+      "V.I.P.": false
+    },
+    "seats": [
+      "A-23"
+    ],
+    "snacks": [
+      {
+        "Snack": {
+          "name": "Brownie",
+          "price": 3.5,
+          "type_of_food": "Snack",
+          "allergies": "none"
+        },
+        "Quantity": 2
+      },
+      {
+        "Snack": {
+          "name": "Soda",
+          "price": 3.5,
+          "type_of_food": "Drink",
+          "allergies": "none"
+        },
+        "Quantity": 1
+      },
+      {
+        "Snack": {
+          "name": "Meatballs",
+          "price": 5,
+          "type_of_food": "Drink",
+          "allergies": "PP"
+        },
+        "Quantity": 1
+      },
+      {
+        "Snack": {
+          "name": "Iced Coffee",
+          "price": 4.5,
+          "type_of_food": "Drink",
+          "allergies": "none"
+        },
+        "Quantity": 1
+      },
+      {
+        "Snack": {
+          "name": "Fries",
+          "price": 4,
+          "type_of_food": "Snack",
+          "allergies": "none"
+        },
+        "Quantity": 1
+      }
+    ]
+  },
+  {
+    "running_movie": {
+      "movie": {
+        "id": 0,
+        "name": "Dune",
+        "genre": "Sci-Fi, Adventure",
+        "length": 155,
+        "age": 13,
+        "labels": "Violence \u0026 Gore"
+      },
+      "room": {
+        "id": 2,
+        "map": [
+          "N |     X X X O O O O O    ",
+          "M |   X X O O O O O O O O  ",
+          "L |   X X O O O O O O O O  ",
+          "K | O O X X X O O O O O O O",
+          "J | O O O O O O O O O O O O",
+          "I | O O O O O O O O O O O O",
+          "H | O O O O O O O O O O O O",
+          "G | O O O O O O O O O O O O",
+          "F | O O O O O O O O O O O O",
+          "E | O O O O O O O O O O O O",
+          "D | O O O O O O O O O O O O",
+          "C |   X X X X X X O O O O  ",
+          "B |     O O O O O O O O    ",
+          "A |     O X X X O O O O    ",
+          "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014",
+          "    1 2 3 4 5 6 7 8 9 1 1 1",
+          "                      0 1 2"
+        ],
+        "total_seats": 150,
+        "available_seats": 149
+      },
+      "begin_time": "2023-04-20T11:49:00",
+      "end_time": "2023-04-20T12:59:00",
+      "date": "2023-04-20T00:00:00"
+    },
+    "account": {
+      "id": 7,
+      "emailAddress": "A",
+      "password": "A",
+      "fullName": "Admin",
+      "V.I.P.": false
+    },
+    "seats": [
+      "N-3"
+    ],
+    "snacks": []
+  },
+  {
+    "running_movie": {
+      "movie": {
+        "id": 0,
+        "name": "Dune",
+        "genre": "Sci-Fi, Adventure",
+        "length": 155,
+        "age": 13,
+        "labels": "Violence \u0026 Gore"
+      },
+      "room": {
+        "id": 2,
+        "map": [
+          "N |     X X X O O O O X    ",
+          "M |   X X O O O O O O O O  ",
+          "L |   X X O O O O O O O O  ",
+          "K | O O X X X O O O O O O O",
+          "J | O O O O O O O O O O O O",
+          "I | O O O O O O O O O O O O",
+          "H | O O O O O O O O O O O O",
+          "G | O O O O O O O O O O O O",
+          "F | O O O O O O O O O O O O",
+          "E | O O O O O O O O O O O O",
+          "D | O O O O O O O O O O O O",
+          "C |   X X X X X X O O O O  ",
+          "B |     O O O O O O O O    ",
+          "A |     O X X X O O O O    ",
+          "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014",
+          "    1 2 3 4 5 6 7 8 9 1 1 1",
+          "                      0 1 2"
+        ],
+        "total_seats": 150,
+        "available_seats": 148
+      },
+      "begin_time": "2023-04-20T11:49:00",
+      "end_time": "2023-04-20T12:59:00",
+      "date": "2023-04-20T00:00:00"
+    },
+    "account": {
+      "id": 7,
+      "emailAddress": "A",
+      "password": "A",
+      "fullName": "Admin",
+      "V.I.P.": false
+    },
+    "seats": [
+      "N-10"
+    ],
+    "snacks": []
+  },
+  {
+    "running_movie": {
+      "movie": {
+        "id": 59,
+        "name": "Ford v Ferrari",
+        "genre": "Action",
+        "length": 152,
+        "age": 0,
+        "labels": "Violence \u0026 Language"
+      },
+      "room": {
+        "id": 2,
+        "map": [
+          "N |     X O O O O O O O    ",
+          "M |   O O O O O O O O O O  ",
+          "L |   O O O O O O O O O O  ",
+          "K | O O O O O O O O O O O O",
+          "J | O O O O O O O O O O O O",
+          "I | O O O O O O O O O O O O",
+          "H | O O O O O O O O O O O O",
+          "G | O O O O O O O O O O O O",
+          "F | O O O O O O O O O O O O",
+          "E | O O O O O O O O O O O O",
+          "D | O O O O O O O O O O O O",
+          "C |   O O O O O O O O O O  ",
+          "B |     O O O O O O O O    ",
+          "A |     O O O O O O O O    ",
+          "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014",
+          "    1 2 3 4 5 6 7 8 9 1 1 1",
+          "                      0 1 2"
+        ],
+        "total_seats": 150,
+        "available_seats": 149
+      },
+      "begin_time": "2023-05-19T12:16:00",
+      "end_time": "2023-05-19T14:15:00",
+      "date": "2023-05-19T00:00:00"
+    },
+    "account": {
+      "id": 7,
+      "emailAddress": "A",
+      "password": "A",
+      "fullName": "Admin",
+      "V.I.P.": false
+    },
+    "seats": [
+      "N-3"
+    ],
+    "snacks": []
+  }
+]

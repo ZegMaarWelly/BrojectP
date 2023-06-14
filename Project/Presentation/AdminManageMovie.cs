@@ -305,27 +305,29 @@ static class AdminManageMovie
     // Asks the user for the start date of the movie.
     static public DateTime Get_Start_Time(DateTime date)
     {
-        Console.WriteLine("Your start time: [HH:MM]");
-        string start_string = Console.ReadLine()!;
-        DateTime start_date = DateTime.ParseExact(start_string, "HH:mm", CultureInfo.InvariantCulture);
+        DateTime correct_start_date;
 
-        DateTime correct_start_date = new DateTime(date.Year, date.Month, date.Day, start_date.Hour, start_date.Minute, start_date.Second);
+        while (true)
+        {
+            Console.WriteLine("Your start time: [HH:MM]");
+            string start_string = Console.ReadLine();
+
+            try
+            {
+                DateTime start_date = DateTime.ParseExact(start_string, "HH:mm", CultureInfo.InvariantCulture);
+                correct_start_date = new DateTime(date.Year, date.Month, date.Day, start_date.Hour, start_date.Minute, start_date.Second);
+                break;
+            }
+            catch
+            {
+                Console.WriteLine("Invalid input. Please enter the start time in the format [HH:MM].");
+            }
+        }
 
         return correct_start_date;
     }
 
-    // Asks the user for the end date of the movie.
-    static public DateTime Get_End_Time(DateTime date)
-    {
-
-        Console.WriteLine("Your end time: [HH:MM]");
-        string start_string = Console.ReadLine()!;
-        DateTime start_date = DateTime.ParseExact(start_string, "HH:mm", CultureInfo.InvariantCulture);
-
-        DateTime correct_start_date = new DateTime(date.Year, date.Month, date.Day, start_date.Hour, start_date.Minute, start_date.Second);
-
-        return correct_start_date;
-    }
+   
 
 
     // Deletes a running movie from the list (and the json file)

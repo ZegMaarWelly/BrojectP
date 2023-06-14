@@ -135,7 +135,17 @@ static class Movies
                     movie_input = Convert.ToInt32(input_movie) - 1;
                     if (movie_input + 1 > running_movie_list.Count() || movie_input + 1 <= 0)
                     {
-                        Console.WriteLine("Invalid number; ");
+                        Console.WriteLine("Invalid number. ");
+                        continue;
+                    }
+                    if (running_movie_list[movie_input].Begin_Time < DateTime.Now)
+                    {
+                        Console.WriteLine("This movie has already started.\n");
+                        continue;
+                    }
+                    if (accountsLogic.Age_Of_Current_User() <= running_movie_list[movie_input].Movie.Age)
+                    {
+                        Console.WriteLine("You are too young to watch this movie.\n");
                         continue;
                     }
                     movie_success = true;
@@ -145,7 +155,7 @@ static class Movies
                 //Catches any type of exception.
                 catch
                 {
-                    Console.WriteLine("Invalid number; please enter a correct number");
+                    Console.WriteLine("Invalid number, please enter a correct number");
                 }
 
             }
@@ -164,7 +174,6 @@ static class Movies
     {
         //Opens a new runningmovieLogic with todays date.
         runningmovieLogic = new RunningMovieLogic(date);
-
         List<RunningMovieModel> running_movie_list = runningmovieLogic.Return_RunningMovie_List();
         Console.WriteLine($"Movies available on {date}");
 
@@ -173,8 +182,11 @@ static class Movies
         //Loops through the running movie list, and add the contents to the table.
         foreach (RunningMovieModel runningmovie in running_movie_list)
         {
-            string time = $"{runningmovie.Begin_Time.ToString("HH:mm")}-{runningmovie.End_Time.ToString("HH:mm")}";
-            table.AddRow(running_movie_list.IndexOf(runningmovie) + 1, runningmovie.Movie.Name, time, runningmovie.Room.ID, runningmovie.Room.Available_Seats);
+            if (runningmovie.Begin_Time >= DateTime.Now)
+            {
+                string time = $"{runningmovie.Begin_Time.ToString("HH:mm")}-{runningmovie.End_Time.ToString("HH:mm")}";
+                table.AddRow(running_movie_list.IndexOf(runningmovie) + 1, runningmovie.Movie.Name, time, runningmovie.Room.ID, runningmovie.Room.Available_Seats);
+            }
         }
         table.Options.EnableCount = false;
 
