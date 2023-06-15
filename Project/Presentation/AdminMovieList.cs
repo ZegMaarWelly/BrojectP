@@ -161,45 +161,53 @@ static class AdminMovieList
     // Length has to be expressed in numbers and will not accept anything but numbers
     static public int New_Movie_Length()
     {   
-        bool correct_price = false;
-        while (!correct_price)
+        while (true)
         {
             Console.WriteLine("\n > Enter the length of the movie in minutes in numbers: ");
             try
             {
                 string movie_length_string = Console.ReadLine();
                 int movie_length = Convert.ToInt32(movie_length_string);
-                return movie_length;
-                correct_price = true;
+                if (movie_length > 1)
+                {
+                    return movie_length;
+                }
+                else
+                {
+                    Console.WriteLine("Please enter a movie length greater than 1");
+                }
             }
             catch
             {
                 Console.WriteLine("Please enter only numbers");
             }
         }
-        return 0;
     }
 
     // Age has to be expressed in numbers and will not accept anything but numbers
     static public int New_Movie_Age()
     {
-        bool correct_age = false;
-        while (!correct_age)
+        while (true)
         {
             Console.WriteLine("\n > Enter the minumum age of the movie goer for this movie: ");
             try
             {
                 string movie_age_string = Console.ReadLine();
                 int movie_age = Convert.ToInt32(movie_age_string);
-                return movie_age;
-                correct_age = true;
+                if (movie_age >= 0)
+                {
+                    return movie_age;
+                }
+                else
+                {
+                    Console.WriteLine("Minimum age cannot be less then 0");
+                }
             }
             catch
             {
                 Console.WriteLine("Please enter only numbers");
             }
         }
-        return 0;
     }
 
     static public string New_Movie_Labels()
@@ -241,7 +249,6 @@ static class AdminMovieList
         string movie_labels = New_Movie_Labels();
         string movie_summary = New_Movie_Summary();
         Console.Clear();
-
         MovieListModel movie = new(movie_id, movie_name, movie_genre, movie_length, movie_age, movie_labels, movie_summary);
         while (true)
         {

@@ -1,4 +1,6 @@
 ﻿using System.Text.RegularExpressions;
+using System;
+using System.Security.Principal;
 
 //This class is not static so later on we can use inheritance and interfaces
 public class AccountsLogic : IAccountsLogic
@@ -16,6 +18,7 @@ public class AccountsLogic : IAccountsLogic
     }
     public List<AccountModel> Return_Account_List()
     {
+        _accounts = AccountsAccess.LoadAll();
         return _accounts;
     }
 
@@ -61,6 +64,12 @@ public class AccountsLogic : IAccountsLogic
             return account;
         }
         return null;
+    }
+
+    public void Delete_From_List(AccountModel account)
+    {
+        _accounts.Remove(account);
+        AccountsAccess.WriteAll(_accounts);
     }
 
     public void Add_To_List(AccountModel newAccount)
@@ -132,6 +141,11 @@ public class AccountsLogic : IAccountsLogic
         if (hasNoSpaces)
             return false;
 
+        string pattern = @"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$";
+        bool hasSymbols = Regex.IsMatch(email, pattern);
+        if (!hasSymbols)
+            return false;
+        
         return true;
     }
 
@@ -162,6 +176,40 @@ public class AccountsLogic : IAccountsLogic
             }
         }
         return It_Exist;
+    }
+
+    public AccountModel Find_User(string email)
+    {
+        foreach (AccountModel user in _accounts)
+        {
+            if (user.EmailAddress == email)
+            {
+                return user;
+            }
+        }
+        return null;
+    }
+
+    public void Update_User_VIP(bool value, AccountModel user)
+    {
+        user.Vip = value;
+        int accountsindex = _accounts.IndexOf(user);
+        _accounts[accountsindex] = user;
+        AccountsAccess.WriteAll(_accounts);
+    }
+
+    // Checks if a given user's name is in the list and returns the opposite of their VIP status
+    public AccountModel Return_User_VIP(string email)
+    {
+        foreach (AccountModel user in _accounts)
+        {
+            if (user.EmailAddress == email)
+            {
+                user.Vip = !user.Vip;
+                return user;
+            }
+        }
+        return null;
     }
 }
 

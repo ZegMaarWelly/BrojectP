@@ -27,7 +27,7 @@
         [TestMethod]
         public void Add_To_List_Successful()
         {
-            MovieListModel movie = new MovieListModel(55, "Test Movie", "Action", 120, 12, "PG-13","sum");
+            MovieListModel movie = new MovieListModel(55, "Test Movie", "Action", 120, 12, "PG-13", "This will be the movie's summary");
             int initialCount = _movieListLogic.Return_Movie_List().Count;
 
             _movieListLogic.Add_To_List(movie);
