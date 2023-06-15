@@ -14,7 +14,7 @@ static class AdminMenu
         Console.ResetColor();
         Console.WriteLine("What do you want to do?.");
         Console.WriteLine(" > [1] add/remove/change snacks.");
-        Console.WriteLine(" > [2] add items to shopping cart TEST.");
+        Console.WriteLine(" > [2] change prices");
         Console.WriteLine(" > [3] admin manage accounts.");
         Console.WriteLine(" > [4] go the the beginning of the program.");
         Console.WriteLine(" > [5] add/remove/change movies.");
@@ -30,7 +30,7 @@ static class AdminMenu
         else if (input == "2")
         {
             Console.Clear();
-            MenuSnack.Start();
+            AdminPrices.Start();
         }
         else if (input == "3")
         {
