@@ -45,6 +45,16 @@
         return seats;
     }
 
+    //Changes the value of the price based on an argument.
+    public void Change_Price(double value, RoomModel room)
+    {
+        room.Price_Per_Seat = value;
+        int snackindex = _rooms.IndexOf(room);
+        _rooms[snackindex] = room;
+        RoomAccess.WriteAll(_rooms);
+
+    }
+
     // makes a new room for the amdin depending on the inputs it sets the size of the room.
     public void Add_Room(int row, int column)
     {
@@ -100,7 +110,7 @@
 
        
         int id = Find_Next_ID();
-        RoomModel real_room = new(id, room, total_available, total_available);
+        RoomModel real_room = new(id, room, total_available, total_available,7.99);
         Add_To_List(real_room);
 
     }

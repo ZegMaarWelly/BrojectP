@@ -12,13 +12,16 @@ public class RoomModel
 
     [JsonPropertyName("available_seats")]
     public int Available_Seats { get; set; }
+    [JsonPropertyName("price_per_seat")]
+    public double Price_Per_Seat { get; set; }
 
-    public RoomModel(int id, List<string> map, int total_seats, int available_seats)
+    public RoomModel(int id, List<string> map, int total_seats, int available_seats, double price_per_seat)
     {
         ID = id;
         Map = map;
         Total_Seats = total_seats;
         Available_Seats = available_seats;
+        Price_Per_Seat = price_per_seat;
     }
 
     public override string ToString()

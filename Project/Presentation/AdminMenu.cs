@@ -20,6 +20,7 @@ static class AdminMenu
         Console.WriteLine(" > [5] add/remove movies.");
         Console.WriteLine(" > [6] Admin Manage Movie.");
         Console.WriteLine(" > [7] Add a Movie Room");
+        Console.WriteLine(" > [8] Change prices ");
         Console.WriteLine(" > [8] Quit the Program.");
 
         string input = Console.ReadLine()!;
@@ -68,13 +69,13 @@ static class AdminMenu
         }
         else if (input == "8")
         {
+            Console.Clear();
+            AdminPrices.Start();
+        }
+        else if (input == "9")
+        {
             Environment.Exit(0);
         }
-        //else if (input == "9")
-        //{
-        //    Console.Clear();
-        //    Reservation.Make_Reservation(AdminManageMovie.Get_Running_Movie_To_Be_Changed("2023-04-20"));
-        //}
         else
         {
             Console.WriteLine("Invalid input");

@@ -66,7 +66,7 @@
             (List<string> new_map, string seat) = ScreenRoomLogic.screening_room_reservation(runningmovie.Room.Map);
 
             runningmovie.Room.Available_Seats -= 1;
-            total_Price += 11.99;
+            total_Price += runningmovie.Room.Price_Per_Seat;
 
             list_of_seats.Add(seat);
         }
