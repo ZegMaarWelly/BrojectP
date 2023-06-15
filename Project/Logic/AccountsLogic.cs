@@ -211,5 +211,19 @@ public class AccountsLogic : IAccountsLogic
         }
         return null;
     }
+
+    public double From_Age_Get_Discount(double price)
+    {
+        int age = Age_Of_Current_User();
+        if(12>= age && age< 18)
+        {
+            price = price * 0.65;
+        }
+        else if(age<12)
+        {
+            price = price * 0.35;
+        }
+        return price;
+    }
 }
 

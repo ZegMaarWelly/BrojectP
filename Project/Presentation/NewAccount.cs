@@ -105,7 +105,7 @@ static class NewAccount
                    accountsLogic.Add_To_List(newAcc);
                    Console.WriteLine("\nYour account has been succesfully created\n > Press any button to return to the main menu");
                     Console.ReadKey();
-                   Menu.Start();
+                Menu.Menu_When_Logged_In();
                 } 
             
         }

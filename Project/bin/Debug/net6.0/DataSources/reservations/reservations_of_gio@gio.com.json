@@ -37,7 +37,8 @@
           "                      0 1 2 3 4 5 6 7 8 "
         ],
         "total_seats": 300,
-        "available_seats": 299
+        "available_seats": 299,
+        "price_per_seat": 0
       },
       "begin_time": "2023-05-19T15:16:00",
       "end_time": "2023-05-19T17:15:00",
@@ -90,7 +91,8 @@
           "    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5"
         ],
         "total_seats": 225,
-        "available_seats": 223
+        "available_seats": 223,
+        "price_per_seat": 0
       },
       "begin_time": "2023-05-19T12:12:00",
       "end_time": "2023-05-19T14:14:00",
@@ -160,7 +162,8 @@
           "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
         ],
         "total_seats": 500,
-        "available_seats": 498
+        "available_seats": 498,
+        "price_per_seat": 0
       },
       "begin_time": "2023-05-23T12:15:00",
       "end_time": "2023-05-23T13:51:00",
@@ -218,7 +221,8 @@
           "                      0 1 2 3 4 5 6 7 8 "
         ],
         "total_seats": 300,
-        "available_seats": 298
+        "available_seats": 298,
+        "price_per_seat": 0
       },
       "begin_time": "2023-05-25T06:22:00",
       "end_time": "2023-05-25T09:11:00",
@@ -288,7 +292,8 @@
           "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
         ],
         "total_seats": 500,
-        "available_seats": 499
+        "available_seats": 499,
+        "price_per_seat": 0
       },
       "begin_time": "2023-05-28T19:45:00",
       "end_time": "2023-05-28T22:29:00",
@@ -345,7 +350,8 @@
           "                      0 1 2 3 4 5 6 7 8 "
         ],
         "total_seats": 300,
-        "available_seats": 298
+        "available_seats": 298,
+        "price_per_seat": 0
       },
       "begin_time": "2023-05-31T20:22:00",
       "end_time": "2023-05-31T22:45:00",
@@ -420,7 +426,8 @@
           "    1 2 3 4"
         ],
         "total_seats": 100,
-        "available_seats": 98
+        "available_seats": 98,
+        "price_per_seat": 0
       },
       "begin_time": "2023-06-02T08:02:00",
       "end_time": "2023-06-02T10:08:00",
@@ -478,7 +485,8 @@
           "                      0 1 2 3 4 5 6 7 8 "
         ],
         "total_seats": 300,
-        "available_seats": 299
+        "available_seats": 299,
+        "price_per_seat": 0
       },
       "begin_time": "2023-06-06T06:17:00",
       "end_time": "2023-06-06T08:21:00",
@@ -535,7 +543,8 @@
           "                      0 1 2 3 4 5 6 7 8 "
         ],
         "total_seats": 300,
-        "available_seats": 298
+        "available_seats": 298,
+        "price_per_seat": 0
       },
       "begin_time": "2023-06-14T19:11:00",
       "end_time": "2023-06-14T21:26:00",
@@ -614,7 +623,8 @@
           "                      0 1 2 3 4 5 6 7 8 "
         ],
         "total_seats": 300,
-        "available_seats": 297
+        "available_seats": 297,
+        "price_per_seat": 0
       },
       "begin_time": "2023-06-14T19:11:00",
       "end_time": "2023-06-14T21:26:00",
@@ -682,7 +692,8 @@
           "                      0 1 2 3 4 5 6 7 8 "
         ],
         "total_seats": 300,
-        "available_seats": 295
+        "available_seats": 295,
+        "price_per_seat": 0
       },
       "begin_time": "2023-06-14T19:11:00",
       "end_time": "2023-06-14T21:26:00",
@@ -698,6 +709,64 @@
     },
     "seats": [
       "N-5"
+    ],
+    "snacks": []
+  },
+  {
+    "running_movie": {
+      "movie": {
+        "id": 53,
+        "name": "1917",
+        "genre": "War, Drama",
+        "length": 119,
+        "age": 17,
+        "labels": "Violence \u0026 Language",
+        "summary": "1917, an immersive war film, follows two British soldiers, Schofield and Blake, on a perilous \nmission during World War I. Tasked with delivering a crucial message across enemy territory, \nthey race against time and face unimaginable challenges. Through a single continuous shot, \nthe film captures the brutality and heroism of war, highlighting the bond between soldiers \nand the indomitable spirit in the face of adversity."
+      },
+      "room": {
+        "id": 7,
+        "map": [
+          "S |   O O O O O O O O O O O O O O O O   ",
+          "R |   O O O O O O O O O O O O O O O O   ",
+          "Q |   O O O O O O O O O O O O O O O O   ",
+          "P |   O O O O O O O O O O O O O O O O   ",
+          "O |   O O O O O O O O O O O O O O O O   ",
+          "N |   O O O O O O O O O O O O O O O O   ",
+          "M | O O O O O O O O O O O O O O O O O O ",
+          "L | O O O O O O O O O O O O O O O O O O ",
+          "K | O O O O O O O O O O O O O O O O O O ",
+          "J | O O O O O O O O O O O O O O O O O O ",
+          "I | O O O O O O O O O O O O O O O O O O ",
+          "H |   O O O O O O O O O O O O O O O O   ",
+          "G |   O O O O O O O O O O O O O O O O   ",
+          "F |   O O O O O O O O O O O O O O O O   ",
+          "E |     O O O O O O O O O O O O O O     ",
+          "D |     O O O O O O O O O O O O O O     ",
+          "C |     O O O O O O O O O O O O O O     ",
+          "B |       O X O O O O O O O O O O       ",
+          "A |       O O O O O O O O O O O O       ",
+          "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------",
+          "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 ",
+          "                      0 1 2 3 4 5 6 7 8 "
+        ],
+        "total_seats": 300,
+        "available_seats": 299,
+        "price_per_seat": 7.99
+      },
+      "begin_time": "2023-06-15T15:12:00",
+      "end_time": "2023-06-15T17:11:00",
+      "date": "2023-06-15T00:00:00"
+    },
+    "account": {
+      "id": 10,
+      "emailAddress": "gio@gio.com",
+      "password": "Appelsap123.",
+      "date_of_birth": "0001-01-01T00:00:00",
+      "fullName": "Giovanni Vonk",
+      "V.I.P.": false
+    },
+    "seats": [
+      "B-5"
     ],
     "snacks": []
   }
