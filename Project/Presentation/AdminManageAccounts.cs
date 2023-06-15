@@ -99,7 +99,7 @@ static class AdminMananageAccount
         AccountModel selected_account = null;
         string email = Console.ReadLine();
         selected_account = accountsLogic.Find_User(email);
-        if (email == null)
+        if (selected_account == null)
         {
             Console.WriteLine("\nUser was not found, press any key to admin manage accounts menu");
             Console.ReadKey();
