@@ -149,6 +149,8 @@ static class Movies
                         Console.WriteLine("You are too young to watch this movie.\n");
                         continue;
                     }
+
+                   
                     movie_success = true;
 
 
@@ -162,6 +164,18 @@ static class Movies
             }
 
             RunningMovieModel running_movie_to_be_watched = running_movie_list[movie_input];
+
+
+            //Can't reserve a movie if you already have a reservation on that time.
+            ReservationLogic reservationLogic = new(accountsLogic.Return_Current_User().EmailAddress);
+            if (reservationLogic.Overlapping_Reservation(running_movie_to_be_watched))
+            {
+                Console.WriteLine("You already have a reservation on this time!");
+                Thread.Sleep(1000);
+                Console.WriteLine("Going back to menu....");
+                Thread.Sleep(1000);
+                Menu.Start();
+            }
             string summary = running_movie_to_be_watched.Movie.Summary;
             Console.WriteLine();
             Console.WriteLine($"Here is some additional information about the movie:\nGenre(s): {running_movie_to_be_watched.Movie.Genre}\n\nParental labels: {running_movie_to_be_watched.Movie.Labels}\n\nSynopsis: {running_movie_to_be_watched.Movie.Summary}\n");

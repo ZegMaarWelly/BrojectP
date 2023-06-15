@@ -294,10 +294,11 @@
 
     }
 
+    //Cancels the reservation
     public static void Cancel_Reservation(List<ReservationModel> reservation_list)
     {
         Console.Clear();
-        //Turns the list into an array
+
         //Prints the reservations
         int count = 1;
         foreach (ReservationModel reservation in reservation_list)
@@ -307,6 +308,8 @@
             count++;
 
         }
+
+        //asks users for their number.
         int reservation_id = -1;
         bool reservation_success = false;
         while (!reservation_success)

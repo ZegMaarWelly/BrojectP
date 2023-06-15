@@ -6,7 +6,8 @@
       "genre": "Musical, Romance",
       "length": 128,
       "age": 10,
-      "labels": "Romance \u0026 Language"
+      "labels": "Romance \u0026 Language",
+      "summary": null
     },
     "room": {
       "id": 5,
@@ -35,7 +36,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 300
+      "available_seats": 300,
+      "price_per_seat": 0
     },
     "begin_time": "2024-06-10T07:04:00",
     "end_time": "2024-06-10T09:12:00",
@@ -48,7 +50,8 @@
       "genre": "Family, Adventure",
       "length": 91,
       "age": 5,
-      "labels": "None"
+      "labels": "None",
+      "summary": null
     },
     "room": {
       "id": 7,
@@ -77,7 +80,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 300
+      "available_seats": 300,
+      "price_per_seat": 0
     },
     "begin_time": "2024-06-10T06:11:00",
     "end_time": "2024-06-10T07:42:00",
@@ -90,7 +94,8 @@
       "genre": "Mystery, Comedy",
       "length": 130,
       "age": 13,
-      "labels": "Violence \u0026 Language"
+      "labels": "Violence \u0026 Language",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -119,7 +124,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 300
+      "available_seats": 300,
+      "price_per_seat": 0
     },
     "begin_time": "2024-06-10T14:51:00",
     "end_time": "2024-06-10T17:01:00",
@@ -132,7 +138,8 @@
       "genre": "Thriller, Comedy",
       "length": 95,
       "age": 16,
-      "labels": "Drugs, Fear, Harsh language \u0026 Violence"
+      "labels": "Drugs, Fear, Harsh language \u0026 Violence",
+      "summary": null
     },
     "room": {
       "id": 5,
@@ -161,7 +168,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 300
+      "available_seats": 300,
+      "price_per_seat": 0
     },
     "begin_time": "2024-06-10T18:22:00",
     "end_time": "2024-06-10T19:57:00",
@@ -174,7 +182,8 @@
       "genre": "Sci-Fi, Thriller",
       "length": 93,
       "age": 12,
-      "labels": "Fear"
+      "labels": "Fear",
+      "summary": null
     },
     "room": {
       "id": 10,
@@ -204,7 +213,8 @@
         "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
       ],
       "total_seats": 500,
-      "available_seats": 500
+      "available_seats": 500,
+      "price_per_seat": 0
     },
     "begin_time": "2024-06-10T15:53:00",
     "end_time": "2024-06-10T17:26:00",
@@ -217,7 +227,8 @@
       "genre": "War, Drama",
       "length": 119,
       "age": 17,
-      "labels": "Violence \u0026 Language"
+      "labels": "Violence \u0026 Language",
+      "summary": null
     },
     "room": {
       "id": 11,
@@ -247,7 +258,8 @@
         "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
       ],
       "total_seats": 500,
-      "available_seats": 500
+      "available_seats": 500,
+      "price_per_seat": 0
     },
     "begin_time": "2024-06-10T11:32:00",
     "end_time": "2024-06-10T13:31:00",
@@ -260,7 +272,8 @@
       "genre": "Action, Adventure",
       "length": 151,
       "age": 13,
-      "labels": "Violence"
+      "labels": "Violence",
+      "summary": null
     },
     "room": {
       "id": 9,
@@ -290,7 +303,8 @@
         "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
       ],
       "total_seats": 500,
-      "available_seats": 500
+      "available_seats": 500,
+      "price_per_seat": 0
     },
     "begin_time": "2024-06-10T15:10:00",
     "end_time": "2024-06-10T17:41:00",
@@ -303,7 +317,8 @@
       "genre": "Animation, Children, Comedy",
       "length": 95,
       "age": 0,
-      "labels": "None"
+      "labels": "None",
+      "summary": null
     },
     "room": {
       "id": 2,
@@ -327,7 +342,8 @@
         "                      0 1 2"
       ],
       "total_seats": 150,
-      "available_seats": 150
+      "available_seats": 150,
+      "price_per_seat": 0
     },
     "begin_time": "2024-06-10T07:57:00",
     "end_time": "2024-06-10T09:32:00",
@@ -340,7 +356,8 @@
       "genre": "Musical, Romance",
       "length": 128,
       "age": 10,
-      "labels": "Romance \u0026 Language"
+      "labels": "Romance \u0026 Language",
+      "summary": null
     },
     "room": {
       "id": 13,
@@ -375,7 +392,8 @@
         "    1 2 3 4"
       ],
       "total_seats": 100,
-      "available_seats": 100
+      "available_seats": 100,
+      "price_per_seat": 0
     },
     "begin_time": "2024-06-10T10:13:00",
     "end_time": "2024-06-10T12:21:00",
@@ -388,7 +406,8 @@
       "genre": "Sci-Fi, Adventure",
       "length": 123,
       "age": 13,
-      "labels": "Violence"
+      "labels": "Violence",
+      "summary": null
     },
     "room": {
       "id": 10,
@@ -418,7 +437,8 @@
         "                      0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 "
       ],
       "total_seats": 500,
-      "available_seats": 500
+      "available_seats": 500,
+      "price_per_seat": 0
     },
     "begin_time": "2024-06-10T09:49:00",
     "end_time": "2024-06-10T11:52:00",
@@ -431,7 +451,8 @@
       "genre": "Animation, Adventure",
       "length": 96,
       "age": 0,
-      "labels": "None"
+      "labels": "None",
+      "summary": null
     },
     "room": {
       "id": 14,
@@ -456,7 +477,8 @@
         "    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5"
       ],
       "total_seats": 225,
-      "available_seats": 225
+      "available_seats": 225,
+      "price_per_seat": 0
     },
     "begin_time": "2024-06-10T16:05:00",
     "end_time": "2024-06-10T17:41:00",
@@ -469,7 +491,8 @@
       "genre": "Adventure, Sci-Fi, Comedy",
       "length": 140,
       "age": 16,
-      "labels": "Harsh language"
+      "labels": "Harsh language",
+      "summary": null
     },
     "room": {
       "id": 2,
@@ -493,7 +516,8 @@
         "                      0 1 2"
       ],
       "total_seats": 150,
-      "available_seats": 150
+      "available_seats": 150,
+      "price_per_seat": 0
     },
     "begin_time": "2024-06-10T10:00:00",
     "end_time": "2024-06-10T12:20:00",
@@ -506,7 +530,8 @@
       "genre": "Adventure, Sci-Fi, Comedy",
       "length": 140,
       "age": 16,
-      "labels": "Harsh language"
+      "labels": "Harsh language",
+      "summary": null
     },
     "room": {
       "id": 2,
@@ -530,7 +555,8 @@
         "                      0 1 2"
       ],
       "total_seats": 150,
-      "available_seats": 150
+      "available_seats": 150,
+      "price_per_seat": 0
     },
     "begin_time": "2024-06-10T10:00:00",
     "end_time": "2024-06-10T12:20:00",
@@ -543,7 +569,8 @@
       "genre": "Adventure, Sci-Fi, Comedy",
       "length": 140,
       "age": 16,
-      "labels": "Harsh language"
+      "labels": "Harsh language",
+      "summary": null
     },
     "room": {
       "id": 2,
@@ -567,7 +594,8 @@
         "                      0 1 2"
       ],
       "total_seats": 150,
-      "available_seats": 150
+      "available_seats": 150,
+      "price_per_seat": 0
     },
     "begin_time": "2024-06-10T10:00:00",
     "end_time": "2024-06-10T12:20:00",
@@ -580,7 +608,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 2,
@@ -604,7 +633,8 @@
         "                      0 1 2"
       ],
       "total_seats": 150,
-      "available_seats": 150
+      "available_seats": 150,
+      "price_per_seat": 0
     },
     "begin_time": "2024-06-10T10:00:00",
     "end_time": "2024-06-10T12:20:00",
@@ -617,7 +647,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -646,7 +677,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 300
+      "available_seats": 300,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T04:00:35.6295451+02:00",
     "end_time": "2024-06-10T12:20:00",
@@ -659,7 +691,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -688,7 +721,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 300
+      "available_seats": 300,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T07:09:11.9233364+02:00",
     "end_time": "2023-06-11T08:49:11.9821669+02:00",
@@ -701,13 +735,15 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
       "map": [],
       "total_seats": 300,
-      "available_seats": 300
+      "available_seats": 300,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T07:23:51.5544064+02:00",
     "end_time": "2023-06-11T09:03:51.596319+02:00",
@@ -720,13 +756,15 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
       "map": [],
       "total_seats": 300,
-      "available_seats": 300
+      "available_seats": 300,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T07:29:33.1048939+02:00",
     "end_time": "2023-06-11T09:09:33.1669312+02:00",
@@ -739,13 +777,15 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
       "map": [],
       "total_seats": 300,
-      "available_seats": 300
+      "available_seats": 300,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T07:30:30.9397188+02:00",
     "end_time": "2023-06-11T09:10:30.9810443+02:00",
@@ -758,7 +798,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -787,7 +828,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T07:32:00.0597587+02:00",
     "end_time": "2023-06-11T09:12:00.106561+02:00",
@@ -800,7 +842,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -829,7 +872,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T07:32:50.4492487+02:00",
     "end_time": "2023-06-11T09:12:50.4983509+02:00",
@@ -842,7 +886,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -871,7 +916,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T07:34:09.2447268+02:00",
     "end_time": "2023-06-11T09:14:09.2905321+02:00",
@@ -884,7 +930,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -913,7 +960,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T07:43:00.2488974+02:00",
     "end_time": "2023-06-11T09:23:00.308517+02:00",
@@ -926,7 +974,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -955,7 +1004,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T07:43:26.2340054+02:00",
     "end_time": "2023-06-11T09:23:26.2911002+02:00",
@@ -968,7 +1018,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -997,7 +1048,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T07:49:02.4261039+02:00",
     "end_time": "2023-06-11T09:29:02.4824527+02:00",
@@ -1010,7 +1062,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1039,7 +1092,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T07:52:44.8020352+02:00",
     "end_time": "2023-06-11T09:32:44.8499937+02:00",
@@ -1052,7 +1106,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1081,7 +1136,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T07:53:34.8606261+02:00",
     "end_time": "2023-06-11T09:33:34.9155709+02:00",
@@ -1094,7 +1150,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1123,7 +1180,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T07:56:57.7276331+02:00",
     "end_time": "2023-06-11T09:36:57.7967671+02:00",
@@ -1136,7 +1194,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1165,7 +1224,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:01:54.9946969+02:00",
     "end_time": "2023-06-11T09:41:55.0457553+02:00",
@@ -1178,7 +1238,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1207,7 +1268,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:02:22.7537629+02:00",
     "end_time": "2023-06-11T09:42:22.8139721+02:00",
@@ -1220,7 +1282,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1249,7 +1312,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:02:49.3268199+02:00",
     "end_time": "2023-06-11T09:42:49.3781422+02:00",
@@ -1262,7 +1326,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1291,7 +1356,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:07:05.6091469+02:00",
     "end_time": "2023-06-11T09:47:05.6635823+02:00",
@@ -1304,7 +1370,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1333,7 +1400,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:08:04.0863055+02:00",
     "end_time": "2023-06-11T09:48:04.1412113+02:00",
@@ -1346,7 +1414,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1375,7 +1444,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:10:30.6284914+02:00",
     "end_time": "2023-06-11T09:50:30.6812806+02:00",
@@ -1388,7 +1458,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1417,7 +1488,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:11:39.9153412+02:00",
     "end_time": "2023-06-11T09:51:39.9578901+02:00",
@@ -1430,7 +1502,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1459,7 +1532,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:12:30.393599+02:00",
     "end_time": "2023-06-11T09:52:30.4493472+02:00",
@@ -1472,7 +1546,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1501,7 +1576,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:14:09.6912289+02:00",
     "end_time": "2023-06-11T09:54:09.7401773+02:00",
@@ -1514,7 +1590,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1543,7 +1620,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:15:36.2905279+02:00",
     "end_time": "2023-06-11T09:55:36.3398939+02:00",
@@ -1556,7 +1634,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1585,7 +1664,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:15:47.9267973+02:00",
     "end_time": "2023-06-11T09:55:47.9753493+02:00",
@@ -1598,7 +1678,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1627,7 +1708,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:15:58.2026498+02:00",
     "end_time": "2023-06-11T09:55:58.2598751+02:00",
@@ -1640,7 +1722,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1669,7 +1752,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:16:13.9666781+02:00",
     "end_time": "2023-06-11T09:56:14.0127542+02:00",
@@ -1682,7 +1766,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1711,7 +1796,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:29:09.9934634+02:00",
     "end_time": "2023-06-11T10:09:10.0434048+02:00",
@@ -1724,7 +1810,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1753,7 +1840,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:29:26.101499+02:00",
     "end_time": "2023-06-11T10:09:26.1843568+02:00",
@@ -1766,7 +1854,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1795,7 +1884,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:29:54.11383+02:00",
     "end_time": "2023-06-11T10:09:54.1663379+02:00",
@@ -1808,7 +1898,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1837,7 +1928,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:31:40.0149307+02:00",
     "end_time": "2023-06-11T10:11:40.0607724+02:00",
@@ -1850,7 +1942,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1879,7 +1972,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:33:20.2265466+02:00",
     "end_time": "2023-06-11T10:13:20.2795494+02:00",
@@ -1892,7 +1986,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1921,7 +2016,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:34:48.1718845+02:00",
     "end_time": "2023-06-11T10:14:48.2243664+02:00",
@@ -1934,7 +2030,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -1963,7 +2060,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:36:54.4003346+02:00",
     "end_time": "2023-06-11T10:16:54.4432367+02:00",
@@ -1976,7 +2074,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2005,7 +2104,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:37:08.6198497+02:00",
     "end_time": "2023-06-11T10:17:08.6702732+02:00",
@@ -2018,7 +2118,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2047,7 +2148,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T08:40:19.6623187+02:00",
     "end_time": "2023-06-11T10:20:19.7158092+02:00",
@@ -2060,7 +2162,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2089,7 +2192,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:40:56.7736086+02:00",
     "end_time": "2023-06-11T13:20:56.83898+02:00",
@@ -2102,7 +2206,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2131,7 +2236,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:41:07.67361+02:00",
     "end_time": "2023-06-11T13:21:07.718961+02:00",
@@ -2144,7 +2250,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2173,7 +2280,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:41:25.8710645+02:00",
     "end_time": "2023-06-11T13:21:25.9323964+02:00",
@@ -2186,7 +2294,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2215,7 +2324,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:41:35.6670457+02:00",
     "end_time": "2023-06-11T13:21:35.7184325+02:00",
@@ -2228,7 +2338,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2257,7 +2368,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:41:47.07238+02:00",
     "end_time": "2023-06-11T13:21:47.1254596+02:00",
@@ -2270,7 +2382,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2299,7 +2412,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:41:55.9891604+02:00",
     "end_time": "2023-06-11T13:21:56.0422357+02:00",
@@ -2312,7 +2426,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2341,7 +2456,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:42:07.4844475+02:00",
     "end_time": "2023-06-11T13:22:07.5548638+02:00",
@@ -2354,7 +2470,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2383,7 +2500,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:42:14.1272091+02:00",
     "end_time": "2023-06-11T13:22:14.1823681+02:00",
@@ -2396,7 +2514,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2425,7 +2544,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:42:20.2768696+02:00",
     "end_time": "2023-06-11T13:22:20.345435+02:00",
@@ -2438,7 +2558,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2467,7 +2588,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:42:25.9922101+02:00",
     "end_time": "2023-06-11T13:22:26.043839+02:00",
@@ -2480,7 +2602,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2509,7 +2632,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:42:44.4301441+02:00",
     "end_time": "2023-06-11T13:22:44.4895159+02:00",
@@ -2522,7 +2646,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2551,7 +2676,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:42:51.2447985+02:00",
     "end_time": "2023-06-11T13:22:51.3012326+02:00",
@@ -2564,7 +2690,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2593,7 +2720,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:44:55.1620133+02:00",
     "end_time": "2023-06-11T13:24:55.2162724+02:00",
@@ -2606,7 +2734,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2635,7 +2764,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:45:11.2745806+02:00",
     "end_time": "2023-06-11T13:25:11.3361916+02:00",
@@ -2648,7 +2778,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2677,7 +2808,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:45:26.1726267+02:00",
     "end_time": "2023-06-11T13:25:26.2208197+02:00",
@@ -2690,7 +2822,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2719,7 +2852,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:46:18.4455738+02:00",
     "end_time": "2023-06-11T13:26:18.5002623+02:00",
@@ -2732,7 +2866,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2761,7 +2896,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:46:25.2041363+02:00",
     "end_time": "2023-06-11T13:26:25.2581999+02:00",
@@ -2774,7 +2910,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2803,7 +2940,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:47:11.1266353+02:00",
     "end_time": "2023-06-11T13:27:11.1894578+02:00",
@@ -2816,7 +2954,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2845,7 +2984,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:47:23.6006013+02:00",
     "end_time": "2023-06-11T13:27:23.6671701+02:00",
@@ -2858,7 +2998,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2887,7 +3028,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:47:32.5006124+02:00",
     "end_time": "2023-06-11T13:27:32.5575936+02:00",
@@ -2900,7 +3042,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2929,7 +3072,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:47:44.9147785+02:00",
     "end_time": "2023-06-11T13:27:44.9669821+02:00",
@@ -2942,7 +3086,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -2971,7 +3116,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:48:06.3601254+02:00",
     "end_time": "2023-06-11T13:28:06.4217227+02:00",
@@ -2984,7 +3130,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3013,7 +3160,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:48:17.7266823+02:00",
     "end_time": "2023-06-11T13:28:17.8063069+02:00",
@@ -3026,7 +3174,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3055,7 +3204,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:48:28.2654499+02:00",
     "end_time": "2023-06-11T13:28:28.3192077+02:00",
@@ -3068,7 +3218,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3097,7 +3248,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:49:34.2078227+02:00",
     "end_time": "2023-06-11T13:29:34.2700584+02:00",
@@ -3110,7 +3262,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3139,7 +3292,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:49:49.2579475+02:00",
     "end_time": "2023-06-11T13:29:49.3179532+02:00",
@@ -3152,7 +3306,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3181,7 +3336,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T11:49:57.7801595+02:00",
     "end_time": "2023-06-11T13:29:57.8341075+02:00",
@@ -3194,7 +3350,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3223,7 +3380,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T12:33:56.8577672+02:00",
     "end_time": "2023-06-11T14:13:56.8914437+02:00",
@@ -3236,7 +3394,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3265,7 +3424,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T12:39:55.3494618+02:00",
     "end_time": "2023-06-11T14:19:55.3815289+02:00",
@@ -3278,7 +3438,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3307,7 +3468,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T13:04:47.7956777+02:00",
     "end_time": "2023-06-11T14:44:47.8246044+02:00",
@@ -3320,7 +3482,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3349,7 +3512,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T13:05:45.787588+02:00",
     "end_time": "2023-06-11T14:45:45.819982+02:00",
@@ -3362,7 +3526,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3391,7 +3556,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T13:06:25.8889141+02:00",
     "end_time": "2023-06-11T14:46:25.9181377+02:00",
@@ -3404,7 +3570,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3433,7 +3600,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T13:06:34.2519669+02:00",
     "end_time": "2023-06-11T14:46:34.2805951+02:00",
@@ -3446,7 +3614,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3475,7 +3644,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T13:07:36.6220639+02:00",
     "end_time": "2023-06-11T14:47:36.6508097+02:00",
@@ -3488,7 +3658,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3517,7 +3688,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T13:07:56.8999736+02:00",
     "end_time": "2023-06-11T14:47:56.9278388+02:00",
@@ -3530,7 +3702,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3559,7 +3732,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T13:08:12.1857384+02:00",
     "end_time": "2023-06-11T14:48:12.2153728+02:00",
@@ -3572,7 +3746,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3601,7 +3776,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T13:11:24.9603054+02:00",
     "end_time": "2023-06-11T14:51:24.9945209+02:00",
@@ -3614,7 +3790,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3643,7 +3820,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T13:11:28.7606108+02:00",
     "end_time": "2023-06-11T14:51:28.796579+02:00",
@@ -3656,7 +3834,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3685,7 +3864,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T13:13:24.3121362+02:00",
     "end_time": "2023-06-11T14:53:24.3593693+02:00",
@@ -3698,7 +3878,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3727,7 +3908,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-11T13:13:36.048031+02:00",
     "end_time": "2023-06-11T14:53:36.0793173+02:00",
@@ -3740,7 +3922,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3769,7 +3952,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-12T04:12:35.796612+02:00",
     "end_time": "2023-06-12T05:52:35.8281446+02:00",
@@ -3782,7 +3966,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3811,7 +3996,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-12T04:15:28.9294471+02:00",
     "end_time": "2023-06-12T05:55:28.9542172+02:00",
@@ -3824,7 +4010,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3853,7 +4040,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-12T04:45:03.2046704+02:00",
     "end_time": "2023-06-12T06:25:03.2337486+02:00",
@@ -3866,7 +4054,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3895,7 +4084,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-12T04:45:54.3320881+02:00",
     "end_time": "2023-06-12T06:25:54.3642051+02:00",
@@ -3908,7 +4098,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3937,7 +4128,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-12T04:46:26.6386593+02:00",
     "end_time": "2023-06-12T06:26:26.6658023+02:00",
@@ -3950,7 +4142,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -3979,7 +4172,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-12T04:46:36.6376178+02:00",
     "end_time": "2023-06-12T06:26:36.6664433+02:00",
@@ -3992,7 +4186,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -4021,7 +4216,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-12T04:48:04.6266641+02:00",
     "end_time": "2023-06-12T06:28:04.6534611+02:00",
@@ -4034,7 +4230,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -4063,7 +4260,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-12T04:48:11.0045727+02:00",
     "end_time": "2023-06-12T06:28:11.0349895+02:00",
@@ -4076,7 +4274,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -4105,7 +4304,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-12T05:56:33.0156784+02:00",
     "end_time": "2023-06-12T07:36:33.0485337+02:00",
@@ -4118,7 +4318,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -4147,7 +4348,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-12T05:58:29.2876361+02:00",
     "end_time": "2023-06-12T07:38:29.3348876+02:00",
@@ -4160,7 +4362,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -4189,7 +4392,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-12T05:58:38.0182777+02:00",
     "end_time": "2023-06-12T07:38:38.0498537+02:00",
@@ -4202,7 +4406,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -4231,7 +4436,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-12T06:00:38.1849591+02:00",
     "end_time": "2023-06-12T07:40:38.2117451+02:00",
@@ -4244,7 +4450,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -4273,7 +4480,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-12T06:02:52.8219916+02:00",
     "end_time": "2023-06-12T07:42:52.8486831+02:00",
@@ -4286,7 +4494,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -4315,7 +4524,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-12T06:03:05.360002+02:00",
     "end_time": "2023-06-12T07:43:05.3903876+02:00",
@@ -4328,7 +4538,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -4357,7 +4568,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-12T06:17:02.3061703+02:00",
     "end_time": "2023-06-12T07:57:02.3690121+02:00",
@@ -4370,7 +4582,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -4399,7 +4612,8 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-12T06:25:34.8788806+02:00",
     "end_time": "2023-06-12T08:05:34.9082615+02:00",
@@ -4412,7 +4626,8 @@
       "genre": "War, Drama",
       "length": 134,
       "age": 12,
-      "labels": "Violence \u0026 Gore"
+      "labels": "Violence \u0026 Gore",
+      "summary": null
     },
     "room": {
       "id": 6,
@@ -4441,10 +4656,55 @@
         "                      0 1 2 3 4 5 6 7 8 "
       ],
       "total_seats": 300,
-      "available_seats": 0
+      "available_seats": 0,
+      "price_per_seat": 0
     },
     "begin_time": "2023-06-14T00:22:48.174873+02:00",
     "end_time": "2023-06-14T02:02:48.2378791+02:00",
     "date": "2023-06-13T13:16:48.2068792+02:00"
+  },
+  {
+    "movie": {
+      "id": 6,
+      "name": "Waterloo",
+      "genre": "War, Drama",
+      "length": 134,
+      "age": 12,
+      "labels": "Violence \u0026 Gore",
+      "summary": null
+    },
+    "room": {
+      "id": 6,
+      "map": [
+        "S |   O O O O O O O O O O O O O O O O   ",
+        "R |   O O O O O O O O O O O O O O O O   ",
+        "Q |   O O O O O O O O O O O O O O O O   ",
+        "P |   O O O O O O O O O O O O O O O O   ",
+        "O |   O O O O O O O O O O O O O O O O   ",
+        "N |   O O O O O O O O O O O O O O O O   ",
+        "M | O O O O O O O O O O O O O O O O O O ",
+        "L | O O O O O O O O O O O O O O O O O O ",
+        "K | O O O O O O O O O O O O O O O O O O ",
+        "J | O O O O O O O O O O O O O O O O O O ",
+        "I | O O O O O O O O O O O O O O O O O O ",
+        "H |   O O O O O O O O O O O O O O O O   ",
+        "G |   O O O O O O O O O O O O O O O O   ",
+        "F |   O O O O O O O O O O O O O O O O   ",
+        "E |     O O O O O O O O O O O O O O     ",
+        "D |     O O O O O O O O O O O O O O     ",
+        "C |     O O O O O O O O O O O O O O     ",
+        "B |       O O O O O O O O O O O O       ",
+        "A |       O O O O O O O O O O O O       ",
+        "  x\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014\u2014-------------",
+        "    1 2 3 4 5 6 7 8 9 1 1 1 1 1 1 1 1 1 ",
+        "                      0 1 2 3 4 5 6 7 8 "
+      ],
+      "total_seats": 300,
+      "available_seats": 0,
+      "price_per_seat": 0
+    },
+    "begin_time": "2023-06-16T01:11:09.4810194+02:00",
+    "end_time": "2023-06-16T02:51:09.5234121+02:00",
+    "date": "2023-06-15T14:05:09.5030007+02:00"
   }
 ]
