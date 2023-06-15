@@ -34,6 +34,11 @@ public class AccountsLogic : IAccountsLogic
         CurrentAccount = null;
     }
 
+    public void LogIn(AccountModel acc)
+    {
+        CurrentAccount = acc;
+    }
+
     public bool CheckAccountAdmin()
     {
         if (CurrentAccount.EmailAddress == "Admin" && CurrentAccount.Password == "Admin"

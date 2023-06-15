@@ -118,5 +118,45 @@
     "date_of_birth": "2016-12-12T00:00:00",
     "fullName": "baby baby yuuu",
     "V.I.P.": true
+  },
+  {
+    "id": 15,
+    "emailAddress": "newuser@new.com",
+    "password": "New12345.",
+    "date_of_birth": "2010-12-12T00:00:00",
+    "fullName": "new new",
+    "V.I.P.": true
+  },
+  {
+    "id": 16,
+    "emailAddress": "Lol@12.com",
+    "password": "erger@$RWE34.",
+    "date_of_birth": "2022-12-12T00:00:00",
+    "fullName": "lol lol",
+    "V.I.P.": false
+  },
+  {
+    "id": 17,
+    "emailAddress": "new@new.com",
+    "password": "New12345.",
+    "date_of_birth": "2015-12-12T00:00:00",
+    "fullName": "new new",
+    "V.I.P.": false
+  },
+  {
+    "id": 18,
+    "emailAddress": "newuser@gmail.com",
+    "password": "NewUser123.",
+    "date_of_birth": "2012-12-30T00:00:00",
+    "fullName": "New User",
+    "V.I.P.": true
+  },
+  {
+    "id": 19,
+    "emailAddress": "newUser@gmail.nl",
+    "password": "New12345.",
+    "date_of_birth": "2010-12-12T00:00:00",
+    "fullName": "New Person",
+    "V.I.P.": true
   }
 ]
