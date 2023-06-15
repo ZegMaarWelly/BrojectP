@@ -199,11 +199,11 @@ public class AccountsLogic : IAccountsLogic
     }
 
     // Checks if a given user's name is in the list and returns the opposite of their VIP status
-    public AccountModel Return_User_VIP(string name)
+    public AccountModel Return_User_VIP(string email)
     {
         foreach (AccountModel user in _accounts)
         {
-            if (user.FullName.IndexOf(name, StringComparison.OrdinalIgnoreCase) >= 0)
+            if (user.EmailAddress == email)
             {
                 user.Vip = !user.Vip;
                 return user;

@@ -123,7 +123,7 @@ static class AdminMananageAccount
                         break;
 
                     case "N":
-                        Console.WriteLine("Deletion canceled. Press any key to return to admin manage accounts menu\n");
+                        Console.WriteLine("Press any key to return to admin manage accounts menu\n");
                         Console.ReadKey();
                         Start();
                         break;
