@@ -1,0 +1,30 @@
+[
+  {
+    "movie": {
+      "id": 11,
+      "name": "The Super Mario Bros. Movie",
+      "genre": "Comedy, Animation",
+      "length": 93,
+      "age": 6,
+      "labels": "Fear \u0026 Violence",
+      "summary": ""
+    },
+    "room": {
+      "id": 15,
+      "map": [
+        "C | O O O O O",
+        "B | O O O O O",
+        "A | O O O O O",
+        "   x----------",
+        "              ",
+        "     1 2 3 4 5"
+      ],
+      "total_seats": 15,
+      "available_seats": 15,
+      "price_per_seat": 1.5
+    },
+    "begin_time": "2023-06-16T12:15:00",
+    "end_time": "2023-06-16T13:48:00",
+    "date": "2023-06-16T00:00:00"
+  }
+]

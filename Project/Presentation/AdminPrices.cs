@@ -47,6 +47,7 @@ public class AdminPrices
         else
         {
             Console.WriteLine("Invalid Input");
+            Start();
         }
     }
 

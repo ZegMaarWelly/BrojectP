@@ -160,6 +160,7 @@ static class AdminManageMovie
         Console.WriteLine("\n Which movie do you want to change?");
         int to_be_changed_id = -1;
         bool to_be_changed_success = false;
+        List<RunningMovieModel> runningmovie_list = runningmovieLogic.Return_RunningMovie_List();
         while (!to_be_changed_success)
         {
             Console.WriteLine("Enter the number of your movie: ");
@@ -167,7 +168,18 @@ static class AdminManageMovie
             {
 
                 to_be_changed_id = Convert.ToInt32(Console.ReadLine());
-                to_be_changed_success = true;
+                if(to_be_changed_id < 0)
+                {
+                    Console.WriteLine("This number is too low!");
+                }
+                else if (to_be_changed_id > runningmovie_list.Count)
+                {
+                    Console.WriteLine("This number is too high!");
+                }
+                else
+                {
+                    to_be_changed_success = true;
+                }
 
             }
             //Catches any type of exception.
@@ -177,7 +189,6 @@ static class AdminManageMovie
             }
         }
 
-        List<RunningMovieModel> runningmovie_list = runningmovieLogic.Return_RunningMovie_List();
         RunningMovieModel your_running_movie = runningmovie_list[to_be_changed_id - 1];
         return your_running_movie;
     }
