@@ -120,8 +120,17 @@
         }
 
 
+        //If user is VIP, get a discount.
+        if(accountsLogic.Return_Current_User().Vip == true)
+        {
+            Console.WriteLine("Because you are VIP, your total price will be lowered by 10%");
+            Thread.Sleep(1000);
+            total_Price = total_Price * 0.9;
+            Console.WriteLine($"New price: {total_Price}");
+            Thread.Sleep(1000);
+            Console.Clear();
+        }
 
-        
         runningmovieLogic = new(runningmovie.Date.ToString("yyyy-MM-dd"));
         
         //updates the room map in the json file.
