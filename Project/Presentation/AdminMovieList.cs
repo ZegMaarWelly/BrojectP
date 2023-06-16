@@ -10,7 +10,7 @@ static class AdminMovieList
         Console.ForegroundColor = ConsoleColor.DarkGreen;
         Console.WriteLine("    _      _       _        __  __         _       __  __              \r\n   /_\\  __| |_ __ (_)_ _   |  \\/  |_____ _(_)___  |  \\/  |___ _ _ _  _ \r\n  / _ \\/ _` | '  \\| | ' \\  | |\\/| / _ \\ V / / -_) | |\\/| / -_) ' \\ || |\r\n /_/ \\_\\__,_|_|_|_|_|_||_| |_|  |_\\___/\\_/|_\\___| |_|  |_\\___|_||_\\_,_|\r\n                                                                      ");
         Console.ResetColor();
-        Console.WriteLine("What would you like to do?\n > [1] Add a movie to the list of movies\n > [2] Remove a movie from the list\n > [3] See the current list of movies\n > [4] Edit a movie's information\n > [5] Sort movies by genre\n > [6] Return to the main menu\n");
+        Console.WriteLine("What would you like to do?\n > [1] Add a movie to the list of movies\n > [2] Remove a movie from the list\n > [3] See the current list of movies\n > [4] Edit a movie's information\n > [5] Sort movies by genre\n > [6] See a movie's synopsis\n > [7] Return to the main menu\n");
         string input = Console.ReadLine()!;
         switch (input)
         {
@@ -44,11 +44,11 @@ static class AdminMovieList
                 break;
             case "6":
                 Console.Clear();
-                AdminMenu.Start();
+                View_Movie_Synopsis();
                 break;
             case "7":
                 Console.Clear();
-                View_Movie_Synopsis();
+                AdminMenu.Start();
                 break;
             default:
                 Console.Clear();
@@ -79,6 +79,7 @@ static class AdminMovieList
                 Console.WriteLine(synopsis);
                 Console.WriteLine("\n\n > Press any key to return to the admin movie list menu");
                 Console.ReadKey();
+                Console.Clear();
                 Start();
             }
             catch
@@ -393,7 +394,7 @@ static class AdminMovieList
                         Console.ResetColor();
                         Console.WriteLine($"\nYou have selected the movie: {selected_movie.Name}\n");
                         Console.WriteLine($"Information of the selected movie: \n{selected_movie}\n");
-                        Console.WriteLine("What part would you like to edit?\n[1] Change the name of the movie\n[2] Change the genre of the movie\n[3] Change the length of the movie\n[4] Change the minimum age of the movie\n[5] Change the labels of the movie\n[6] Select a different movie\n[7] Return to the admin movie list menu");
+                        Console.WriteLine("What part would you like to edit?\n[1] Change the name of the movie\n[2] Change the genre of the movie\n[3] Change the length of the movie\n[4] Change the minimum age of the movie\n[5] Change the labels of the movie\n[6] Change a movie's synopsis\n[7] Select a different movie\n[8] Return to the admin movie list menu");
                         string movie_edit = Console.ReadLine()!;
                         switch (movie_edit)
                         {
@@ -438,8 +439,12 @@ static class AdminMovieList
                                 Start();
                                 break;
                             case "6":
+                                string new_synopsis_value = New_Movie_Summary();
+                                movieLogic.Update_Movie_Synopsis(new_synopsis_value, selected_movie);
+                                Console.WriteLine($"The synopsis of {selected_movie.Name} has been updated\n\nUpdated information of this movie\n {selected_movie}\nPress any key to return to the movie list menu");
+                                Console.ReadKey();
                                 Console.Clear();
-                                
+                                Start();
                                 break;
                             case "7":
                                 Console.Clear();
