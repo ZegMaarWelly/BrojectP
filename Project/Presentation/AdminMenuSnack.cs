@@ -284,6 +284,7 @@ public static class AdminMenuSnack
                     {
 
                         snacksLogic.Delete_From_List(selected_snack);
+                        snacksLogic.Update_Snack_ID();
                         Console.Clear();
                         Console.ForegroundColor = ConsoleColor.DarkGreen;
                         Console.WriteLine("    _      _    _   ___              _   \r\n   /_\\  __| |__| | / __|_ _  __ _ __| |__\r\n  / _ \\/ _` / _` | \\__ \\ ' \\/ _` / _| / /\r\n /_/ \\_\\__,_\\__,_| |___/_||_\\__,_\\__|_\\_\\\r\n                                         ");
